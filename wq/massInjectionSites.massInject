@@ -1,0 +1,13 @@
+{
+  "@type" : "MassInjectionManager",
+  "name" : "Mass Injection Sites",
+  "description" : "",
+  "Description" : "",
+  "Index" : 170,
+  "Name" : "Mass Injection Sites",
+  "index" : 170,
+  "lastModifiedTime" : 1665684799619,
+  "massInjectionSiteList" : [ ],
+  "nextId" : 0,
+  "version" : 1
+}

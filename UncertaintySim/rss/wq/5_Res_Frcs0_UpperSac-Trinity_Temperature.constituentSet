@@ -1,0 +1,34 @@
+{
+  "index" : 35,
+  "name" : "5 Res Frcs0:UpperSac-Trinity Temperature",
+  "description" : "",
+  "lastModifiedTime" : 1683227856828,
+  "set" : {
+    "name" : "5 Res Frcs0:UpperSac-Trinity Temperature",
+    "description" : "",
+    "constituentList" : [ {
+      "@type" : "WQConstituent",
+      "displayName" : "Water Temperature",
+      "id" : 1,
+      "isAdvected" : true,
+      "isEvaporated" : true,
+      "isInjected" : false,
+      "libraryName" : "Temperature",
+      "name" : "Water_Temperature",
+      "referenceValue" : "-Infinity",
+      "unit" : "\u00B0C"
+    }, {
+      "@type" : "WQConstituent",
+      "displayName" : "Sediment Temperature",
+      "id" : 2,
+      "isAdvected" : false,
+      "isEvaporated" : false,
+      "isInjected" : false,
+      "libraryName" : "Temperature",
+      "name" : "Sediment_Temperature",
+      "referenceValue" : "-Infinity",
+      "unit" : "\u00B0C"
+    } ]
+  },
+  "version" : 1
+}

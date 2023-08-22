@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResSimTimeStepMap>
+  <TimeStepInfo ModelAlternative="RSSacTrnPO" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="RSTrnRiv" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="RSSacRiv" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="5 Reservoir Flow" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="SAC-Only" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="ShaKesSac" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="RSSacTrn" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="Forecast" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="5 Res Copy" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="WhisClear" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="WHI-Only" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="Shasta" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="5 Res Frcs" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="Historical" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="5 Res Temp" TimeStep="1 Hour" Lookback="24" />
+</ResSimTimeStepMap>
+

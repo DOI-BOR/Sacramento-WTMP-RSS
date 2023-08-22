@@ -1,0 +1,177 @@
+AsciiSerializer=5
+{=hec.clientapp.model.SimulationPeriod
+  ID=0
+  FLD=_index
+  I=14628
+  FLD=_name
+  STR=UncertaintySim
+  FLD=_description
+  STR=
+  FLD=_path
+  STR=
+  FLD=_nextTSRecordProxyIndex
+  I=0
+  FLD=_lastModifiedTime
+  J=1683332612980
+  FLD=_startTimeString
+  STR=
+  FLD=_endTimeString
+  STR=
+  FLD=_startDate
+  STR=11Mar2019,1200
+  FLD=_endDate
+  STR=30Nov2019,1200
+  FLD=_lookbackDate
+  STR=10Mar2019,1200
+  FLD=_lookbackTime
+  STR=
+  FLD=_timeStep
+  I=1
+  FLD=_timeIncrement
+  I=2
+  FLD=_altComputeTimes
+  {=java.util.Vector
+    ID=1
+    {COLLECT
+      STR=rss:5 Res Temp1:1683332612980
+      STR=rss:5 Res Frcs22:1683228680486
+    }COLLECT
+  }
+  FLD=_alternativeNames
+  {=[Lhec.clientapp.model.SimRunInfo;
+    ID=2
+    {[=2
+    {=hec.clientapp.model.SimRunInfo
+      ID=3
+      FLD=_name
+      STR=5 Res Temp
+      FLD=_index
+      I=0
+      FLD=_lastComputeTime
+      J=1683332612980
+      FLD=_dataAvailable
+      Z=true
+    }
+    {=hec.clientapp.model.SimRunInfo
+      ID=4
+      FLD=_name
+      STR=5 Res Frcs
+      FLD=_index
+      I=21
+      FLD=_lastComputeTime
+      J=1683228680486
+      FLD=_dataAvailable
+      Z=true
+    }
+
+    }]
+  }
+  FLD=m_simulationPath
+  STR=rss/UncertaintySim
+  FLD=_trialList
+  {=java.util.Vector
+    ID=5
+  }
+  FLD=m_simulationRunClass
+  STR=hec.rss.model.RssSimRun
+  FLD=m_appType
+  STR=rss
+  FLD=_modelTrials
+  {=java.util.Hashtable
+    ID=6
+    {MAP
+      STR=rss
+      {=java.util.Hashtable
+        ID=7
+        {MAP
+          STR=5 Res Temp
+          {=java.util.Vector
+            ID=8
+            {COLLECT
+              STR=5 Res Temp0
+            }COLLECT
+          }
+          STR=5 Res Frcs
+          {=java.util.Vector
+            ID=9
+            {COLLECT
+              STR=5 Res Frcs0
+            }COLLECT
+          }
+        }MAP
+      }
+    }MAP
+  }
+  FLD=_extract
+  {=hec.rss.model.SimulationExtractModel
+    ID=10
+  }
+  FLD=_currentTrials
+  {=java.util.Hashtable
+    ID=11
+    {MAP
+      STR=5 Res Frcs0:1
+      {=hec.model.TrialReference
+        ID=12
+        FLD=mgrIndex
+        I=22
+        FLD=modelPosition
+        I=0
+        FLD=trialKey
+        STR=5 Res Frcs0
+      }
+      STR=5 Res Temp0:1
+      {=hec.model.TrialReference
+        ID=13
+        FLD=mgrIndex
+        I=1
+        FLD=modelPosition
+        I=0
+        FLD=trialKey
+        STR=5 Res Temp0
+      }
+    }MAP
+  }
+  FLD=_allTrials
+  {=java.util.Hashtable
+    ID=14
+    {MAP
+      STR=5 Res Temp:1
+      {=hec.model.AltItem
+        ID=15
+        FLD=_program
+        STR=rss
+        FLD=_altName
+        STR=5 Res Temp
+        FLD=_inputPos
+        I=0
+        FLD=_modelPos
+        I=1
+        FLD=_altIndex
+        I=1
+      }
+      STR=5 Res Frcs:1
+      {=hec.model.AltItem
+        ID=16
+        FLD=_program
+        STR=rss
+        FLD=_altName
+        STR=5 Res Frcs
+        FLD=_inputPos
+        I=0
+        FLD=_modelPos
+        I=1
+        FLD=_altIndex
+        I=22
+      }
+    }MAP
+  }
+  FLD=_keyLength
+  I=11
+  FLD=_maxAlternativeNameLength
+  I=10
+  FLD=_simulationFileName
+  STR=simulation.dss
+  FLD=_simType
+  STR=Simulation
+}

@@ -1,0 +1,4089 @@
+{
+ "lastModifiedTime": 1683227889928, 
+ "set": {
+  "subDomainEntries": [
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Keswick Reservoir", 
+     "id": 33
+    }, 
+    "depth": 504.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.530869064370532
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 605.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Keswick Reservoir", 
+     "id": 33
+    }, 
+    "depth": 587.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.530869064370532
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 615.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 625.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 635.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Lewiston Reservoir", 
+     "id": 6
+    }, 
+    "depth": 630.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.824331502510546
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 645.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 655.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 665.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.761111111
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 675.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.766666667
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 685.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.766666667
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 695.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.772222222
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 705.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.777777778
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 715.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.77822958737719
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 725.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.789063657697435
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 735.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.794444444
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 745.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.795490160648429
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 755.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.8084543959313235
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 765.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.840848434996354
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 775.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.869502552636879
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 785.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.931982958635958
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 795.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.024657483890519
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 805.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.202803997483827
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 815.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.307923189048031
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 825.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.504246057440319
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 835.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.775656505924109
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 845.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.902949887974859
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 855.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.045945242940128
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 865.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.117620427698288
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 875.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.194946457877787
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 885.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.434242206836986
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 895.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.526703874395363
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 905.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.644959278996705
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 915.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.658193009622169
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 925.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.802333519759765
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 935.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.944444444
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 945.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.95
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 955.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.95
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Lewiston Reservoir", 
+     "id": 6
+    }, 
+    "depth": 950.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.824331502510546
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 965.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.95
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 975.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.95
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 985.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.955555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 995.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.950616213760119
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 1005.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.955555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 1015.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.955555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1080.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.863017444970976
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 1025.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.961111111
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 1035.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.958754702115133
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1090.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.889687312155038
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1100.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.9163571793391005
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1110.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.100953407138702
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1120.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.287403791093315
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1130.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.408179355787393
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1140.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.459355973057498
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1150.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.510532590327603
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1160.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.574878063537184
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1170.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.639374104770171
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1180.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.740371641575672
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1190.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 8.879254930555955
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1200.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 9.027584992974154
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1210.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 9.594444444
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1220.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 9.594444444
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1945.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.23
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1955.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.23
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1965.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.23
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1975.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.23
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1985.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.233765935270414
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1995.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.238088726214335
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2005.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.2422461832928615
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2015.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.246272603243276
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2025.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.250585364774138
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2035.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.258467443671659
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2045.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.26634952256918
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2075.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.271033277281521
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2175.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.8210337522356905
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2115.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.446326902026489
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2125.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.525761270435982
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2135.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.581621983312526
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2105.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.364181641078597
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2055.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.27
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2155.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.697726475992178
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2145.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.6374826961890685
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2165.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.760930206573414
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2085.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.290921049073827
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2095.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.310808820866132
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2065.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.27
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2195.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.852643810806048
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2205.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.879699394550638
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2185.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.836838781520869
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2235.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.997605542260612
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2215.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.916550548603898
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2225.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 6.954023066009163
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2245.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.04118801851206
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2265.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.140592214986871
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2255.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.089205885416086
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2275.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.192788708073253
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2285.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.265216428527843
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2295.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.337644148982434
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2375.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2365.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2345.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2355.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2385.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2395.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2305.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.429643256022816
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2315.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.537445191268465
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2325.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.644848289010983
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2335.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Keswick Reservoir", 
+     "id": 33
+    }, 
+    "depth": 504.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.530869064370532
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 605.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Keswick Reservoir", 
+     "id": 33
+    }, 
+    "depth": 587.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.530869064370532
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 615.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 625.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 635.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Lewiston Reservoir", 
+     "id": 6
+    }, 
+    "depth": 630.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.824331502510546
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 645.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 655.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.755555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 665.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.761111111
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 675.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.766666667
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 685.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.766666667
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 695.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.772222222
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 705.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.777777778
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 715.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.77822958737719
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 725.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.789063657697435
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 735.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.794444444
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 745.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.795490160648429
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 755.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.8084543959313235
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 765.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.840848434996354
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 775.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.869502552636879
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 785.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.931982958635958
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 795.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.024657483890519
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 805.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.202803997483827
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 815.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.307923189048031
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 825.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.504246057440319
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 835.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.775656505924109
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 845.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.902949887974859
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 855.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.045945242940128
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 865.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.117620427698288
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 875.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.194946457877787
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 885.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.434242206836986
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 895.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.526703874395363
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 905.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.644959278996705
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 915.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.658193009622169
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 925.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.802333519759765
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 935.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.944444444
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 945.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.95
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 955.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.95
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Lewiston Reservoir", 
+     "id": 6
+    }, 
+    "depth": 950.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.824331502510546
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 965.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.95
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 975.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.95
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 985.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.955555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 995.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.950616213760119
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 1005.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.955555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 1015.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.955555556
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1080.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.863017444970976
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 1025.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.961111111
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Shasta Lake", 
+     "id": 29
+    }, 
+    "depth": 1035.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.958754702115133
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1090.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.889687312155038
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1100.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.9163571793391005
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1110.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.100953407138702
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1120.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.287403791093315
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1130.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.408179355787393
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1140.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.459355973057498
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1150.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.510532590327603
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1160.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.574878063537184
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1170.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.639374104770171
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1180.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.740371641575672
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1190.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 8.879254930555955
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1200.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 9.027584992974154
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1210.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 9.594444444
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Whiskeytown Lake", 
+     "id": 9
+    }, 
+    "depth": 1220.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 9.594444444
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1945.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.23
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1955.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.23
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1965.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.23
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1975.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.23
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1985.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.233765935270414
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 1995.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.238088726214335
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2005.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.2422461832928615
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2015.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.246272603243276
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2025.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.250585364774138
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2035.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.258467443671659
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2045.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.26634952256918
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2075.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.271033277281521
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2175.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.8210337522356905
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2115.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.446326902026489
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2125.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.525761270435982
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2135.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.581621983312526
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2105.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.364181641078597
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2055.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.27
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2155.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.697726475992178
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2145.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.6374826961890685
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2165.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.760930206573414
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2085.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.290921049073827
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2095.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.310808820866132
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2065.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.27
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2195.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.852643810806048
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2205.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.879699394550638
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2185.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.836838781520869
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2235.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.997605542260612
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2215.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.916550548603898
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2225.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 6.954023066009163
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2245.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.04118801851206
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2265.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.140592214986871
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2255.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.089205885416086
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2275.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.192788708073253
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2285.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.265216428527843
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2295.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.337644148982434
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2375.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2365.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2345.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2355.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2385.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2395.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.67
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2305.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.429643256022816
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2315.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.537445191268465
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2325.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.644848289010983
+    }
+   }, 
+   {
+    "ref": {
+     "@type": "WQSubDomainRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_1DV", 
+     "name": "Trinity Lake", 
+     "id": 4
+    }, 
+    "depth": 2335.0, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 7.67
+    }
+   }
+  ], 
+  "description": "", 
+  "boundaryEntries": [
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_OUTFLOW", 
+     "jnctId": 45, 
+     "name": "Red Bluff Diversion", 
+     "id": 39
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 165, 
+     "name": "Helena", 
+     "id": 35
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 207, 
+     "name": "Trinity River at Reading Cr", 
+     "id": 26
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 188, 
+     "name": "Sacramento R + Battle Cr", 
+     "id": 34
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 52, 
+     "name": "Bend Bridge", 
+     "id": 38
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 199, 
+     "name": "Trinity R at Grass Valley Cr", 
+     "id": 12
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 50, 
+     "name": "Jellys Ferry Bridge", 
+     "id": 36
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 201, 
+     "name": "Trinity R at Rush Cr", 
+     "id": 10
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 211, 
+     "name": "Trinity R at Canyon Cr", 
+     "id": 33
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_2_RIVER", 
+     "jnctId": 5, 
+     "name": "Keswick Dam", 
+     "id": 23
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 162, 
+     "name": "Clear Cr + South Fork", 
+     "id": 11
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 175, 
+     "name": "Limekiln Gulch", 
+     "id": 14
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 54, 
+     "name": "Sacramento R + Cottonwood Cr", 
+     "id": 32
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 167, 
+     "name": "ACID dam", 
+     "id": 25
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_2_RIVER", 
+     "jnctId": 65, 
+     "name": "Whiskeytown Dam", 
+     "id": 7
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_OUTFLOW", 
+     "jnctId": 213, 
+     "name": "Trinity R at NF Trinity R", 
+     "id": 37
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 205, 
+     "name": "Trinity R at Weaver Cr", 
+     "id": 24
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 171, 
+     "name": "Junction City", 
+     "id": 31
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 43, 
+     "name": "Sacramento R + Clear Cr", 
+     "id": 13
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 160, 
+     "name": "Lewiston WQ", 
+     "id": 9
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 203, 
+     "name": "Trinity R at Indian Cr", 
+     "id": 22
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 173, 
+     "name": "Douglas City", 
+     "id": 27
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 209, 
+     "name": "Trinity R at Browns Cr", 
+     "id": 29
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_2_RIVER", 
+     "jnctId": 143, 
+     "name": "Lewiston Dam", 
+     "id": 5
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 2, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 63, 
+     "name": "Sacramento R + Cow Cr", 
+     "id": 30
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 2, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_OUTFLOW", 
+     "jnctId": 45, 
+     "name": "Red Bluff Diversion", 
+     "id": 39
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 165, 
+     "name": "Helena", 
+     "id": 35
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 207, 
+     "name": "Trinity River at Reading Cr", 
+     "id": 26
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 188, 
+     "name": "Sacramento R + Battle Cr", 
+     "id": 34
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 52, 
+     "name": "Bend Bridge", 
+     "id": 38
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 199, 
+     "name": "Trinity R at Grass Valley Cr", 
+     "id": 12
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 50, 
+     "name": "Jellys Ferry Bridge", 
+     "id": 36
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 201, 
+     "name": "Trinity R at Rush Cr", 
+     "id": 10
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 211, 
+     "name": "Trinity R at Canyon Cr", 
+     "id": 33
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_2_RIVER", 
+     "jnctId": 5, 
+     "name": "Keswick Dam", 
+     "id": 23
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 162, 
+     "name": "Clear Cr + South Fork", 
+     "id": 11
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 175, 
+     "name": "Limekiln Gulch", 
+     "id": 14
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 54, 
+     "name": "Sacramento R + Cottonwood Cr", 
+     "id": 32
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 167, 
+     "name": "ACID dam", 
+     "id": 25
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_2_RIVER", 
+     "jnctId": 65, 
+     "name": "Whiskeytown Dam", 
+     "id": 7
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_OUTFLOW", 
+     "jnctId": 213, 
+     "name": "Trinity R at NF Trinity R", 
+     "id": 37
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 205, 
+     "name": "Trinity R at Weaver Cr", 
+     "id": 24
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 171, 
+     "name": "Junction City", 
+     "id": 31
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 43, 
+     "name": "Sacramento R + Clear Cr", 
+     "id": 13
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 160, 
+     "name": "Lewiston WQ", 
+     "id": 9
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 203, 
+     "name": "Trinity R at Indian Cr", 
+     "id": 22
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 173, 
+     "name": "Douglas City", 
+     "id": 27
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 209, 
+     "name": "Trinity R at Browns Cr", 
+     "id": 29
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RESERVOIR_2_RIVER", 
+     "jnctId": 143, 
+     "name": "Lewiston Dam", 
+     "id": 5
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }, 
+   {
+    "constituentId": 1, 
+    "ref": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "RIVER_2_RIVER", 
+     "jnctId": 63, 
+     "name": "Sacramento R + Cow Cr", 
+     "id": 30
+    }, 
+    "initialCondition": {
+     "@type": "WQInitialCondition", 
+     "constituentId": 1, 
+     "override": 10.0
+    }
+   }
+  ], 
+  "reachInterpolationType": "ONEWAYFORWARD", 
+  "name": "5 Res Frcs0:Uncertainty_IC", 
+  "reservoirInterpolationType": "LINEAR"
+ }, 
+ "index": 41, 
+ "description": "", 
+ "geometryId": 32, 
+ "version": 1, 
+ "constituentId": 35, 
+ "name": "5 Res Frcs0:Uncertainty_IC"
+}

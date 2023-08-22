@@ -1,0 +1,476 @@
+{
+  "index" : 11628,
+  "name" : "Whiskeytown-ClearCr_BC1",
+  "description" : "",
+  "Description" : "",
+  "Index" : 11628,
+  "Name" : "Whiskeytown-ClearCr_BC1",
+  "constituentSetId" : 871,
+  "geometryId" : 11606,
+  "lastModifiedTime" : 1689915989090,
+  "set" : {
+    "boundaryConditions" : [ {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 50,
+        "jnctId" : 162,
+        "name" : "Clear Cr + South Fork - SF Clear Creek IGO Balance",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : ""
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 6,
+        "jnctId" : 67,
+        "name" : "Lewiston Reservoir-Clear Creek Diversion Reach",
+        "type" : "RESERVOIR_INFLOW_IN_NETWORK"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\WTMP_UpperSac_Historical.dss",
+        "DSS Path" : "/USBR/JCR_GENERATION_RELEASE/TEMP-WATER//1HOUR/GRAB2-INTERP/",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : "F"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\WTMP_UpperSac_Historical.dss",
+        "DSS Path" : "/USBR/JCR_GENERATION_RELEASE/TEMP-WATER//1HOUR/GRAB2-INTERP/",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : "F"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 46,
+        "jnctId" : 67,
+        "name" : "Carr Powerhouse - Whiskeytown - Clear Creek Local Inflow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\USBR_inputs.dss",
+        "DSS Path" : "/USBR/CLEAR CREAK WHI INFLOW ADJUSTED/TEMP-WATER//1HOUR/WATERCOURSE/",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : "C"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 47,
+        "jnctId" : 67,
+        "name" : "Carr Powerhouse - Whiskeytown Balance Flow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : ""
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 59,
+        "jnctId" : 37,
+        "name" : "Spring Creek In - Keswick Balance Flow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : ""
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 60,
+        "jnctId" : 37,
+        "name" : "Spring Creek In - Spring Creek Debris Dam Inflow",
+        "type" : "LOCAL_INFLOW"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\WTMP_UpperSac_Historical.dss",
+        "DSS Path" : "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : "C"
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "DssData",
+        "DSS File Path" : "shared\\WTMP_UpperSac_Historical.dss",
+        "DSS Path" : "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : "C"
+      },
+      "units" : [ "\u00B0C" ]
+    }, {
+      "@type" : "WQBoundaryCondition",
+      "boundaryRef" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 28,
+        "jnctId" : 43,
+        "name" : "Sacramento R + Clear Cr",
+        "type" : "RIVER_INFLOW_IN_NETWORK"
+      },
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "dates" : [ ],
+        "description" : "",
+        "name" : "Table Data",
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "description" : "",
+        "interpretedUnits" : "\u00B0C",
+        "name" : "DSS",
+        "units" : ""
+      }, {
+        "@type" : "ExcelData",
+        "availableUnits" : [ ],
+        "bottomRow" : 0,
+        "compType" : 2,
+        "description" : "",
+        "name" : "Excel Worksheet",
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Constant Value",
+        "value" : "-Infinity"
+      }, {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      } ],
+      "selectedDataSource" : {
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "description" : "",
+        "name" : "Ambient Value"
+      },
+      "units" : [ "\u00B0C" ]
+    } ],
+    "description" : "",
+    "name" : "Whiskeytown-ClearCr_BC1"
+  },
+  "version" : 1
+}

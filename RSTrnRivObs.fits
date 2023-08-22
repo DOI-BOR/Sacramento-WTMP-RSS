@@ -1,0 +1,142 @@
+TSDataSet Name=RSTrnRivObs
+Description= (Observed TS Data Set)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=0
+TSRecord Name=~N91
+TSRecord VariableId=0
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/Historic-UpperSac.dss
+TSRecord DssPathname=/SACRAMENTO/BEND BRIDGE(BND)/FLOW//IR-MONTH/FLOW (CFS)-MERGED/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=1
+TSRecord Name=~N181
+TSRecord VariableId=0
+TSRecord ParamName=Flow
+TSRecord DssFilename=
+TSRecord DssPathname=///////
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=2
+TSRecord Name=~N215
+TSRecord VariableId=0
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/LewistonWhiskeytown_BalanceFlows.dss
+TSRecord DssPathname=/USBR-LINEARINTERP-CAPPED/WHI_GENERATION_RELEASE/FLOW//1HOUR/GRAB2PROCESSED/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=3
+TSRecord Name=~N220
+TSRecord VariableId=0
+TSRecord ParamName=Flow
+TSRecord DssFilename=
+TSRecord DssPathname=///////
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=4
+TSRecord Name=~N223
+TSRecord VariableId=0
+TSRecord ParamName=Flow
+TSRecord DssFilename=
+TSRecord DssPathname=///////
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=5
+TSRecord Name=~E9:F
+TSRecord VariableId=10
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/USBR_inputs.dss
+TSRecord DssPathname=/USBR/SHASTA/ELEVATION//1HOUR/USBR_BLESSED/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=6
+TSRecord Name=~E9:F
+TSRecord VariableId=21
+TSRecord ParamName=Flow-OUT
+TSRecord DssFilename=shared/USBR_inputs.dss
+TSRecord DssPathname=/USBR/SHASTA_QOUT/FLOW//1HOUR/USBR_BLESSED/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=7
+TSRecord Name=~E59:F
+TSRecord VariableId=10
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/USBR_inputs.dss
+TSRecord DssPathname=/USBR/KESWICK/ELEVATION//1HOUR/USBR_BLESSED/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=8
+TSRecord Name=~E59:F
+TSRecord VariableId=21
+TSRecord ParamName=Flow-OUT
+TSRecord DssFilename=shared/USBR_inputs.dss
+TSRecord DssPathname=/USBR/KESWICK_QOUT_SUM/FLOW//1HOUR/USBR_DERIVED/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=9
+TSRecord Name=~E127:F
+TSRecord VariableId=10
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/LewistonWhiskeytown_BalanceFlows.dss
+TSRecord DssPathname=/USBR+23HRSHIFT/WHI_ELEVATION/ELEV//1HOUR/GRAB2-MANUAL-FILTER-INTERPFILL/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=10
+TSRecord Name=~E127:F
+TSRecord VariableId=11
+TSRecord ParamName=Stor
+TSRecord DssFilename=
+TSRecord DssPathname=///////
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=11
+TSRecord Name=~E142:F
+TSRecord VariableId=10
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/LewistonWhiskeytown_BalanceFlows.dss
+TSRecord DssPathname=/USBR_CLEANED_FULLLINEARINTERP/LEW_ELEVATION_PROCESSED/ELEV//1HOUR/GRAB2/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=12
+TSRecord Name=~E181:F
+TSRecord VariableId=10
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/USBR_TRN_DSSv6.dss
+TSRecord DssPathname=/USBR_RECLEANED_FULLLINEARINTERP/TRN_ELEVATION/ELEV//1HOUR/GRAB2/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=13
+TSRecord Name=~E181:F
+TSRecord VariableId=11
+TSRecord ParamName=Stor
+TSRecord DssFilename=shared/USBR_TRN_DSSv6.dss
+TSRecord DssPathname=/TRINITY RESERVOIR/CONIC_FROM_ELEV/STORAGE//1HOUR/DERIVED/
+TSRecord InputPosition=-1
+TSRecord End=
+
+TSRecord=14
+TSRecord Name=~E181:F
+TSRecord VariableId=21
+TSRecord ParamName=Flow-OUT
+TSRecord DssFilename=shared/LewistonWhiskeytown_BalanceFlows.dss
+TSRecord DssPathname=/USBR_SUM_CLEAN_GEN_OUT_SPILL/TRN/FLOW//1HOUR/GRAB2/
+TSRecord InputPosition=-1
+TSRecord End=
+
+

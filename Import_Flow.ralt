@@ -1,0 +1,254 @@
+RssAlt Name=Import Flow
+RssAlt Description=Flow Model imported from 5-reservoir watershed
+Version=1001
+ModifiedTime=1657243048322
+NetworkID=39
+System Path=rss/Five_Reservoirs.rsys
+Operations Path=
+InputTSData Path=rss/Import_Flow.fits
+OutputTSData Path=
+InputGVData Path=
+InputWQTSDataPath Path=
+OutputVerticalDatum=AS_DEFINED
+FlowComputeType=1
+ComputeHoldouts=false
+ComputeUnreg=false
+ComputeCumLoc=true
+CopyOverrides=false
+UseObsTSData=false
+LogLevel=3
+UseYieldAnalysis=false
+SelectedYieldAnalysis=Reservoir Yield
+ReservoirYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+ReservoirYieldAnalysisEnd
+ReverseReservoirYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisRuleRefBegin
+Reservoir=8:Shasta Lake
+Rule=1:Specified Release:1
+StorageZone=8:Shasta Lake,3:5Q Specified Releases,2:Flood Control,1000.0
+Tolerance=10.0
+YieldAnalysisRuleRefEnd
+YieldAnalysisRuleRefBegin
+Reservoir=8:Shasta Lake
+Rule=0:PowerPlant-Specified:27
+StorageZone=8:Shasta Lake,3:5Q Specified Releases,2:Flood Control,1000.0
+Tolerance=10.0
+YieldAnalysisRuleRefEnd
+YieldAnalysisEnd
+ReservoirDataBegin
+Reservoir=8:Shasta Lake
+Zone=2:Flood Control
+Tolerance=1000.0
+ReservoirDataEnd
+SatisfyMapBegin
+0:true
+1:true
+SatisfyMapEnd
+AdjustmentOptionsBegin
+AdjustTopOfCon=true
+AdjustmentStrategy=Slide Pattern
+HasExcludePeriod=false
+Start=null
+End=null
+MaxLimitType=Zone
+MinLimitType=Zone
+MinElevValue=0.0
+MaxElevValue=0.0
+MinStorageValue=0.0
+MaxStorageValue=0.0
+MinZoneValue=0
+MaxZoneValue=2
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+ReverseReservoirYieldAnalysisEnd
+WaterAccountYieldAnalysisBegin
+Tolerence=0.0
+WaterAccountIndex=-2147483648
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+WaterAccountYieldAnalysisEnd
+ReverseWaterAccountYieldAnalysisBegin
+Tolerance=100.0
+WaterAccountIndex=-2147483648
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisEnd
+SatisfyMapBegin
+SatisfyMapEnd
+AdjustmentOptionsBegin
+MaxLimitType=Constant
+MaxConstantValue=0.0
+MaxPercentValue=0.0
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+ReverseWaterAccountYieldAnalysisEnd
+ReservoirStorageVsYieldAnalysisBegin
+YieldAnalysisBegin
+UseHydropowerRules=false
+MaxIteration=25
+UseBisectionOnly=true
+MaxHeuristicIterations=8
+YieldAnalysisRuleRefBegin
+Reservoir=8:Shasta Lake
+Rule=1:Specified Release:1
+StorageZone=8:Shasta Lake,3:5Q Specified Releases,2:Flood Control,1000.0
+Tolerance=10.0
+YieldAnalysisRuleRefEnd
+YieldAnalysisRuleRefBegin
+Reservoir=8:Shasta Lake
+Rule=0:PowerPlant-Specified:27
+StorageZone=8:Shasta Lake,3:5Q Specified Releases,2:Flood Control,1000.0
+Tolerance=10.0
+YieldAnalysisRuleRefEnd
+YieldAnalysisEnd
+ReservoirDataBegin
+Reservoir=8:Shasta Lake
+Zone=2:Flood Control
+Tolerance=1000.0
+Min=0.0
+Max=0.0
+ReservoirDataEnd
+SatisfyMapBegin
+0:true
+1:true
+SatisfyMapEnd
+AdjustmentOptionsBegin
+AdjustmentStrategy=Slide Pattern
+HasExcludePeriod=false
+Start=null
+End=null
+ZoneAdjustmentType=Collapse Zones
+AdjustmentOptionsEnd
+Intervals=10
+YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 
+ReservoirStorageVsYieldAnalysisEnd
+TimeStep=1
+TimeIncrement=2
+ObservedTSData Path=rss/Import_FlowObs.fits
+resOpSelection=141,1
+resOpSelection=8,3
+resOpSelection=126,1
+resOpSelection=180,2
+resOpSelection=58,1
+divOpSelection=169,0
+ReplaceAllReleaseOverrides=false
+UseDiffAltResultsTableBegin
+UseDiffAltResultsTableEnd
+DssOutputDataBegin
+WriteAllDssOutput;true
+WriteAllInputDss;true
+DssOutputDataEnd
+Hindcast=~E9:F;14;0;-Infinity
+Hindcast=~E9:F;15;2;-Infinity
+Hindcast=~E13:F;41;0;-Infinity
+Hindcast=~E26:F;41;0;-Infinity
+Hindcast=~E27:F;41;0;-Infinity
+Hindcast=~E28:F;41;0;-Infinity
+Hindcast=~E164:F;41;0;-Infinity
+Hindcast=~E59:F;14;0;-Infinity
+Hindcast=~E59:F;15;2;-Infinity
+Hindcast=~E107:F;41;0;-Infinity
+Hindcast=~E127:F;14;2;-Infinity
+Hindcast=~E127:F;15;0;-Infinity
+Hindcast=~E158:F;41;0;-Infinity
+Hindcast=~E159:F;96;1;0.0
+Hindcast=~E157:F;41;0;-Infinity
+Hindcast=~E142:F;14;1;1904.0
+Hindcast=~E142:F;15;2;-Infinity
+Hindcast=~E147:F;41;1;0.0
+Hindcast=~E148:F;41;0;-Infinity
+Hindcast=~E149:F;41;1;0.0
+Hindcast=~E153:F;41;0;-Infinity
+Hindcast=~E170:F;43;0;-Infinity
+Hindcast=~E181:F;14;2;-Infinity
+Hindcast=~E181:F;15;0;-Infinity
+Hindcast=~E185:F;96;1;0.0
+Hindcast=~E186:F;41;0;-Infinity
+Hindcast=~E187:F;41;1;0.0
+Hindcast=~S2;98;1;0.01
+Hindcast=~S3;98;1;0.01
+Hindcast=~S4;98;1;0.01
+Hindcast=~S9;98;1;0.01
+UsingInflowFactors=false
+InflowFactorType=0
+GlobalInflowFactor=1.0
+Hotstart Options
+CreateHotStart:false
+SaveAtEnd:false
+SaveAtLookback:false
+SaveAtInterval:false
+IntervalDateTime:
+TimeStep:1
+TimeIncrement:2
+SaveAtDateTime:false
+TimeStepsToSave:0.0
+LoadHotstart:false
+Hotstart End
+WaterQualityBegin
+RunWq=false
+TimeStep=5
+TimeStepIncrement=1
+Constituent=temperatures
+ConstituentId=66
+InitialConditions=UpSacCCTrinity
+InitialConditionsId=307
+BoundaryConditions=UpSacCCTrinity
+BoundaryConditionsId=306
+MetData=USBR
+MetDataId=220
+DispersionCoef=UpSacCCTrinity
+DispersionCoefId=308
+Parameters=UpSacCCTrinity
+ParametersId=305
+NumberThreads=1
+OutputSteps=1
+PreserveConcentration=true
+FirstOrderSolution=true
+OutputVariablesBegin
+CellVolume=false
+CellFlow=false
+CellVelocity=false
+CellMass=false
+HeatBudget=false
+NsmPathways=false
+NsmVariables=false
+GeneralPathways=false
+OutputVariablesEnd
+CoupledFlowWQCompute=false
+WaterQualityEnd
+PlugInDataBegin
+PlugIn:Monte Carlo
+MinIterations:-2147483648
+MaxIterations:-2147483648
+LastIteration:0
+CumulativeTime:0
+SimulationOption:0
+ScriptFilePath:null
+IterationString:
+Compute:false
+StandAloneRandomSeed:0.0
+PlugInEnd
+PlugIn:Ensemble
+EnsembleMembersString:
+Compute:false
+UseMultithreadedCompute:false
+PlugInEnd
+PlugInDataEnd

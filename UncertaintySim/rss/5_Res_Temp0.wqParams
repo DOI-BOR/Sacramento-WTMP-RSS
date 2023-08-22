@@ -1,0 +1,209 @@
+Parameter Name, Regional Values
+wind_a, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000                                                                                                                                                                                                                                                                                                 
+wind_b, 2.500, 1.500, 1.500, 1.000, 1.000, 1.000, 1.000, 4.000, 2.500, 4.000, 4.000, 4.000, 4.000, 4.000, 4.000                                                                                                                                                                                                                                                                                                 
+wind_c, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, .500, 1.000, 1.000, .500, .500, .500, .500, .500                                                                                                                                                                                                                                                                                                       
+wind_kh_kw, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000                                                                                                                                                                                                                                                                                             
+h2, .250, .250, .250, .250, .250, .250, .250, .250, .250, .250, .250, .250, .250, .250, .250                                                                                                                                                                                                                                                                                                                    
+pb, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000, 1600.000                                                                                                                                                                                                                                                        
+Cps, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720, 1674.720                                                                                                                                                                                                                                                       
+alphas, .043, .043, .043, .043, .043, .043, .043, .043, .043, .043, .043, .043, .043, .043, .043                                                                                                                                                                                                                                                                                                                
+tsedf, .200, .200, .200, .350, .350, .350, .350, .200, .200, .200, .200, .200, .200, .200, .200                                                                                                                                                                                                                                                                                                                 
+lambda0, .450, .450, .450, .450, .450, .450, .450, .450, .450, .450, .450, .450, .450, .450, .450                                                                                                                                                                                                                                                                                                               
+lambdas, .052, .052, .052, .052, .052, .052, .052, .052, .052, .052, .052, .052, .052, .052, .052                                                                                                                                                                                                                                                                                                               
+Slope, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000                                                                                                                                                                                                                                                                                   
+Half angle, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000, 85.000                                                                                                                                                                                                                                                                              
+Initial Mixing Ratio, .150, .150, .150, .150, .150, .150, .150, .150, .150, .150, .150, .150, .150, .150, .150                                                                                                                                                                                                                                                                                                  
+Entrainment coefficient, -1.000, -1.000, .000, -1.000, -1.000, -1.000, -1.000, .000, -1.000, .000, -1.000, -1.000, -1.000, -1.000, -1.000                                                                                                                                                                                                                                                                       
+drho Tolerance, .080, .040, .080, .080, .080, .080, .080, .040, .080, .005, .080, .080, .080, .080, .080                                                                                                                                                                                                                                                                                                        
+Sediment temperature, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000                                                                                                                                                                                                                                                                    
+Inflow envelope restriction, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, 15.240, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000                                                                                                                                                                                                                                                             
+Outflow envelope restriction, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, 100.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000, -1.000                                                                                                                                                                                                                                                           
+Richardson Number Function Option, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3                                                                                                                                                                                                                                                                                                                                  
+Use Entrainment, 2, 1, 1, 2, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2, 2                                                                                                                                                                                                                                                                                                                                                    
+  
+Reservoir: Trinity Lake is using the Munk Anderson method for vertical diffusion
+  Munk Anderson parameter a: 0.2000000000
+  Munk Anderson parameter b: 0.7500000000
+  Munk Anderson parameter c: 0.0500000000
+  Munk Anderson parameter dzmin: 0.0000150000
+  
+Reservoir: Lewiston Reservoir is using the Wind method for vertical diffusion
+  Wind parameter Dz_min: 0.0000300000
+  Wind parameter A1: 0.0000000000
+  Wind parameter Az: 2.000
+  Wind parameter Dz_max: 1000000.000
+  
+Reservoir: Whiskeytown Lake is using the Munk Anderson method for vertical diffusion
+  Munk Anderson parameter a: 0.2000000000
+  Munk Anderson parameter b: 0.7500000000
+  Munk Anderson parameter c: 0.0500000000
+  Munk Anderson parameter dzmin: 0.0000150000
+  
+Reservoir: Shasta Lake is using the Munk Anderson method for vertical diffusion
+  Munk Anderson parameter a: 0.1000000000
+  Munk Anderson parameter b: 0.6500000000
+  Munk Anderson parameter c: 0.0500000000
+  Munk Anderson parameter dzmin: 0.0000750000
+  
+Reservoir: Keswick Reservoir is using the Wind method for vertical diffusion
+  Wind parameter Dz_min: 0.0000108000
+  Wind parameter A1: 0.0000328000
+  Wind parameter Az: 2.000
+  Wind parameter Dz_max: 1000000.000
+Reservoir Entrainment Parameters
+Trinity Lake                                                                    
+  Boundary idx: 1
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .003933
+    Entrainment coefficient: .00104155
+  Boundary idx: 2
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004823
+    Entrainment coefficient: .00127710
+  Boundary idx: 3
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004416
+    Entrainment coefficient: .00116939
+  Boundary idx: 4
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .009258
+    Entrainment coefficient: .00245141
+  Boundary idx: 41
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .003933
+    Entrainment coefficient: .00104155
+  Boundary idx: 42
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .003933
+    Entrainment coefficient: .00104155
+  Boundary idx: 43
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004823
+    Entrainment coefficient: .00127710
+  Boundary idx: 44
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004416
+    Entrainment coefficient: .00116939
+  Boundary idx: 45
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .009258
+    Entrainment coefficient: .00245141
+Lewiston Reservoir                                                              
+  Boundary idx: 5
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .001850
+    Entrainment coefficient: .00005000
+  Boundary idx: 46
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .001850
+    Entrainment coefficient: .00005000
+Whiskeytown Lake                                                                
+  Boundary idx: 7
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .005581
+    Entrainment coefficient: .00000500
+  Boundary idx: 47
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .005581
+    Entrainment coefficient: .00000500
+  Boundary idx: 48
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .005581
+    Entrainment coefficient: .00000500
+Shasta Lake                                                                     
+  Boundary idx: 16
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .002738
+    Entrainment coefficient: .00040000
+  Boundary idx: 17
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004246
+    Entrainment coefficient: .00040000
+  Boundary idx: 18
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004902
+    Entrainment coefficient: .00040000
+  Boundary idx: 19
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004167
+    Entrainment coefficient: .00040000
+  Boundary idx: 20
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .011701
+    Entrainment coefficient: .00040000
+  Boundary idx: 21
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .056555
+    Entrainment coefficient: .00040000
+  Boundary idx: 53
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .002738
+    Entrainment coefficient: .00040000
+  Boundary idx: 54
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004246
+    Entrainment coefficient: .00040000
+  Boundary idx: 55
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004902
+    Entrainment coefficient: .00040000
+  Boundary idx: 56
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .004167
+    Entrainment coefficient: .00040000
+  Boundary idx: 57
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .011701
+    Entrainment coefficient: .00040000
+  Boundary idx: 58
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .056555
+    Entrainment coefficient: .00040000
+Keswick Reservoir                                                               
+  Boundary idx: 9
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .007109
+    Entrainment coefficient: .00188248
+  Boundary idx: 22
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .001765
+    Entrainment coefficient: .00046744
+  Boundary idx: 60
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .007109
+    Entrainment coefficient: .00188248
+  Boundary idx: 61
+    Initial mixing ratio: .150
+    Half angle: 85.000
+    Slope: .007109
+    Entrainment coefficient: .00188248
+  

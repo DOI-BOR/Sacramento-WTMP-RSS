@@ -1,0 +1,2589 @@
+{
+ "lastModifiedTime": 1683227856874, 
+ "set": {
+  "boundaryConditions": [
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY R CANYON CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 211, 
+     "name": "Trinity R at Canyon Cr - Canyon Cr Local Inflow", 
+     "id": 70
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY R CANYON CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+      "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 0, 
+     "name": "Distributed in - Shasta Balance Flow", 
+     "id": 57
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY SWIFT CR INFLOW ADJ2/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\USBR_TRN_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 178, 
+     "name": "Swift Creek in - Trinity - Swift Creek Inflow", 
+     "id": 42
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY SWIFT CR INFLOW ADJ2/TEMP-WATER//1DAY/WATERCOURSE_FCST/", 
+      "DSS File Path": "shared\\USBR_Uncertainty_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 213, 
+     "name": "Trinity R at NF Trinity R - NF Trinity River Inflow", 
+     "id": 72
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY R RUSH CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 201, 
+     "name": "Trinity R at Rush Cr - Rush Cr Local Inflow", 
+     "id": 49
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY R RUSH CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+      "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 175, 
+     "name": "Limekiln Gulch - Limekiln Local Inflow", 
+     "id": 58
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 171, 
+     "name": "Junction City - Junction City Local Inflow", 
+     "id": 68
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 37, 
+     "name": "Spring Creek In - Keswick Balance Flow", 
+     "id": 59
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/", 
+     "DSS File Path": "shared\\USBR_derived_6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 37, 
+     "name": "Spring Creek In - Spring Creek Debris Dam Inflow", 
+     "id": 60
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/", 
+      "DSS File Path": "shared\\USBR_derived_6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/COTTONWOOD_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/", 
+     "DSS File Path": "shared\\USBR_inputs.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 2, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 54, 
+     "name": "Sacramento R + Cottonwood Cr - Cottonwood Creek Inflow", 
+     "id": 69
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/COTTONWOOD_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/", 
+      "DSS File Path": "shared\\USBR_inputs.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 2, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/COW_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/", 
+     "DSS File Path": "shared\\USBR_inputs.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 2, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 63, 
+     "name": "Sacramento R + Cow Cr - Cow Creek Inflow", 
+     "id": 67
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/COW_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/", 
+      "DSS File Path": "shared\\USBR_inputs.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 2, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/PIT_RIVER/TEMP-WATER//1HOUR/USBR_BLESSED/", 
+     "DSS File Path": "shared\\USBR_inputs.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 2, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 1, 
+     "name": "Pit River in - Shasta - Pit River Inflow", 
+     "id": 52
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/UNCERTAINTY-SHASTA-PIT-IN_TEMP_USBR_FCST/TEMP-WATER//1DAY/REGRESS_FROM_7D-ROLLING/", 
+      "DSS File Path": "shared\\USBR_Uncertainty_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 2, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY EF TRINITY INFLOW ADJ2/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\USBR_TRN_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 177, 
+     "name": "East Fork Trinity in - Trinity - East Fork Trinity Inflow", 
+     "id": 43
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY EF TRINITY INFLOW ADJ2/TEMP-WATER//1DAY/WATERCOURSE_FCST/", 
+      "DSS File Path": "shared\\USBR_Uncertainty_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/BATTLE_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/", 
+     "DSS File Path": "shared\\USBR_inputs.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 2, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 188, 
+     "name": "Sacramento R + Battle Cr - Battle Creek Inflow", 
+     "id": 71
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/BATTLE_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/", 
+      "DSS File Path": "shared\\USBR_inputs.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 2, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY R READING CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 207, 
+     "name": "Trinity River at Reading Cr - Reading Cr Local Inflow", 
+     "id": 63
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY R READING CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+      "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 209, 
+     "name": "Trinity R at Browns Cr - Browns Cr Local Inflow", 
+     "id": 66
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+      "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY TRINITY R INFLOW ADJ2/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\USBR_TRN_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 133, 
+     "name": "Trinity In - Trinity - Trinity River Inflow", 
+     "id": 40
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY TRINITY R INFLOW ADJ2/TEMP-WATER//1DAY/WATERCOURSE_FCST/", 
+      "DSS File Path": "shared\\USBR_Uncertainty_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 133, 
+     "name": "Trinity In - Trinity Balance Flow", 
+     "id": 41
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 173, 
+     "name": "Douglas City - Douglas City Local Inflow", 
+     "id": 65
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 134, 
+     "name": "Trinity Dam - Lewiston Balance Flow", 
+     "id": 45
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/MCCLOUD_RIVER/TEMP-WATER//1HOUR/USBR_BLESSED/", 
+     "DSS File Path": "shared\\USBR_inputs.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 2, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 3, 
+     "name": "McCloud River in - Shasta - McCloud River Inflow", 
+     "id": 54
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/UNCERTAINTY-SHASTA-MCCLOUD-IN_TEMP_USBR_FCST/TEMP-WATER//1DAY/REGRESS_FROM_7D-ROLLING/", 
+      "DSS File Path": "shared\\USBR_Uncertainty_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 2, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 67, 
+     "name": "Carr Powerhouse - Whiskeytown - Clear Creek Local Inflow", 
+     "id": 46
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/CLEAR CREAK WHI INFLOW ADJUSTED/TEMP-WATER//1HOUR/WATERCOURSE/", 
+      "DSS File Path": "shared\\USBR_inputs.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 2, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 67, 
+     "name": "Carr Powerhouse - Whiskeytown Balance Flow", 
+     "id": 47
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 199, 
+     "name": "Trinity R at Grass Valley Cr - Grass Valley Cr Local Inflow", 
+     "id": 51
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+      "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 205, 
+     "name": "Trinity R at Weaver Cr - Weaver Cr Local Inflow", 
+     "id": 62
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+      "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 203, 
+     "name": "Trinity R at Indian Cr - Indian Cr Local Inflow", 
+     "id": 61
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1DAY/WATERCOURSE/", 
+      "DSS File Path": "shared\\Trinity_River_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 52, 
+     "name": "Bend Bridge - Bend Bridge Balance Flow", 
+     "id": 73
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 162, 
+     "name": "Clear Cr + South Fork - SF Clear Creek IGO Balance", 
+     "id": 50
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/SACRAMENTO_RIVER/TEMP-WATER//1HOUR/USBR_BLESSED/", 
+     "DSS File Path": "shared\\USBR_inputs.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 2, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 7, 
+     "name": "Sacramento River in - Shasta - Sacramento River Inflow", 
+     "id": 55
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/UNCERTAINTY-SHASTA-SAC-IN_TEMP_USBR_FCST/TEMP-WATER//1DAY/REGRESS_FROM_7D-ROLLING/", 
+      "DSS File Path": "shared\\USBR_Uncertainty_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 2, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "AmbientData", 
+     "description": "", 
+     "compType": 2, 
+     "name": "Ambient Value", 
+     "OptionType": "AVERAGE_RECIEVING_WATER"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 4, 
+     "name": "Big Backbone Creek in - Shasta - Big Backbone Creek Inflow", 
+     "id": 56
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "compType": 0, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/SQUAW_CREEK/TEMP-WATER//1HOUR/USBR_BLESSED/", 
+     "DSS File Path": "shared\\USBR_inputs.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 2, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 2, 
+     "name": "Squaw Creek in - Shasta - Squaw Creek Inflow", 
+     "id": 53
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/UNCERTAINTY-SHASTA-SAC-IN_TEMP_USBR_FCST/TEMP-WATER//1DAY/REGRESS_FROM_7D-ROLLING/", 
+      "DSS File Path": "shared\\USBR_Uncertainty_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 2, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_AT_JUNCTION"
+     }
+    ]
+   }, 
+   {
+    "selectedDataSource": {
+     "DSS Path": "/USBR/TRINITY STUART FORK INFLOW ADJ2/TEMP-WATER//1DAY/WATERCOURSE/", 
+     "DSS File Path": "shared\\USBR_TRN_DSSv6.dss", 
+     "availableUnits": [
+      "\u00b0C"
+     ], 
+     "@type": "DssData", 
+     "description": "", 
+     "units": "C", 
+     "compType": 1, 
+     "name": "DSS"
+    }, 
+    "@type": "WQBoundaryCondition", 
+    "boundaryRef": {
+     "@type": "WQSubDomainBoundaryRef", 
+     "geometryId": 1043, 
+     "type": "LOCAL_INFLOW", 
+     "jnctId": 179, 
+     "name": "Stuart Fork in - Trinity - Stuart Fork Inflow", 
+     "id": 44
+    }, 
+    "units": [
+     "\u00b0C"
+    ], 
+    "constituentId": 1, 
+    "dataSources": [
+     {
+      "availableUnits": [], 
+      "@type": "TableData", 
+      "values": [], 
+      "description": "", 
+      "dates": [], 
+      "compType": 2, 
+      "name": "Table Data"
+     }, 
+     {
+      "DSS Path": "/USBR/TRINITY STUART FORK INFLOW ADJ2/TEMP-WATER//1DAY/WATERCOURSE_FCST/", 
+      "DSS File Path": "shared\\USBR_Uncertainty_DSSv6.dss", 
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "DssData", 
+      "description": "", 
+      "units": "C", 
+      "compType": 1, 
+      "name": "DSS"
+     }, 
+     {
+      "availableUnits": [], 
+      "@type": "ExcelData", 
+      "bottomRow": 0, 
+      "topRow": 0, 
+      "description": "", 
+      "timeColumn": "", 
+      "compType": 2, 
+      "name": "Excel Worksheet", 
+      "valueColumn": "", 
+      "worksheetName": ""
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "ConstantData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Constant Value", 
+      "value": "-Infinity"
+     }, 
+     {
+      "availableUnits": [
+       "\u00b0C"
+      ], 
+      "@type": "AmbientData", 
+      "description": "", 
+      "compType": 2, 
+      "name": "Ambient Value", 
+      "OptionType": "AVERAGE_RECIEVING_WATER"
+     }
+    ]
+   }
+  ], 
+  "description": "", 
+  "name": "5 Res Frcs0:UpperSac-Trinity BC"
+ }, 
+ "index": 36, 
+ "description": "", 
+ "geometryId": 32, 
+ "version": 1, 
+ "name": "5 Res Frcs0:UpperSac-Trinity BC", 
+ "constituentSetId": 35
+}

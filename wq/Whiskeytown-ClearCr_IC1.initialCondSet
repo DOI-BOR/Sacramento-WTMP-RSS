@@ -1,0 +1,197 @@
+{
+  "index" : 11629,
+  "name" : "Whiskeytown-ClearCr_IC1",
+  "description" : "",
+  "Description" : "",
+  "Index" : 11629,
+  "Name" : "Whiskeytown-ClearCr_IC1",
+  "constituentId" : 871,
+  "geometryId" : 11606,
+  "lastModifiedTime" : 1678301238479,
+  "ressimVersion" : "6.0.0.171R",
+  "set" : {
+    "boundaryEntries" : [ {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 13,
+        "jnctId" : 43,
+        "name" : "Sacramento R + Clear Cr",
+        "type" : "RIVER_OUTFLOW"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 7,
+        "jnctId" : 65,
+        "name" : "Whiskeytown Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 8,
+        "jnctId" : 37,
+        "name" : "Whiskeytown Lake-Spring Creek Diversion Reach",
+        "type" : "RESERVOIR_OUTFLOW"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 11,
+        "jnctId" : 162,
+        "name" : "Clear Cr + South Fork",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 13,
+        "jnctId" : 43,
+        "name" : "Sacramento R + Clear Cr",
+        "type" : "RIVER_OUTFLOW"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 7,
+        "jnctId" : 65,
+        "name" : "Whiskeytown Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 8,
+        "jnctId" : 37,
+        "name" : "Whiskeytown Lake-Spring Creek Diversion Reach",
+        "type" : "RESERVOIR_OUTFLOW"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 11606,
+        "id" : 11,
+        "jnctId" : 162,
+        "name" : "Clear Cr + South Fork",
+        "type" : "RIVER_2_RIVER"
+      }
+    } ],
+    "description" : "",
+    "name" : "Whiskeytown-ClearCr_IC1",
+    "reachInterpolationType" : "ONEWAYFORWARD",
+    "reservoirInterpolationType" : "LINEAR",
+    "subDomainEntries" : [ {
+      "depth" : 1080.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 11606,
+        "id" : 9,
+        "name" : "Whiskeytown Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1225.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 11606,
+        "id" : 9,
+        "name" : "Whiskeytown Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1080.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 11606,
+        "id" : 9,
+        "name" : "Whiskeytown Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1225.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 9.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 11606,
+        "id" : 9,
+        "name" : "Whiskeytown Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    } ]
+  },
+  "version" : 1
+}

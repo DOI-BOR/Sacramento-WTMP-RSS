@@ -1,0 +1,140 @@
+{
+  "index" : 12108,
+  "name" : "ShaKesSac_DZ",
+  "description" : "",
+  "Description" : "",
+  "Index" : 12108,
+  "Name" : "ShaKesSac_DZ",
+  "geometryId" : 12092,
+  "lastModifiedTime" : 1687735428317,
+  "ressimVersion" : "CWMS3.2.1-04/24/2020",
+  "set" : {
+    "@type" : "WQDispersionCoefSettings",
+    "id" : 0,
+    "name" : "ShaKesSac_DZ",
+    "description" : "",
+    "reachSettings" : {
+      "@type" : "WQReachDispersionSettings",
+      "dispersionType" : "GLOBAL",
+      "globalValue" : 10.0,
+      "reachValues" : [ {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 22,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 37,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 42,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 46,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 50,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 54,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 58,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 62,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 65,
+        "upperEnd" : "-Infinity"
+      } ],
+      "valueByReachType" : "CONSTANT"
+    },
+    "reservoirSettingsSet" : {
+      "@type" : "WQReservoirDispersionSettingsSet",
+      "entries" : [ {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 12092,
+          "id" : 29,
+          "name" : "Shasta Lake",
+          "type" : "RESERVOIR_1DV"
+        },
+        "value" : {
+          "@type" : "WQReservoirDispersionSettings",
+          "alternateMixingMethod" : "MUNK_ANDERSON",
+          "munkAndersonData" : {
+            "@type" : "MunkAndersonDispersionData",
+            "acoeff" : 0.1,
+            "bcoeff" : 0.65,
+            "ccoeff" : 0.05,
+            "dzmin" : 9.0E-5
+          },
+          "stabilityData" : {
+            "@type" : "StabilityDispersionData",
+            "a1" : 3.23E-5,
+            "a3" : 0.7,
+            "ecrit" : 1.0E-7
+          },
+          "verticalMixingType" : "ALTERNATE_METHOD",
+          "windData" : {
+            "@type" : "WindDispersionData",
+            "a1" : 1.0E-4,
+            "a2" : 3.0,
+            "dzmax" : "-Infinity",
+            "dzmin" : 4.0E-5
+          }
+        }
+      }, {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 12092,
+          "id" : 33,
+          "name" : "Keswick Reservoir",
+          "type" : "RESERVOIR_1DV"
+        },
+        "value" : {
+          "@type" : "WQReservoirDispersionSettings",
+          "alternateMixingMethod" : "WIND",
+          "munkAndersonData" : {
+            "@type" : "MunkAndersonDispersionData",
+            "acoeff" : 3.33,
+            "bcoeff" : 1.5,
+            "ccoeff" : 0.09842519685039369,
+            "dzmin" : 0.0
+          },
+          "stabilityData" : {
+            "@type" : "StabilityDispersionData",
+            "a1" : 1.0E-6,
+            "a3" : 1.0,
+            "ecrit" : 6.096E-8
+          },
+          "verticalMixingType" : "ALTERNATE_METHOD",
+          "windData" : {
+            "@type" : "WindDispersionData",
+            "a1" : 0.0,
+            "a2" : 2.0,
+            "dzmax" : "-Infinity",
+            "dzmin" : 5.0E-5
+          }
+        }
+      } ]
+    }
+  },
+  "version" : 1
+}

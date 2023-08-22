@@ -1,0 +1,6 @@
+Name=5 Res Temp0:5 Res Temp0:UpSac+Trinity_XS
+Description=Cross Sections for RAS Cross Section file UpSac+Trinity_XS.shp
+RasFile=rss/ras-exports/UpSac+Trinity_XS.shp
+RiverColumn=River
+ReachColumn=Reach
+StationColumn=River Stat

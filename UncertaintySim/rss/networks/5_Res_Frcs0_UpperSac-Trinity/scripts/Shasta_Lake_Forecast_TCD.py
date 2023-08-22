@@ -1,0 +1,1207 @@
+from hec.model import RunTimeStep
+from hec.heclib.util import HecTime
+from hec.rss.model import OpController
+from hec.rss.model import OpRule
+from hec.rss.model import OpValue     
+from hec.rss.model import ReservoirElement
+from hec.rss.plugins.waterquality.model import RssWQGeometry
+from hec.rss.wq.model import WQRun
+from hec.script import Constants
+from hec.wqenginecore import WQEngineAdapter
+from hec.wqenginecore import WQResHydro
+from hec.wqenginecore import WQException
+from hec.wqenginecore.geometry import SubDomain
+from hec.wqenginecore.geometry import WQControlDevice
+from java.util import Vector
+from datetime import date
+
+
+#######################################################################################################
+# Reference information
+
+# TCD inlet definitions
+# Port Index #     Elev     #  Name                   # Operable? #
+#      0     #     695.5    #  TCD Deep               #     Y     #
+#      1     #     720.     #  TCD Side A             #     Y     #
+#      2     #     749.5    #  Leakage Zone 6         #     N     #
+#      3     #     760.     #  TCD Side B             #     Y     #
+#      4     #     780.     #  Leakage Zone 5         #     N     #
+#      5     #     800.     #  TCD Side C (usual)     #     Y     #
+#      6     #     802.     #  TCD Lower Bot          #     Y     #
+#      7     #     805.6    #  Leakage Zone 4         #     N     #
+#      8     #     816.     #  TCD Lower Mid          #     Y     #
+#      9     #     820.     #  TCD Side C (high)      #     Y     #
+#      10    #     830.     #  TCD Lower Top (usual)  #     Y     #
+#      11    #     833.6    #  Leakage Zone 3         #     N     #
+#      12    #     850.     #  TCD Lower Top (high)   #     Y     #
+#      13    #     896.7    #  Leakage Zone 2         #     N     #
+#      14    #     900.     #  TCD Middle Bot         #     Y     #
+#      15    #     921.     #  TCD Middle Mid         #     Y     #
+#      16    #     942.     #  TCD Middle Top (usual) #     Y     #
+#      17    #     946.7    #  Leakage Zone 1         #     N     #
+#      18    #     962.     #  TCD Middle Top (high)  #     Y     #
+#      19    #    1000.     #  TCD Upper Bot          #     Y     #
+#      20    #    1021.     #  TCD Upper Mid          #     Y     #
+#      21    #    1042.     #  TCD Upper Top          #     Y     #
+
+# Withdrawal indices, from lowest to highest in elevation
+# This needs to be consistent with the TCD info in the Reservoir Physical tab
+
+# River outlet elevations (centerline)
+#  Name   #   Elev  #
+#  RRL    #   742.  #
+#  RRM    #   842.  #
+#  RRU    #   942.  #
+
+# Script "Global variables"
+# TCD Operations
+startOpDate = date(3000, 5, 1)  # May 1st
+endOpDate = date(3000, 12, 1)  # Dec 1st
+temperatureThreshold = 0.3
+maxViolationDays = 3
+checkOpHour = 19  # Hour to do operations check
+gateOpLookbackDays = 2  # For operations outside of target op period
+# Variable names
+globalVarNameNumUpGates = 'Total_TCDU_gates_forecast'
+globalVarNameNumMidGates = 'Total_TCDM_gates_forecast'
+globalVarNameNumLowGates = 'Total_TCDL_gates_forecast'
+globalVarNameNumSideGates = 'Total_TCDS_gates_forecast'
+globalVarNameNumUpGatesHist = 'Total_TCDU_gates_open'
+globalVarNameNumMidGatesHist = 'Total_TCDM_gates_open'
+globalVarNameNumLowGatesHist = 'Total_TCDL_gates_open'
+globalVarNameNumSideGatesHist = 'Total_TCDS_gates_open'
+globalVarNameTCDTarget = 'TCD_target'
+stateVarNameTCDViolations = 'TCD_Violations'
+stateVarNameTCDLevel = 'TCD_Level'
+# Script constants
+temperatureConstitId = 1
+lastIterationPassNum = 2
+
+
+#######################################################################################################
+# Gets indexes of leakage points
+def getLeakageIndexes():
+	return [2, 4, 7, 11, 13, 17]
+
+
+#######################################################################################################
+# Gets indexes of gate points
+def getGateIndexes(useHighPt):
+
+	if useHighPt:
+		sideIdx = [0, 1, 3, 9]
+		lowerIdx = [6, 8, 12]
+		middleIdx = [14, 15, 18]
+	else:
+		sideIdx = [0, 1, 3, 5]
+		lowerIdx = [6, 8, 10]
+		middleIdx = [14, 15, 16]
+		
+	upperIdx = [19, 20, 21]
+	return sideIdx, lowerIdx, middleIdx, upperIdx
+
+
+#######################################################################################################
+def getRiverOutletElevs():
+	return {'Outlet 16-RRL': 742., 'Outlet 15-RRM': 842., 'Outlet 14-RRU': 942.}
+
+
+#######################################################################################################
+# Gets the inlet elevations from the WQ Geometry (which gets passed the data in the Reservoir Physical tab)
+def getInletElevs(currentRule, network):
+	wqRun = network.getRssRun().getWQRun()
+	engineAdapter = wqRun.getWqEngineAdapter()
+	resOp = currentRule.getController().getReservoirOp()
+	releaseElemId = resOp.getWQCDReleaseElemId(currentRule)
+	resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+	elevs = engineAdapter.getWQCDInletLevels(resWQGeoSubdom, releaseElemId)
+	return elevs
+
+
+#######################################################################################################
+def getNumGateOptions():  # Level number, number of gate openings [side, lower, middle, upper]
+	numGateOptions = {1: [0, 0, 0, 5],  # upper only
+					  2: [0, 0, 2, 3],  # upper and middle blending
+					  3: [0, 0, 5, 0],  # middle only
+					  4: [0, 2, 3, 0],  # middle and lower blending
+					  5: [0, 5, 0, 0],  # lower only
+					  6: [2, 3, 0, 0],  # lower and side blending
+					  7: [2, 0, 0, 0]}  # side only
+	# Option with upper/middle/lower levels open
+	#numGateOptions = {1: [0, 0, 0, 5],  # upper only
+	#				  2: [0, 0, 2, 3],  # upper and middle blending
+	#				  3: [0, 1, 2, 2],  # upper middle lower blending
+	#				  4: [0, 0, 5, 0],  # middle only
+	#				  5: [0, 2, 3, 0],  # middle and lower blending
+	#				  6: [0, 5, 0, 0],  # lower only
+	#				  7: [2, 3, 0, 0],  # lower and side blending
+	#				  8: [2, 0, 0, 0]}  # side only
+	return numGateOptions
+
+
+#######################################################################################################
+# Get gate settings for an integer level value [side, lower, middle, upper]
+def getGatesForLevel(level):
+	numGateOptions = getNumGateOptions()
+	return numGateOptions[level]
+
+
+#######################################################################################################
+# Called at the start of the simulation
+def initRuleScript(currentRule, network):
+
+	applyRule = checkApplyRule(currentRule, network)
+
+	# Handle case where rule is active or disable but WQ for reservoir is not being run
+	if not applyRule:
+		currentRule.setEvalRule(False)
+		network.getRssRun().printWarningMessage("Warning: Scripted rule " + currentRule.getName() + 
+			" references Water Quality which is disabled for this simulation. Rule will be ignored.")
+		return Constants.TRUE
+
+	# WQ is being simulated
+	else:
+		# Pass information to the WQEngine that says we're dealing with the Shasta TCD
+		wqRun = network.getRssRun().getWQRun()
+		engineAdapter = wqRun.getWqEngineAdapter()
+		resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+		sdId = resWQGeoSubdom.getId()
+		resOp = currentRule.getController().getReservoirOp()
+		releaseElemId = resOp.getWQCDReleaseElemId(currentRule)
+		tcdId = resWQGeoSubdom.getWqControlDeviceId(releaseElemId)
+
+		useHighPt = False
+		sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(useHighPt)
+		engineAdapter.setShastaTCDInfo(sdId, tcdId, sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx)
+		setTempTargetViolations(network, 0)
+		return Constants.TRUE
+
+
+#######################################################################################################
+# This checks whether we should be applying this rule in a given simulation
+def checkApplyRule(currentRule, network):
+	wqRun = network.getRssRun().getWQRun()
+	if not wqRun:
+		return False
+	rssWQGeometry = wqRun.getRssWQGeometry()
+	resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+	return rssWQGeometry.isInExtent(resWQGeoSubdom)
+
+
+#######################################################################################################
+# This is called each simulated forward time step during the simulation
+def runRuleScript(currentRule, network, currentRuntimestep):
+
+	# Only evaluation rule if running WQ (getEvalRule) *and* compute iteration > 0
+	#  (On 0th iteration, only local res decisions being evaluated and WQ is not being run yet)
+	computeIter = currentRule.getComputeIteration()
+	evalRule = currentRule.getEvalRule() and (computeIter >= lastIterationPassNum)
+
+	#print('Running rule script')
+	#print('Time step', currentRuntimestep.getStep())
+	#print('Lookback steps', currentRuntimestep.getRunTimeWindow().getNumLookbackSteps())
+	
+	if evalRule:
+
+		# Get current water quality target
+		wqTarget = getTargetWQ(network, currentRuntimestep)
+	
+		# Get reservoir elevation
+		resOp = currentRule.getController().getReservoirOp()
+		res = resOp.getReservoirElement()
+		resElev = res.getStorageFunction().getElevation(currentRuntimestep)
+		if not isValidValue(resElev):  # try previous time step value
+			prevRuntimestep = RunTimeStep(currentRuntimestep)
+			prevRuntimestep.setStep(currentRuntimestep.getPrevStep())
+			resElev = res.getStorageFunction().getElevation(prevRuntimestep)
+		if not isValidValue(resElev):
+			raise ValueError("Invalid value: " + str(resElev) + 
+			                 " for reservoir elevation for time step: " + str(currentRuntimestep.step))
+	
+		# Find current minimum flow requirement through the WQCD
+		usePrevStepAsEstimate = True  # if flow value not available, use previous timestep val as estimate
+		penstockFlow = resOp.getWQControlDeviceFlow(currentRuntimestep, currentRule, usePrevStepAsEstimate)
+		if not isValidValue(penstockFlow):
+			raise ValueError("Invalid value: " + str(penstockFlow) + 
+			                 " for penstock flow for time step: " + str(currentRuntimestep.step))
+
+		# Find any river outlet flow
+		riverOutletFlow, riverOutletTemp = getRiverOutletFlowAndTemp(currentRule, network, currentRuntimestep, usePrevStepAsEstimate)
+
+		# If no penstock flow, use same gate configuration as previous time step
+		if penstockFlow < 1.0:  # 1 cfs
+			prevLevel = getPrevGateLevel(network, currentRuntimestep)
+			if not isValidValue(prevLevel):
+				# might happen first time step - try getting the historical gate value
+				prevLevel = getHistoricalGateLevel(network, currentRuntimestep)
+				if prevLevel < 0:  # no historical value found
+					preLevel = 1  # default to upper gates only
+			elevRestrictionLevel = getElevationRestrictionLevel(currentRule, network, resElev)
+			prevLevel = max(prevLevel, elevRestrictionLevel)
+			setGateLevel(network, currentRuntimestep, prevLevel)
+			nGates = getGatesForLevel(prevLevel)  # [side, lower, middle, upper]
+			setGateOpenings(network, currentRuntimestep, nGates)
+			tcdFlows = splitFlowForLevel(currentRule, network, prevLevel, penstockFlow)
+		else:
+			# Find optimal flow distribution in WQCD and resulting average water quality, given a
+			#  wq target and total WQCD flow
+			tcdTemp, tcdFlows = getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev, wqTarget, penstockFlow,
+														   riverOutletFlow, riverOutletTemp)
+
+		resOp.setWQControlDeviceFlowRatios(tcdFlows, currentRule, penstockFlow)
+
+	return None
+
+
+#######################################################################################################
+# Set TCD flows when there is only a small amount of flow through the penstocks
+def splitFlowForLevel(currentRule, network, level, penstockFlow):
+
+	elevs = getInletElevs(currentRule, network)
+	nInletLevels = len(elevs)
+	tcdFlows = [0. for j in range(nInletLevels)]
+	sideIdx, lowerIdx, middleIdx, upperIdx = getGateIndexes(False)
+	nGates = getGatesForLevel(level)  # [side, lower, middle, upper]
+
+	# Count active outlet points
+	nPts = 0
+	if nGates[0] > 0:
+		nPts += len(sideIdx)
+	if nGates[1] > 0:
+		nPts += len(lowerIdx)
+	if nGates[2] > 0:
+		nPts += len(middleIdx)
+	if nGates[3] > 0:
+		nPts += len(upperIdx)
+
+	avgFlow = penstockFlow / nPts
+	if nGates[0] > 0:
+		for idx in sideIdx:
+			tcdFlows[idx] = avgFlow
+	if nGates[1] > 0:
+		for idx in lowerIdx:
+			tcdFlows[idx] = avgFlow
+	if nGates[2] > 0:
+		for idx in middleIdx:
+			tcdFlows[idx] = avgFlow
+	if nGates[3] > 0:
+		for idx in upperIdx:
+			tcdFlows[idx] = avgFlow
+	
+	return tcdFlows
+
+
+#######################################################################################################
+# Get the water quality target value by looking for the global variable timeseries
+def getTargetWQ(network, currentRuntimestep):
+
+	convert2C = True
+	
+	globVar = network.getGlobalVariable(globalVarNameTCDTarget)
+	if not globVar:
+		raise NameError("Global variable: " + globalVarNameTCDTarget + " not found.")
+	target = globVar.getCurrentValue(currentRuntimestep)
+	
+	if not isValidValue(target):
+		raise ValueError("Global variable: " + globalVarNameTCDTarget + " has invalid value " +
+		                 str(target) + " for time step: " + str(currentRuntimestep.step))
+	else:
+		if convert2C:
+			targetDegC = (target - 32.) * 5./9.
+		else:
+			targetDegC = target
+		#print("Target temperature: {0:.2f}".format(targetDegC))
+		return targetDegC
+
+
+#######################################################################################################
+# Get the total river outlet flow for a given time step
+def getRiverOutletFlowAndTemp(currentRule, network, currentRuntimestep, usePrevStepAsEstimate):
+
+	totalFlow = 0.
+	totalFlowTemp = 0.
+	totalTemp = 0.
+	roDict = getRiverOutletElevs()
+	
+	for roName, roElev in roDict.items():
+		flow, temp = getRiverOutletFlowAndTempSingle(currentRule, network, roName, roElev, currentRuntimestep, usePrevStepAsEstimate)
+		totalFlow += flow
+		totalFlowTemp += flow * temp
+
+	if totalFlow > 0.:
+		totalTemp = totalFlowTemp / totalFlow
+		
+	return totalFlow, totalTemp
+	
+
+#######################################################################################################
+# Get a single river outlet flow for a given time step
+def getRiverOutletFlowAndTempSingle(currentRule, network, name, elevation, currentRuntimestep, usePrevStepAsEstimate):
+
+	resOp = currentRule.getController().getReservoirOp()
+	res = resOp.getReservoirElement()
+		
+	rivOutlet = res.getElementByName(name)
+	if rivOutlet is None:
+		raise NameError("River outlet: " + name + " not found")
+
+	wqRun = network.getRssRun().getWQRun()
+	engineAdapter = wqRun.getWqEngineAdapter()
+	resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+	sdId = resWQGeoSubdom.getId()
+
+	roCntrlr = resOp.getControllerForElement(rivOutlet)
+	flow = roCntrlr.getCurMinOpValue(currentRuntimestep).value;
+	if not isValidValue(flow) and usePrevStepAsEstimate:
+		rts = RunTimeStep()
+		rts.setStep(currentRuntimestep.getStep() - 1)
+		flow = roCntrlr.getDecisionValue(rts)
+	if not isValidValue(flow):
+		raise ValueError("Invalid value: " + str(flow) + " for " + name + " flow for time step: " + str(currentRuntimestep.step))
+	
+	if flow > 0.:
+		# Find temperature
+		temp = engineAdapter.getConstitResultForFlowElev(sdId, temperatureConstitId, flow, elevation)
+		if temp > 100. or temp < 0.:
+			message = "Temperature outside of range (0,100) for flow " + str(flow) + " elevation " + str(elevation) + " temperature " + str(temp)
+			print(message)
+			raise ValueError(message)
+		return flow, temp
+	else:
+		return 0., 0.
+
+
+#######################################################################################################
+# Get the total number of gates open at a given level by looking for the global variable timeseries
+def getNumGatesOpen(network, currentRuntimestep, levelName, isHistorical=False):
+
+	maxGates = 5
+	if levelName.lower() == 'upper':
+		if isHistorical:
+			globalVarName = globalVarNameNumUpGatesHist
+		else:
+			globalVarName = globalVarNameNumUpGates
+	elif levelName.lower() == 'middle':
+		if isHistorical:
+			globalVarName = globalVarNameNumMidGatesHist
+		else:
+			globalVarName = globalVarNameNumMidGates
+	elif levelName.lower() == 'lower':
+		if isHistorical:
+			globalVarName = globalVarNameNumLowGatesHist
+		else:
+			globalVarName = globalVarNameNumLowGates
+	elif levelName.lower() == 'side':
+		if isHistorical:
+			globalVarName = globalVarNameNumSideGatesHist
+		else:
+			globalVarName = globalVarNameNumSideGates
+		maxGates = 2
+	else:
+		raise NameError("Gate level: " + levelName + " not recognized.")
+		
+	globVar = network.getGlobalVariable(globalVarName)
+	if not globVar:
+		raise NameError("Global variable: " + globalVarName + " not found.")
+	numGates = globVar.getCurrentValue(currentRuntimestep)
+	
+	if numGates < 0 or numGates > maxGates:
+		raise ValueError("Global variable: " + globalVarName + " has invalid value " +
+		                 str(numGates) + " for time step: " + str(currentRuntimestep.step))
+	else:
+		return numGates
+
+
+#######################################################################################################
+# Set the total number of gates open at a given level for the global variable timeseries
+def setNumGatesOpen(network, currentRuntimestep, levelName, numGates):
+
+	maxGates = 5
+	if levelName.lower() == 'upper':
+		globalVarName = globalVarNameNumUpGates
+	elif levelName.lower() == 'middle':
+		globalVarName = globalVarNameNumMidGates
+	elif levelName.lower() == 'lower':
+		globalVarName = globalVarNameNumLowGates
+	elif levelName.lower() == 'side':
+		globalVarName = globalVarNameNumSideGates
+		maxGates = 2
+	else:
+		raise NameError("Gate level: " + levelName + " not recognized.")
+		
+	globVar = network.getGlobalVariable(globalVarName)
+	if not globVar:
+		raise NameError("Global variable: " + globalVarName + " not found.")
+	
+	if numGates < 0 or numGates > maxGates:
+		raise ValueError("Global variable: " + globalVarName + " has invalid value " +
+		                 str(numGates) + " for time step: " + str(currentRuntimestep.step))
+		            
+	globVar.setCurrentValue(currentRuntimestep, numGates)
+
+
+#######################################################################################################
+# Set the total number of gates open at a given level for the global variable timeseries
+#   nGates = [side, lower, middle, upper]
+def setGateOpenings(network, currentRuntimestep, nGates):
+	setNumGatesOpen(network, currentRuntimestep, 'side', nGates[0])
+	setNumGatesOpen(network, currentRuntimestep, 'lower', nGates[1])
+	setNumGatesOpen(network, currentRuntimestep, 'middle', nGates[2])
+	setNumGatesOpen(network, currentRuntimestep, 'upper', nGates[3])
+
+
+#######################################################################################################
+# Set the gate level
+def setGateLevel(network, currentRuntimestep, level):
+	sv = network.getStateVariable(stateVarNameTCDLevel)
+	sv.setValue(currentRuntimestep, level)
+
+
+#######################################################################################################
+# Get the gate level for the previous time step
+def getPrevGateLevel(network, currentRuntimestep):
+	sv = network.getStateVariable(stateVarNameTCDLevel)
+	iCurStep = currentRuntimestep.getStep()
+	iPrevStep = max(0, iCurStep - 1)
+	rts = RunTimeStep()
+	rts.setStep(iPrevStep)
+	return sv.getValue(rts)
+
+
+#######################################################################################################
+# Get the historical gate level for a given time step
+def getHistoricalGateLevel(network, currentRuntimestep):
+
+	nGatesHist = []
+	gateLevelNames = ['side', 'lower', 'middle', 'upper']
+	for gateLevelName in gateLevelNames:
+		nOpen = getNumGatesOpen(network, currentRuntimestep, gateLevelName, isHistorical=True)
+		nGatesHist.append(nOpen)
+
+	gateOptions = getNumGateOptions()
+	level = -1
+	for level, nGates in gateOptions.items():
+		matches = True
+		for gateLevel in range(len(gateLevelNames)):
+			if nGatesHist[gateLevel] == 0 and nGates[gateLevel] != 0:
+				matches = False
+			elif nGatesHist[gateLevel] != 0 and nGates[gateLevel] == 0:
+				matches = False
+		if matches:
+			break
+	if not matches:
+		message = "Historical gate level not found for time step " + str(currentRuntimestep.getStep()) + "\n"
+		for j, gateLevelName in enumerate(gateLevelNames):
+			message += gateLevelName + " gates open: " + str(nGatesHist[j]) + "\n"
+#		raise ValueError(message)
+		print(message)
+
+	return level
+
+
+#######################################################################################################
+# Set the number of temperature target violations
+def setTempTargetViolations(network, numViolations):
+	sv = network.getStateVariable(stateVarNameTCDViolations)
+	rts = RunTimeStep()
+	rts.setStep(1)
+	sv.setValue(rts, numViolations)
+
+
+#######################################################################################################
+# Get the number of temperature target violations
+def getTempTargetViolations(network):
+	sv = network.getStateVariable(stateVarNameTCDViolations)
+	rts = RunTimeStep()
+	rts.setStep(1)
+	return sv.getValue(rts)
+
+
+#######################################################################################################
+# Check whether a value is valid
+def isValidValue(value):
+	if value is None:
+		return False
+	elif value == Constants.UNDEFINED_DOUBLE:
+		return False
+	elif value < 0.:
+		return False
+	else:
+		return True
+	
+
+#######################################################################################################
+# Get the WQSubdomain object from the reservoir using the current rule
+def getReservoirWQSubdomain(currentRule, network):
+	resOp = currentRule.getController().getReservoirOp()
+	res = resOp.getReservoirElement()
+	wqRun = network.getRssRun().getWQRun()
+	rssWQGeometry = wqRun.getRssWQGeometry()
+	resWQGeoSubdom = rssWQGeometry.getSubdomForRSSElemId(res.getIndex())
+	return resWQGeoSubdom
+
+
+#######################################################################################################
+# Calculate total TCD leakage fraction, applicable for years 2000-2009
+# From W2 Report, Table 16
+def getTotalLeakageFraction2000(resElev, elevs):
+	upperFraction = 13.09/100.
+	middleFraction = 19.7/100.
+	lowerFraction = 12.65/100.
+	fraction = getTotalLeakageFraction(resElev, elevs, upperFraction, middleFraction, lowerFraction, 0.2)
+	return fraction
+
+
+#######################################################################################################
+# Calculate total TCD leakage fraction, applicable for years 2010 onward
+# From W2 Report, Table 17
+def getTotalLeakageFraction2010(resElev, elevs):
+	upperFraction = 16.3/100.
+	middleFraction = 0./100.
+	lowerFraction = 15.75/100.
+	fraction = getTotalLeakageFraction(resElev, elevs, upperFraction, middleFraction, lowerFraction, 0.2)
+	return fraction
+
+
+#######################################################################################################
+# Calculate the total leakage fraction based on reservoir elevation
+def getTotalLeakageFraction(resElev, elevs, upperFraction, middleFraction, lowerFraction, grossFraction):
+
+	#grossFraction = 0.2  # Assumed leakage fraction when pool elev > 1000. and all gates closed
+	topElev = 1000.
+	z1Elev = elevs[getIdxForLeakageZone(1)]
+	z2Elev = elevs[getIdxForLeakageZone(2)]
+	z3Elev = elevs[getIdxForLeakageZone(3)]
+	if resElev >= topElev:
+		fraction = grossFraction
+	elif resElev >= z1Elev:
+		resElevFactor = 1. - (resElev - z1Elev) / (topElev - z1Elev)  # =0 at 1000, 1 at 945ish
+		fraction = grossFraction * (1. - upperFraction*resElevFactor)
+	elif resElev >= z2Elev:
+		resElevFactor = 1. - (resElev - z2Elev) / (z1Elev - z2Elev)  # =0 at 945ish, 1 at 900ish
+		fraction = grossFraction * (1. - upperFraction - middleFraction*resElevFactor)
+	elif resElev >= z3Elev:
+		resElevFactor = 1. - (resElev - z3Elev) / (z2Elev - z3Elev)  # =0 at 900ish, 1 at 831ish
+		fraction = grossFraction * (1. - upperFraction - middleFraction - lowerFraction*resElevFactor)
+	else:
+		# we have bigger concerns than leakage at this point
+		fraction = 0.
+	return fraction
+
+
+#######################################################################################################
+# Get TCD leakage table coefficients for each zone
+# From W2 Report, Tables 16 and 17
+def getLeakageTableVals(currentYear, zoneNum):
+	vals = []
+	# Zone 6 (also includes "Bottom 8" leakage)
+	if zoneNum == 6:
+		if currentYear < 2010:
+			vals = [1.79 + 6.77, 0.]
+		else:
+			vals = [2.23 + 8.44, 0.]
+	# Zone 5 (also includes "Bottom 7" leakage)
+	elif zoneNum == 5:
+		if currentYear < 2010:
+			vals = [3.84 + 31.12, 0.]
+		else:
+			vals = [4.78 + 38.76, 0.]
+	# Zone 4
+	elif zoneNum == 4:
+		if currentYear < 2010:
+			vals = [1.03, 10.01]
+		else:
+			vals = [1.28, 12.47]
+	# Zone 3
+	elif zoneNum == 3:
+		if currentYear < 2010:
+			vals = [9.34, 3.31]
+		else:
+			vals = [11.63, 4.12]
+	# Zone 2
+	elif zoneNum == 2:
+		if currentYear < 2010:
+			vals = [8.05, 11.65]
+		else:
+			vals = [0., 0.]
+	# Zone 1
+	elif zoneNum == 1:
+		if currentYear < 2010:
+			vals = [13.09, 0.]
+		else:
+			vals = [16.3, 0.]
+	return vals
+
+
+#######################################################################################################
+# Calculate a theoretical maximum flow through a given gate level based on depth of gate submergence
+#   and the number of open gates
+# Estimate max using a sharp crested weir equation (Fluid Mechanics, White, 3rd ed., pg 624)
+def calcWeirFlow(H, numOpenGates):
+	g = 32.1  # assuming imperial units here
+	weirCoef = 0.564  # from White
+	width = 50.  # gates are 50' wide
+	q = weirCoef * width * g**0.5 * H**1.5 * numOpenGates
+	return q
+
+
+#######################################################################################################
+# Gets the TCD outlet index for a given leakage zone
+def getIdxForLeakageZone(z):
+	leakageIdx = getLeakageIndexes()
+	i = len(leakageIdx) - z
+	return leakageIdx[i]
+
+
+#######################################################################################################
+# Calculates leakage as a function of several inputs
+def calcLeakage(currentYear, zone, gateRatio, elevationRatio, totalLeakFract, flow):
+	tableVals = getLeakageTableVals(currentYear, zone)
+	leakageFlow = (tableVals[0] + tableVals[1]*gateRatio)/100. * elevationRatio * totalLeakFract * flow
+	return leakageFlow
+
+
+#######################################################################################################
+# Chooses the minimum flow fraction based on the number of open levels and the point number (0 = lowest)
+def chooseMinFlowFractOrig(nOpenLevels, ptNum):
+	if ptNum == 0:
+		if nOpenLevels == 1:
+			minFF = 0.10
+		else:
+			minFF = 0.05
+	else:
+		if nOpenLevels == 1:
+			minFF = 0.02
+		else:
+			minFF = 0.01
+	return minFF
+
+
+#######################################################################################################
+# Chooses the minimum flow fraction based on the number of open levels and the point number (0 = lowest)
+def chooseMinFlowFract(nOpenLevels, ptNum):
+	if ptNum == 0:
+		if nOpenLevels == 1:
+			minFF = 0.01
+		else:
+			minFF = 0.01
+	else:
+		if nOpenLevels == 1:
+			minFF = 0.01
+		else:
+			minFF = 0.01
+	return minFF
+
+
+#######################################################################################################
+# Check if gate operation change within a given time period back from current step
+def checkRecentGateOp(network, currentRuntimestep):
+
+	stateVarTCDlevel = network.getStateVariable(stateVarNameTCDLevel)
+	iCurStep = currentRuntimestep.getStep()
+	lbSteps = currentRuntimestep.getRunTimeWindow().getNumLookbackSteps()
+
+	numStepsDay = int(24. * 60. / currentRuntimestep.getRunTimeWindow().getTimeStepMinutes())
+	iStartStep = max(lbSteps+1, iCurStep - gateOpLookbackDays * numStepsDay)
+	recentChange = False
+	rts = RunTimeStep()
+	rts.setStep(iStartStep)
+	holdLevel = stateVarTCDlevel.getValue(rts)
+	for j in range(iStartStep+1, iCurStep):
+		rts.setStep(j)
+		level = stateVarTCDlevel.getValue(rts)
+		if level != holdLevel:
+			recentChange = True
+			break
+	rts.setStep(iCurStep-1)
+	prevLevel = stateVarTCDlevel.getValue(rts)
+
+	return recentChange, prevLevel
+
+
+#######################################################################################################
+# Get highest gate level possible for a reservoir elevation 
+def getElevationRestrictionLevel(currentRule, network, resElev):
+	elevs = getInletElevs(currentRule, network)
+	nGateOptions = getNumGateOptions()  # dictionary of options for gates (e.g., level 1 = [0,0,0,5] upper only)
+	sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(False)
+	elevRestrictions = {1: elevs[upperGateIdx[0]] + 35.,  # upper only needs invert submerged by at least 35'
+						2: elevs[upperGateIdx[0]],        # upper and middle needs upper invert submerged
+						3: elevs[middleGateIdx[0]] + 35.,  # middle only needs invert submerged by at least 35'
+						4: elevs[middleGateIdx[0]]}        # middle and lower needs middle invert submerged
+	#elevRestrictions = {1: elevs[upperGateIdx[0]] + 35.,  # upper only needs invert submerged by at least 35'
+	#					2: elevs[upperGateIdx[0]],        # upper and middle needs upper invert submerged
+	#					3: elevs[upperGateIdx[0]],        # option with upper, middle, lower all open
+	#					4: elevs[middleGateIdx[0]] + 35.,  # middle only needs invert submerged by at least 35'
+	#					5: elevs[middleGateIdx[0]]}        # middle and lower needs middle invert submerged
+	# Loop over the options
+	for level, nGates in nGateOptions.items():
+		try:
+			elevRestriction = elevRestrictions[level]
+		except KeyError:
+			elevRestriction = 0.
+		if resElev > elevRestriction:
+			return level
+	return 0
+
+
+#######################################################################################################
+# Get total gate flow through all the levels
+def getTotalGateFlows(tcdFlows):
+	useHighPt = False
+	sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(useHighPt)
+	
+	totalUpperFlow = 0.
+	for idx in upperGateIdx:
+		totalUpperFlow += tcdFlows[idx]
+	totalMiddleFlow = 0.
+	for idx in middleGateIdx:
+		totalMiddleFlow += tcdFlows[idx]
+	totalLowerFlow = 0.
+	for idx in lowerGateIdx:
+		totalLowerFlow += tcdFlows[idx]
+	totalSideFlow = 0.
+	for idx in sideGateIdx:
+		totalSideFlow += tcdFlows[idx]
+	return totalSideFlow, totalLowerFlow, totalMiddleFlow, totalUpperFlow
+
+
+#######################################################################################################
+# Get total leakage flow
+def getTotalLeakageFlow(tcdFlows):
+	leakageIdx = getLeakageIndexes()
+	totalLeakageFlow = 0.
+	for idx in leakageIdx:
+		totalLeakageFlow += tcdFlows[idx]
+	return totalLeakageFlow
+	
+
+#######################################################################################################
+# Determine forecasted WQCD flow distribution for a WQ target
+def getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev, targetTemp, tcdMinFlow, 
+                               riverOutletFlow, riverOutletTemp):
+
+	curTime = currentRuntimestep.getHecTime()
+	try:
+		curDate = date(3000, curTime.month(), curTime.day())
+	except ValueError: # Leap year issue
+		curDate = date(3000, curTime.month(), curTime.day()-1)
+	curHour = curTime.hour()
+	iCurStep = currentRuntimestep.getStep()
+	insideOpPeriod = curDate >= startOpDate and curDate <= endOpDate
+	
+	elevRestrictionLevel = getElevationRestrictionLevel(currentRule, network, resElev)
+	gateOptions = getNumGateOptions()
+	nGateOptions = len(gateOptions)
+
+	useHighPt = False
+	sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(useHighPt)
+
+	#network.printMessage("**************************************************************************************")
+	#network.printMessage(curTime.toString())
+	#network.printMessage('resElev' + str(resElev))
+	#network.printMessage('elevRestrictionLevel' + str(elevRestrictionLevel))
+	#network.printMessage('Temperature target ' + str(targetTemp))
+
+	# For first time step(s), use the historical record if possible
+	# iCurStep comes in at num LB steps + 1 for first time step
+	if iCurStep <= currentRuntimestep.getRunTimeWindow().getNumLookbackSteps() + 1:
+		histLevel = getHistoricalGateLevel(network, currentRuntimestep)
+		if histLevel > 0:  # valid value found
+			level = max(histLevel, elevRestrictionLevel)
+			tcdTemp, tcdFlows = setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
+			                                    tcdMinFlow, riverOutletFlow, riverOutletTemp, level)
+		else:  # find a set of gate openings that hits the target temperature without any operating restrictions
+			tcdTemp, tcdFlows = findTCDTempAndFlowsNoRestriction(currentRule, network,
+			                       currentRuntimestep, resElev, elevRestrictionLevel, targetTemp, 
+			                       tcdMinFlow, riverOutletFlow, riverOutletTemp)
+		setTempTargetViolations(network, 0)
+		return tcdTemp, tcdFlows
+	else:  # Not the first time step
+		prevGateLevel = getPrevGateLevel(network, currentRuntimestep)
+		# Only one check per day
+		if curHour != checkOpHour:
+			level = max(prevGateLevel, elevRestrictionLevel)
+			
+			tcdTemp, tcdFlows = setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
+			                                    tcdMinFlow, riverOutletFlow, riverOutletTemp, level)
+			return tcdTemp, tcdFlows
+		else:
+			# Outside of operation period - only requirement is don't switch gates too often
+			if not insideOpPeriod:
+				recentChange, prevGateLevel = checkRecentGateOp(network, currentRuntimestep)
+				setTempTargetViolations(network, 0)
+				#print("Setting temp target violations 0")
+				if recentChange:
+					level = max(prevGateLevel, elevRestrictionLevel)
+					tcdTemp, tcdFlows = setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
+			                                    		tcdMinFlow, riverOutletFlow, riverOutletTemp, level)
+					return tcdTemp, tcdFlows
+				else:
+					tcdTemp, tcdFlows = findTCDTempAndFlowsNoRestriction(currentRule, network,
+					                       currentRuntimestep, resElev, elevRestrictionLevel, targetTemp, 
+					                       tcdMinFlow, riverOutletFlow, riverOutletTemp)
+					return tcdTemp, tcdFlows
+			# Inside operation period - one way movement from upper to lower levels
+			else:
+				#print("**************************************************************************************")
+				network.printMessage(curTime.toString())
+				#numViolations = getTempTargetViolations(network)
+				#print("Num violations", numViolations)
+				#setTempTargetViolations(network, 0)
+				#print("Num violations", numViolations)
+
+				#network.printMessage("Previous gate level" + str(prevGateLevel))
+			
+				if prevGateLevel < elevRestrictionLevel:  # move down a gate level if forced by reservoir elevation
+					level = elevRestrictionLevel
+					tcdTemp, tcdFlows = setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
+			                                    		tcdMinFlow, riverOutletFlow, riverOutletTemp, level)
+					setTempTargetViolations(network, 0)
+					#network.printMessage('block 1' + str(level))
+					return tcdTemp, tcdFlows
+				else:
+					#network.printMessage('block 2')
+					nGates = getGatesForLevel(prevGateLevel)
+					tcdTemp, tcdFlows = getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, 
+					                       resElev, targetTemp, tcdMinFlow, nGates, riverOutletFlow, riverOutletTemp)
+					numViolations = getTempTargetViolations(network)
+					#print("Num violations", numViolations)
+					
+					totSideFlow, totLowFlow, totMidFlow, totUpFlow = getTotalGateFlows(tcdFlows)
+					totLeakFlow = getTotalLeakageFlow(tcdFlows)
+					flowPctCutoff = 0.10  # can't be less than 7% = 5 + 1 + 1 min flow fractions
+
+					if tcdTemp > targetTemp + temperatureThreshold:
+						numViolations += 1
+						setTempTargetViolations(network, numViolations)
+						#print("Incrementing num violations", numViolations)
+					else:
+						#setTempTargetViolations(network, 0)
+
+						if tcdTemp < targetTemp - 0.5:   # We switched levels prematurely and now we're way too cold
+							# See if we can go up a level and still meet the target
+							if prevGateLevel > 1 and prevGateLevel < elevRestrictionLevel:
+								nGates2 = getGatesForLevel(prevGateLevel-1)
+								tcdTemp2, tcdFlows2 = getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, tcdMinFlow, nGates2, riverOutletFlow, riverOutletTemp)
+								if tcdTemp2 < targetTemp + temperatureThreshold:
+									prevGateLevel = prevGateLevel-1
+								setTempTargetViolations(network, 0)
+						else:
+							if prevGateLevel == 6: # lower and side blending
+								#print("Lower and side blending")
+								totLowFlow = tcdFlows[lowerGateIdx[1]] + tcdFlows[lowerGateIdx[2]]
+								#print(totLowFlow, tcdMinFlow)
+								#print(tcdFlows[lowerGateIdx[0]], tcdFlows[sideGateIdx[3]])
+	
+								# See if you can meet the temperature with just the side gates
+								nGates2 = getGatesForLevel(7)
+								tcdTemp2, tcdFlows2 = getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, tcdMinFlow, nGates2, riverOutletFlow, riverOutletTemp)
+								#print("Side gates only")
+								#print("Target ", targetTemp, "Optimized ", tcdTemp2)
+								
+								if totLowFlow / tcdMinFlow < flowPctCutoff:
+									numViolations += 1  # increment violations to move to a lower level
+									setTempTargetViolations(network, numViolations)
+								else:
+									setTempTargetViolations(network, 0)
+							else:
+								setTempTargetViolations(network, 0)
+
+						
+#						if prevGateLevel == 2: # upper and middle blending
+#							if totUpFlow / tcdMinFlow < flowPctCutoff:
+#								numViolations += 1  # increment violations to move to a lower level
+#								setTempTargetViolations(network, numViolations)
+#							else:
+#								setTempTargetViolations(network, 0)
+#						elif prevGateLevel == 4: # middle and lower blending
+#							if totMidFlow / tcdMinFlow < flowPctCutoff:
+#								numViolations += 1  # increment violations to move to a lower level
+#								setTempTargetViolations(network, numViolations)
+#							else:
+#								setTempTargetViolations(network, 0)
+#						elif prevGateLevel == 6: # lower and side blending
+#							if totLowFlow / tcdMinFlow < flowPctCutoff:
+#								numViolations += 1  # increment violations to move to a lower level
+#								setTempTargetViolations(network, numViolations)
+#							else:
+#								setTempTargetViolations(network, 0)
+#						else:
+#							#print("Setting temp target violations 0")
+#							setTempTargetViolations(network, 0)
+					if numViolations >= maxViolationDays and prevGateLevel < nGateOptions:  # move to next level down in elevation
+						#print("Updating TCD Level")
+						level = prevGateLevel + 1
+						#setTempTargetViolations(network, 0)
+						tcdTemp, tcdFlows = setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
+									tcdMinFlow, riverOutletFlow, riverOutletTemp, level)
+						if level == 3 or level == 5:  # middle only or lower only
+							if tcdTemp < targetTemp + temperatureThreshold:
+								setTempTargetViolations(network, 0)
+						else:
+							setTempTargetViolations(network, 0)
+						return tcdTemp, tcdFlows
+					else:
+						level = prevGateLevel
+						setGateLevel(network, currentRuntimestep, level)
+						setGateOpenings(network, currentRuntimestep, nGates)
+						return tcdTemp, tcdFlows
+
+
+#######################################################################################################
+# Given a level, set things and return optimized TCD flow and temperature for that level	
+def setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
+			        tcdMinFlow, riverOutletFlow, riverOutletTemp, level):
+	setGateLevel(network, currentRuntimestep, level)
+	nGates = getGatesForLevel(level)
+	setGateOpenings(network, currentRuntimestep, nGates)
+	tcdTemp, tcdFlows = getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, 
+			                       resElev, targetTemp, tcdMinFlow, nGates, riverOutletFlow, riverOutletTemp)
+	return tcdTemp, tcdFlows
+
+
+#######################################################################################################
+# Loop over possible combos of open gate levels and get the upper most one satisfying the target temperature
+def findTCDTempAndFlowsNoRestriction(currentRule, network, currentRuntimestep, resElev, elevRestrictionLevel,
+                                     targetTemp, tcdMinFlow, riverOutletFlow, riverOutletTemp):
+	
+	# Loop over the options
+	nGateOptions = getNumGateOptions()  # dictionary of options for gates (e.g., level 1 = [0,0,0,5] upper only)
+	errorCode = -9999.
+	levelAbvResult = -9999.
+	for level, nGates in nGateOptions.items():
+		if level >= elevRestrictionLevel:
+			tcdTemp, tcdFlows = getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, 
+			                                   resElev, targetTemp, tcdMinFlow, nGates, riverOutletFlow, riverOutletTemp)
+			if tcdTemp != errorCode and tcdTemp < targetTemp + 0.02:  # small buffer
+				if level > 1 and abs(levelAbvResult - targetTemp) < abs(tcdTemp - targetTemp):
+					setGateLevel(network, currentRuntimestep, level - 1)
+					setGateOpenings(network, currentRuntimestep, levelAbvNumGates)
+					return levelAbvResult, levelAbvFlows
+				else:
+					setGateLevel(network, currentRuntimestep, level)
+					setGateOpenings(network, currentRuntimestep, nGates)
+					return tcdTemp, tcdFlows
+			elif tcdTemp != errorCode and level == len(nGateOptions):
+				setGateLevel(network, currentRuntimestep, level)
+				setGateOpenings(network, currentRuntimestep, nGates)
+				return tcdTemp, tcdFlows
+			levelAbvResult = tcdTemp
+			levelAbvFlows = tcdFlows
+			levelAbvNumGates = nGates
+
+	raise ValueError("No optimized TCD flows found")
+	
+
+#######################################################################################################
+# Given a set of open gate levels, get the forecasted WQCD flow distribution for a WQ target
+def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, tcdMinFlow, nGates, 
+                               riverOutletFlow, riverOutletTemp):
+
+	# Adjust target temperature for river outlet impact
+	if riverOutletFlow > 0.:
+		totalDownstreamFlow = tcdMinFlow + riverOutletFlow
+		newTargetTemp = (totalDownstreamFlow * targetTemp - riverOutletFlow * riverOutletTemp) / tcdMinFlow
+		# Prevent cases where TCD trying to operate to -100 degrees to account for lots of river outlet flow
+		targetTemp = min(max(newTargetTemp, 0.1), 35.)
+
+	elevs = getInletElevs(currentRule, network)
+	nInletLevels = len(elevs)
+	numSideGatesOpen = nGates[0]
+	numLowerGatesOpen = nGates[1]
+	numMiddleGatesOpen = nGates[2]
+	numUpperGatesOpen = nGates[3]
+
+	# Get the year for the current timestep
+	currentYear = 2023
+	hecTime = currentRuntimestep.getHecTime()
+	if hecTime:
+		currentYear = hecTime.year()
+
+	# Set min/max flow limits through individual inlets to constrain optimization problem
+	inletFlowMin = []
+	inletFlowMax = []
+	# Initialize
+	for j in range(nInletLevels):
+		inletFlowMin.append(0.)
+		inletFlowMax.append(0.)
+
+	# Set leakage (uncontrollable)
+	if currentYear < 2010:
+		totalLeakageFraction = getTotalLeakageFraction2000(resElev, elevs)
+	else:
+		totalLeakageFraction = getTotalLeakageFraction2010(resElev, elevs)
+	# Gate total numbers, open numbers, and ratios for leakage
+	numSideGates = 2
+	numLowerGates = 5
+	numMiddleGates = 5
+	numUpperGates = 5
+	sideGateRatio = (numSideGates - numSideGatesOpen)/numSideGates
+	lowerGateRatio = (numLowerGates - numLowerGatesOpen)/numLowerGates
+	middleGateRatio = (numMiddleGates - numMiddleGatesOpen)/numMiddleGates
+	# Zone 6 - no gate ratio or elev ratio
+	zone = 6
+	i = getIdxForLeakageZone(zone)
+	inletFlowMin[i] = calcLeakage(currentYear, zone, 1., 1., totalLeakageFraction, tcdMinFlow)
+	inletFlowMax[i] = inletFlowMin[i]
+	# Zone 5 - no gate ratio or elev ratio
+	zone = 5
+	i = getIdxForLeakageZone(zone)
+	inletFlowMin[i] = calcLeakage(currentYear, zone, 1., 1., totalLeakageFraction, tcdMinFlow)
+	inletFlowMax[i] = inletFlowMin[i]
+	# Zone 4 - dependent on lower gate ratio
+	zone = 4
+	i = getIdxForLeakageZone(zone)
+	inletFlowMin[i] = calcLeakage(currentYear, zone, lowerGateRatio, 1., totalLeakageFraction, tcdMinFlow)
+	inletFlowMax[i] = inletFlowMin[i]
+	# Zone 3 - dependent on elevation and side gate ratio
+	zone = 3
+	i = getIdxForLeakageZone(zone)
+	iz2 = getIdxForLeakageZone(2)
+	elevRatio = max(0., min((resElev-elevs[i])/(elevs[iz2]-elevs[i]), 1.))
+	inletFlowMin[i] = calcLeakage(currentYear, zone, sideGateRatio, elevRatio, totalLeakageFraction, tcdMinFlow)
+	inletFlowMax[i] = inletFlowMin[i]
+	# Zone 2 - dependent on elevation and middle gate ratio
+	zone = 2
+	i = getIdxForLeakageZone(zone)
+	iz1 = getIdxForLeakageZone(1)
+	elevRatio = max(0., min((resElev-elevs[i])/(elevs[iz1]-elevs[i]), 1.))
+	inletFlowMin[i] = calcLeakage(currentYear, zone, middleGateRatio, elevRatio, totalLeakageFraction, tcdMinFlow)
+	inletFlowMax[i] = inletFlowMin[i]
+	# Zone 1 - dependent on elevation
+	zone = 1
+	i = getIdxForLeakageZone(zone)
+	elevRatio = max(0., min((resElev-elevs[i])/(1000.-elevs[i]), 1.))
+	inletFlowMin[i] = calcLeakage(currentYear, zone, 1., elevRatio, totalLeakageFraction, tcdMinFlow)
+	inletFlowMax[i] = inletFlowMin[i]
+
+	numLevelsOpen = 0
+	if numSideGatesOpen > 0:
+		numLevelsOpen += 1
+	if numLowerGatesOpen > 0:
+		numLevelsOpen += 1
+	if numMiddleGatesOpen > 0:
+		numLevelsOpen += 1
+	if numUpperGatesOpen > 0:
+		numLevelsOpen += 1
+
+	useHighPt = False
+	sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(useHighPt)
+
+	# Side (lowest level) gates
+	if numSideGatesOpen > 0:
+		for count, idx in enumerate(sideGateIdx):
+			flowFract = chooseMinFlowFract(numLevelsOpen, count)
+			if count == 1:  # Override the second from the bottom pt to also use 5%/10% min flow fracts
+				flowFract = chooseMinFlowFract(numLevelsOpen, 0)
+			inletFlowMin[idx] = flowFract * tcdMinFlow
+			inletFlowMax[idx] = tcdMinFlow
+			#if idx == 0:
+			#	inletFlowMin[idx] = 0.35 * tcdMinFlow * (1.0 - totalLeakageFraction)
+			#	inletFlowMax[idx] = inletFlowMin[idx]
+			#else:
+			#	flowFract = chooseMinFlowFract(numLevelsOpen, count)
+			#	if count == 1:  # Override the second from the bottom pt to also use 5%/10% min flow fracts
+			#		flowFract = chooseMinFlowFract(numLevelsOpen, 0)
+			#	inletFlowMin[idx] = flowFract * tcdMinFlow
+			#	inletFlowMax[idx] = tcdMinFlow
+				
+	# Lower level gates
+	if numLowerGatesOpen > 0:
+		for count, idx in enumerate(lowerGateIdx):
+			flowFract = chooseMinFlowFract(numLevelsOpen, count)
+			inletFlowMin[idx] = flowFract * tcdMinFlow
+			inletFlowMax[idx] = tcdMinFlow
+
+	# Middle level gates
+	if numMiddleGatesOpen > 0:
+		if resElev > elevs[middleGateIdx[2]]:  # All pts submerged
+			for count, idx in enumerate(middleGateIdx):
+				flowFract = chooseMinFlowFract(numLevelsOpen, count)
+				inletFlowMin[idx] = flowFract * tcdMinFlow
+				inletFlowMax[idx] = tcdMinFlow
+		elif resElev > elevs[middleGateIdx[1]]:  # Lower 2 pts submerged
+			for count, idx in enumerate(middleGateIdx):
+				flowFract = chooseMinFlowFract(numLevelsOpen, count)
+				inletFlowMin[idx] = flowFract * tcdMinFlow
+				inletFlowMax[idx] = tcdMinFlow
+				if count == 1:
+					break
+		elif resElev > elevs[middleGateIdx[0]]:  # Only lower pt submerged
+			# Use weir eqn limitation for this one
+			hGateSubmerged = min(45., resElev - elevs[middleGateIdx[0]])
+			weirMaxEstimate = calcWeirFlow(hGateSubmerged, numMiddleGatesOpen)
+			flowFract = chooseMinFlowFract(numLevelsOpen, 0)
+			idx = middleGateIdx[0]
+			inletFlowMin[idx] = min(flowFract * tcdMinFlow, weirMaxEstimate)
+			inletFlowMax[idx] = min(tcdMinFlow, weirMaxEstimate)
+	
+	# Upper level gates
+	if numUpperGatesOpen > 0:
+		if resElev > elevs[upperGateIdx[2]]:  # All pts submerged
+			for count, idx in enumerate(upperGateIdx):
+				flowFract = chooseMinFlowFract(numLevelsOpen, count)
+				inletFlowMin[idx] = flowFract * tcdMinFlow
+				inletFlowMax[idx] = tcdMinFlow
+		elif resElev > elevs[upperGateIdx[1]]:  # Lower 2 pts submerged
+			for count, idx in enumerate(upperGateIdx):
+				flowFract = chooseMinFlowFract(numLevelsOpen, count)
+				inletFlowMin[idx] = flowFract * tcdMinFlow
+				inletFlowMax[idx] = tcdMinFlow
+				if count == 1:
+					break
+		elif resElev > elevs[upperGateIdx[0]]:  # Only lower pt submerged
+			# Use weir eqn limitation for this one
+			hGateSubmerged = min(45., resElev - elevs[upperGateIdx[0]])
+			weirMaxEstimate = calcWeirFlow(hGateSubmerged, numUpperGatesOpen)
+			flowFract = chooseMinFlowFract(numLevelsOpen, 0)
+			idx = upperGateIdx[0]
+			inletFlowMin[idx] = min(flowFract * tcdMinFlow, weirMaxEstimate)
+			inletFlowMax[idx] = min(tcdMinFlow, weirMaxEstimate)
+		
+	wqRun = network.getRssRun().getWQRun()
+	engineAdapter = wqRun.getWqEngineAdapter()
+	resWQGeoSubdom = getReservoirWQSubdomain(currentRule, network)
+	sdId = resWQGeoSubdom.getId()
+	resOp = currentRule.getController().getReservoirOp()
+	releaseElemId = resOp.getWQCDReleaseElemId(currentRule)
+	tcdId = resWQGeoSubdom.getWqControlDeviceId(releaseElemId)
+	try:
+		tcdFlows = engineAdapter.computeWQCDFlows(sdId, tcdId, temperatureConstitId, nInletLevels, inletFlowMin, inletFlowMax, tcdMinFlow, targetTemp)
+	except WQException as wqe:
+		print(wqe.getNativeExceptionMessage())
+		print("Penstock flow", tcdMinFlow)
+		print("River outlet flow", riverOutletFlow)
+		print("Res elevation", resElev)
+		print("Target temperature", targetTemp)
+		print("Nof upper gates open", numUpperGatesOpen)
+		print("Nof middle gates open", numMiddleGatesOpen)
+		print("Nof lower gates open", numLowerGatesOpen)
+		print("Nof side gates open", numSideGatesOpen)
+		print("inletFlowMin", inletFlowMin)
+		print("inletFlowMax", inletFlowMax)
+		raise ValueError()
+		
+	tcdResult = engineAdapter.getConstitResultWQCDOptimized(sdId, tcdId)
+
+	# Error checking
+	if abs(sum(tcdFlows) - tcdMinFlow) > 1.:  # 1 cfs
+		print("TCD flows /= Penstock flow")
+		print(hecTime.toString())
+		print("Sum TCD flows", sum(tcdFlows))
+		print("Penstock flow", tcdMinFlow)
+		print("Res elevation", resElev)
+		print("Target temperature", targetTemp)
+		print("Nof upper gates open", numUpperGatesOpen)
+		print("Nof middle gates open", numMiddleGatesOpen)
+		print("Nof lower gates open", numLowerGatesOpen)
+		print("Nof side gates open", numSideGatesOpen)
+		print("inletFlowMin", inletFlowMin)
+		print("inletFlowMax", inletFlowMax)
+		print("tcdFlows", tcdFlows)
+		raise ValueError()
+
+	return tcdResult, tcdFlows
+
+

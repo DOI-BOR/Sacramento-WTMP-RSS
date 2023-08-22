@@ -1,0 +1,3159 @@
+{
+ "description": "", 
+ "stations": [
+  {
+   "variables": [
+    {
+     "@type": "AtmosphericPressure", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "units": "atm", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": 0.91
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "", 
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "DSS File Path": null, 
+       "@type": "DssData", 
+       "description": "", 
+       "units": null, 
+       "compType": 0, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "elevation": 0.0, 
+       "availableUnits": [
+        "ft", 
+        "m"
+       ], 
+       "@type": "ElevationData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Elevation"
+      }
+     ], 
+     "selectedDataSourceName": "Constant Value"
+    }, 
+    {
+     "@type": "AirTemperature", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_MET_REDDING_DEC-MAR/TEMP-AIR//1HOUR/GRAB2-DERVIED/", 
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "C", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Humidity", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_MET_REDDING_DEC-MAR/RELHUM//1HOUR/GRAB2-DERVIED/", 
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "%", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "ShortWaveRadiation", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_MET_REDDING_DEC-MAR/SOLRAD//1HOUR/GRAB2-DERVIED/", 
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "W/m2", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "LatLongData", 
+       "latitude": 0.0, 
+       "dustCoefficient": 0.04, 
+       "description": "", 
+       "nearestMeridian": 0, 
+       "compType": 2, 
+       "name": "Lat-Long", 
+       "interval": 60.0, 
+       "longitude": 0.0
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Cloudiness", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_MET_REDDING_DEC-MAR/CLOUD-FRACTION_0-1//1HOUR/GRAB2-DERVIED/", 
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "FRAC", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ObservedData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Compute from ObsSW and Lat-Long"
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "WindSpeed", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_MET_REDDING_DEC-MAR/SPEED-WIND//1HOUR/GRAB2-DERVIED/", 
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "m/s", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }
+   ], 
+   "latitude": 0.0, 
+   "active": true, 
+   "description": "", 
+   "metStation": true, 
+   "nearestMeridian": 0, 
+   "observed": false, 
+   "name": "Lewiston Met", 
+   "geometry": {
+    "coordinates": [
+     1699089.6830725598, 
+     14795019.742212119
+    ], 
+    "type": "Point"
+   }, 
+   "id": 2, 
+   "referenceElevation": 0.0, 
+   "longitude": 0.0
+  }, 
+  {
+   "variables": [
+    {
+     "@type": "AtmosphericPressure", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "units": "atm", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": 0.97
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "", 
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "DSS File Path": null, 
+       "@type": "DssData", 
+       "description": "", 
+       "units": null, 
+       "compType": 0, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "elevation": 0.0, 
+       "availableUnits": [
+        "ft", 
+        "m"
+       ], 
+       "@type": "ElevationData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Elevation"
+      }
+     ], 
+     "selectedDataSourceName": "Constant Value"
+    }, 
+    {
+     "@type": "AirTemperature", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/TEMP-AIR//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "deg C", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Humidity", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/RELHUM//1HOUR/USBR_DERIVED/", 
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "%", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "ShortWaveRadiation", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_RRAC1/SRO//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "W/M2", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "LatLongData", 
+       "latitude": 0.0, 
+       "dustCoefficient": 0.04, 
+       "description": "", 
+       "nearestMeridian": 0, 
+       "compType": 2, 
+       "name": "Lat-Long", 
+       "interval": 60.0, 
+       "longitude": 0.0
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Cloudiness", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/CLOUD-FRACTION_0-1//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "FRACTION", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ObservedData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Compute from ObsSW and Lat-Long"
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "WindSpeed", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/SPEED-WIND//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "m/s", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }
+   ], 
+   "latitude": 0.0, 
+   "active": true, 
+   "description": "", 
+   "metStation": true, 
+   "nearestMeridian": 0, 
+   "observed": false, 
+   "name": "RDD Redding Airport", 
+   "geometry": {
+    "coordinates": [
+     1836676.7128546566, 
+     14710736.44145215
+    ], 
+    "type": "Point"
+   }, 
+   "id": 3, 
+   "referenceElevation": 0.0, 
+   "longitude": 0.0
+  }, 
+  {
+   "variables": [
+    {
+     "@type": "AtmosphericPressure", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "units": "atm", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": 0.97
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "", 
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "DSS File Path": null, 
+       "@type": "DssData", 
+       "description": "", 
+       "units": null, 
+       "compType": 0, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "elevation": 0.0, 
+       "availableUnits": [
+        "ft", 
+        "m"
+       ], 
+       "@type": "ElevationData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Elevation"
+      }
+     ], 
+     "selectedDataSourceName": "Constant Value"
+    }, 
+    {
+     "@type": "AirTemperature", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/TEMP-AIR//1Hour/USBR_DERIVED_SHASTA/", 
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "DSS File Path": "shared\\USBR_derived.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "deg C", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Humidity", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/RELHUM//1HOUR/USBR_DERIVED/", 
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "%", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "ShortWaveRadiation", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_RRAC1/SRO//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "W/M2", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "LatLongData", 
+       "latitude": 0.0, 
+       "dustCoefficient": 0.04, 
+       "description": "", 
+       "nearestMeridian": 0, 
+       "compType": 2, 
+       "name": "Lat-Long", 
+       "interval": 60.0, 
+       "longitude": 0.0
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Cloudiness", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/CLOUD-FRACTION_0-1//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "FRACTION", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ObservedData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Compute from ObsSW and Lat-Long"
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "WindSpeed", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/SPEED-WIND//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "m/s", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }
+   ], 
+   "latitude": 0.0, 
+   "active": true, 
+   "description": "", 
+   "metStation": true, 
+   "nearestMeridian": 0, 
+   "observed": false, 
+   "name": "Sacramento R Met", 
+   "geometry": {
+    "coordinates": [
+     1877454.790197891, 
+     14611708.00271761
+    ], 
+    "type": "Point"
+   }, 
+   "id": 4, 
+   "referenceElevation": 0.0, 
+   "longitude": 0.0
+  }, 
+  {
+   "variables": [
+    {
+     "@type": "AtmosphericPressure", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "units": "atm", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": 0.97
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "", 
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "DSS File Path": null, 
+       "@type": "DssData", 
+       "description": "", 
+       "units": null, 
+       "compType": 0, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "elevation": 0.0, 
+       "availableUnits": [
+        "ft", 
+        "m"
+       ], 
+       "@type": "ElevationData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Elevation"
+      }
+     ], 
+     "selectedDataSourceName": "Constant Value"
+    }, 
+    {
+     "@type": "AirTemperature", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/TEMP-AIR//1Hour/USBR_DERIVED_SHASTA/", 
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "DSS File Path": "shared\\USBR_derived.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "deg C", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Humidity", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/RELHUM//1HOUR/USBR_DERIVED/", 
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "%", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "ShortWaveRadiation", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_RRAC1/SRO//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "W/M2", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "LatLongData", 
+       "latitude": 0.0, 
+       "dustCoefficient": 0.04, 
+       "description": "", 
+       "nearestMeridian": 0, 
+       "compType": 2, 
+       "name": "Lat-Long", 
+       "interval": 60.0, 
+       "longitude": 0.0
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Cloudiness", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/CLOUD-FRACTION_0-1//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "FRACTION", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ObservedData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Compute from ObsSW and Lat-Long"
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "WindSpeed", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/SPEED-WIND//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "m/s", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }
+   ], 
+   "latitude": 0.0, 
+   "active": true, 
+   "description": "", 
+   "metStation": true, 
+   "nearestMeridian": 0, 
+   "observed": false, 
+   "name": "Shasta Met", 
+   "geometry": {
+    "coordinates": [
+     1796062.7042259397, 
+     14792048.375982564
+    ], 
+    "type": "Point"
+   }, 
+   "id": 5, 
+   "referenceElevation": 0.0, 
+   "longitude": 0.0
+  }, 
+  {
+   "variables": [
+    {
+     "@type": "AtmosphericPressure", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "units": "atm", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": 0.91
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "", 
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "DSS File Path": null, 
+       "@type": "DssData", 
+       "description": "", 
+       "units": null, 
+       "compType": 0, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "elevation": 0.0, 
+       "availableUnits": [
+        "ft", 
+        "m"
+       ], 
+       "@type": "ElevationData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Elevation"
+      }
+     ], 
+     "selectedDataSourceName": "Constant Value"
+    }, 
+    {
+     "@type": "AirTemperature", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_LEWISTON_MET/TEMP-AIR//1HOUR/WATERCOURSE/", 
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "C", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Humidity", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_LEWISTON_MET/RELHUM//1HOUR/WATERCOURSE/", 
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "%", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "ShortWaveRadiation", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_LEWISTON_MET/SOLRAD//1HOUR/WATERCOURSE/", 
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "W/m2", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "LatLongData", 
+       "latitude": 0.0, 
+       "dustCoefficient": 0.04, 
+       "description": "", 
+       "nearestMeridian": 0, 
+       "compType": 2, 
+       "name": "Lat-Long", 
+       "interval": 60.0, 
+       "longitude": 0.0
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Cloudiness", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_LEWISTON_MET/CLOUD-FRACTION_0-1//1HOUR/GRAB2/", 
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "FRAC", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ObservedData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Compute from ObsSW and Lat-Long"
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "WindSpeed", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_LEWISTON_MET/SPEED-WIND//1HOUR/WATERCOURSE/", 
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "m/s", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }
+   ], 
+   "latitude": 0.0, 
+   "active": true, 
+   "description": "", 
+   "metStation": true, 
+   "nearestMeridian": 0, 
+   "observed": false, 
+   "name": "Trinity Center", 
+   "geometry": {
+    "coordinates": [
+     1713636.7749852159, 
+     14885876.381680042
+    ], 
+    "type": "Point"
+   }, 
+   "id": 6, 
+   "referenceElevation": 0.0, 
+   "longitude": 0.0
+  }, 
+  {
+   "variables": [
+    {
+     "@type": "AtmosphericPressure", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "units": "atm", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": 0.95
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "", 
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "DSS File Path": null, 
+       "@type": "DssData", 
+       "description": "", 
+       "units": null, 
+       "compType": 0, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "elevation": 0.0, 
+       "availableUnits": [
+        "ft", 
+        "m"
+       ], 
+       "@type": "ElevationData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Elevation"
+      }
+     ], 
+     "selectedDataSourceName": "Constant Value"
+    }, 
+    {
+     "@type": "AirTemperature", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_RIVER_MET/TEMP-AIR//1HOUR/WATERCOURSE/", 
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "C", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Humidity", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_RIVER_MET/RELHUM//1HOUR/WATERCOURSE/", 
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "%", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "ShortWaveRadiation", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_RIVER_MET/SOLRAD//1HOUR/WATERCOURSE/", 
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "W/m2", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "LatLongData", 
+       "latitude": 0.0, 
+       "dustCoefficient": 0.04, 
+       "description": "", 
+       "nearestMeridian": 0, 
+       "compType": 2, 
+       "name": "Lat-Long", 
+       "interval": 60.0, 
+       "longitude": 0.0
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Cloudiness", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_LEWISTON_MET/CLOUD-FRACTION_0-1//1HOUR/GRAB2/", 
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "FRAC", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ObservedData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Compute from ObsSW and Lat-Long"
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "WindSpeed", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/TRINITY_RIVER_MET/SPEED-WIND//1HOUR/WATERCOURSE/", 
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "m/s", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }
+   ], 
+   "latitude": 0.0, 
+   "active": true, 
+   "description": "", 
+   "metStation": true, 
+   "nearestMeridian": 0, 
+   "observed": false, 
+   "name": "Trinity R Met", 
+   "geometry": {
+    "coordinates": [
+     1631514.0799724148, 
+     14785052.300285578
+    ], 
+    "type": "Point"
+   }, 
+   "id": 7, 
+   "referenceElevation": 0.0, 
+   "longitude": 0.0
+  }, 
+  {
+   "variables": [
+    {
+     "@type": "AtmosphericPressure", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "units": "atm", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": 0.97
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "", 
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "DSS File Path": null, 
+       "@type": "DssData", 
+       "description": "", 
+       "units": null, 
+       "compType": 0, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "mb", 
+        "mm-hg", 
+        "in-hg", 
+        "atm"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "elevation": 0.0, 
+       "availableUnits": [
+        "ft", 
+        "m"
+       ], 
+       "@type": "ElevationData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Elevation"
+      }
+     ], 
+     "selectedDataSourceName": "Constant Value"
+    }, 
+    {
+     "@type": "AirTemperature", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/TEMP-AIR//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "deg C", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "deg C", 
+        "deg F"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Humidity", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/RELHUM//1HOUR/USBR_DERIVED/", 
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "%", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Relative Humidity, %", 
+        "Dewpt T, deg C", 
+        "Dewpt T, deg F", 
+        "Wetbulb T, deg C", 
+        "Wetbulb T, deg F", 
+        "mm-Hg", 
+        "in-Hg", 
+        "mb", 
+        "kPa"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "ShortWaveRadiation", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_RRAC1/SRO//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "W/M2", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "W/m2", 
+        "Cal/cm2/day", 
+        "MJ/m2/day"
+       ], 
+       "@type": "LatLongData", 
+       "latitude": 0.0, 
+       "dustCoefficient": 0.04, 
+       "description": "", 
+       "nearestMeridian": 0, 
+       "compType": 2, 
+       "name": "Lat-Long", 
+       "interval": 60.0, 
+       "longitude": 0.0
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "Cloudiness", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/CLOUD-FRACTION_0-1//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "FRACTION", 
+       "compType": 2, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }, 
+      {
+       "availableUnits": [
+        "Fraction, 0-1"
+       ], 
+       "@type": "ObservedData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Compute from ObsSW and Lat-Long"
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }, 
+    {
+     "@type": "WindSpeed", 
+     "dataSources": [
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ConstantData", 
+       "description": "", 
+       "compType": 2, 
+       "name": "Constant Value", 
+       "value": "-Infinity"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "TableData", 
+       "values": [], 
+       "description": "", 
+       "dates": [], 
+       "units": null, 
+       "compType": 2, 
+       "name": "Table Data"
+      }, 
+      {
+       "DSS Path": "/USBR/REDDING_KRDD/SPEED-WIND//1HOUR/USBR_BLESSED/", 
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "DSS File Path": "shared\\USBR_inputs.dss", 
+       "@type": "DssData", 
+       "description": "", 
+       "units": "m/s", 
+       "compType": 1, 
+       "name": "DSS"
+      }, 
+      {
+       "availableUnits": [
+        "m/s", 
+        "ft/s", 
+        "mph", 
+        "knots"
+       ], 
+       "@type": "ExcelData", 
+       "topRow": 0, 
+       "bottomRow": 0, 
+       "description": "", 
+       "timeColumn": "", 
+       "compType": 2, 
+       "name": "Excel Worksheet", 
+       "valueColumn": "", 
+       "worksheetName": ""
+      }
+     ], 
+     "selectedDataSourceName": "DSS"
+    }
+   ], 
+   "latitude": 0.0, 
+   "active": true, 
+   "description": "", 
+   "metStation": true, 
+   "nearestMeridian": 0, 
+   "observed": false, 
+   "name": "Whiskeytown Met", 
+   "geometry": {
+    "coordinates": [
+     1764597.5977540498, 
+     14744432.209193386
+    ], 
+    "type": "Point"
+   }, 
+   "id": 8, 
+   "referenceElevation": 0.0, 
+   "longitude": 0.0
+  }
+ ], 
+ "metdatablending": false, 
+ "name": "5 Res Temp0:UpperSac-Trinity 7-station", 
+ "id": 13, 
+ "dataBlending": false
+}

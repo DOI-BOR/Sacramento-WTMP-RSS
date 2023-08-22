@@ -1,0 +1,72 @@
+{
+  "index" : 11630,
+  "name" : "Whiskeytown-ClearCr_DZ1",
+  "description" : "",
+  "Description" : "",
+  "Index" : 11630,
+  "Name" : "Whiskeytown-ClearCr_DZ1",
+  "geometryId" : 11606,
+  "lastModifiedTime" : 1678927693962,
+  "ressimVersion" : "6.0.0.171R",
+  "set" : {
+    "@type" : "WQDispersionCoefSettings",
+    "id" : 0,
+    "name" : "Whiskeytown-ClearCr_DZ1",
+    "description" : "",
+    "reachSettings" : {
+      "@type" : "WQReachDispersionSettings",
+      "dispersionType" : "GLOBAL",
+      "globalValue" : 10.0,
+      "reachValues" : [ {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 16,
+        "upperEnd" : "-Infinity"
+      }, {
+        "constant" : "-Infinity",
+        "lowerEnd" : "-Infinity",
+        "reachId" : 22,
+        "upperEnd" : "-Infinity"
+      } ],
+      "valueByReachType" : "CONSTANT"
+    },
+    "reservoirSettingsSet" : {
+      "@type" : "WQReservoirDispersionSettingsSet",
+      "entries" : [ {
+        "key" : {
+          "@type" : "WQSubDomainRef",
+          "geometryId" : 11606,
+          "id" : 9,
+          "name" : "Whiskeytown Lake",
+          "type" : "RESERVOIR_1DV"
+        },
+        "value" : {
+          "@type" : "WQReservoirDispersionSettings",
+          "alternateMixingMethod" : "MUNK_ANDERSON",
+          "munkAndersonData" : {
+            "@type" : "MunkAndersonDispersionData",
+            "acoeff" : 0.1,
+            "bcoeff" : 0.75,
+            "ccoeff" : 0.05,
+            "dzmin" : 1.5E-5
+          },
+          "stabilityData" : {
+            "@type" : "StabilityDispersionData",
+            "a1" : 3.229173125012916E-5,
+            "a3" : 0.7,
+            "ecrit" : 6.096E-8
+          },
+          "verticalMixingType" : "ALTERNATE_METHOD",
+          "windData" : {
+            "@type" : "WindDispersionData",
+            "a1" : 3.280839895013123E-5,
+            "a2" : 4.6,
+            "dzmax" : "-Infinity",
+            "dzmin" : 1.076391041670972E-5
+          }
+        }
+      } ]
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,47 @@
+AsciiSerializer=5
+{=hec.model.ModelAlt
+  ID=0
+  FLD=_index
+  I=43
+  FLD=_name
+  STR=Import Flow
+  FLD=_description
+  STR=Flow Model imported from 5-reservoir watershed (Simulation)
+  FLD=_path
+  STR=
+  FLD=_nextTSRecordProxyIndex
+  I=0
+  FLD=_lastModifiedTime
+  J=1657243048331
+  FLD=_configurationIds
+  {=rma.util.LongVector
+    ID=1
+    FLD=elementData
+    {=[J
+      ID=2
+      {[=1
+      J=2,
+      }]
+    }
+    FLD=elementCount
+    I=1
+    FLD=capacityIncrement
+    I=0
+  }
+  FLD=_programIndex
+  I=1
+  FLD=_altId
+  STR=FlowWTribs
+  FLD=_modelRef
+  {=hec.lang.ModelReference
+    ID=3
+    FLD=id
+    I=42
+    FLD=className
+    STR=hec.rss.model.RssAlt
+    FLD=wkspName
+    STR=rss
+    FLD=newId
+    I=42
+  }
+}

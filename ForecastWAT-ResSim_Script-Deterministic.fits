@@ -1,0 +1,619 @@
+TSDataSet Name=Forecast-WAT-ResSim_Script-Deterministic
+Description=(TS Data Set for WAT-ResSim_Script-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=0
+TSRecord Name=Shasta - Pit River Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/PIT_RIVER/FLOW//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=1
+TSRecord Name=Shasta - Squaw Creek Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SQUAW_CREEK/FLOW//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=2
+TSRecord Name=Shasta - McCloud River Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/MCCLOUD_RIVER/FLOW//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=3
+TSRecord Name=Shasta - Sacramento River Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SACRAMENTO_RIVER/FLOW//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=4
+TSRecord Name=Whiskeytown - Clear Creek Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR-LINEARINTERP/CLEAR CR ABOVE JCR INFLOW/FLOW//1HOUR/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=5
+TSRecord Name=Trinity - Trinity River Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY TRINITY R INFLOW/FLOW//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=6
+TSRecord Name=Lewiston Balance Flow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/LEWISTON RESERVOIR/BALANCE FLOW/FLOW//6HOUR/DERIVED-1DAY-MEAN-TRNGENMOD/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=7
+TSRecord Name=SF Clear Creek IGO Balance
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=//IGO/FLOW-BALANCE//1DAY/CDEC-EDIT-INTERPFILL-WHI_OUT_SPILL/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=8
+TSRecord Name=Cow Creek Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/COW_CREEK/FLOW-IN//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=9
+TSRecord Name=Cottonwood Creek Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/COTTONWOOD_CREEK/FLOW-IN//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=10
+TSRecord Name=Bend Bridge Balance Flow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/SACRAMENTO/BALANCE BEND BRIDGE 20230321/FLOW//1DAY/MERGE-INTERP-1D-SHIFT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=11
+TSRecord Name=Shasta Balance Flow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/SHASTA RESERVOIR/BALANCE FLOW/FLOW//1DAY/DERIVED-1DAYFORWARD/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=12
+TSRecord Name=Shasta - Big Backbone Creek Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=//ZEROS/FLOW//1HOUR//
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=13
+TSRecord Name=Keswick Balance Flow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/KESWICK RESERVOIR/BALANCE FLOW/FLOW//1HOUR/DERIVED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=14
+TSRecord Name=Trinity - East Fork Trinity Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY EF TRINITY INFLOW/FLOW//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=15
+TSRecord Name=Trinity - Swift Creek Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY SWIFT CR INFLOW/FLOW//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=16
+TSRecord Name=Trinity - Stuart Fork Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY STUART FORK INFLOW/FLOW//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=17
+TSRecord Name=Battle Creek Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/BATTLE_CREEK/FLOW-IN//1DAY/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=18
+TSRecord Name=Trinity Balance Flow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/TRINITY RESERVOIR/BALANCE FLOW-TRIBS/FLOW//1DAY/DERIVED-1DAY-MEAN-TRNGENMOD/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=19
+TSRecord Name=Whiskeytown Balance Flow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/WHISKEYTOWN RESERVOIR/BALANCE FLOW/FLOW//1DAY/DERIVED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=20
+TSRecord Name=Spring Creek Debris Dam Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/SPC DEBRIS DAM FLOW CALCULATION/SPRING_CREEK_SPC2017SHIFT-WHI_GEN_RELEASE-NONEG/FLOW//1HOUR/USBR_DERIVED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=21
+TSRecord Name=Limekiln Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/BALANCE-LIMEKILN_GULCH_20230321/FLOW//1HOUR/WATERCOURSE-INTERP-MERGED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=22
+TSRecord Name=Douglas City Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/BALANCE-DOUGLASCITY_20230321/FLOW//1HOUR/GRAB2PROCESSED-MERGED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=23
+TSRecord Name=Junction City Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/BALANCE-JUNCTIONCITY_20230321/FLOW//1HOUR/GRAB2PROCESSED-MERGED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=24
+TSRecord Name=Rush Cr Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R RUSH CK/FLOW//1DAY/WATERCOURSE/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=25
+TSRecord Name=Grass Valley Cr Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R GRASS VALLEY CK/FLOW//1DAY/WATERCOURSE/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=26
+TSRecord Name=Indian Cr Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R INDIAN CK/FLOW//1DAY/WATERCOURSE/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=27
+TSRecord Name=Weaver Cr Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R WEAVER CK/FLOW//1DAY/WATERCOURSE/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=28
+TSRecord Name=Reading Cr Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R READING CK/FLOW//1DAY/WATERCOURSE/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=29
+TSRecord Name=Browns Cr Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R BROWNS CK/FLOW//1DAY/WATERCOURSE/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=30
+TSRecord Name=Canyon Cr Local Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R CANYON CK/FLOW//1DAY/WATERCOURSE/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=31
+TSRecord Name=NF Trinity River Inflow
+TSRecord VariableId=4
+TSRecord ParamName=Flow
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=//ZEROS/FLOW//1HOUR//
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=32
+TSRecord Name=~E9:F
+TSRecord VariableId=14
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA/ELEVATION//1HOUR/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=33
+TSRecord Name=~E13:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_SPILL/FLOW//1HOUR/SUPP/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=34
+TSRecord Name=~E26:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_RRU/FLOW//1HOUR/SUPP/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=35
+TSRecord Name=~E27:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_RRM/FLOW//1HOUR/SUPP/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=36
+TSRecord Name=~E28:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_RRL/FLOW//1HOUR/SUPP/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=37
+TSRecord Name=~E164:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_PGSUM/FLOW//1HOUR/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=38
+TSRecord Name=PowerPlant-Outflow
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_PGSUM/FLOW//1HOUR/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=39
+TSRecord Name=Specified RRL Flow
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_RRL/FLOW//1HOUR/SUPP/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=40
+TSRecord Name=Specified RRM Flow
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_RRM/FLOW//1HOUR/SUPP/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=41
+TSRecord Name=Specified RRU Flow
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_RRU/FLOW//1HOUR/SUPP/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=42
+TSRecord Name=Specified Spillway Flow
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/SHASTA_SPILL/FLOW//1HOUR/SUPP/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=43
+TSRecord Name=~E59:F
+TSRecord VariableId=14
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/KESWICK/ELEVATION//1HOUR/USBR_BLESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=44
+TSRecord Name=~E107:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/KESWICK_QOUT_SUM/FLOW//1HOUR/USBR_DERIVED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=45
+TSRecord Name=Keswick Release
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/KESWICK_QOUT_SUM/FLOW//1HOUR/USBR_DERIVED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=46
+TSRecord Name=~E127:F
+TSRecord VariableId=14
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR+23HRSHIFT/WHI_ELEVATION/ELEV//1HOUR/GRAB2-MANUAL-FILTER-INTERPFILL/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=47
+TSRecord Name=~E194:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=//WHI_OUTLET_RELEASE_MANUFACTURED/FLOW//1HOUR/OUTLET_OR_IGO-10/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=48
+TSRecord Name=~E157:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR-LINEARINTERP-CAPPED/WHI_GENERATION_RELEASE/FLOW//1HOUR/GRAB2PROCESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=49
+TSRecord Name=Spring CR Diversion
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR-LINEARINTERP-CAPPED/WHI_GENERATION_RELEASE/FLOW//1HOUR/GRAB2PROCESSED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=50
+TSRecord Name=Whiskeytown Calibration Spillway Flow
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/WHI_SPILL_RELEASE/FLOW//1HOUR/GRAB2-INTERPFILL/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=51
+TSRecord Name=Whiskeytown Outlet Release
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=//WHI_OUTLET_RELEASE_MANUFACTURED/FLOW//1HOUR/OUTLET_OR_IGO-10/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=52
+TSRecord Name=~E142:F
+TSRecord VariableId=14
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_CLEANED_FULLLINEARINTERP/LEW_ELEVATION_PROCESSED/ELEV//1HOUR/GRAB2/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=53
+TSRecord Name=~E147:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_MERGED/LEW_OUTLET_PLUS_GEN_DAILYMERGED/FLOW//1HOUR/GRAB2-MERGED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=54
+TSRecord Name=~E148:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_MERGED/LEW_SPILL_PROCESSED_DAILYMERGED/FLOW//1HOUR/2009-EDIT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=55
+TSRecord Name=~E149:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_MERGED/LEW_HATCHERYFLOW_PROCESSED_FILLED/FLOW//1HOUR/GRAB2-MERGED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=56
+TSRecord Name=~E153:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/JCR_GENERATION_RELEASE/FLOW//1HOUR/GRAB2-CAPPED-INTERPFILL/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=57
+TSRecord Name=Lewiston CC Diversion Tunnel
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR/JCR_GENERATION_RELEASE/FLOW//1HOUR/GRAB2-CAPPED-INTERPFILL/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=58
+TSRecord Name=Lewiston PH
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_MERGED/LEW_OUTLET_PLUS_GEN_DAILYMERGED/FLOW//1HOUR/GRAB2-MERGED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=59
+TSRecord Name=Lewiston Gated Spillway
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_MERGED/LEW_SPILL_PROCESSED_DAILYMERGED/FLOW//1HOUR/2009-EDIT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=60
+TSRecord Name=Lewiston Fish Hatchery
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_MERGED/LEW_HATCHERYFLOW_PROCESSED_FILLED/FLOW//1HOUR/GRAB2-MERGED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=61
+TSRecord Name=~E170:F
+TSRecord VariableId=43
+TSRecord ParamName=Flow-DIVERSION
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/ANDERSON-COTTONWOOD CANAL/SHARON AVE (11370700)/FLOW//1DAY/USGS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=62
+TSRecord Name=Anderson-Cottonwood Canal
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/ANDERSON-COTTONWOOD CANAL/SHARON AVE (11370700)/FLOW//1DAY/USGS/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=63
+TSRecord Name=~E181:F
+TSRecord VariableId=14
+TSRecord ParamName=Elev
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_RECLEANED_FULLLINEARINTERP/TRN_ELEVATION/ELEV//1HOUR/GRAB2/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=64
+TSRecord Name=~E186:F
+TSRecord VariableId=41
+TSRecord ParamName=Flow-RELEASE
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_LINEARINTERP/TRN_OUTLET_SUM_GEN_G1_G2/FLOW//1HOUR/GRAB2-TRNGENMOD/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=65
+TSRecord Name=Trinity Powerhouse Release
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_LINEARINTERP/TRN_OUTLET_SUM_GEN_G1_G2/FLOW//1HOUR/GRAB2-TRNGENMOD/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=66
+TSRecord Name=Bypass Release
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_LINEARINTERP/TRN_OUTLET_G3_RELEASE/FLOW//1HOUR/GRAB2/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=67
+TSRecord Name=Trinity Calibration Spillway Flow
+TSRecord VariableId=85
+TSRecord ParamName=
+TSRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+TSRecord DssPathname=/USBR_CLEANED_FULLLINEARINTERP/TRN_SPILLWAYRELEASE/FLOW//1HOUR/GRAB2/
+TSRecord InputPosition=0
+TSRecord End=
+
+

@@ -1,0 +1,85 @@
+ModifiedTime=1682001846192
+GVDataSet Name=5 Res Temp0:5 Res Temp-WAT-Default-Deterministic
+Description=(GV Data Set for WAT-Default-Deterministic)
+
+GVRecord=TIME_SERIES
+GVRecord Name=TCD_target
+GVRecord ID=1
+GVRecord DssFilename=shared/USBR_inputs.dss
+GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/USBR_BLESSED/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDU_gates_open
+GVRecord ID=5
+GVRecord DssFilename=shared/USBR_inputs.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_U OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDM_gates_open
+GVRecord ID=6
+GVRecord DssFilename=shared/USBR_inputs.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_M OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDL_gates_open
+GVRecord ID=7
+GVRecord DssFilename=shared/USBR_inputs.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_L OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDS_gates_open
+GVRecord ID=8
+GVRecord DssFilename=shared/USBR_inputs.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Whiskeytown_target
+GVRecord ID=19
+GVRecord DssFilename=shared/LewistonWhiskeytown_BalanceFlows.dss
+GVRecord DssPathname=/USBR/WHI DAM OUTFLOW/TEMP-WATER//1HOUR/GRAB2PROCESSED-LINEARINTERP-MERGED/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Whiskeytown_Upper_Gate_open
+GVRecord ID=22
+GVRecord DssFilename=shared/USBR_inputs.dss
+GVRecord DssPathname=/USBR/WHISKEYTOWN_UPPER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Whiskeytown_Lower_Gate_open
+GVRecord ID=23
+GVRecord DssFilename=shared/USBR_inputs.dss
+GVRecord DssPathname=/USBR/WHISKEYTOWN_LOWER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+
