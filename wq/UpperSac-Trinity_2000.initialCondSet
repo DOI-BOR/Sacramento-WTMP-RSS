@@ -7,8 +7,7 @@
   "Name" : "UpperSac-Trinity 2000",
   "constituentId" : 871,
   "geometryId" : 1043,
-  "lastModifiedTime" : 1667552230211,
-  "ressimVersion" : "CWMS3.2.1-04/24/2020",
+  "lastModifiedTime" : 1693944757006,
   "set" : {
     "boundaryEntries" : [ {
       "constituentId" : 2,
@@ -20,220 +19,10 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 13,
-        "jnctId" : 43,
-        "name" : "Sacramento R + Clear Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 8.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 5,
-        "jnctId" : 143,
-        "name" : "Lewiston Dam",
-        "type" : "RESERVOIR_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 29,
-        "jnctId" : 209,
-        "name" : "Trinity R at Browns Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 23,
-        "jnctId" : 5,
-        "name" : "Keswick Dam",
-        "type" : "RESERVOIR_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 25,
-        "jnctId" : 167,
-        "name" : "ACID dam",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 33,
-        "jnctId" : 211,
-        "name" : "Trinity R at Canyon Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 32,
-        "jnctId" : 54,
-        "name" : "Sacramento R + Cottonwood Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 9,
-        "jnctId" : 160,
-        "name" : "Lewiston WQ",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
         "id" : 39,
         "jnctId" : 45,
         "name" : "Red Bluff Diversion",
         "type" : "RIVER_OUTFLOW"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 38,
-        "jnctId" : 52,
-        "name" : "Bend Bridge",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 11,
-        "jnctId" : 162,
-        "name" : "Clear Cr + South Fork",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 7,
-        "jnctId" : 65,
-        "name" : "Whiskeytown Dam",
-        "type" : "RESERVOIR_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 31,
-        "jnctId" : 171,
-        "name" : "Junction City",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 10,
-        "jnctId" : 201,
-        "name" : "Trinity R at Rush Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 24,
-        "jnctId" : 205,
-        "name" : "Trinity R at Weaver Cr",
-        "type" : "RIVER_2_RIVER"
       }
     }, {
       "constituentId" : 2,
@@ -260,9 +49,24 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 12,
-        "jnctId" : 199,
-        "name" : "Trinity R at Grass Valley Cr",
+        "id" : 14,
+        "jnctId" : 175,
+        "name" : "Limekiln Gulch",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 32,
+        "jnctId" : 54,
+        "name" : "Sacramento R + Cottonwood Cr",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -305,9 +109,9 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 34,
-        "jnctId" : 188,
-        "name" : "Sacramento R + Battle Cr",
+        "id" : 10,
+        "jnctId" : 201,
+        "name" : "Trinity R at Rush Cr",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -335,9 +139,39 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 14,
-        "jnctId" : 175,
-        "name" : "Limekiln Gulch",
+        "id" : 9,
+        "jnctId" : 160,
+        "name" : "Lewiston WQ",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 12,
+        "jnctId" : 199,
+        "name" : "Trinity R at Grass Valley Cr",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 38,
+        "jnctId" : 52,
+        "name" : "Bend Bridge",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -365,9 +199,54 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 36,
-        "jnctId" : 50,
-        "name" : "Jellys Ferry Bridge",
+        "id" : 25,
+        "jnctId" : 167,
+        "name" : "ACID dam",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 13,
+        "jnctId" : 43,
+        "name" : "Sacramento R + Clear Cr",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 31,
+        "jnctId" : 171,
+        "name" : "Junction City",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 24,
+        "jnctId" : 205,
+        "name" : "Trinity R at Weaver Cr",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -386,55 +265,10 @@
         "type" : "RIVER_2_RIVER"
       }
     }, {
-      "constituentId" : 1,
+      "constituentId" : 2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 13,
-        "jnctId" : 43,
-        "name" : "Sacramento R + Clear Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 8.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 5,
-        "jnctId" : 143,
-        "name" : "Lewiston Dam",
-        "type" : "RESERVOIR_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 29,
-        "jnctId" : 209,
-        "name" : "Trinity R at Browns Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
+        "constituentId" : 2,
         "override" : 10.0
       },
       "ref" : {
@@ -446,25 +280,55 @@
         "type" : "RESERVOIR_2_RIVER"
       }
     }, {
-      "constituentId" : 1,
+      "constituentId" : 2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
-        "constituentId" : 1,
+        "constituentId" : 2,
         "override" : 10.0
       },
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 25,
-        "jnctId" : 167,
-        "name" : "ACID dam",
+        "id" : 11,
+        "jnctId" : 162,
+        "name" : "Clear Cr + South Fork",
         "type" : "RIVER_2_RIVER"
       }
     }, {
-      "constituentId" : 1,
+      "constituentId" : 2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
-        "constituentId" : 1,
+        "constituentId" : 2,
+        "override" : 8.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 5,
+        "jnctId" : 143,
+        "name" : "Lewiston Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 29,
+        "jnctId" : 209,
+        "name" : "Trinity R at Browns Cr",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
         "override" : 10.0
       },
       "ref" : {
@@ -476,33 +340,48 @@
         "type" : "RIVER_2_RIVER"
       }
     }, {
-      "constituentId" : 1,
+      "constituentId" : 2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
-        "constituentId" : 1,
+        "constituentId" : 2,
         "override" : 10.0
       },
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 32,
-        "jnctId" : 54,
-        "name" : "Sacramento R + Cottonwood Cr",
+        "id" : 36,
+        "jnctId" : 50,
+        "name" : "Jellys Ferry Bridge",
         "type" : "RIVER_2_RIVER"
       }
     }, {
-      "constituentId" : 1,
+      "constituentId" : 2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
-        "constituentId" : 1,
+        "constituentId" : 2,
         "override" : 10.0
       },
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 9,
-        "jnctId" : 160,
-        "name" : "Lewiston WQ",
+        "id" : 7,
+        "jnctId" : 65,
+        "name" : "Whiskeytown Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 34,
+        "jnctId" : 188,
+        "name" : "Sacramento R + Battle Cr",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -530,96 +409,6 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 38,
-        "jnctId" : 52,
-        "name" : "Bend Bridge",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 11,
-        "jnctId" : 162,
-        "name" : "Clear Cr + South Fork",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 7,
-        "jnctId" : 65,
-        "name" : "Whiskeytown Dam",
-        "type" : "RESERVOIR_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 31,
-        "jnctId" : 171,
-        "name" : "Junction City",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 10,
-        "jnctId" : 201,
-        "name" : "Trinity R at Rush Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
-        "id" : 24,
-        "jnctId" : 205,
-        "name" : "Trinity R at Weaver Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 1043,
         "id" : 26,
         "jnctId" : 207,
         "name" : "Trinity River at Reading Cr",
@@ -635,9 +424,24 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 12,
-        "jnctId" : 199,
-        "name" : "Trinity R at Grass Valley Cr",
+        "id" : 14,
+        "jnctId" : 175,
+        "name" : "Limekiln Gulch",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 32,
+        "jnctId" : 54,
+        "name" : "Sacramento R + Cottonwood Cr",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -680,9 +484,9 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 34,
-        "jnctId" : 188,
-        "name" : "Sacramento R + Battle Cr",
+        "id" : 10,
+        "jnctId" : 201,
+        "name" : "Trinity R at Rush Cr",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -710,9 +514,39 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 14,
-        "jnctId" : 175,
-        "name" : "Limekiln Gulch",
+        "id" : 9,
+        "jnctId" : 160,
+        "name" : "Lewiston WQ",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 12,
+        "jnctId" : 199,
+        "name" : "Trinity R at Grass Valley Cr",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 38,
+        "jnctId" : 52,
+        "name" : "Bend Bridge",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -740,9 +574,54 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 1043,
-        "id" : 36,
-        "jnctId" : 50,
-        "name" : "Jellys Ferry Bridge",
+        "id" : 25,
+        "jnctId" : 167,
+        "name" : "ACID dam",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 13,
+        "jnctId" : 43,
+        "name" : "Sacramento R + Clear Cr",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 31,
+        "jnctId" : 171,
+        "name" : "Junction City",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 24,
+        "jnctId" : 205,
+        "name" : "Trinity R at Weaver Cr",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -758,6 +637,126 @@
         "id" : 27,
         "jnctId" : 173,
         "name" : "Douglas City",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 23,
+        "jnctId" : 5,
+        "name" : "Keswick Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 11,
+        "jnctId" : 162,
+        "name" : "Clear Cr + South Fork",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 8.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 5,
+        "jnctId" : 143,
+        "name" : "Lewiston Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 29,
+        "jnctId" : 209,
+        "name" : "Trinity R at Browns Cr",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 33,
+        "jnctId" : 211,
+        "name" : "Trinity R at Canyon Cr",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 36,
+        "jnctId" : 50,
+        "name" : "Jellys Ferry Bridge",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 7,
+        "jnctId" : 65,
+        "name" : "Whiskeytown Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 1043,
+        "id" : 34,
+        "jnctId" : 188,
+        "name" : "Sacramento R + Battle Cr",
         "type" : "RIVER_2_RIVER"
       }
     } ],
@@ -896,20 +895,6 @@
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 2,
-        "override" : 11.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainRef",
-        "geometryId" : 1043,
-        "id" : 6,
-        "name" : "Lewiston Reservoir",
-        "type" : "RESERVOIR_1DV"
-      }
-    }, {
-      "depth" : 1080.0,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
         "override" : 9.0
       },
       "ref" : {
@@ -917,6 +902,20 @@
         "geometryId" : 1043,
         "id" : 9,
         "name" : "Whiskeytown Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1080.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 11.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 1043,
+        "id" : 6,
+        "name" : "Lewiston Reservoir",
         "type" : "RESERVOIR_1DV"
       }
     }, {
@@ -948,11 +947,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 694.87,
+      "depth" : 905.2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 2,
-        "override" : 8.04
+        "override" : 10.24
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -962,11 +961,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 905.2,
+      "depth" : 694.87,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 2,
-        "override" : 10.24
+        "override" : 8.04
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -1302,20 +1301,6 @@
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 1,
-        "override" : 11.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainRef",
-        "geometryId" : 1043,
-        "id" : 6,
-        "name" : "Lewiston Reservoir",
-        "type" : "RESERVOIR_1DV"
-      }
-    }, {
-      "depth" : 1080.0,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
         "override" : 9.0
       },
       "ref" : {
@@ -1323,6 +1308,20 @@
         "geometryId" : 1043,
         "id" : 9,
         "name" : "Whiskeytown Lake",
+        "type" : "RESERVOIR_1DV"
+      }
+    }, {
+      "depth" : 1080.0,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 11.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainRef",
+        "geometryId" : 1043,
+        "id" : 6,
+        "name" : "Lewiston Reservoir",
         "type" : "RESERVOIR_1DV"
       }
     }, {
@@ -1354,11 +1353,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 694.87,
+      "depth" : 905.2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 1,
-        "override" : 8.04
+        "override" : 10.24
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -1368,11 +1367,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 905.2,
+      "depth" : 694.87,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 1,
-        "override" : 10.24
+        "override" : 8.04
       },
       "ref" : {
         "@type" : "WQSubDomainRef",

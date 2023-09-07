@@ -1,5 +1,5 @@
-ModifiedTime=1693938334733
-GVDataSet Name=RSSacTrnPO-WAT-Default-Deterministic
+ModifiedTime=1694022199696
+GVDataSet Name=RSSacTrnPO-WAT-ResSim Prescribed-Deterministic
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
 
 GVRecord=TIME_SERIES

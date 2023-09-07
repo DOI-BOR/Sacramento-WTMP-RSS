@@ -1,13 +1,13 @@
-ModifiedTime=1693938334733
-GVDataSet Name=RSSacTrnPO-WAT-Default-Deterministic
-Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
+ModifiedTime=1694045309687
+GVDataSet Name=RSSacTrnPO
+Description=(Global Variable Data Set)
 
 GVRecord=TIME_SERIES
 GVRecord Name=TCD_target
 GVRecord ID=1
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=true
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End

@@ -1,13 +1,13 @@
-RssAlt Name=WhisClear
-RssAlt Description=
+RssAlt Name=RSSacTrnRv
+RssAlt Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used.
 Version=1001
-ModifiedTime=1692656584702
+ModifiedTime=1693948306245
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
-InputTSData Path=rss/WhisClear.fits
+InputTSData Path=rss/RSSacTrnRv.fits
 OutputTSData Path=
-InputGVData Path=
+InputGVData Path=rss/RSSacTrnRv.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -142,7 +142,7 @@ YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 ReservoirStorageVsYieldAnalysisEnd
 TimeStep=1
 TimeIncrement=2
-ObservedTSData Path=rss/WhisClearObs.fits
+ObservedTSData Path=rss/RSSacTrnRvObs.fits
 resOpSelection=141,1
 resOpSelection=8,3
 resOpSelection=126,1
@@ -207,11 +207,15 @@ Hindcast=~S32;98;1;-Infinity
 Hindcast=~S33;98;1;-Infinity
 InputTsVariant=WAT-Default-Deterministic,false
 InputTsVariant=WAT-ResSim_Script-Deterministic,false
-InputTsVariant=WAT-ResSim_WhisCC-Deterministic,false
+InputTsVariant=ResSim_Script-Deterministic,true
+InputTsVariant=WAT-ResSim Prescribed-Deterministic,false
+InputTsVariant=WAT-W2 5-Res Plus Rivers-Deterministic,true
+InputTsVariant=W2 5-Res Plus Rivers-Deterministic,true
 UsingInflowFactors=false
 InflowFactorType=0
 GlobalInflowFactor=1.0
 Hotstart Options
+Enabled:false
 CreateHotStart:false
 SaveAtEnd:false
 SaveAtLookback:false
@@ -229,18 +233,18 @@ TimeStep=1
 TimeStepIncrement=2
 Constituent=UpperSac-Trinity Temperature
 ConstituentId=871
-InitialConditions=Whiskeytown-ClearCr_IC1
-InitialConditionsId=11629
-BoundaryConditions=Whiskeytown-ClearCr_BC1
-BoundaryConditionsId=11628
+InitialConditions=SacTrnRiversOnly_IC_constant
+InitialConditionsId=17267
+BoundaryConditions=SacTrnRiversOnly_BC1
+BoundaryConditionsId=17266
 MetData=UpperSac-Trinity 7-station
 MetDataId=873
-DispersionCoef=Whiskeytown-ClearCr_DZ1
-DispersionCoefId=11630
-Parameters=Whiskeytown-ClearCr_P1
-ParametersId=11627
-WqGeometry=Whiskeytown-ClearCr
-WqGeometryId=11606
+DispersionCoef=SacTrnRiversOnly_DZ
+DispersionCoefId=17268
+Parameters=SacTrnRiversOnly_P1
+ParametersId=17265
+WqGeometry=Sacramento-Trinity-Rivers-Only
+WqGeometryId=17264
 NumberThreads=1
 OutputSteps=1
 PreserveConcentration=true
@@ -250,7 +254,7 @@ CellVolume=true
 CellFlow=true
 CellVelocity=true
 CellMass=false
-HeatBudget=false
+HeatBudget=true
 NsmPathways=false
 NsmVariables=false
 GeneralPathways=false
@@ -264,7 +268,7 @@ MaxIterations:-2147483648
 LastIteration:0
 CumulativeTime:0
 SimulationOption:0
-ScriptFilePath:rss/WhisClear.mcscript
+ScriptFilePath:rss/RSSacTrnRv.mcscript
 IterationString:
 Compute:false
 StandAloneRandomSeed:0.0

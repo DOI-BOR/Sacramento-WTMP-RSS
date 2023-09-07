@@ -7,7 +7,6 @@
   "Name" : "ShaKesSac_DZ",
   "geometryId" : 12092,
   "lastModifiedTime" : 1687735428317,
-  "ressimVersion" : "CWMS3.2.1-04/24/2020",
   "set" : {
     "@type" : "WQDispersionCoefSettings",
     "id" : 0,

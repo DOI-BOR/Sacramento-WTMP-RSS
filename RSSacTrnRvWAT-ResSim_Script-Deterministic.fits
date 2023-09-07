@@ -1,5 +1,5 @@
-TSDataSet Name=RSSacTrnPO
-Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
+TSDataSet Name=RSSacTrnRv-WAT-ResSim_Script-Deterministic
+Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used. (TS Data Set for WAT-ResSim_Script-Deterministic)
 
 _type=0
 ParentPath=null

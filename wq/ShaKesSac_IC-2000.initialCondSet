@@ -8,7 +8,6 @@
   "constituentId" : 871,
   "geometryId" : 12092,
   "lastModifiedTime" : 1678428106038,
-  "ressimVersion" : "CWMS3.2.1-04/24/2020",
   "set" : {
     "boundaryEntries" : [ {
       "constituentId" : 2,
@@ -20,25 +19,10 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 12092,
-        "id" : 23,
-        "jnctId" : 5,
-        "name" : "Keswick Dam",
-        "type" : "RESERVOIR_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 12092,
-        "id" : 11,
-        "jnctId" : 162,
-        "name" : "Clear Cr + South Fork",
-        "type" : "RIVER_INFLOW_IN_NETWORK"
+        "id" : 36,
+        "jnctId" : 50,
+        "name" : "Jellys Ferry Bridge",
+        "type" : "RIVER_2_RIVER"
       }
     }, {
       "constituentId" : 2,
@@ -80,39 +64,24 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 12092,
+        "id" : 39,
+        "jnctId" : 45,
+        "name" : "Red Bluff Diversion",
+        "type" : "RIVER_OUTFLOW"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 12092,
         "id" : 34,
         "jnctId" : 188,
         "name" : "Sacramento R + Battle Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 12092,
-        "id" : 38,
-        "jnctId" : 52,
-        "name" : "Bend Bridge",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 2,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 2,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 12092,
-        "id" : 36,
-        "jnctId" : 50,
-        "name" : "Jellys Ferry Bridge",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -140,6 +109,21 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 12092,
+        "id" : 23,
+        "jnctId" : 5,
+        "name" : "Keswick Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 12092,
         "id" : 30,
         "jnctId" : 63,
         "name" : "Sacramento R + Cow Cr",
@@ -155,40 +139,40 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 12092,
-        "id" : 39,
-        "jnctId" : 45,
-        "name" : "Red Bluff Diversion",
-        "type" : "RIVER_OUTFLOW"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 12092,
-        "id" : 23,
-        "jnctId" : 5,
-        "name" : "Keswick Dam",
-        "type" : "RESERVOIR_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 12092,
         "id" : 11,
         "jnctId" : 162,
         "name" : "Clear Cr + South Fork",
         "type" : "RIVER_INFLOW_IN_NETWORK"
+      }
+    }, {
+      "constituentId" : 2,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 2,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 12092,
+        "id" : 38,
+        "jnctId" : 52,
+        "name" : "Bend Bridge",
+        "type" : "RIVER_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 12092,
+        "id" : 36,
+        "jnctId" : 50,
+        "name" : "Jellys Ferry Bridge",
+        "type" : "RIVER_2_RIVER"
       }
     }, {
       "constituentId" : 1,
@@ -230,39 +214,24 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 12092,
+        "id" : 39,
+        "jnctId" : 45,
+        "name" : "Red Bluff Diversion",
+        "type" : "RIVER_OUTFLOW"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 12092,
         "id" : 34,
         "jnctId" : 188,
         "name" : "Sacramento R + Battle Cr",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 12092,
-        "id" : 38,
-        "jnctId" : 52,
-        "name" : "Bend Bridge",
-        "type" : "RIVER_2_RIVER"
-      }
-    }, {
-      "constituentId" : 1,
-      "initialCondition" : {
-        "@type" : "WQInitialCondition",
-        "constituentId" : 1,
-        "override" : 10.0
-      },
-      "ref" : {
-        "@type" : "WQSubDomainBoundaryRef",
-        "geometryId" : 12092,
-        "id" : 36,
-        "jnctId" : 50,
-        "name" : "Jellys Ferry Bridge",
         "type" : "RIVER_2_RIVER"
       }
     }, {
@@ -290,6 +259,21 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 12092,
+        "id" : 23,
+        "jnctId" : 5,
+        "name" : "Keswick Dam",
+        "type" : "RESERVOIR_2_RIVER"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 12092,
         "id" : 30,
         "jnctId" : 63,
         "name" : "Sacramento R + Cow Cr",
@@ -305,10 +289,25 @@
       "ref" : {
         "@type" : "WQSubDomainBoundaryRef",
         "geometryId" : 12092,
-        "id" : 39,
-        "jnctId" : 45,
-        "name" : "Red Bluff Diversion",
-        "type" : "RIVER_OUTFLOW"
+        "id" : 11,
+        "jnctId" : 162,
+        "name" : "Clear Cr + South Fork",
+        "type" : "RIVER_INFLOW_IN_NETWORK"
+      }
+    }, {
+      "constituentId" : 1,
+      "initialCondition" : {
+        "@type" : "WQInitialCondition",
+        "constituentId" : 1,
+        "override" : 10.0
+      },
+      "ref" : {
+        "@type" : "WQSubDomainBoundaryRef",
+        "geometryId" : 12092,
+        "id" : 38,
+        "jnctId" : 52,
+        "name" : "Bend Bridge",
+        "type" : "RIVER_2_RIVER"
       }
     } ],
     "description" : "",
@@ -344,11 +343,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 824.38,
+      "depth" : 642.0,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 2,
-        "override" : 9.24
+        "override" : 7.72
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -358,11 +357,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 642.0,
+      "depth" : 824.38,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 2,
-        "override" : 7.72
+        "override" : 9.24
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -484,11 +483,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 905.2,
+      "depth" : 694.87,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 2,
-        "override" : 10.24
+        "override" : 8.04
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -498,11 +497,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 694.87,
+      "depth" : 905.2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 2,
-        "override" : 8.04
+        "override" : 10.24
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -638,11 +637,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 824.38,
+      "depth" : 642.0,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 1,
-        "override" : 9.24
+        "override" : 7.72
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -652,11 +651,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 642.0,
+      "depth" : 824.38,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 1,
-        "override" : 7.72
+        "override" : 9.24
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -778,11 +777,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 905.2,
+      "depth" : 694.87,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 1,
-        "override" : 10.24
+        "override" : 8.04
       },
       "ref" : {
         "@type" : "WQSubDomainRef",
@@ -792,11 +791,11 @@
         "type" : "RESERVOIR_1DV"
       }
     }, {
-      "depth" : 694.87,
+      "depth" : 905.2,
       "initialCondition" : {
         "@type" : "WQInitialCondition",
         "constituentId" : 1,
-        "override" : 8.04
+        "override" : 10.24
       },
       "ref" : {
         "@type" : "WQSubDomainRef",

@@ -1,13 +1,13 @@
 RssAlt Name=RSSacTrnPO
 RssAlt Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs|Supports Calibration/Historical ResSim model runs with prescribed operations across the historical data period for the 5-reservoir and 2-river (+Clear Creek) UpperSac system.
 Version=1001
-ModifiedTime=1692664588468
+ModifiedTime=1693947303638
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
 InputTSData Path=rss/RSSacTrnPO.fits
 OutputTSData Path=
-InputGVData Path=rss/RSSacTrnPO.igv
+InputGVData Path=
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1

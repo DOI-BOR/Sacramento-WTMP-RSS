@@ -1,13 +1,13 @@
-ModifiedTime=1693938334733
-GVDataSet Name=RSSacTrnPO-WAT-Default-Deterministic
-Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
+ModifiedTime=1693948242554
+GVDataSet Name=RSSacTrnRv-W2 5-Res Plus Rivers-Deterministic
+Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used. (GV Data Set for W2 5-Res Plus Rivers-Deterministic)
 
 GVRecord=TIME_SERIES
 GVRecord Name=TCD_target
 GVRecord ID=1
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=true
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End

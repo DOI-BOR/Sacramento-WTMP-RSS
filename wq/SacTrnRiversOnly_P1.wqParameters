@@ -1,12 +1,12 @@
 {
-  "index" : 1047,
-  "name" : "UpperSacTrinity - P1",
+  "index" : 17265,
+  "name" : "SacTrnRiversOnly_P1",
   "description" : "",
   "Description" : "",
-  "Index" : 1047,
-  "Name" : "UpperSacTrinity - P1",
-  "geometryId" : 1043,
-  "lastModifiedTime" : 1689782664289,
+  "Index" : 17265,
+  "Name" : "SacTrnRiversOnly_P1",
+  "geometryId" : 17264,
+  "lastModifiedTime" : 1693946309369,
   "setMap" : {
     "871" : {
       "@type" : "WQParameterSet",
@@ -112,41 +112,9 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
+          "geometryId" : 17264,
           "id" : 0,
           "name" : "Default Region"
-        }
-      }, {
-        "parameterOptionSettings" : [ {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 51,
-          "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 1
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 1,
-          "name" : "Trinity Lake"
-        }
-      }, {
-        "parameterOptionSettings" : [ {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 51,
-          "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 1
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 2,
-          "name" : "Lewiston Reservoir"
         }
       }, {
         "parameterOptionSettings" : [ {
@@ -160,8 +128,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 3,
+          "geometryId" : 17264,
+          "id" : 1,
           "name" : "Trinity R - Lewiston to Limekiln Gulch"
         }
       }, {
@@ -176,8 +144,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 4,
+          "geometryId" : 17264,
+          "id" : 2,
           "name" : "Trinity R - Limekiln Gulch to Douglas City"
         }
       }, {
@@ -192,8 +160,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 5,
+          "geometryId" : 17264,
+          "id" : 3,
           "name" : "Trinity R - Douglas City to Junction City"
         }
       }, {
@@ -208,8 +176,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 6,
+          "geometryId" : 17264,
+          "id" : 4,
           "name" : "Trinity R - Junction City to NF Trinity"
         }
       }, {
@@ -220,45 +188,13 @@
         }, {
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 1006,
-          "option" : 1
+          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 7,
-          "name" : "Shasta Lake"
-        }
-      }, {
-        "parameterOptionSettings" : [ {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 51,
-          "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 1
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 8,
-          "name" : "Keswick Reservoir"
-        }
-      }, {
-        "parameterOptionSettings" : [ {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 51,
-          "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 1
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 9,
-          "name" : "Whiskeytown Lake"
+          "geometryId" : 17264,
+          "id" : 5,
+          "name" : "Clear Creek below Whiskeytown"
         }
       }, {
         "parameterOptionSettings" : [ {
@@ -272,24 +208,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 10,
-          "name" : "Clear Cr - Whiskeytown to Sacramento R"
-        }
-      }, {
-        "parameterOptionSettings" : [ {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 51,
-          "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 11,
+          "geometryId" : 17264,
+          "id" : 6,
           "name" : "Sacramento R - Keswick to Clear Cr"
         }
       }, {
@@ -304,8 +224,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 12,
+          "geometryId" : 17264,
+          "id" : 7,
           "name" : "Sacramento R - Clear Cr to Jellys Ferry"
         }
       }, {
@@ -320,8 +240,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 13,
+          "geometryId" : 17264,
+          "id" : 8,
           "name" : "Sacramento R - Jellys Ferry to Bend Bridge"
         }
       }, {
@@ -336,8 +256,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 14,
+          "geometryId" : 17264,
+          "id" : 9,
           "name" : "Sacramento R - Bend Bridge to Red Bluff"
         }
       } ],
@@ -345,65 +265,9 @@
         "parameterSettings" : [ ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
+          "geometryId" : 17264,
           "id" : 0,
           "name" : "Default Region"
-        }
-      }, {
-        "parameterSettings" : [ {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 2,
-          "value" : 1.5
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 3,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 10,
-          "value" : 0.45
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1007,
-          "value" : 0.04
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 1,
-          "name" : "Trinity Lake"
-        }
-      }, {
-        "parameterSettings" : [ {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 2,
-          "value" : 1.5
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 3,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 10,
-          "value" : 0.45
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1005,
-          "value" : 5.0E-5
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 2,
-          "name" : "Lewiston Reservoir"
         }
       }, {
         "parameterSettings" : [ {
@@ -417,8 +281,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 3,
+          "geometryId" : 17264,
+          "id" : 1,
           "name" : "Trinity R - Lewiston to Limekiln Gulch"
         }
       }, {
@@ -433,8 +297,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 4,
+          "geometryId" : 17264,
+          "id" : 2,
           "name" : "Trinity R - Limekiln Gulch to Douglas City"
         }
       }, {
@@ -449,8 +313,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 5,
+          "geometryId" : 17264,
+          "id" : 3,
           "name" : "Trinity R - Douglas City to Junction City"
         }
       }, {
@@ -465,104 +329,28 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 6,
+          "geometryId" : 17264,
+          "id" : 4,
           "name" : "Trinity R - Junction City to NF Trinity"
         }
       }, {
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
           "parameterId" : 2,
           "value" : 4.0
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 3,
           "value" : 0.5
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1005,
-          "value" : 2.0E-4
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1007,
-          "value" : 0.04
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1009,
-          "value" : 15.24
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1010,
-          "value" : 100.0
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 7,
-          "name" : "Shasta Lake"
+          "geometryId" : 17264,
+          "id" : 5,
+          "name" : "Clear Creek below Whiskeytown"
         }
       }, {
         "parameterSettings" : [ {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 2,
-          "value" : 2.5
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 3,
-          "value" : 1.0
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 8,
-          "name" : "Keswick Reservoir"
-        }
-      }, {
-        "parameterSettings" : [ {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 2,
-          "value" : 4.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 3,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 10,
-          "value" : 0.45
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1005,
-          "value" : 5.0E-6
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1007,
-          "value" : 0.005
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 9,
-          "name" : "Whiskeytown Lake"
-        }
-      }, {
-        "parameterSettings" : [ {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
           "value" : 4.0
@@ -573,37 +361,13 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 10,
-          "name" : "Clear Cr - Whiskeytown to Sacramento R"
-        }
-      }, {
-        "parameterSettings" : [ {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 2,
-          "value" : 4.0
-        }, {
-          "@type" : "WQParameterSetting",
-          "parameterId" : 3,
-          "value" : 0.5
-        } ],
-        "regionRef" : {
-          "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 11,
+          "geometryId" : 17264,
+          "id" : 6,
           "name" : "Sacramento R - Keswick to Clear Cr"
         }
       }, {
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
           "parameterId" : 2,
           "value" : 4.0
         }, {
@@ -613,17 +377,13 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 12,
+          "geometryId" : 17264,
+          "id" : 7,
           "name" : "Sacramento R - Clear Cr to Jellys Ferry"
         }
       }, {
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
           "parameterId" : 2,
           "value" : 4.0
         }, {
@@ -633,17 +393,13 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 13,
+          "geometryId" : 17264,
+          "id" : 8,
           "name" : "Sacramento R - Jellys Ferry to Bend Bridge"
         }
       }, {
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
-          "parameterId" : 1,
-          "value" : 1.0
-        }, {
-          "@type" : "WQParameterSetting",
           "parameterId" : 2,
           "value" : 4.0
         }, {
@@ -653,8 +409,8 @@
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
-          "geometryId" : 1043,
-          "id" : 14,
+          "geometryId" : 17264,
+          "id" : 9,
           "name" : "Sacramento R - Bend Bridge to Red Bluff"
         }
       } ]
