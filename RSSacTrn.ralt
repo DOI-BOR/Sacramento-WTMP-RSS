@@ -1,7 +1,7 @@
 RssAlt Name=RSSacTrn
 RssAlt Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system.
 Version=1001
-ModifiedTime=1694131644407
+ModifiedTime=1694548366012
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
@@ -208,6 +208,8 @@ Hindcast=~S33;98;1;-Infinity
 InputTsVariant=WAT-Default-Deterministic,false
 InputTsVariant=WAT-ResSim_Script-Deterministic,false
 InputTsVariant=ResSim_Script-Deterministic,true
+InputTsVariant=WAT-ResSim Only-Deterministic,true
+InputTsVariant=ResSim Only-Deterministic,true
 UsingInflowFactors=false
 InflowFactorType=0
 GlobalInflowFactor=1.0
