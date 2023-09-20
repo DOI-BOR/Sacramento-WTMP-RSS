@@ -7,7 +7,7 @@ System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
 InputTSData Path=rss/RSSacTrnRv.fits
 OutputTSData Path=
-InputGVData Path=rss/RSSacTrnRv.igv
+InputGVData Path=
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -217,7 +217,6 @@ UsingInflowFactors=false
 InflowFactorType=0
 GlobalInflowFactor=1.0
 Hotstart Options
-Enabled:false
 CreateHotStart:false
 SaveAtEnd:false
 SaveAtLookback:false
