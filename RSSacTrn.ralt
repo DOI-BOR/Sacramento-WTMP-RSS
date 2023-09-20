@@ -1,7 +1,7 @@
 RssAlt Name=RSSacTrn
 RssAlt Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system.
 Version=1001
-ModifiedTime=1694548366012
+ModifiedTime=1695179736208
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
@@ -157,8 +157,8 @@ DssOutputDataBegin
 WriteAllDssOutput;true
 WriteAllInputDss;true
 DssOutputDataEnd
-Hindcast=~E9:F;14;0;-Infinity
-Hindcast=~E9:F;15;2;-Infinity
+Hindcast=~E9:F;14;2;-Infinity
+Hindcast=~E9:F;15;0;-Infinity
 Hindcast=~E13:F;41;0;-Infinity
 Hindcast=~E26:F;41;0;-Infinity
 Hindcast=~E27:F;41;0;-Infinity
@@ -167,8 +167,8 @@ Hindcast=~E164:F;41;0;-Infinity
 Hindcast=~E59:F;14;0;-Infinity
 Hindcast=~E59:F;15;2;-Infinity
 Hindcast=~E107:F;41;0;-Infinity
-Hindcast=~E127:F;14;0;-Infinity
-Hindcast=~E127:F;15;2;-Infinity
+Hindcast=~E127:F;14;2;-Infinity
+Hindcast=~E127:F;15;0;-Infinity
 Hindcast=~E159:F;96;1;0.0
 Hindcast=~E194:F;41;0;-Infinity
 Hindcast=~E198:F;41;1;0.0
@@ -180,8 +180,8 @@ Hindcast=~E148:F;41;0;-Infinity
 Hindcast=~E149:F;41;0;-Infinity
 Hindcast=~E153:F;41;0;-Infinity
 Hindcast=~E170:F;43;0;-Infinity
-Hindcast=~E181:F;14;0;-Infinity
-Hindcast=~E181:F;15;2;-Infinity
+Hindcast=~E181:F;14;2;-Infinity
+Hindcast=~E181:F;15;0;-Infinity
 Hindcast=~E185:F;96;1;0.0
 Hindcast=~E186:F;41;0;-Infinity
 Hindcast=~E187:F;41;1;0.0
@@ -200,21 +200,22 @@ Hindcast=~S17;98;1;0.0
 Hindcast=~S18;98;1;0.0
 Hindcast=~S20;98;1;0.0
 Hindcast=~S21;98;1;0.0
-Hindcast=~S25;98;1;-Infinity
-Hindcast=~S30;98;1;-Infinity
-Hindcast=~S31;98;1;-Infinity
-Hindcast=~S32;98;1;-Infinity
-Hindcast=~S33;98;1;-Infinity
+Hindcast=~S25;98;1;0.0
+Hindcast=~S30;98;1;0.0
+Hindcast=~S31;98;1;0.0
+Hindcast=~S32;98;1;0.0
+Hindcast=~S33;98;1;0.0
 InputTsVariant=WAT-Default-Deterministic,false
 InputTsVariant=WAT-ResSim_Script-Deterministic,false
 InputTsVariant=ResSim_Script-Deterministic,true
 InputTsVariant=WAT-ResSim Only-Deterministic,true
 InputTsVariant=ResSim Only-Deterministic,true
+InputTsVariant=WAT-ResSim Only,true
+InputTsVariant=ResSim Only,true
 UsingInflowFactors=false
 InflowFactorType=0
 GlobalInflowFactor=1.0
 Hotstart Options
-Enabled:false
 CreateHotStart:false
 SaveAtEnd:false
 SaveAtLookback:false
@@ -234,10 +235,10 @@ Constituent=UpperSac-Trinity Temperature
 ConstituentId=871
 InitialConditions=Uncertainty_IC
 InitialConditionsId=14641
-BoundaryConditions=UpperSac-Trinity BC
-BoundaryConditionsId=1044
-MetData=UpperSac-Trinity 7-station
-MetDataId=873
+BoundaryConditions=UpperSac-Trinity BC forecast
+BoundaryConditionsId=17814
+MetData=UpperSac-Trinity 7-station forecast
+MetDataId=17849
 DispersionCoef=UpperSac-Trinity DZ
 DispersionCoefId=1046
 Parameters=UpperSacTrinity - P1

@@ -6,7 +6,7 @@
   "Index" : 1043,
   "Name" : "UpperSac-Geom",
   "crossSectionManagerId" : 868,
-  "lastModifiedTime" : 1694132322037,
+  "lastModifiedTime" : 1695072134301,
   "networkId" : 1,
   "rssWqGeometry" : {
     "@type" : "RssWQGeometry",
@@ -1438,6 +1438,522 @@
         }
       }, {
         "key" : 873,
+        "value" : {
+          "@type" : "WQStationSetAssignments",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 4,
+              "name" : "Trinity Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 6
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 6,
+              "name" : "Lewiston Reservoir",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 2
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 9,
+              "name" : "Whiskeytown Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 8
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 10,
+              "name" : "LEW to LWS",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 15,
+              "name" : "Lewiston WQ to Trinity R at Rush Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 16,
+              "name" : "Whiskeytown to South Fork",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 21,
+              "name" : "Trinity R at Rush Cr to Trinity R at Grass Valley Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 22,
+              "name" : "South Fork to Sacramento R",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 26,
+              "name" : "Trinity R at Grass Valley Cr to Limekiln Gulch",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 29,
+              "name" : "Shasta Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 5
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 30,
+              "name" : "Limekiln Gulch to Trinity R at Indian Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 33,
+              "name" : "Keswick Reservoir",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 5
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 34,
+              "name" : "Trinity R at Indian Cr to Trinity R at Weaver Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 37,
+              "name" : "Keswick  to ACID dam",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 38,
+              "name" : "Trinity R at Weaver Cr to Trinity River at Reading Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 41,
+              "name" : "Trinity River at Reading Cr to Douglas City",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 42,
+              "name" : "ACID dam to Sacramento R + Clear Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 45,
+              "name" : "Douglas City to Trinity R at Browns Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 46,
+              "name" : "Clear Cr to Cow Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 49,
+              "name" : "Trinity R at Browns Cr to Junction City",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 50,
+              "name" : "Cow Cr to Cottonwood Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 53,
+              "name" : "Junction City to Trinity R at Canyon Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 54,
+              "name" : "Cottonwood Cr to Battle Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 57,
+              "name" : "Trinity R at Canyon Cr to Helena",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 58,
+              "name" : "Battle Cr to Jellys Ferry Bridge",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 61,
+              "name" : "Helena to Trinity R at NF Trinity R",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 62,
+              "name" : "Jellys Ferry Bridge to Bend Bridge",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 65,
+              "name" : "Bend Bridge to Red Bluff Diversion",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          } ]
+        }
+      }, {
+        "key" : 17813,
+        "value" : {
+          "@type" : "WQStationSetAssignments",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 4,
+              "name" : "Trinity Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 6
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 6,
+              "name" : "Lewiston Reservoir",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 2
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 9,
+              "name" : "Whiskeytown Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 8
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 10,
+              "name" : "LEW to LWS",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 15,
+              "name" : "Lewiston WQ to Trinity R at Rush Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 16,
+              "name" : "Whiskeytown to South Fork",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 21,
+              "name" : "Trinity R at Rush Cr to Trinity R at Grass Valley Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 22,
+              "name" : "South Fork to Sacramento R",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 26,
+              "name" : "Trinity R at Grass Valley Cr to Limekiln Gulch",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 29,
+              "name" : "Shasta Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 5
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 30,
+              "name" : "Limekiln Gulch to Trinity R at Indian Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 33,
+              "name" : "Keswick Reservoir",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : 5
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 34,
+              "name" : "Trinity R at Indian Cr to Trinity R at Weaver Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 37,
+              "name" : "Keswick  to ACID dam",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 38,
+              "name" : "Trinity R at Weaver Cr to Trinity River at Reading Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 41,
+              "name" : "Trinity River at Reading Cr to Douglas City",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 42,
+              "name" : "ACID dam to Sacramento R + Clear Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 45,
+              "name" : "Douglas City to Trinity R at Browns Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 46,
+              "name" : "Clear Cr to Cow Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 49,
+              "name" : "Trinity R at Browns Cr to Junction City",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 50,
+              "name" : "Cow Cr to Cottonwood Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 53,
+              "name" : "Junction City to Trinity R at Canyon Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 54,
+              "name" : "Cottonwood Cr to Battle Cr",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 57,
+              "name" : "Trinity R at Canyon Cr to Helena",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 58,
+              "name" : "Battle Cr to Jellys Ferry Bridge",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 61,
+              "name" : "Helena to Trinity R at NF Trinity R",
+              "type" : "REACH_1D"
+            },
+            "value" : 7
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 62,
+              "name" : "Jellys Ferry Bridge to Bend Bridge",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 65,
+              "name" : "Bend Bridge to Red Bluff Diversion",
+              "type" : "REACH_1D"
+            },
+            "value" : 4
+          } ]
+        }
+      }, {
+        "key" : 17849,
         "value" : {
           "@type" : "WQStationSetAssignments",
           "entries" : [ {

@@ -1,13 +1,13 @@
 {
-  "index" : 1044,
-  "name" : "UpperSac-Trinity BC",
+  "index" : 17814,
+  "name" : "UpperSac-Trinity BC forecast",
   "description" : "",
   "Description" : "",
-  "Index" : 1044,
-  "Name" : "UpperSac-Trinity BC",
+  "Index" : 17814,
+  "Name" : "UpperSac-Trinity BC forecast",
   "constituentSetId" : 871,
   "geometryId" : 1043,
-  "lastModifiedTime" : 1695168069626,
+  "lastModifiedTime" : 1695146529799,
   "set" : {
     "boundaryConditions" : [ {
       "@type" : "WQBoundaryCondition",
@@ -30,15 +30,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Canyon Ck-Temp-Water/Temp-Water//1Day/236.106.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -67,15 +67,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Canyon Ck-Temp-Water/Temp-Water//1Day/236.106.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -163,15 +163,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity Lake/Swift Creek-Inflow WTemp/Temp-Water//1Day/231.9.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -200,15 +200,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity Lake/Swift Creek-Inflow WTemp/Temp-Water//1Day/231.9.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -296,15 +296,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Rush Ck-Temp-Water/Temp-Water//1Day/236.100.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -333,15 +333,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Rush Ck-Temp-Water/Temp-Water//1Day/236.100.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -586,23 +586,19 @@
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "OptionType" : "AVERAGE_RECIEVING_WATER",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
         "description" : "",
         "name" : "Ambient Value"
       } ],
       "selectedDataSource" : {
-        "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/",
-        "Interpreted Units" : "\u00B0C",
+        "@type" : "AmbientData",
+        "OptionType" : "AVERAGE_RECIEVING_WATER",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
+        "compType" : 2,
         "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "name" : "Ambient Value"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -626,15 +622,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Sac River/Cottonwood Creek-WTemp/Temp-Water//1Hour/237.35.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "degF"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -663,15 +659,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Sac River/Cottonwood Creek-WTemp/Temp-Water//1Hour/237.35.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "degF"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -695,15 +691,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Sac River/Cow Creek-WTemp/Temp-Water//1Hour/237.33.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/COW_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "degF"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -732,15 +728,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Sac River/Cow Creek-WTemp/Temp-Water//1Hour/237.33.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/COW_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "degF"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -764,15 +760,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Shasta Lake/Pit R. Branch-Temp/Temp-Water//1Hour/230.6.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Pit-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -801,15 +797,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Shasta Lake/Pit R. Branch-Temp/Temp-Water//1Hour/230.6.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Pit-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -833,15 +829,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity Lake/EF Trinity River-Inflow WTemp/Temp-Water//1Day/231.7.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -870,15 +866,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity Lake/EF Trinity River-Inflow WTemp/Temp-Water//1Day/231.7.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -902,15 +898,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Sac River/Battle Creek-WTemp/Temp-Water//1Hour/237.36.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "degF"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -939,15 +935,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Sac River/Battle Creek-WTemp/Temp-Water//1Hour/237.36.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "degF"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -971,15 +967,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Reading Ck-Temp-Water/Temp-Water//1Day/236.104.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1008,15 +1004,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Reading Ck-Temp-Water/Temp-Water//1Day/236.104.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1040,15 +1036,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Browns Ck-Temp-Water/Temp-Water//1Day/236.105.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1077,15 +1073,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Browns Ck-Temp-Water/Temp-Water//1Day/236.105.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1109,15 +1105,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity Lake/Trinity River-Inflow WTemp/Temp-Water//1Day/231.6.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1146,15 +1142,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity Lake/Trinity River-Inflow WTemp/Temp-Water//1Day/231.6.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1369,15 +1365,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Shasta Lake/McCloud River-Temp/Temp-Water//1Hour/230.8.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-McCloud-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1406,15 +1402,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Shasta Lake/McCloud River-Temp/Temp-Water//1Hour/230.8.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-McCloud-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1567,15 +1563,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Grass Valley Ck-Temp-Water/Temp-Water//1Day/236.101.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1604,15 +1600,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Grass Valley Ck-Temp-Water/Temp-Water//1Day/236.101.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1636,15 +1632,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Weaver Ck-Temp-Water/Temp-Water//1Day/236.103.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1673,15 +1669,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Weaver Ck-Temp-Water/Temp-Water//1Day/236.103.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1705,15 +1701,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Indian Ck-Temp-Water/Temp-Water//1Day/236.102.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1742,15 +1738,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity River/Indian Ck-Temp-Water/Temp-Water//1Day/236.102.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1902,15 +1898,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Shasta Lake/Sacramento R. a Delta-Temp/Temp-Water//1Hour/230.9.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1939,15 +1935,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Shasta Lake/Sacramento R. a Delta-Temp/Temp-Water//1Hour/230.9.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -2035,15 +2031,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR SAC.-SHASTA LAKE/SULANHARAS CREEK-TEMP/TEMP-WATER//1HOUR/230.7.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -2072,15 +2068,15 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR SAC.-SHASTA LAKE/SULANHARAS CREEK-TEMP/TEMP-WATER//1HOUR/230.7.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -2104,15 +2100,15 @@
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity Lake/Stuart Fork-Inflow WTemp/Temp-Water//1Day/231.8.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -2141,20 +2137,20 @@
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR Sac.-Trinity Lake/Stuart Fork-Inflow WTemp/Temp-Water//1Day/231.8.50.1.1/",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
         "Interpreted Units" : "\u00B0C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
+        "compType" : 1,
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "F"
+        "units" : "deg C"
       },
       "units" : [ "\u00B0C" ]
     } ],
     "description" : "",
-    "name" : "UpperSac-Trinity BC"
+    "name" : "UpperSac-Trinity BC forecast"
   },
   "version" : 1
 }

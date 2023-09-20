@@ -1,85 +1,85 @@
-ModifiedTime=1694193541849
+ModifiedTime=1695179859394
 GVDataSet Name=RSSacTrn-WAT-ResSim Only-Deterministic
 Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system. (GV Data Set for WAT-ResSim Only-Deterministic)
 
 GVRecord=TIME_SERIES
 GVRecord Name=TCD_target
 GVRecord ID=1
-GVRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
-GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1WEEK/USBR_BLESSED/
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=SHASTA
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDU_gates_open
 GVRecord ID=5
-GVRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_U OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=TOTAL TCD_U OPEN
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDM_gates_open
 GVRecord ID=6
-GVRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_M OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=TOTAL TCD_M OPEN
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDL_gates_open
 GVRecord ID=7
-GVRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_L OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=TOTAL TCD_L OPEN
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDS_gates_open
 GVRecord ID=8
-GVRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=TOTAL TCD_S OPEN
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Whiskeytown_target
 GVRecord ID=19
-GVRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
-GVRecord DssPathname=/USBR/WHI DAM OUTFLOW/TEMP-WATER//1HOUR/GRAB2PROCESSED-LINEARINTERP-MERGED/
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=WHI DAM OUTFLOW
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Whiskeytown_Upper_Gate_open
 GVRecord ID=22
-GVRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
-GVRecord DssPathname=/USBR/WHISKEYTOWN_UPPER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=WHISKEYTOWN_UPPER_OUTLET_GATE
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Whiskeytown_Lower_Gate_open
 GVRecord ID=23
-GVRecord DssFilename=shared/WTMP_UpperSac_Historical.dss
-GVRecord DssPathname=/USBR/WHISKEYTOWN_LOWER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=WHISKEYTOWN_LOWER_OUTLET_GATE
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 

@@ -9,7 +9,7 @@ TSRecord Name=Shasta - Pit River Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/Pit R. Branch-Flow/Flow//1Day/228-230.6.125.1.1/
+TSRecord DssPathname=/MR Sac.-Shasta Lake/Pit R. Branch-Flow/Flow//1Day/230.6.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -18,7 +18,7 @@ TSRecord Name=Shasta - Squaw Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/Squaw Creek-Flow/Flow//1Day/228-230.7.125.1.1/
+TSRecord DssPathname=/MR SAC.-SHASTA LAKE/SULANHARAS CREEK-FLOW/FLOW//1DAY/230.7.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -27,7 +27,7 @@ TSRecord Name=Shasta - McCloud River Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/McCloud River-Flow/Flow//1Day/228-230.8.125.1.1/
+TSRecord DssPathname=/MR Sac.-Shasta Lake/McCloud River-Flow/Flow//1Day/230.8.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -36,7 +36,7 @@ TSRecord Name=Shasta - Sacramento River Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/Sacramento R. a Delta-Flow/Flow//1Day/228-230.9.125.1.1/
+TSRecord DssPathname=/MR Sac.-Shasta Lake/Sacramento R. a Delta-Flow/Flow//1Day/230.9.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -54,7 +54,7 @@ TSRecord Name=Trinity - Trinity River Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/Trinity River-Inflow/Flow//1Day/225-231.6.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity Lake/Trinity River-Inflow/Flow//1Day/231.6.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -81,7 +81,7 @@ TSRecord Name=Cow Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/11374000 Cow Creek-Dly Flow/Flow//1Day/248-237.61.125.2.1/
+TSRecord DssPathname=/MR Sac.-Sac River/11374000 Cow Creek-Dly Flow/Flow//1Day/237.61.125.2.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -90,7 +90,7 @@ TSRecord Name=Cottonwood Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/11374000 Cow Creek-Dly Flow/Flow//1Day/248-237.61.125.2.1/
+TSRecord DssPathname=/MR Sac.-Sac River/11374000 Cow Creek-Dly Flow/Flow//1Day/237.61.125.2.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -135,7 +135,7 @@ TSRecord Name=Trinity - East Fork Trinity Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/EF Trinity River-Inflow/Flow//1Day/225-231.7.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity Lake/EF Trinity River-Inflow/Flow//1Day/231.7.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -144,7 +144,7 @@ TSRecord Name=Trinity - Swift Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/Swift Creek-Inflow/Flow//1Day/225-231.9.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity Lake/Swift Creek-Inflow/Flow//1Day/231.9.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -153,7 +153,7 @@ TSRecord Name=Trinity - Stuart Fork Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/Stuart Fork-Inflow/Flow//1Day/225-231.8.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity Lake/Stuart Fork-Inflow/Flow//1Day/231.8.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -162,7 +162,7 @@ TSRecord Name=Battle Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/11376550 Battle Creek-Dly Flow/Flow//1Day/248-237.63.125.2.1/
+TSRecord DssPathname=/MR Sac.-Sac River/11376550 Battle Creek-Dly Flow/Flow//1Day/237.63.125.2.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -225,7 +225,7 @@ TSRecord Name=Rush Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Rush Ck-Flow/Flow//1Day/250-236.100.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity River/Rush Ck-Flow/Flow//1Day/236.100.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -234,7 +234,7 @@ TSRecord Name=Grass Valley Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Grass Valley Ck-Flow/Flow//1Day/250-236.101.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity River/Grass Valley Ck-Flow/Flow//1Day/236.101.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -243,7 +243,7 @@ TSRecord Name=Indian Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Indian Ck-Flow/Flow//1Day/250-236.102.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity River/Indian Ck-Flow/Flow//1Day/236.102.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -252,7 +252,7 @@ TSRecord Name=Weaver Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Weaver Ck-Flow/Flow//1Day/250-236.103.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity River/Weaver Ck-Flow/Flow//1Day/236.103.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -261,7 +261,7 @@ TSRecord Name=Reading Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Reading Ck-Flow/Flow//1Day/250-236.104.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity River/Reading Ck-Flow/Flow//1Day/236.104.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -270,7 +270,7 @@ TSRecord Name=Browns Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Browns Ck-Flow/Flow//1Day/250-236.105.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity River/Browns Ck-Flow/Flow//1Day/236.105.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -279,7 +279,7 @@ TSRecord Name=Canyon Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Canyon Ck-Flow/Flow//1Day/250-236.106.125.1.1/
+TSRecord DssPathname=/MR Sac.-Trinity River/Canyon Ck-Flow/Flow//1Day/236.106.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -306,7 +306,7 @@ TSRecord Name=~E13:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Spill Release/Flow//1Hour/228-230.11.125.4.1/
+TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Spill Release/Flow//1Hour/230.11.125.4.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -342,7 +342,7 @@ TSRecord Name=~E164:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Generation Release/Flow//1Hour/228-230.11.125.3.1/
+TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Generation Release/Flow//1Hour/230.11.125.3.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -351,7 +351,7 @@ TSRecord Name=PowerPlant-Outflow
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Generation Release/Flow//1Hour/228-230.11.125.3.1/
+TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Generation Release/Flow//1Hour/230.11.125.3.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -387,7 +387,7 @@ TSRecord Name=Specified Spillway Flow
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Spill Release/Flow//1Hour/228-230.11.125.4.1/
+TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Spill Release/Flow//1Hour/230.11.125.4.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -495,7 +495,7 @@ TSRecord Name=~E148:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Spill Release Hrly/Flow//1Hour/226-232.12.125.5.1/
+TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Spill Release Hrly/Flow//1Hour/232.12.125.5.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -504,7 +504,7 @@ TSRecord Name=~E149:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Fish Hatchery Release/Flow//1Hour/226-232.12.125.1.1/
+TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Fish Hatchery Release/Flow//1Hour/232.12.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -540,7 +540,7 @@ TSRecord Name=Lewiston Gated Spillway
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Spill Release Hrly/Flow//1Hour/226-232.12.125.5.1/
+TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Spill Release Hrly/Flow//1Hour/232.12.125.5.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -549,7 +549,7 @@ TSRecord Name=Lewiston Fish Hatchery
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Fish Hatchery Release/Flow//1Hour/226-232.12.125.1.1/
+TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Fish Hatchery Release/Flow//1Hour/232.12.125.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -603,7 +603,7 @@ TSRecord Name=Bypass Release
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/TRN-Outlet Release G3/Flow//1Hour/225-231.5.125.9.1/
+TSRecord DssPathname=/MR Sac.-Trinity Lake/TRN-Outlet Release G3/Flow//1Hour/231.5.125.9.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -612,7 +612,7 @@ TSRecord Name=Trinity Calibration Spillway Flow
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/TRN-Spill Release/Flow//1Hour/225-231.5.125.3.1/
+TSRecord DssPathname=/MR Sac.-Trinity Lake/TRN-Spill Release/Flow//1Hour/231.5.125.3.1/
 TSRecord InputPosition=0
 TSRecord End=
 
