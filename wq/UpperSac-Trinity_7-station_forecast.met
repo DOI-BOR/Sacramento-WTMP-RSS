@@ -87,7 +87,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
         "DSS File Path" : "shared\\forecast_SacTrn_ResSim_Pre-Process.dss",
         "Interpreted Units" : "deg C"
       }, {
@@ -129,7 +129,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
         "DSS File Path" : "shared\\forecast_SacTrn_ResSim_Pre-Process.dss",
         "Interpreted Units" : "Dewpt T, deg C"
       }, {
@@ -171,7 +171,7 @@
         "description" : "",
         "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "W/m2"
       }, {
@@ -224,7 +224,7 @@
         "description" : "",
         "units" : "tenths",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -272,7 +272,7 @@
         "description" : "",
         "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "m/s"
       }, {
@@ -380,7 +380,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "deg C"
       }, {
@@ -422,7 +422,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Dewpt T, deg C"
       }, {
@@ -464,7 +464,7 @@
         "description" : "",
         "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "W/m2"
       }, {
@@ -517,7 +517,7 @@
         "description" : "",
         "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -565,7 +565,7 @@
         "description" : "",
         "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "m/s"
       }, {
@@ -673,7 +673,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "deg C"
       }, {
@@ -715,7 +715,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Dewpt T, deg C"
       }, {
@@ -757,7 +757,7 @@
         "description" : "",
         "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "W/m2"
       }, {
@@ -810,7 +810,7 @@
         "description" : "",
         "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -858,7 +858,7 @@
         "description" : "",
         "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "m/s"
       }, {
@@ -966,7 +966,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "deg C"
       }, {
@@ -1008,7 +1008,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Dewpt T, deg C"
       }, {
@@ -1050,7 +1050,7 @@
         "description" : "",
         "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "W/m2"
       }, {
@@ -1103,7 +1103,7 @@
         "description" : "",
         "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1151,7 +1151,7 @@
         "description" : "",
         "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "m/s"
       }, {
@@ -1259,7 +1259,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "deg C"
       }, {
@@ -1301,7 +1301,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Dewpt T, deg C"
       }, {
@@ -1343,7 +1343,7 @@
         "description" : "",
         "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "W/m2"
       }, {
@@ -1396,7 +1396,7 @@
         "description" : "",
         "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1444,7 +1444,7 @@
         "description" : "",
         "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "m/s"
       }, {
@@ -1552,7 +1552,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "deg C"
       }, {
@@ -1594,7 +1594,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Dewpt T, deg C"
       }, {
@@ -1636,7 +1636,7 @@
         "description" : "",
         "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "W/m2"
       }, {
@@ -1689,7 +1689,7 @@
         "description" : "",
         "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1737,7 +1737,7 @@
         "description" : "",
         "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "m/s"
       }, {
@@ -1845,7 +1845,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "deg C"
       }, {
@@ -1887,7 +1887,7 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Dewpt T, deg C"
       }, {
@@ -1929,7 +1929,7 @@
         "description" : "",
         "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "W/m2"
       }, {
@@ -1982,7 +1982,7 @@
         "description" : "",
         "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -2030,7 +2030,7 @@
         "description" : "",
         "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "Interpreted Units" : "m/s"
       }, {
