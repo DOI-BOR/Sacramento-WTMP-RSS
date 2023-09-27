@@ -1,13 +1,13 @@
 RssAlt Name=RSSacTrnRv
 RssAlt Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used.
 Version=1001
-ModifiedTime=1695168016747
+ModifiedTime=1695786049964
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
 InputTSData Path=rss/RSSacTrnRv.fits
 OutputTSData Path=
-InputGVData Path=
+InputGVData Path=rss/RSSacTrnRv.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -217,6 +217,7 @@ UsingInflowFactors=false
 InflowFactorType=0
 GlobalInflowFactor=1.0
 Hotstart Options
+Enabled:false
 CreateHotStart:false
 SaveAtEnd:false
 SaveAtLookback:false

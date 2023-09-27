@@ -392,15 +392,6 @@ TSRecord InputPosition=0
 TSRecord End=
 
 TSRecord=43
-TSRecord Name=~E59:F
-TSRecord VariableId=14
-TSRecord ParamName=Elev
-TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=/USBR/KESWICK/ELEVATION//1HOUR/USBR_BLESSED/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=44
 TSRecord Name=~E107:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
@@ -409,7 +400,7 @@ TSRecord DssPathname=/SACRAMENTO RIVER/SHASTA LAKE/FLOW-KESWICK-CFS//1Month/SACT
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=45
+TSRecord=44
 TSRecord Name=Keswick Release
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -418,7 +409,7 @@ TSRecord DssPathname=/SACRAMENTO RIVER/SHASTA LAKE/FLOW-KESWICK-CFS//1Month/SACT
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=46
+TSRecord=45
 TSRecord Name=~E127:F
 TSRecord VariableId=15
 TSRecord ParamName=Stor
@@ -427,7 +418,7 @@ TSRecord DssPathname=/CLEAR CREEK/WHISKEYTOWN LAKE/STORAGE//1Month/SACTRN_BC_SCR
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=47
+TSRecord=46
 TSRecord Name=~E194:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
@@ -436,7 +427,7 @@ TSRecord DssPathname=/CLEAR CREEK/WHISKEYTOWN DAM/FLOW-RELEASE//1HOUR/SACTRN_BC_
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=48
+TSRecord=47
 TSRecord Name=~E157:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
@@ -445,7 +436,7 @@ TSRecord DssPathname=/CLEAR CREEK/WHISKEYTOWN LAKE/FLOW-DIVERSION-SPRING-CR//1Ho
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=49
+TSRecord=48
 TSRecord Name=Spring CR Diversion
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -454,7 +445,7 @@ TSRecord DssPathname=/CLEAR CREEK/WHISKEYTOWN LAKE/FLOW-DIVERSION-SPRING-CR//1Ho
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=50
+TSRecord=49
 TSRecord Name=Whiskeytown Calibration Spillway Flow
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -463,7 +454,7 @@ TSRecord DssPathname=//ZERO-BY-DAY/FLOW-ZERO//1Day/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=51
+TSRecord=50
 TSRecord Name=Whiskeytown Outlet Release
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -472,16 +463,7 @@ TSRecord DssPathname=/CLEAR CREEK/WHISKEYTOWN DAM/FLOW-RELEASE//1HOUR/SACTRN_BC_
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=52
-TSRecord Name=~E142:F
-TSRecord VariableId=14
-TSRecord ParamName=Elev
-TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=/USBR_CLEANED_FULLLINEARINTERP/LEW_ELEVATION_PROCESSED/ELEV//1HOUR/GRAB2/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=53
+TSRecord=51
 TSRecord Name=~E147:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
@@ -490,7 +472,7 @@ TSRecord DssPathname=//ZERO-BY-DAY/FLOW-ZERO//1Day/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=54
+TSRecord=52
 TSRecord Name=~E148:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
@@ -499,7 +481,7 @@ TSRecord DssPathname=/TRINITY RIVER/LEWISTON RESERVOIR/FLOW-RIVER RELEASE//1Mont
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=55
+TSRecord=53
 TSRecord Name=~E149:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
@@ -508,7 +490,7 @@ TSRecord DssPathname=//ZERO-BY-DAY/FLOW-ZERO//1Day/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=56
+TSRecord=54
 TSRecord Name=~E153:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
@@ -517,7 +499,7 @@ TSRecord DssPathname=/CLEAR CREEK/CARR POWERHOUSE/FLOW-RELEASE//1Hour/SACTRN_BC_
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=57
+TSRecord=55
 TSRecord Name=Lewiston CC Diversion Tunnel
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -526,7 +508,7 @@ TSRecord DssPathname=/CLEAR CREEK/CARR POWERHOUSE/FLOW-RELEASE//1Hour/SACTRN_BC_
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=58
+TSRecord=56
 TSRecord Name=Lewiston PH
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -535,7 +517,7 @@ TSRecord DssPathname=//ZERO-BY-DAY/FLOW-ZERO//1Day/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=59
+TSRecord=57
 TSRecord Name=Lewiston Gated Spillway
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -544,7 +526,7 @@ TSRecord DssPathname=/TRINITY RIVER/LEWISTON RESERVOIR/FLOW-RIVER RELEASE//1Mont
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=60
+TSRecord=58
 TSRecord Name=Lewiston Fish Hatchery
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -553,7 +535,7 @@ TSRecord DssPathname=//ZERO-BY-DAY/FLOW-ZERO//1Day/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=61
+TSRecord=59
 TSRecord Name=~E170:F
 TSRecord VariableId=43
 TSRecord ParamName=Flow-DIVERSION
@@ -562,7 +544,7 @@ TSRecord DssPathname=/ANDERSON-COTTONWOOD CANAL/SHARON AVE (11370700)/FLOW//1Day
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=62
+TSRecord=60
 TSRecord Name=Anderson-Cottonwood Canal
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -571,7 +553,7 @@ TSRecord DssPathname=/ANDERSON-COTTONWOOD CANAL/SHARON AVE (11370700)/FLOW//1Day
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=63
+TSRecord=61
 TSRecord Name=~E181:F
 TSRecord VariableId=15
 TSRecord ParamName=Stor
@@ -580,7 +562,7 @@ TSRecord DssPathname=/TRINITY RIVER/TRINITY LAKE/STORAGE//1MON/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=64
+TSRecord=62
 TSRecord Name=~E186:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
@@ -589,7 +571,7 @@ TSRecord DssPathname=/TRINITY RIVER/TRINITY LAKE/FLOW-RELEASE//1Hour/SACTRN_BC_S
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=65
+TSRecord=63
 TSRecord Name=Trinity Powerhouse Release
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -598,7 +580,7 @@ TSRecord DssPathname=/TRINITY RIVER/TRINITY LAKE/FLOW-RELEASE//1Hour/SACTRN_BC_S
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=66
+TSRecord=64
 TSRecord Name=Bypass Release
 TSRecord VariableId=85
 TSRecord ParamName=
@@ -607,7 +589,7 @@ TSRecord DssPathname=//ZERO-BY-DAY/FLOW-ZERO//1Day/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=67
+TSRecord=65
 TSRecord Name=Trinity Calibration Spillway Flow
 TSRecord VariableId=85
 TSRecord ParamName=

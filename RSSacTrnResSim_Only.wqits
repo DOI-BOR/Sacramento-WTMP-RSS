@@ -346,15 +346,6 @@ TSRecord DssPathname=/MR Sac.-Trinity River/Rush Ck-Temp-Water/Temp-Water//1Day/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=39
-TSRecord Name=Spring Creek In - Spring Creek Debris Dam Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/
-TSRecord InputPosition=0
-TSRecord End=
-
 TSRecord=40
 TSRecord Name=Sacramento R + Cottonwood Cr - Cottonwood Creek Inflow
 TSRecord VariableId=2001
