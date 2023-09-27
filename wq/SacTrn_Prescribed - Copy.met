@@ -1,6 +1,6 @@
 {
-  "id" : 873,
-  "name" : "UpperSac-Trinity 7-station",
+  "id" : 19478,
+  "name" : "SacTrn_Prescribed",
   "description" : "",
   "metdatablending" : false,
   "stations" : [ {
@@ -82,7 +82,7 @@
       }, {
         "@type" : "DssData",
         "interpretedUnits" : "deg C",
-        "compType" : 2,
+        "compType" : 1,
         "name" : "DSS",
         "units" : "C",
         "description" : "",
@@ -224,7 +224,7 @@
         "units" : "tenths",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/236.9.129.1.1/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -239,8 +239,9 @@
         "topRow" : 0,
         "bottomRow" : 0
       }, {
-        "@type" : "ObservedData",
+        "@type" : "null",
         "name" : "Compute from ObsSW and Lat-Long",
+        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
@@ -517,7 +518,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/235.41.129.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -532,8 +533,9 @@
         "topRow" : 0,
         "bottomRow" : 0
       }, {
-        "@type" : "ObservedData",
+        "@type" : "null",
         "name" : "Compute from ObsSW and Lat-Long",
+        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
@@ -810,7 +812,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/235.41.129.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -825,8 +827,9 @@
         "topRow" : 0,
         "bottomRow" : 0
       }, {
-        "@type" : "ObservedData",
+        "@type" : "null",
         "name" : "Compute from ObsSW and Lat-Long",
+        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
@@ -1103,7 +1106,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/235.41.129.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1118,8 +1121,9 @@
         "topRow" : 0,
         "bottomRow" : 0
       }, {
-        "@type" : "ObservedData",
+        "@type" : "null",
         "name" : "Compute from ObsSW and Lat-Long",
+        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
@@ -1396,7 +1400,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/236.9.129.1.1/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1411,8 +1415,9 @@
         "topRow" : 0,
         "bottomRow" : 0
       }, {
-        "@type" : "ObservedData",
+        "@type" : "null",
         "name" : "Compute from ObsSW and Lat-Long",
+        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
@@ -1689,7 +1694,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/236.9.129.1.1/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1704,8 +1709,9 @@
         "topRow" : 0,
         "bottomRow" : 0
       }, {
-        "@type" : "ObservedData",
+        "@type" : "null",
         "name" : "Compute from ObsSW and Lat-Long",
+        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
@@ -1982,7 +1988,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/235.41.129.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1997,8 +2003,9 @@
         "topRow" : 0,
         "bottomRow" : 0
       }, {
-        "@type" : "ObservedData",
+        "@type" : "null",
         "name" : "Compute from ObsSW and Lat-Long",
+        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2

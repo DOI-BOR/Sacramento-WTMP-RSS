@@ -1,6 +1,6 @@
 {
-  "id" : 873,
-  "name" : "UpperSac-Trinity 7-station",
+  "id" : 19478,
+  "name" : "SacTrn_Prescribed",
   "description" : "",
   "metdatablending" : false,
   "stations" : [ {
@@ -224,7 +224,7 @@
         "units" : "tenths",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/236.9.129.1.1/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -517,7 +517,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/235.41.129.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -810,7 +810,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/235.41.129.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1103,7 +1103,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/235.41.129.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1396,7 +1396,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/236.9.129.1.1/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1689,7 +1689,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/236.9.129.1.1/",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
@@ -1982,7 +1982,7 @@
         "units" : "FRAC",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/235.41.129.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
         "Interpreted Units" : "Fraction, 0-1"
       }, {
