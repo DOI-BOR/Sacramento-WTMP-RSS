@@ -1,4 +1,4 @@
-ModifiedTime=1695785695727
+ModifiedTime=1695843536681
 GVDataSet Name=RSSacTrn-WAT-ResSim Only-Deterministic
 Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system. (GV Data Set for WAT-ResSim Only-Deterministic)
 
@@ -8,7 +8,7 @@ GVRecord ID=1
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=SHASTA
+GVRecord LinkedLocation=ZERO-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -28,7 +28,7 @@ GVRecord ID=6
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=FIVE-BY-HOUR
+GVRecord LinkedLocation=ZERO-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -58,7 +58,7 @@ GVRecord ID=19
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=SHASTA
+GVRecord LinkedLocation=ZERO-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -68,7 +68,7 @@ GVRecord ID=22
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=ONE-BY-HOUR
+GVRecord LinkedLocation=ZERO-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
