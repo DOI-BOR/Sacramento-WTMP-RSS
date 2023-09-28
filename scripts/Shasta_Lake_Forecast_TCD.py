@@ -1034,7 +1034,7 @@ def backRouteWQTarget(network, currentRuntimestep, wqTarget, tcdMinFlow, riverOu
         t = (1 - kesFraction) * keswickResAvgTemp + kesFraction * outletTemp
         # Route downstream
         for k in range(travTimeSteps):
-            futureRts.setStep(currentRuntimestep.getStep() + k)
+            futureRts.setStep(min(currentRuntimestep.getStep() + k,currentRuntimestep.getTotalNumSteps() - 1))
             eqTemp = getGVTemperature(network, futureRts, globalVarNameEquilibTemp)
             deltaTemp = (eqTemp - t) * exchCoef
             t += deltaTemp
