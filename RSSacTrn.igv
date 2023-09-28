@@ -1,4 +1,4 @@
-ModifiedTime=1695853438838
+ModifiedTime=1695931997322
 GVDataSet Name=RSSacTrn
 Description=(Global Variable Data Set)
 
@@ -78,6 +78,26 @@ GVRecord ID=23
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=36
+GVRecord DssFilename=runs/ResSim-F18-04-test/ResSim-F18-04-test.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrn-ResSim-Default/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=KRDD_Equilibrium_Temp
+GVRecord ID=38
+GVRecord DssFilename=shared/forecast_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-EQUIL//1HOUR/SACTRN_BC_SCRIPT/
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End

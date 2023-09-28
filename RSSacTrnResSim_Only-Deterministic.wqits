@@ -4,168 +4,6 @@ Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-
 _type=0
 ParentPath=null
 ParentClass=null
-TSRecord=36
-TSRecord Name=Trinity R at Canyon Cr - Canyon Cr Local Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Canyon Ck-Temp-Water/Temp-Water//1Day/251-236.106.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=37
-TSRecord Name=Swift Creek in - Trinity - Swift Creek Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/Swift Creek-Inflow WTemp/Temp-Water//1Day/225-231.9.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=38
-TSRecord Name=Trinity R at Rush Cr - Rush Cr Local Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Rush Ck-Temp-Water/Temp-Water//1Day/251-236.100.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=40
-TSRecord Name=Sacramento R + Cottonwood Cr - Cottonwood Creek Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/Cottonwood Creek-WTemp/Temp-Water//1Hour/248-237.35.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=41
-TSRecord Name=Sacramento R + Cow Cr - Cow Creek Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/Cow Creek-WTemp/Temp-Water//1Hour/248-237.33.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=42
-TSRecord Name=Pit River in - Shasta - Pit River Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/Pit R. Branch-Temp/Temp-Water//1Hour/228-230.6.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=43
-TSRecord Name=East Fork Trinity in - Trinity - East Fork Trinity Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/EF Trinity River-Inflow WTemp/Temp-Water//1Day/225-231.7.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=44
-TSRecord Name=Sacramento R + Battle Cr - Battle Creek Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/Battle Creek-WTemp/Temp-Water//1Hour/248-237.36.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=45
-TSRecord Name=Trinity River at Reading Cr - Reading Cr Local Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Reading Ck-Temp-Water/Temp-Water//1Day/251-236.104.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=46
-TSRecord Name=Trinity R at Browns Cr - Browns Cr Local Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Browns Ck-Temp-Water/Temp-Water//1Day/251-236.105.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=47
-TSRecord Name=Trinity In - Trinity - Trinity River Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/Trinity River-Inflow WTemp/Temp-Water//1Day/225-231.6.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=48
-TSRecord Name=McCloud River in - Shasta - McCloud River Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/McCloud River-Temp/Temp-Water//1Hour/228-230.8.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=49
-TSRecord Name=Trinity R at Grass Valley Cr - Grass Valley Cr Local Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Grass Valley Ck-Temp-Water/Temp-Water//1Day/251-236.101.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=50
-TSRecord Name=Trinity R at Weaver Cr - Weaver Cr Local Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Weaver Ck-Temp-Water/Temp-Water//1Day/251-236.103.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=51
-TSRecord Name=Trinity R at Indian Cr - Indian Cr Local Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Indian Ck-Temp-Water/Temp-Water//1Day/251-236.102.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=52
-TSRecord Name=Sacramento River in - Shasta - Sacramento River Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/Sacramento R. a Delta-Temp/Temp-Water//1Hour/228-230.9.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=53
-TSRecord Name=Squaw Creek in - Shasta - Squaw Creek Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Shasta Lake/Squaw Creek-Temp/Temp-Water//1Hour/228-230.7.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=54
-TSRecord Name=Stuart Fork in - Trinity - Stuart Fork Inflow
-TSRecord VariableId=2001
-TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity Lake/Stuart Fork-Inflow WTemp/Temp-Water//1Day/225-231.8.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
 TSRecord=18
 TSRecord Name=Lewiston Met-Air Temperature
 TSRecord VariableId=-2147483648
@@ -329,29 +167,29 @@ TSRecord InputPosition=0
 TSRecord End=
 
 TSRecord=36
-TSRecord Name=Shasta Met-Cloudiness
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Cloudiness
-TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/
+TSRecord Name=Trinity R at Canyon Cr - Canyon Cr Local Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity River/Canyon Ck-Temp-Water/Temp-Water//1Day/251-236.106.50.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
 TSRecord=37
-TSRecord Name=Shasta Met-Wind Speed
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Wind Speed
-TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/
+TSRecord Name=Swift Creek in - Trinity - Swift Creek Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity Lake/Swift Creek-Inflow WTemp/Temp-Water//1Day/225-231.9.50.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
 TSRecord=38
-TSRecord Name=Trinity Center-Air Temperature
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Air Temperature
-TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/
+TSRecord Name=Trinity R at Rush Cr - Rush Cr Local Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity River/Rush Ck-Temp-Water/Temp-Water//1Day/251-236.100.50.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -361,6 +199,168 @@ TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=40
+TSRecord Name=Sacramento R + Cottonwood Cr - Cottonwood Creek Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Sac River/Cottonwood Creek-WTemp/Temp-Water//1Hour/248-237.35.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=41
+TSRecord Name=Sacramento R + Cow Cr - Cow Creek Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Sac River/Cow Creek-WTemp/Temp-Water//1Hour/248-237.33.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=42
+TSRecord Name=Pit River in - Shasta - Pit River Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Shasta Lake/Pit R. Branch-Temp/Temp-Water//1Hour/228-230.6.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=43
+TSRecord Name=East Fork Trinity in - Trinity - East Fork Trinity Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity Lake/EF Trinity River-Inflow WTemp/Temp-Water//1Day/225-231.7.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=44
+TSRecord Name=Sacramento R + Battle Cr - Battle Creek Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Sac River/Battle Creek-WTemp/Temp-Water//1Hour/248-237.36.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=45
+TSRecord Name=Trinity River at Reading Cr - Reading Cr Local Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity River/Reading Ck-Temp-Water/Temp-Water//1Day/251-236.104.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=46
+TSRecord Name=Trinity R at Browns Cr - Browns Cr Local Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity River/Browns Ck-Temp-Water/Temp-Water//1Day/251-236.105.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=47
+TSRecord Name=Trinity In - Trinity - Trinity River Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity Lake/Trinity River-Inflow WTemp/Temp-Water//1Day/225-231.6.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=48
+TSRecord Name=McCloud River in - Shasta - McCloud River Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Shasta Lake/McCloud River-Temp/Temp-Water//1Hour/228-230.8.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=49
+TSRecord Name=Trinity R at Grass Valley Cr - Grass Valley Cr Local Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity River/Grass Valley Ck-Temp-Water/Temp-Water//1Day/251-236.101.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=50
+TSRecord Name=Trinity R at Weaver Cr - Weaver Cr Local Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity River/Weaver Ck-Temp-Water/Temp-Water//1Day/251-236.103.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=51
+TSRecord Name=Trinity R at Indian Cr - Indian Cr Local Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity River/Indian Ck-Temp-Water/Temp-Water//1Day/251-236.102.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=52
+TSRecord Name=Sacramento River in - Shasta - Sacramento River Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Shasta Lake/Sacramento R. a Delta-Temp/Temp-Water//1Hour/228-230.9.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=53
+TSRecord Name=Squaw Creek in - Shasta - Squaw Creek Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Shasta Lake/Squaw Creek-Temp/Temp-Water//1Hour/228-230.7.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=54
+TSRecord Name=Stuart Fork in - Trinity - Stuart Fork Inflow
+TSRecord VariableId=2001
+TSRecord ParamName=Water Temperature
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity Lake/Stuart Fork-Inflow WTemp/Temp-Water//1Day/225-231.8.50.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=37
+TSRecord Name=Shasta Met-Cloudiness
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Cloudiness
+TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=38
+TSRecord Name=Shasta Met-Wind Speed
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Wind Speed
+TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=39
+TSRecord Name=Trinity Center-Air Temperature
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Air Temperature
+TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
