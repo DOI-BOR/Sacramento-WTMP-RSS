@@ -1,4 +1,4 @@
-ModifiedTime=1695940651568
+ModifiedTime=1696007566908
 GVDataSet Name=RSSacTrn-WAT-ResSim Only-Deterministic
 Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system. (GV Data Set for WAT-ResSim Only-Deterministic)
 
@@ -85,7 +85,7 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=runs/ResSim-F18-04-test/ResSim-F18-04-test.dss
+GVRecord DssFilename=runs/ResSim-F18-03/ResSim-F18-03.dss
 GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrn-WAT-ResSim Only-Deterministic/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
