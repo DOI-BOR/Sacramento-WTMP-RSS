@@ -459,7 +459,7 @@ TSRecord Name=Whiskeytown Met-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=J:\Ben\git\WTMP_SacramentoTrinity_working\shared\DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/235.40.51.1.1/
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/
 TSRecord InputPosition=0
 TSRecord End=
 

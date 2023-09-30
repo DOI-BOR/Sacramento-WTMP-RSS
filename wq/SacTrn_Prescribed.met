@@ -422,9 +422,9 @@
         "units" : "C",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/235.40.51.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "Interpreted Units" : "Relative Humidity, %"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -715,9 +715,9 @@
         "units" : "C",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/235.40.51.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "Interpreted Units" : "Relative Humidity, %"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1008,9 +1008,9 @@
         "units" : "C",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/235.40.51.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "Interpreted Units" : "Relative Humidity, %"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1887,9 +1887,9 @@
         "units" : "C",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/235.40.51.1.1/",
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/",
         "DSS File Path" : "shared\\DMS_SacTrnMet.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "Interpreted Units" : "Relative Humidity, %"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",

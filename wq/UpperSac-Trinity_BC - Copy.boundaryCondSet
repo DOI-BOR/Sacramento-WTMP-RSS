@@ -38,7 +38,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -75,7 +75,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -171,7 +171,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -208,7 +208,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -304,7 +304,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -341,7 +341,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -634,7 +634,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "degF"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -671,7 +671,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "degF"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -703,7 +703,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "degF"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -740,7 +740,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "degF"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -772,7 +772,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -809,7 +809,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -841,7 +841,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -878,7 +878,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -910,7 +910,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "degF"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -947,7 +947,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "degF"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -979,7 +979,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1016,7 +1016,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1048,7 +1048,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1085,7 +1085,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1117,7 +1117,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1154,7 +1154,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1377,7 +1377,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1414,7 +1414,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1575,7 +1575,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1612,7 +1612,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1644,7 +1644,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1681,7 +1681,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1713,7 +1713,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1750,7 +1750,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1910,7 +1910,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -1947,7 +1947,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -2043,7 +2043,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -2080,7 +2080,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -2112,7 +2112,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       }, {
         "@type" : "ExcelData",
         "availableUnits" : [ ],
@@ -2149,7 +2149,7 @@
         "description" : "",
         "interpretedUnits" : "\u00B0C",
         "name" : "DSS",
-        "units" : "C"
+        "units" : "F"
       },
       "units" : [ "\u00B0C" ]
     } ],
