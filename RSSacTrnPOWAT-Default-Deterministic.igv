@@ -1,4 +1,4 @@
-ModifiedTime=1695850033673
+ModifiedTime=1696038022567
 GVDataSet Name=RSSacTrnPO-WAT-Default-Deterministic
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
 
@@ -78,6 +78,26 @@ GVRecord ID=23
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/WHISKEYTOWN_LOWER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
 GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=36
+GVRecord DssFilename=rss/RSSacTrnPOWAT-Default-Deterministic_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnPO-WAT-Default-Deterministic/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=KRDD_Equilibrium_Temp
+GVRecord ID=38
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=//ZEROS/FLOW//1HOUR//
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End
