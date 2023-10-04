@@ -6,8 +6,7 @@
   "Index" : 1046,
   "Name" : "UpperSac-Trinity DZ",
   "geometryId" : 1043,
-  "lastModifiedTime" : 1689782691837,
-  "ressimVersion" : "CWMS3.2.1-04/24/2020",
+  "lastModifiedTime" : 1696305062910,
   "set" : {
     "@type" : "WQDispersionCoefSettings",
     "id" : 0,
@@ -250,9 +249,9 @@
           "munkAndersonData" : {
             "@type" : "MunkAndersonDispersionData",
             "acoeff" : 0.1,
-            "bcoeff" : 0.75,
+            "bcoeff" : 0.65,
             "ccoeff" : 0.05,
-            "dzmin" : 4.0E-5
+            "dzmin" : 7.5E-5
           },
           "stabilityData" : {
             "@type" : "StabilityDispersionData",

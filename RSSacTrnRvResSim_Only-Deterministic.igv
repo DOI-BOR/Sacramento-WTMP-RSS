@@ -1,13 +1,13 @@
-ModifiedTime=1696306053628
-GVDataSet Name=RSSacTrnPO-WAT-Default-Deterministic
-Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
+ModifiedTime=1696267958790
+GVDataSet Name=RSSacTrnRv-ResSim Only-Deterministic
+Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used. (GV Data Set for ResSim Only-Deterministic)
 
 GVRecord=TIME_SERIES
 GVRecord Name=TCD_target
 GVRecord ID=1
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=true
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End
@@ -78,26 +78,6 @@ GVRecord ID=23
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/WHISKEYTOWN_LOWER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
-GVRecord End
-
-GVRecord=SCALAR
-GVRecord Name=Downstream_Control_Loc
-GVRecord ID=36
-GVRecord DssFilename=rss/RSSacTrnPOWAT-Default-Deterministic_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnPO-WAT-Default-Deterministic/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=KRDD_Equilibrium_Temp
-GVRecord ID=38
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=//ZEROS/FLOW//1HOUR//
-GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End
