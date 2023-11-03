@@ -1,4 +1,4 @@
-ModifiedTime=1696306053628
+ModifiedTime=1697812063236
 GVDataSet Name=RSSacTrnPO-WAT-Default-Deterministic
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
 
@@ -65,8 +65,8 @@ GVRecord End
 GVRecord=TIME_SERIES
 GVRecord Name=Whiskeytown_Upper_Gate_open
 GVRecord ID=22
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/WHISKEYTOWN_UPPER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=//ONES/GATE//1HOUR/ONES/
 GVRecord DataLocation=true
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
@@ -75,8 +75,8 @@ GVRecord End
 GVRecord=TIME_SERIES
 GVRecord Name=Whiskeytown_Lower_Gate_open
 GVRecord ID=23
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/WHISKEYTOWN_LOWER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=//ZEROS/GATE//1HOUR/ZEROS/
 GVRecord DataLocation=true
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
@@ -95,8 +95,8 @@ GVRecord End
 GVRecord=TIME_SERIES
 GVRecord Name=KRDD_Equilibrium_Temp
 GVRecord ID=38
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=//ZEROS/FLOW//1HOUR//
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=//ZEROS/TEMP-WATER//1HOUR/ZEROS/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=

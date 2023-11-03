@@ -1,4 +1,4 @@
-ModifiedTime=1695850069451
+ModifiedTime=1697222478147
 GVDataSet Name=RSSacTrnRv-W2 5-Res Plus Rivers
 Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used. (GV Data Set for W2 5-Res Plus Rivers)
 
@@ -78,6 +78,26 @@ GVRecord ID=23
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/WHISKEYTOWN_LOWER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
 GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=36
+GVRecord DssFilename=rss/RSSacTrnRvW2_5-Res_Plus_Rivers_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnRv-W2 5-Res Plus Rivers/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=KRDD_Equilibrium_Temp
+GVRecord ID=38
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=//ZEROS/FLOW//1DAY//
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End

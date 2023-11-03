@@ -985,9 +985,14 @@ def getKeswickAvgTemp(network, currentRuntimestep):
 #######################################################################################################
 # Backcalculate the temperature required at Shasta Dam from the downstream temperature target
 def backRouteWQTarget(network, currentRuntimestep, wqTarget, tcdMinFlow, riverOutletFlow):
+
+
     
     # Get the downstream control location
     loc = getDSControlLoc(network)
+
+    loc=0
+    
     if loc == 0:  # At Shasta Dam - no backrouting needed
         return wqTarget
     elif loc == 1:  # Highway 44

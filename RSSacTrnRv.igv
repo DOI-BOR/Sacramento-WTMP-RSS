@@ -1,4 +1,4 @@
-ModifiedTime=1696439077205
+ModifiedTime=1699034352184
 GVDataSet Name=RSSacTrnPO
 Description=(Global Variable Data Set)
 
@@ -78,6 +78,26 @@ GVRecord ID=23
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/WHISKEYTOWN_LOWER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
 GVRecord DataLocation=true
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=36
+GVRecord DssFilename=runs/RiversOnly/RiversOnly.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnRv-ResSim-Default/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=KRDD_Equilibrium_Temp
+GVRecord ID=38
+GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+GVRecord DssPathname=//ZEROS/FLOW//1DAY//
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End

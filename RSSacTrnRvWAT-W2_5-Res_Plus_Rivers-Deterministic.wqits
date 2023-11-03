@@ -4,7 +4,7 @@ Description=Derived from RSSacTrnPO, but includes a rivers-only water quality ge
 _type=0
 ParentPath=null
 ParentClass=null
-TSRecord=13
+TSRecord=1
 TSRecord Name=Lewiston Met-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
@@ -13,7 +13,7 @@ TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TE
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=14
+TSRecord=2
 TSRecord Name=Lewiston Met-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
@@ -22,7 +22,7 @@ TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEW
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=15
+TSRecord=3
 TSRecord Name=Lewiston Met-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
@@ -31,7 +31,7 @@ TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=16
+TSRecord=4
 TSRecord Name=Lewiston Met-Cloudiness
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Cloudiness
@@ -40,7 +40,7 @@ TSRecord DssPathname=/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOU
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=17
+TSRecord=5
 TSRecord Name=Lewiston Met-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
@@ -49,7 +49,7 @@ TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/2
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=18
+TSRecord=6
 TSRecord Name=RDD Redding Airport-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
@@ -58,16 +58,16 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=19
+TSRecord=7
 TSRecord Name=RDD Redding Airport-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/235.40.51.1.1/
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=20
+TSRecord=8
 TSRecord Name=RDD Redding Airport-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
@@ -76,7 +76,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SO
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=21
+TSRecord=9
 TSRecord Name=RDD Redding Airport-Cloudiness
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Cloudiness
@@ -85,7 +85,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVE
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=22
+TSRecord=10
 TSRecord Name=RDD Redding Airport-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
@@ -94,7 +94,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1H
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=23
+TSRecord=11
 TSRecord Name=Sacramento R Met-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
@@ -103,16 +103,16 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=24
+TSRecord=12
 TSRecord Name=Sacramento R Met-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/235.40.51.1.1/
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=25
+TSRecord=13
 TSRecord Name=Sacramento R Met-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
@@ -121,7 +121,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SO
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=26
+TSRecord=14
 TSRecord Name=Sacramento R Met-Cloudiness
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Cloudiness
@@ -130,7 +130,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVE
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=27
+TSRecord=15
 TSRecord Name=Sacramento R Met-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
@@ -139,7 +139,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1H
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=28
+TSRecord=16
 TSRecord Name=Shasta Met-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
@@ -148,16 +148,16 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=29
+TSRecord=17
 TSRecord Name=Shasta Met-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/235.40.51.1.1/
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=30
+TSRecord=18
 TSRecord Name=Shasta Met-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
@@ -166,7 +166,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SO
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=31
+TSRecord=19
 TSRecord Name=Shasta Met-Cloudiness
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Cloudiness
@@ -175,7 +175,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVE
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=32
+TSRecord=20
 TSRecord Name=Shasta Met-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
@@ -184,7 +184,7 @@ TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1H
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=33
+TSRecord=21
 TSRecord Name=Trinity Center-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
@@ -193,7 +193,7 @@ TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TE
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=34
+TSRecord=22
 TSRecord Name=Trinity Center-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
@@ -202,7 +202,7 @@ TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEW
 TSRecord InputPosition=0
 TSRecord End=
 
-TSRecord=35
+TSRecord=23
 TSRecord Name=Trinity Center-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
@@ -211,12 +211,120 @@ TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1
 TSRecord InputPosition=0
 TSRecord End=
 
+TSRecord=24
+TSRecord Name=Trinity Center-Cloudiness
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Cloudiness
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=25
+TSRecord Name=Trinity Center-Wind Speed
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Wind Speed
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/232.5.133.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=26
+TSRecord Name=Trinity R Met-Air Temperature
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Air Temperature
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/232.6.53.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=27
+TSRecord Name=Trinity R Met-Humidity
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Humidity
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/232.6.51.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=28
+TSRecord Name=Trinity R Met-Shortwave Radiation
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Shortwave Radiation
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/232.5.135.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=29
+TSRecord Name=Trinity R Met-Cloudiness
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Cloudiness
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=30
+TSRecord Name=Trinity R Met-Wind Speed
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Wind Speed
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/232.5.133.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=31
+TSRecord Name=Whiskeytown Met-Air Temperature
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Air Temperature
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/235.40.53.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=32
+TSRecord Name=Whiskeytown Met-Humidity
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Humidity
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=33
+TSRecord Name=Whiskeytown Met-Shortwave Radiation
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Shortwave Radiation
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/235.41.135.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=34
+TSRecord Name=Whiskeytown Met-Cloudiness
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Cloudiness
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
+TSRecord=35
+TSRecord Name=Whiskeytown Met-Wind Speed
+TSRecord VariableId=-2147483648
+TSRecord ParamName=Wind Speed
+TSRecord DssFilename=shared/DMS_SacTrnMet.dss
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/235.40.133.1.1/
+TSRecord InputPosition=0
+TSRecord End=
+
 TSRecord=36
 TSRecord Name=Trinity R at Indian Cr - Indian Cr Local Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Indian Ck-Temp-Water/Temp-Water/01Jan2015/1Day/236.102.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R INDIAN CK/TEMP-WATER//1DAY/WATERCOURSE/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -224,8 +332,8 @@ TSRecord=37
 TSRecord Name=Trinity R at Rush Cr - Rush Cr Local Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Rush Ck-Temp-Water/Temp-Water/01Jan2015/1Day/236.100.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R RUSH CK/TEMP-WATER//1DAY/WATERCOURSE/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -233,8 +341,8 @@ TSRecord=38
 TSRecord Name=Sacramento R + Battle Cr - Battle Creek Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/Battle Creek-WTemp/Temp-Water/01Dec2015/1Hour/237.36.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/BATTLE_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -251,8 +359,8 @@ TSRecord=40
 TSRecord Name=Trinity River at Reading Cr - Reading Cr Local Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Reading Ck-Temp-Water/Temp-Water/01Jan2015/1Day/236.104.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R READING CK/TEMP-WATER//1DAY/WATERCOURSE/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -260,8 +368,8 @@ TSRecord=41
 TSRecord Name=Trinity R at Weaver Cr - Weaver Cr Local Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Weaver Ck-Temp-Water/Temp-Water/01Jan2015/1Day/236.103.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R WEAVER CK/TEMP-WATER//1DAY/WATERCOURSE/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -269,8 +377,8 @@ TSRecord=42
 TSRecord Name=Trinity R at Grass Valley Cr - Grass Valley Cr Local Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Grass Valley Ck-Temp-Water/Temp-Water/01Jan2015/1Day/236.101.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1DAY/WATERCOURSE/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -279,7 +387,7 @@ TSRecord Name=Lewiston Dam
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
 TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=//LEW-Out-FWA/TEMP-WATER//1HOUR/W2 5-Res P:2018:Scripting-OutputLink_W2-Lewiston/
+TSRecord DssPathname=/USBR/LEWISTON_HATCHERY-C/TEMP-WATER/01JAN2000/1HOUR/GROSS_INTERP_PLACEHOLDER/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -287,8 +395,8 @@ TSRecord=44
 TSRecord Name=Sacramento R + Cow Cr - Cow Creek Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/Cow Creek-WTemp/Temp-Water/01Dec2015/1Hour/237.33.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/COW_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -305,8 +413,8 @@ TSRecord=46
 TSRecord Name=Sacramento R + Cottonwood Cr - Cottonwood Creek Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Sac River/Cottonwood Creek-WTemp/Temp-Water/01Dec2015/1Hour/237.35.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/COTTONWOOD_CREEK/TEMP-IN//1MON/USBR_BLESSED/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -314,8 +422,8 @@ TSRecord=47
 TSRecord Name=Trinity R at Canyon Cr - Canyon Cr Local Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Canyon Ck-Temp-Water/Temp-Water/01Jan2015/1Day/236.106.50.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R CANYON CK/TEMP-WATER//1DAY/WATERCOURSE/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -323,116 +431,8 @@ TSRecord=48
 TSRecord Name=Trinity R at Browns Cr - Browns Cr Local Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/Browns Ck-Temp-Water/Temp-Water/01Jan2015/1Day/236.105.50.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=36
-TSRecord Name=Trinity Center-Cloudiness
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Cloudiness
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=37
-TSRecord Name=Trinity Center-Wind Speed
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Wind Speed
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/232.5.133.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=38
-TSRecord Name=Trinity R Met-Air Temperature
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Air Temperature
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/232.6.53.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=39
-TSRecord Name=Trinity R Met-Humidity
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Humidity
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/232.6.51.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=40
-TSRecord Name=Trinity R Met-Shortwave Radiation
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Shortwave Radiation
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/232.5.135.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=41
-TSRecord Name=Trinity R Met-Cloudiness
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Cloudiness
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER-FRAC//1DAY/236.9.129.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=42
-TSRecord Name=Trinity R Met-Wind Speed
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Wind Speed
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/232.5.133.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=43
-TSRecord Name=Whiskeytown Met-Air Temperature
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Air Temperature
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/235.40.53.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=44
-TSRecord Name=Whiskeytown Met-Humidity
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Humidity
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-/RELHUM-FROM-AT-DP//1HOUR/235.40.53.1.1-DERIVED/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=45
-TSRecord Name=Whiskeytown Met-Shortwave Radiation
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Shortwave Radiation
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/235.41.135.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=46
-TSRecord Name=Whiskeytown Met-Cloudiness
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Cloudiness
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER-FRAC//1HOUR/235.41.129.1.1/
-TSRecord InputPosition=0
-TSRecord End=
-
-TSRecord=47
-TSRecord Name=Whiskeytown Met-Wind Speed
-TSRecord VariableId=-2147483648
-TSRecord ParamName=Wind Speed
-TSRecord DssFilename=shared/DMS_SacTrnMet.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/235.40.133.1.1/
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/USBR/TRINITY R BROWNS CK/TEMP-WATER//1DAY/WATERCOURSE/
 TSRecord InputPosition=0
 TSRecord End=
 
