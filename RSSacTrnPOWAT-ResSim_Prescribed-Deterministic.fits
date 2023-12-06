@@ -108,7 +108,7 @@ TSRecord Name=Shasta Balance Flow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
-TSRecord DssPathname=/SHASTA RESERVOIR/BALANCE FLOW/FLOW//1DAY/DERIVED/
+TSRecord DssPathname=/SHASTA RESERVOIR/BALANCE FLOW/FLOW//1Day/DERIVED/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -296,8 +296,8 @@ TSRecord=32
 TSRecord Name=~E9:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
-TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=/USBR/SHASTA/ELEVATION//1HOUR/USBR_BLESSED/
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Elevation/Elev//1Hour/230.11.145.2.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -422,8 +422,8 @@ TSRecord=46
 TSRecord Name=~E127:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
-TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=/USBR+23HRSHIFT/WHI_ELEVATION/ELEV//1HOUR/GRAB2-MANUAL-FILTER-INTERPFILL/
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Whiskeytown Lake/WHI-Reservoir Elevation/Elev//1Hour/233.14.145.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -476,8 +476,8 @@ TSRecord=52
 TSRecord Name=~E142:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
-TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=/USBR_CLEANED_FULLLINEARINTERP/LEW_ELEVATION_PROCESSED/ELEV//1HOUR/GRAB2/
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Lewiston Res./LEW-Reservoir Elevation Hrly/Elev//1Hour/232.12.145.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -575,8 +575,8 @@ TSRecord=63
 TSRecord Name=~E181:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
-TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=/USBR_RECLEANED_FULLLINEARINTERP/TRN_ELEVATION/ELEV//1HOUR/GRAB2/
+TSRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+TSRecord DssPathname=/MR Sac.-Trinity Lake/TRN-Reservoir Elevation/Elev//1Hour/231.5.145.1.1/
 TSRecord InputPosition=0
 TSRecord End=
 
