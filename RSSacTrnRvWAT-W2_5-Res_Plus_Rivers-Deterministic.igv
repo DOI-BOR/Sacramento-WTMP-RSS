@@ -95,10 +95,10 @@ GVRecord End
 GVRecord=TIME_SERIES
 GVRecord Name=KRDD_Equilibrium_Temp
 GVRecord ID=38
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=//ZEROS/FLOW//1DAY//
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=/MR Sac.-Clear Cr. to Sac R./KRDD/Temp-Equil//1Day/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
+GVRecord LinkedLocation=KRDD
 GVRecord LinkedModel=DSS File
 GVRecord End
 
