@@ -1,5 +1,26 @@
 PDCDataSet Name=RSSacTrnPO-ResSim Prescribed-Deterministic
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
-Supports Calibration/Historical ResSim model runs with prescribed operations across the historical data period for the 5-reservoir and 2-river (+Clear Creek) UpperSac system. (PDC Data Set for ResSim Prescribed-Deterministic)
+
+PDCRecord=29
+PDCRecordImpl Name=Shasta Lake-Sediment_Temperature
+PDCRecordImpl Description=Constituent:Sediment_Temperature, Reservoir:Shasta Lake
+PDCRecordImpl Units=°C
+PDCRecordImpl Input=true
+PDCRecordImpl VariableId=2002
+PDCRecordImpl ParamName=Sediment Temperature
+PDCRecordImpl DssFilename=J:\Ben\git\WTMP_SacramentoTrinity_working\shared\shasta_profs_watercourse_all.dss
+PDCRecordImpl DssPathname=//Shasta/DEPTH-TEMP//2016-01-20//
+PDCRecordImpl End=
+
+PDCRecord=29
+PDCRecordImpl Name=Shasta Lake-Water_Temperature
+PDCRecordImpl Description=Constituent:Water_Temperature, Reservoir:Shasta Lake
+PDCRecordImpl Units=°C
+PDCRecordImpl Input=true
+PDCRecordImpl VariableId=2001
+PDCRecordImpl ParamName=Water Temperature
+PDCRecordImpl DssFilename=J:\Ben\git\WTMP_SacramentoTrinity_working\shared\shasta_profs_watercourse_all.dss
+PDCRecordImpl DssPathname=//Shasta Lake/DEPTH-TEMP//2016-01-20//
+PDCRecordImpl End=
 
 

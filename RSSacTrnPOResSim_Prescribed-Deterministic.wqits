@@ -1,6 +1,5 @@
 TSDataSet Name=RSSacTrnPO-ResSim Prescribed-Deterministic
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
-Supports Calibration/Historical ResSim model runs with prescribed operations across the historical data period for the 5-reservoir and 2-river (+Clear Creek) UpperSac system. (TS Data Set for ResSim Prescribed-Deterministic)
 
 _type=0
 ParentPath=null

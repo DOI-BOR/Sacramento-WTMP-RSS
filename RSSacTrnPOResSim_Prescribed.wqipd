@@ -1,4 +1,4 @@
-PDCDataSet Name=RSSacTrnPO-WAT-ResSim Prescribed-Deterministic
+PDCDataSet Name=RSSacTrnPO-ResSim Prescribed
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
 
 PDCRecord=29
@@ -8,8 +8,8 @@ PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2002
 PDCRecordImpl ParamName=Sediment Temperature
-PDCRecordImpl DssFilename=shared/shasta_profs_watercourse_all.dss
-PDCRecordImpl DssPathname=//Shasta Lake/DEPTH-TEMP//2006-05-04//
+PDCRecordImpl DssFilename=J:\Ben\git\WTMP_SacramentoTrinity_working\shared\shasta_profs_watercourse_all.dss
+PDCRecordImpl DssPathname=//Shasta/DEPTH-TEMP//2016-01-20//
 PDCRecordImpl End=
 
 PDCRecord=29
@@ -19,8 +19,8 @@ PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
-PDCRecordImpl DssFilename=shared/shasta_profs_watercourse_all.dss
-PDCRecordImpl DssPathname=//Shasta Lake/DEPTH-TEMP//2006-05-04//
+PDCRecordImpl DssFilename=J:\Ben\git\WTMP_SacramentoTrinity_working\shared\shasta_profs_watercourse_all.dss
+PDCRecordImpl DssPathname=//Shasta Lake/DEPTH-TEMP//2016-01-20//
 PDCRecordImpl End=
 
 

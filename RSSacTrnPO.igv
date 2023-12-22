@@ -1,4 +1,4 @@
-ModifiedTime=1701446995776
+ModifiedTime=1703111233142
 GVDataSet Name=RSSacTrnPO
 Description=(Global Variable Data Set)
 
@@ -85,7 +85,7 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=runs/ResSim_Prescribed-Prescribed2014/ResSim_Prescribed-Prescribed2014.dss
+GVRecord DssFilename=rss/RSSacTrnPO_igv.dss
 GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnPO-ResSim-Default/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
