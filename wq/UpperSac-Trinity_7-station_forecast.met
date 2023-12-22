@@ -4,54 +4,58 @@
   "description" : "",
   "metdatablending" : false,
   "stations" : [ {
-    "name" : "Lewiston Met",
     "active" : true,
+    "description" : "",
     "geometry" : {
       "type" : "Point",
       "coordinates" : [ 1699089.6830725598, 1.4795019742212119E7 ]
     },
+    "id" : 2,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : true,
+    "name" : "Lewiston Met",
+    "nearestMeridian" : 0,
+    "observed" : false,
+    "referenceElevation" : 0.0,
     "variables" : [ {
       "@type" : "AtmosphericPressure",
-      "selectedDataSourceName" : "Constant Value",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
-        "units" : "atm",
         "description" : "",
+        "units" : "atm",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
         "value" : 0.91
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "",
-        "compType" : 0,
         "name" : "DSS",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
         "DSS Path" : "",
-        "DSS File Path" : null,
-        "Interpreted Units" : ""
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ElevationData",
         "name" : "Elevation",
@@ -59,10 +63,10 @@
         "availableUnits" : [ "ft", "m" ],
         "compType" : 2,
         "elevation" : 0.0
-      } ]
+      } ],
+      "selectedDataSourceName" : "Constant Value"
     }, {
       "@type" : "AirTemperature",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -72,39 +76,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "deg C",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
+        "compType" : 2,
         "DSS File Path" : "shared\\forecast_SacTrn_ResSim_Pre-Process.dss",
-        "Interpreted Units" : "deg C"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Humidity",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -114,39 +117,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Dewpt T, deg C",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
+        "compType" : 2,
         "DSS File Path" : "shared\\forecast_SacTrn_ResSim_Pre-Process.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "ShortWaveRadiation",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -156,50 +158,49 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "W/m2",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "W/m2",
         "description" : "",
+        "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "W/m2"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "LatLongData",
-        "latitude" : 0.0,
-        "longitude" : 0.0,
-        "nearestMeridian" : 0,
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
         "dustCoefficient" : 0.04,
-        "interval" : 60.0
-      } ]
+        "interval" : 60.0,
+        "latitude" : 0.0,
+        "longitude" : 0.0,
+        "nearestMeridian" : 0
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Cloudiness",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -209,45 +210,44 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Fraction, 0-1",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "tenths",
         "description" : "",
+        "units" : "tenths",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Fraction, 0-1"
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ObservedData",
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
-      } ]
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "WindSpeed",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -257,94 +257,90 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "m/s",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "m/s",
         "description" : "",
+        "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "m/s"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
-    } ],
-    "id" : 2,
-    "description" : "",
-    "longitude" : 0.0,
-    "latitude" : 0.0,
-    "nearestMeridian" : 0,
-    "referenceElevation" : 0.0,
-    "observed" : false,
-    "metStation" : true
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
   }, {
-    "name" : "RDD Redding Airport",
     "active" : true,
+    "description" : "",
     "geometry" : {
       "type" : "Point",
       "coordinates" : [ 1836676.7128546566, 1.471073644145215E7 ]
     },
+    "id" : 3,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : true,
+    "name" : "RDD Redding Airport",
+    "nearestMeridian" : 0,
+    "observed" : false,
+    "referenceElevation" : 0.0,
     "variables" : [ {
       "@type" : "AtmosphericPressure",
-      "selectedDataSourceName" : "Constant Value",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
-        "units" : "atm",
         "description" : "",
+        "units" : "atm",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
         "value" : 0.97
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "",
-        "compType" : 0,
         "name" : "DSS",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
         "DSS Path" : "",
-        "DSS File Path" : null,
-        "Interpreted Units" : ""
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ElevationData",
         "name" : "Elevation",
@@ -352,10 +348,10 @@
         "availableUnits" : [ "ft", "m" ],
         "compType" : 2,
         "elevation" : 0.0
-      } ]
+      } ],
+      "selectedDataSourceName" : "Constant Value"
     }, {
       "@type" : "AirTemperature",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -365,39 +361,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "deg C"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Humidity",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -407,39 +402,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Dewpt T, deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "ShortWaveRadiation",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -449,50 +443,49 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "W/m2",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "W/m2",
         "description" : "",
+        "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "W/m2"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "LatLongData",
-        "latitude" : 0.0,
-        "longitude" : 0.0,
-        "nearestMeridian" : 0,
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
         "dustCoefficient" : 0.04,
-        "interval" : 60.0
-      } ]
+        "interval" : 60.0,
+        "latitude" : 0.0,
+        "longitude" : 0.0,
+        "nearestMeridian" : 0
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Cloudiness",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -502,45 +495,44 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Fraction, 0-1",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "FRAC",
         "description" : "",
+        "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Fraction, 0-1"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ObservedData",
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
-      } ]
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "WindSpeed",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -550,94 +542,90 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "m/s",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "m/s",
         "description" : "",
+        "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "m/s"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
-    } ],
-    "id" : 3,
-    "description" : "",
-    "longitude" : 0.0,
-    "latitude" : 0.0,
-    "nearestMeridian" : 0,
-    "referenceElevation" : 0.0,
-    "observed" : false,
-    "metStation" : true
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
   }, {
-    "name" : "Sacramento R Met",
     "active" : true,
+    "description" : "",
     "geometry" : {
       "type" : "Point",
       "coordinates" : [ 1877454.790197891, 1.461170800271761E7 ]
     },
+    "id" : 4,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : true,
+    "name" : "Sacramento R Met",
+    "nearestMeridian" : 0,
+    "observed" : false,
+    "referenceElevation" : 0.0,
     "variables" : [ {
       "@type" : "AtmosphericPressure",
-      "selectedDataSourceName" : "Constant Value",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
-        "units" : "atm",
         "description" : "",
+        "units" : "atm",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
         "value" : 0.97
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "",
-        "compType" : 0,
         "name" : "DSS",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
         "DSS Path" : "",
-        "DSS File Path" : null,
-        "Interpreted Units" : ""
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ElevationData",
         "name" : "Elevation",
@@ -645,10 +633,10 @@
         "availableUnits" : [ "ft", "m" ],
         "compType" : 2,
         "elevation" : 0.0
-      } ]
+      } ],
+      "selectedDataSourceName" : "Constant Value"
     }, {
       "@type" : "AirTemperature",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -658,39 +646,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "deg C"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Humidity",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -700,39 +687,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Dewpt T, deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "ShortWaveRadiation",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -742,50 +728,49 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "W/m2",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "W/m2",
         "description" : "",
+        "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "W/m2"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "LatLongData",
-        "latitude" : 0.0,
-        "longitude" : 0.0,
-        "nearestMeridian" : 0,
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
         "dustCoefficient" : 0.04,
-        "interval" : 60.0
-      } ]
+        "interval" : 60.0,
+        "latitude" : 0.0,
+        "longitude" : 0.0,
+        "nearestMeridian" : 0
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Cloudiness",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -795,45 +780,44 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Fraction, 0-1",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "FRAC",
         "description" : "",
+        "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Fraction, 0-1"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ObservedData",
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
-      } ]
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "WindSpeed",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -843,94 +827,90 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "m/s",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "m/s",
         "description" : "",
+        "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "m/s"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
-    } ],
-    "id" : 4,
-    "description" : "",
-    "longitude" : 0.0,
-    "latitude" : 0.0,
-    "nearestMeridian" : 0,
-    "referenceElevation" : 0.0,
-    "observed" : false,
-    "metStation" : true
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
   }, {
-    "name" : "Shasta Met",
     "active" : true,
+    "description" : "",
     "geometry" : {
       "type" : "Point",
       "coordinates" : [ 1796062.7042259397, 1.4792048375982564E7 ]
     },
+    "id" : 5,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : true,
+    "name" : "Shasta Met",
+    "nearestMeridian" : 0,
+    "observed" : false,
+    "referenceElevation" : 0.0,
     "variables" : [ {
       "@type" : "AtmosphericPressure",
-      "selectedDataSourceName" : "Constant Value",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
-        "units" : "atm",
         "description" : "",
+        "units" : "atm",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
         "value" : 0.97
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "",
-        "compType" : 0,
         "name" : "DSS",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
         "DSS Path" : "",
-        "DSS File Path" : null,
-        "Interpreted Units" : ""
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ElevationData",
         "name" : "Elevation",
@@ -938,10 +918,10 @@
         "availableUnits" : [ "ft", "m" ],
         "compType" : 2,
         "elevation" : 0.0
-      } ]
+      } ],
+      "selectedDataSourceName" : "Constant Value"
     }, {
       "@type" : "AirTemperature",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -951,39 +931,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "deg C"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Humidity",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -993,39 +972,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Dewpt T, deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "ShortWaveRadiation",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1035,50 +1013,49 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "W/m2",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "W/m2",
         "description" : "",
+        "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "W/m2"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "LatLongData",
-        "latitude" : 0.0,
-        "longitude" : 0.0,
-        "nearestMeridian" : 0,
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
         "dustCoefficient" : 0.04,
-        "interval" : 60.0
-      } ]
+        "interval" : 60.0,
+        "latitude" : 0.0,
+        "longitude" : 0.0,
+        "nearestMeridian" : 0
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Cloudiness",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1088,45 +1065,44 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Fraction, 0-1",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "FRAC",
         "description" : "",
+        "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Fraction, 0-1"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ObservedData",
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
-      } ]
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "WindSpeed",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1136,94 +1112,90 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "m/s",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "m/s",
         "description" : "",
+        "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "m/s"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
-    } ],
-    "id" : 5,
-    "description" : "",
-    "longitude" : 0.0,
-    "latitude" : 0.0,
-    "nearestMeridian" : 0,
-    "referenceElevation" : 0.0,
-    "observed" : false,
-    "metStation" : true
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
   }, {
-    "name" : "Trinity Center",
     "active" : true,
+    "description" : "",
     "geometry" : {
       "type" : "Point",
       "coordinates" : [ 1713636.7749852159, 1.4885876381680042E7 ]
     },
+    "id" : 6,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : true,
+    "name" : "Trinity Center",
+    "nearestMeridian" : 0,
+    "observed" : false,
+    "referenceElevation" : 0.0,
     "variables" : [ {
       "@type" : "AtmosphericPressure",
-      "selectedDataSourceName" : "Constant Value",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
-        "units" : "atm",
         "description" : "",
+        "units" : "atm",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
         "value" : 0.91
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "",
-        "compType" : 0,
         "name" : "DSS",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
         "DSS Path" : "",
-        "DSS File Path" : null,
-        "Interpreted Units" : ""
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ElevationData",
         "name" : "Elevation",
@@ -1231,10 +1203,10 @@
         "availableUnits" : [ "ft", "m" ],
         "compType" : 2,
         "elevation" : 0.0
-      } ]
+      } ],
+      "selectedDataSourceName" : "Constant Value"
     }, {
       "@type" : "AirTemperature",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1244,39 +1216,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "deg C"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Humidity",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1286,39 +1257,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Dewpt T, deg C",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "ShortWaveRadiation",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1328,50 +1298,49 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "W/m2",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "W/m2",
         "description" : "",
+        "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "W/m2"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "LatLongData",
-        "latitude" : 0.0,
-        "longitude" : 0.0,
-        "nearestMeridian" : 0,
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
         "dustCoefficient" : 0.04,
-        "interval" : 60.0
-      } ]
+        "interval" : 60.0,
+        "latitude" : 0.0,
+        "longitude" : 0.0,
+        "nearestMeridian" : 0
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Cloudiness",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1381,45 +1350,44 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Fraction, 0-1",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "FRAC",
         "description" : "",
+        "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Fraction, 0-1"
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ObservedData",
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
-      } ]
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "WindSpeed",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1429,94 +1397,90 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "m/s",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "m/s",
         "description" : "",
+        "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "m/s"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
-    } ],
-    "id" : 6,
-    "description" : "",
-    "longitude" : 0.0,
-    "latitude" : 0.0,
-    "nearestMeridian" : 0,
-    "referenceElevation" : 0.0,
-    "observed" : false,
-    "metStation" : true
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
   }, {
-    "name" : "Trinity R Met",
     "active" : true,
+    "description" : "",
     "geometry" : {
       "type" : "Point",
       "coordinates" : [ 1631514.0799724148, 1.4785052300285578E7 ]
     },
+    "id" : 7,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : true,
+    "name" : "Trinity R Met",
+    "nearestMeridian" : 0,
+    "observed" : false,
+    "referenceElevation" : 0.0,
     "variables" : [ {
       "@type" : "AtmosphericPressure",
-      "selectedDataSourceName" : "Constant Value",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
-        "units" : "atm",
         "description" : "",
+        "units" : "atm",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
         "value" : 0.95
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "",
-        "compType" : 0,
         "name" : "DSS",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
         "DSS Path" : "",
-        "DSS File Path" : null,
-        "Interpreted Units" : ""
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ElevationData",
         "name" : "Elevation",
@@ -1524,10 +1488,10 @@
         "availableUnits" : [ "ft", "m" ],
         "compType" : 2,
         "elevation" : 0.0
-      } ]
+      } ],
+      "selectedDataSourceName" : "Constant Value"
     }, {
       "@type" : "AirTemperature",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1537,39 +1501,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "deg C",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "deg C"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Humidity",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1579,39 +1542,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Dewpt T, deg C",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1 - CALC DATA-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "ShortWaveRadiation",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1621,50 +1583,49 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "W/m2",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "W/m2",
         "description" : "",
+        "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "W/m2"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "LatLongData",
-        "latitude" : 0.0,
-        "longitude" : 0.0,
-        "nearestMeridian" : 0,
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
         "dustCoefficient" : 0.04,
-        "interval" : 60.0
-      } ]
+        "interval" : 60.0,
+        "latitude" : 0.0,
+        "longitude" : 0.0,
+        "nearestMeridian" : 0
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Cloudiness",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1674,45 +1635,44 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Fraction, 0-1",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "FRAC",
         "description" : "",
+        "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Fraction, 0-1"
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1 - CALC DATA-CLOUD COVER/%-CLOUD COVER//1DAY/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ObservedData",
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
-      } ]
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "WindSpeed",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1722,94 +1682,90 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "m/s",
-        "compType" : 2,
         "name" : "DSS",
-        "units" : "m/s",
         "description" : "",
+        "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "m/s"
+        "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
-    } ],
-    "id" : 7,
-    "description" : "",
-    "longitude" : 0.0,
-    "latitude" : 0.0,
-    "nearestMeridian" : 0,
-    "referenceElevation" : 0.0,
-    "observed" : false,
-    "metStation" : true
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
   }, {
-    "name" : "Whiskeytown Met",
     "active" : true,
+    "description" : "",
     "geometry" : {
       "type" : "Point",
       "coordinates" : [ 1764597.5977540498, 1.4744432209193386E7 ]
     },
+    "id" : 8,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : true,
+    "name" : "Whiskeytown Met",
+    "nearestMeridian" : 0,
+    "observed" : false,
+    "referenceElevation" : 0.0,
     "variables" : [ {
       "@type" : "AtmosphericPressure",
-      "selectedDataSourceName" : "Constant Value",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
-        "units" : "atm",
         "description" : "",
+        "units" : "atm",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
         "value" : 0.97
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "",
-        "compType" : 0,
         "name" : "DSS",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
+        "compType" : 0,
         "DSS Path" : "",
-        "DSS File Path" : null,
-        "Interpreted Units" : ""
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ElevationData",
         "name" : "Elevation",
@@ -1817,10 +1773,10 @@
         "availableUnits" : [ "ft", "m" ],
         "compType" : 2,
         "elevation" : 0.0
-      } ]
+      } ],
+      "selectedDataSourceName" : "Constant Value"
     }, {
       "@type" : "AirTemperature",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1830,39 +1786,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "deg C", "deg F" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "deg C"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-AIR TEMPERATURE/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "deg C",
+        "interpretedUnits" : "deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "deg C", "deg F" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Humidity",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1872,39 +1827,38 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Dewpt T, deg C",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "C",
         "description" : "",
+        "units" : "C",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Dewpt T, deg C"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-DEW POINT/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Dewpt T, deg C",
+        "interpretedUnits" : "Dewpt T, deg C"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "ShortWaveRadiation",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1914,50 +1868,49 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "W/m2",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "W/m2",
         "description" : "",
+        "units" : "W/m2",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "W/m2"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-SOLAR RADIATION/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "W/m2",
+        "interpretedUnits" : "W/m2"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "LatLongData",
-        "latitude" : 0.0,
-        "longitude" : 0.0,
-        "nearestMeridian" : 0,
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
         "compType" : 2,
         "dustCoefficient" : 0.04,
-        "interval" : 60.0
-      } ]
+        "interval" : 60.0,
+        "latitude" : 0.0,
+        "longitude" : 0.0,
+        "nearestMeridian" : 0
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "Cloudiness",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -1967,45 +1920,44 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "Fraction, 0-1",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "FRAC",
         "description" : "",
+        "units" : "FRAC",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "Fraction, 0-1"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1-CLOUD COVER/%-CLOUD COVER//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "Fraction, 0-1",
+        "interpretedUnits" : "Fraction, 0-1"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
+        "valueColumn" : "",
+        "worksheetName" : ""
       }, {
         "@type" : "ObservedData",
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
         "compType" : 2
-      } ]
+      } ],
+      "selectedDataSourceName" : "DSS"
     }, {
       "@type" : "WindSpeed",
-      "selectedDataSourceName" : "DSS",
       "dataSources" : [ {
         "@type" : "ConstantData",
         "name" : "Constant Value",
@@ -2015,45 +1967,37 @@
         "value" : "-Infinity"
       }, {
         "@type" : "TableData",
-        "values" : [ ],
-        "dates" : [ ],
         "name" : "Table Data",
-        "units" : null,
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "compType" : 2
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
       }, {
         "@type" : "DssData",
-        "interpretedUnits" : "m/s",
-        "compType" : 1,
         "name" : "DSS",
-        "units" : "m/s",
         "description" : "",
+        "units" : "m/s",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
-        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "Interpreted Units" : "m/s"
+        "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD-WIND SPEED/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "Interpreted Units" : "m/s",
+        "interpretedUnits" : "m/s"
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
         "description" : "",
         "availableUnits" : [ "m/s", "ft/s", "mph", "knots" ],
         "compType" : 2,
-        "worksheetName" : "",
+        "bottomRow" : 0,
         "timeColumn" : "",
-        "valueColumn" : "",
         "topRow" : 0,
-        "bottomRow" : 0
-      } ]
-    } ],
-    "id" : 8,
-    "description" : "",
-    "longitude" : 0.0,
-    "latitude" : 0.0,
-    "nearestMeridian" : 0,
-    "referenceElevation" : 0.0,
-    "observed" : false,
-    "metStation" : true
+        "valueColumn" : "",
+        "worksheetName" : ""
+      } ],
+      "selectedDataSourceName" : "DSS"
+    } ]
   } ],
   "dataBlending" : false
 }

@@ -7,7 +7,7 @@
   "Name" : "UpperSac-Trinity BC",
   "constituentSetId" : 871,
   "geometryId" : 1043,
-  "lastModifiedTime" : 1695168069626,
+  "lastModifiedTime" : 1703274065858,
   "set" : {
     "boundaryConditions" : [ {
       "@type" : "WQBoundaryCondition",
@@ -22,60 +22,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Canyon Ck-Temp-Water/Temp-Water//1Day/236.106.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Canyon Ck-Temp-Water/Temp-Water//1Day/236.106.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -91,55 +91,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -155,60 +155,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity Lake/Swift Creek-Inflow WTemp/Temp-Water//1Day/231.9.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity Lake/Swift Creek-Inflow WTemp/Temp-Water//1Day/231.9.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -224,55 +224,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -288,60 +288,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Rush Ck-Temp-Water/Temp-Water//1Day/236.100.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Rush Ck-Temp-Water/Temp-Water//1Day/236.100.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -357,55 +357,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -421,55 +421,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -485,55 +485,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -549,60 +549,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
         "DSS Path" : "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
         "DSS Path" : "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -618,60 +618,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Sac River/Cottonwood Creek-WTemp/Temp-Water//1Hour/237.35.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Sac River/Cottonwood Creek-WTemp/Temp-Water//1Hour/237.35.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -687,60 +687,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Sac River/Cow Creek-WTemp/Temp-Water//1Hour/237.33.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Sac River/Cow Creek-WTemp/Temp-Water//1Hour/237.33.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -756,60 +756,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Shasta Lake/Pit R. Branch-Temp/Temp-Water//1Hour/230.6.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Shasta Lake/Pit R. Branch-Temp/Temp-Water//1Hour/230.6.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -825,60 +825,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity Lake/EF Trinity River-Inflow WTemp/Temp-Water//1Day/231.7.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity Lake/EF Trinity River-Inflow WTemp/Temp-Water//1Day/231.7.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -894,60 +894,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Sac River/Battle Creek-WTemp/Temp-Water//1Hour/237.36.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Sac River/Battle Creek-WTemp/Temp-Water//1Hour/237.36.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -963,60 +963,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Reading Ck-Temp-Water/Temp-Water//1Day/236.104.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Reading Ck-Temp-Water/Temp-Water//1Day/236.104.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1032,60 +1032,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Browns Ck-Temp-Water/Temp-Water//1Day/236.105.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Browns Ck-Temp-Water/Temp-Water//1Day/236.105.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1101,60 +1101,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity Lake/Trinity River-Inflow WTemp/Temp-Water//1Day/231.6.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity Lake/Trinity River-Inflow WTemp/Temp-Water//1Day/231.6.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1170,54 +1170,54 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "",
-        "Interpreted Units" : "",
+        "name" : "DSS",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 0,
-        "description" : "",
-        "interpretedUnits" : "",
-        "name" : "DSS"
+        "DSS Path" : "",
+        "Interpreted Units" : "",
+        "interpretedUnits" : ""
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1233,55 +1233,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1297,55 +1297,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1361,60 +1361,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Shasta Lake/McCloud River-Temp/Temp-Water//1Hour/230.8.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Shasta Lake/McCloud River-Temp/Temp-Water//1Hour/230.8.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1430,56 +1430,56 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\USBR_inputs.dss",
         "DSS Path" : "/USBR/CLEAR CREAK WHI INFLOW ADJUSTED/TEMP-WATER//1HOUR/WATERCOURSE/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1495,55 +1495,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1559,60 +1559,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Grass Valley Ck-Temp-Water/Temp-Water//1Day/236.101.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Grass Valley Ck-Temp-Water/Temp-Water//1Day/236.101.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1628,60 +1628,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Weaver Ck-Temp-Water/Temp-Water//1Day/236.103.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Weaver Ck-Temp-Water/Temp-Water//1Day/236.103.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1697,60 +1697,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Indian Ck-Temp-Water/Temp-Water//1Day/236.102.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity River/Indian Ck-Temp-Water/Temp-Water//1Day/236.102.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1766,55 +1766,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1830,55 +1830,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1894,60 +1894,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Shasta Lake/Sacramento R. a Delta-Temp/Temp-Water//1Hour/230.9.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Shasta Lake/Sacramento R. a Delta-Temp/Temp-Water//1Hour/230.9.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1963,55 +1963,55 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "DSS Path" : "///////",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -2027,60 +2027,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR SAC.-SHASTA LAKE/SULANHARAS CREEK-TEMP/TEMP-WATER//1HOUR/230.7.50.1.1/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
+        "DSS Path" : "/MR Sac.-Shasta Lake/Sulanharas Creek-Temp/Temp-Water//1Hour/230.7.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
-        "DSS Path" : "/MR SAC.-SHASTA LAKE/SULANHARAS CREEK-TEMP/TEMP-WATER//1HOUR/230.7.50.1.1/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
+        "DSS Path" : "/MR Sac.-Shasta Lake/Sulanharas Creek-Temp/Temp-Water//1Hour/230.7.50.1.1/",
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -2096,60 +2096,60 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity Lake/Stuart Fork-Inflow WTemp/Temp-Water//1Day/231.8.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrnHydroTS.dss",
         "DSS Path" : "/MR Sac.-Trinity Lake/Stuart Fork-Inflow WTemp/Temp-Water//1Day/231.8.50.1.1/",
         "Interpreted Units" : "\u00B0C",
-        "availableUnits" : [ "\u00B0C" ],
-        "compType" : 2,
-        "description" : "",
-        "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "interpretedUnits" : "\u00B0C"
       },
       "units" : [ "\u00B0C" ]
     } ],
