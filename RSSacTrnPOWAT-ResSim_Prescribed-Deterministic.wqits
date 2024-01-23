@@ -350,8 +350,8 @@ TSRecord=39
 TSRecord Name=Spring Creek In - Spring Creek Debris Dam Inflow
 TSRecord VariableId=2001
 TSRecord ParamName=Water Temperature
-TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-TSRecord DssPathname=/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/
+TSRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+TSRecord DssPathname=//SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1Day/ANNUAL/
 TSRecord InputPosition=0
 TSRecord End=
 
