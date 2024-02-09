@@ -1,0 +1,5 @@
+PDCDataSet Name=RSSacTrnPO-ResSim Prescribed-Deterministic
+Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
+Supports Calibration/Historical ResSim model runs with prescribed operations across the historical data period for the 5-reservoir and 2-river (+Clear Creek) UpperSac system. (PDC Data Set for ResSim Prescribed-Deterministic)
+
+

@@ -956,7 +956,11 @@
           "name" : "Shasta Lake",
           "type" : "RESERVOIR_1DV"
         },
-        "value" : 3.0
+        "value" : {
+          "@type" : "ReservoirLayerConfiguration",
+          "constantLayerHeight" : 3.0,
+          "spacingType" : "CONSTANT"
+        }
       }, {
         "key" : {
           "@type" : "WQSubDomainRef",
@@ -965,7 +969,11 @@
           "name" : "Keswick Reservoir",
           "type" : "RESERVOIR_1DV"
         },
-        "value" : 3.0
+        "value" : {
+          "@type" : "ReservoirLayerConfiguration",
+          "constantLayerHeight" : 3.0,
+          "spacingType" : "CONSTANT"
+        }
       } ],
       "globalHeight" : 3.0,
       "type" : "SubDomain"

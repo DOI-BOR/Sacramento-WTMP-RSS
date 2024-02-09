@@ -929,11 +929,26 @@ def findTCDTempAndFlowsNoRestriction(currentRule, network, currentRuntimestep, r
     
 
 #######################################################################################################
-def getDSControlLoc(network):
+def getDSControlLoc(network,currentRuntimestep):
     gv = network.getGlobalVariable(globalVarNameDSControlLoc)
+
+    fail=False
     if not gv:
+        fail = True
+    else:
+        loc = gv.getValue()
+        if loc is None:
+            fail = True
+        elif loc < 0 or loc > 3:
+            fail = True
+    if fail:
         raise NameError("Global variable: " + globalVarNameDSControlLoc + " not found.")
-    return gv.getValue()
+        #if currentRuntimestep.getStep() < 2:        
+        #	network.getRssRun().printWarningMessage("Warning: Forecast_TCS script can't understand downstream control loc " +
+        #                                        globalVarNameDSControlLoc +". Assuming default of 'Abv Clear Cr'.")
+        #return 2
+    else:
+    	return gv.getValue()
 
 
 #######################################################################################################
@@ -989,9 +1004,7 @@ def backRouteWQTarget(network, currentRuntimestep, wqTarget, tcdMinFlow, riverOu
 
     
     # Get the downstream control location
-    loc = getDSControlLoc(network)
-
-    loc=0
+    loc = getDSControlLoc(network,currentRuntimestep)
     
     if loc == 0:  # At Shasta Dam - no backrouting needed
         return wqTarget

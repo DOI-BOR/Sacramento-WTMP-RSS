@@ -1,64 +1,64 @@
-ModifiedTime=1704993727594
+ModifiedTime=1707241713436
 GVDataSet Name=RSSacTrnRv-WAT-W2 5-Res Plus Rivers-Deterministic
 Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used. (GV Data Set for WAT-W2 5-Res Plus Rivers-Deterministic)
 
 GVRecord=TIME_SERIES
 GVRecord Name=TCD_target
 GVRecord ID=1
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1Hour/SACTRN_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=SHASTA
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDU_gates_open
 GVRecord ID=5
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_U OPEN/GATE//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=TOTAL TCD_U OPEN
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//ZEROS/gate//1Hour/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDM_gates_open
 GVRecord ID=6
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_M OPEN/GATE//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=TOTAL TCD_M OPEN
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//ONES/gate//1Hour/ONES/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ONES
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDL_gates_open
 GVRecord ID=7
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_L OPEN/GATE//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=TOTAL TCD_L OPEN
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//FIVE-BY-HOUR/GATES-FIVE//1Hour/SACTRN_BC_SCRIPT/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=FIVE-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDS_gates_open
 GVRecord ID=8
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=TOTAL TCD_S OPEN
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//ZEROS/gate//1Hour/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Whiskeytown_target
 GVRecord ID=19
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/WHI DAM OUTFLOW/TEMP-WATER//1HOUR/GRAB2PROCESSED-LINEARINTERP-MERGED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=WHI DAM OUTFLOW
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//WHI-target-13/temp-water//1Day/WHI-target-13/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=WHI-target-13
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -85,10 +85,10 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=rss/RSSacTrnRvWAT-W2_5-Res_Plus_Rivers-Deterministic_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnRv-WAT-W2 5-Res Plus Rivers-Deterministic/
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/SACTRN_TARGET_TEMP/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=Downstream_Control_Loc
+GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
 GVRecord LinkedModel=DSS File
 GVRecord End
 

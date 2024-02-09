@@ -1,0 +1,7 @@
+TSDataSet Name=RSSacTrn-ResSim Only-Deterministic
+Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system. (Obs WQ TS Data Set for ResSim Only-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+

@@ -7,7 +7,7 @@
   "Name" : "SacTrnRiversOnly_BC1",
   "constituentSetId" : 871,
   "geometryId" : 17264,
-  "lastModifiedTime" : 1697225802251,
+  "lastModifiedTime" : 1706826278693,
   "set" : {
     "boundaryConditions" : [ {
       "@type" : "WQBoundaryCondition",
@@ -163,8 +163,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/WEAVER CK-TEMP-WATER/TEMP-WATER-C//1Day/236.103.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -200,8 +200,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/WEAVER CK-TEMP-WATER/TEMP-WATER-C//1Day/236.103.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -232,8 +232,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R RUSH CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/RUSH CK-TEMP-WATER/TEMP-WATER-C//1Day/236.100.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -269,8 +269,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R RUSH CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/RUSH CK-TEMP-WATER/TEMP-WATER-C//1Day/236.100.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -300,9 +300,9 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/BATTLE_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/",
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-SAC RIVER/BATTLE CREEK-WTEMP/TEMP-WATER-C//1Hour/237.36.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -337,9 +337,9 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/BATTLE_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/",
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-SAC RIVER/BATTLE CREEK-WTEMP/TEMP-WATER-C//1Hour/237.36.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -439,8 +439,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R READING CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/READING CK-TEMP-WATER/TEMP-WATER-C//1Day/236.104.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -476,8 +476,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R READING CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/READING CK-TEMP-WATER/TEMP-WATER-C//1Day/236.104.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -508,8 +508,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/WEAVER CK-TEMP-WATER/TEMP-WATER-C//1Day/236.103.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -545,8 +545,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/WEAVER CK-TEMP-WATER/TEMP-WATER-C//1Day/236.103.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -833,8 +833,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/GRASS VALLEY CK-TEMP-WATER/TEMP-WATER-C//1Day/236.101.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -870,8 +870,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/GRASS VALLEY CK-TEMP-WATER/TEMP-WATER-C//1Day/236.101.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -971,8 +971,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/COW_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-SAC RIVER/COW CREEK-WTEMP/TEMP-WATER-C//1Hour/237.33.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -1008,8 +1008,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/COW_CREEK/TEMP-IN//1HOUR/USBR_BLESSED/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-SAC RIVER/COW CREEK-WTEMP/TEMP-WATER-C//1Hour/237.33.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -1108,9 +1108,9 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/COTTONWOOD_CREEK/TEMP-IN//1MON/USBR_BLESSED/",
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-SAC RIVER/COTTONWOOD CREEK-WTEMP/TEMP-WATER-C//1Hour/237.35.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -1145,9 +1145,9 @@
         "description" : "",
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
-        "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/COTTONWOOD_CREEK/TEMP-IN//1MON/USBR_BLESSED/",
+        "compType" : 2,
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-SAC RIVER/COTTONWOOD CREEK-WTEMP/TEMP-WATER-C//1Hour/237.35.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -1178,8 +1178,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R CANYON CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/CANYON CK-TEMP-WATER/TEMP-WATER-C//1Day/236.106.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -1215,8 +1215,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R CANYON CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/CANYON CK-TEMP-WATER/TEMP-WATER-C//1Day/236.106.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },
@@ -1247,8 +1247,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/BROWNS CK-TEMP-WATER/TEMP-WATER-C//1Day/236.105.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       }, {
@@ -1284,8 +1284,8 @@
         "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1DAY/WATERCOURSE/",
+        "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
+        "DSS Path" : "/MR SAC.-TRINITY RIVER/BROWNS CK-TEMP-WATER/TEMP-WATER-C//1Day/236.105.50.1.1/",
         "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C"
       },

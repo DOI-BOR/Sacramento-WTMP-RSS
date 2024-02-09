@@ -1,65 +1,65 @@
-ModifiedTime=1704993727570
+ModifiedTime=1707351051529
 GVDataSet Name=RSSacTrnPO
 Description=(Global Variable Data Set)
 
 GVRecord=TIME_SERIES
 GVRecord Name=TCD_target
 GVRecord ID=1
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/USBR_BLESSED/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
+GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Calc-Calculated Water Temp/Temp-Water//1Hour/230.14.50.1.1/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=SHA-Calc-Calculated Water Temp
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDU_gates_open
 GVRecord ID=5
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_U OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Top Gate Sum/count-gate//1Hour/Derived/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=SHA-TCD-Top Gate Sum
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDM_gates_open
 GVRecord ID=6
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_M OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Middle Gate Sum/count-gate//1Hour/Derived/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=SHA-TCD-Middle Gate Sum
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDL_gates_open
 GVRecord ID=7
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_L OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Bottom Gate Sum/count-gate//1Hour/Derived/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=SHA-TCD-Bottom Gate Sum
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDS_gates_open
 GVRecord ID=8
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/TOTAL TCD_S OPEN/GATE//1HOUR/USBR_BLESSED/
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Side Gate Sum/count-gate//1Hour/Derived/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=SHA-TCD-Side Gate Sum
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=Whiskeytown_target
 GVRecord ID=19
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=/USBR/WHI DAM OUTFLOW/TEMP-WATER//1HOUR/GRAB2PROCESSED-LINEARINTERP-MERGED/
+GVRecord DssFilename=shared/DMS_SacTrn_CalVal.dss
+GVRecord DssPathname=/MR Sac.-Clear Cr. to Sac R./RM18.3-Whiskeytown-Water Temp/Temp-Water//30Minute/235.54.50.1.1/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord LinkedLocation=RM18.3-Whiskeytown-Water Temp
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
@@ -67,7 +67,7 @@ GVRecord Name=Whiskeytown_Upper_Gate_open
 GVRecord ID=22
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/WHISKEYTOWN_UPPER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
-GVRecord DataLocation=true
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End
@@ -77,7 +77,7 @@ GVRecord Name=Whiskeytown_Lower_Gate_open
 GVRecord ID=23
 GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
 GVRecord DssPathname=/USBR/WHISKEYTOWN_LOWER_OUTLET_GATE/GATE//1HOUR/WATERCOURSE-INTERP/
-GVRecord DataLocation=true
+GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End
@@ -85,21 +85,21 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=runs/RiversOnly/RiversOnly.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnRv-ResSim-Default/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/SACTRN_TARGET_TEMP/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
 GVRecord Name=KRDD_Equilibrium_Temp
 GVRecord ID=38
-GVRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
-GVRecord DssPathname=//ZEROS/FLOW//1DAY//
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=//TENS/temp-water//1Day/TENS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=TENS
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 
