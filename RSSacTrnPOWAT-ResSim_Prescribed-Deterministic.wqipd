@@ -9,7 +9,7 @@ PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2002
 PDCRecordImpl ParamName=Sediment Temperature
 PDCRecordImpl DssFilename=shared/shasta_profs_watercourse_all.dss
-PDCRecordImpl DssPathname=//Shasta Lake/DEPTH-TEMP//2006-05-04//
+PDCRecordImpl DssPathname=//Shasta Lake/DEPTH-TEMP//2021-01-12//
 PDCRecordImpl End=
 
 PDCRecord=29
@@ -20,7 +20,7 @@ PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
 PDCRecordImpl DssFilename=shared/shasta_profs_watercourse_all.dss
-PDCRecordImpl DssPathname=//Shasta Lake/DEPTH-TEMP//2006-05-04//
+PDCRecordImpl DssPathname=//Shasta Lake/DEPTH-TEMP//2021-01-12//
 PDCRecordImpl End=
 
 PDCRecord=33
@@ -42,7 +42,7 @@ PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2002
 PDCRecordImpl ParamName=Sediment Temperature
 PDCRecordImpl DssFilename=shared/whiskeytown_1Prof.dss
-PDCRecordImpl DssPathname=//Whiskeytown Lake/DEPTH-TEMP//2016-01-21//
+PDCRecordImpl DssPathname=//Whiskeytown Lake/DEPTH-TEMP//2021-01-13//
 PDCRecordImpl End=
 
 PDCRecord=6
@@ -64,7 +64,7 @@ PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2002
 PDCRecordImpl ParamName=Sediment Temperature
 PDCRecordImpl DssFilename=shared/TrinityProf.dss
-PDCRecordImpl DssPathname=//Trinity Lake/DEPTH-TEMP//2016-01-27//
+PDCRecordImpl DssPathname=//Trinity Lake/DEPTH-TEMP//2021-01-19//
 PDCRecordImpl End=
 
 PDCRecord=33
@@ -86,7 +86,7 @@ PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
 PDCRecordImpl DssFilename=shared/whiskeytown_1Prof.dss
-PDCRecordImpl DssPathname=//Whiskeytown Lake/DEPTH-TEMP//2016-01-21//
+PDCRecordImpl DssPathname=//Whiskeytown Lake/DEPTH-TEMP//2021-01-13//
 PDCRecordImpl End=
 
 PDCRecord=6
@@ -108,7 +108,7 @@ PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
 PDCRecordImpl DssFilename=shared/TrinityProf.dss
-PDCRecordImpl DssPathname=//Trinity Lake/DEPTH-TEMP//2016-01-27//
+PDCRecordImpl DssPathname=//Trinity Lake/DEPTH-TEMP//2021-01-19//
 PDCRecordImpl End=
 
 

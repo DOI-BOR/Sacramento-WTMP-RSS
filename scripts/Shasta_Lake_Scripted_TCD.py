@@ -454,6 +454,15 @@ def checkUseHighPoint(network, currentRuntimestep):
 # Ask the WQEngine for the optimal WQCD flow distribution for a WQ target and total flow rate
 def getTCDTempAndFlows3ptMinFF(currentRule, network, currentRuntimestep, resElev, targetTemp, tcdMinFlow):
 
+    wqRun = network.getWQRun()
+    engineAdapter = wqRun.getWQEngineAdapter()
+    resOp = currentRule.getController().getReservoirOp()
+    res = resOp.getReservoirElement()
+    rssWQGeometry = wqRun.getRssWQGeometry()
+    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
+    wqcd = rssWQGeometry.getWQControlDevice(currentRule.getController().getReleaseElement())
+    tempConstituent = wqRun.getWQConstituent("Water Temperature")
+
     elevs = getInletElevs(currentRule, network)
     nInletLevels = len(elevs)
 
@@ -536,6 +545,7 @@ def getTCDTempAndFlows3ptMinFF(currentRule, network, currentRuntimestep, resElev
 
     useHighPt = checkUseHighPoint(network, currentRuntimestep)
     sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(useHighPt)
+    engineAdapter.setShastaTCDInfo(resWQGeoSubdom.getId(), wqcd.getId(), sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx)
 
     # Side (lowest level) gates
     if numSideGatesOpen > 0:
@@ -603,14 +613,6 @@ def getTCDTempAndFlows3ptMinFF(currentRule, network, currentRuntimestep, resElev
             inletFlowMin[idx] = min(flowFract * tcdMinFlow, weirMaxEstimate)
             inletFlowMax[idx] = min(tcdMinFlow, weirMaxEstimate)
         
-    wqRun = network.getWQRun()
-    engineAdapter = wqRun.getWQEngineAdapter()
-    resOp = currentRule.getController().getReservoirOp()
-    res = resOp.getReservoirElement()
-    rssWQGeometry = wqRun.getRssWQGeometry()
-    resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
-    wqcd = rssWQGeometry.getWQControlDevice(currentRule.getController().getReleaseElement())
-    tempConstituent = wqRun.getWQConstituent("Water Temperature")
     tcdFlows = engineAdapter.computeWQCDFlows(resWQGeoSubdom, wqcd, tempConstituent, nInletLevels, inletFlowMin, inletFlowMax, tcdMinFlow, targetTemp)
     tcdResult = engineAdapter.getWQResultOptimized(resWQGeoSubdom, wqcd)
     #print("TCD Result: {0:.2f}".format(tcdResult))
@@ -636,3 +638,4 @@ def getTCDTempAndFlows3ptMinFF(currentRule, network, currentRuntimestep, resElev
         raise ValueError()
 
     return tcdResult, tcdFlows
+
