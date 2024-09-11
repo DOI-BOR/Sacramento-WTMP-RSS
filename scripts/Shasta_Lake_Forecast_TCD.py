@@ -1022,14 +1022,21 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
     alpha = 0.3625
     velocity = Kcoef * (keswickFlow / 1000)**alpha  # power law approximation
     # Calculate travel time in model steps
-    travTime = downstreamDistance / velocity
+    if velocity <= 0.0:
+        print('WARNING: Keswick flow <= 0 in Forecast TCD script. Specified flows may be incorrect.')
+        travTime = 0.0
+    else:
+        travTime = downstreamDistance / velocity
     deltaT = currentRuntimestep.getTimeStepSeconds()
     travTimeSteps = int(round(travTime / deltaT))
 
     # Get Keswick pool information
     flowVol = keswickFlow * 86400.  # Keswick flow is short term average of Shasta out
     kesConPoolVol = 20100. * 43560.  # cubic feet, assumed at top of conservation
-    flushTimeDays = -(-int(round(kesConPoolVol)) // int(round(flowVol)))
+    if flowVol <= 0.0:
+        flushTimeDays = 0
+    else:
+        flushTimeDays = -(-int(round(kesConPoolVol)) // int(round(flowVol)))
     #network.printMessage('flushTimeDays ' + str(flushTimeDays))
     flushTimeSteps = flushTimeDays * 24
 
@@ -1075,7 +1082,8 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
             avgET += eqTemp
             deltaTemp = (eqTemp - t) * exchCoef
             t += deltaTemp
-        avgET = avgET / travTimeSteps
+        if travTimeSteps > 0:
+            avgET = avgET / travTimeSteps
         #network.printMessage('Iter vars ' + str(outletTemp) + ', ' + str(t))
         if j == 0:
             prevT = t
@@ -1142,7 +1150,11 @@ def backRouteWQTarget(network, currentRuntimestep, wqTarget, tcdMinFlow, riverOu
     alpha = 0.3625
     velocity = Kcoef * (keswickFlow / 1000)**alpha  # power law approximation
     # Calculate travel time in model steps
-    travTime = downstreamDistance / velocity
+    if velocity <= 0.0:
+        print('WARNING: Keswick flow <= 0 in Forecast TCD script. Specified flows may be incorrect.')
+        travTime = 0.0
+    else:
+        travTime = downstreamDistance / velocity
     deltaT = currentRuntimestep.getTimeStepSeconds()
     travTimeSteps = int(round(travTime / deltaT))
 
