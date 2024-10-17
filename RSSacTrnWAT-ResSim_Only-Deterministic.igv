@@ -1,14 +1,34 @@
-ModifiedTime=1725483697005
+ModifiedTime=1729199011483
 GVDataSet Name=RSSacTrn-WAT-ResSim Only-Deterministic
 Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system. (GV Data Set for WAT-ResSim Only-Deterministic)
 
 GVRecord=TIME_SERIES
-GVRecord Name=TCD_target
-GVRecord ID=1
+GVRecord Name=Total_TCDM_gates_open
+GVRecord ID=6
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/
+GVRecord DssPathname=//FIVE-BY-HOUR/GATES-FIVE//1Hour/SACTRN_BC_SCRIPT/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=SHASTA
+GVRecord LinkedLocation=ZERO-BY-HOUR
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Whiskeytown_Lower_Gate_open
+GVRecord ID=23
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDU_gates_open
+GVRecord ID=5
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=FIVE-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -19,36 +39,6 @@ GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=/MR Sac.-Clear Cr. to Sac R./KRDD/Temp-Equil//1Day/sactrn_bc_script/
 GVRecord DataLocation=true
 GVRecord LinkedLocation=KRDD
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=SCALAR
-GVRecord Name=Downstream_Control_Loc
-GVRecord ID=36
-GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/SACTRN_TARGET_TEMP/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDS_gates_open
-GVRecord ID=8
-GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=ZERO-BY-HOUR
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDM_gates_open
-GVRecord ID=6
-GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//FIVE-BY-HOUR/GATES-FIVE//1Hour/SACTRN_BC_SCRIPT/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=FIVE-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -63,13 +53,23 @@ GVRecord LinkedModel=
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Whiskeytown_Lower_Gate_open
-GVRecord ID=23
+GVRecord Name=TCD_target
+GVRecord ID=1
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
+GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=SHASTA
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=36
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/SACTRN_TARGET_TEMP/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
+GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
@@ -88,13 +88,13 @@ GVRecord ID=19
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=SHASTA
+GVRecord LinkedLocation=WHI-target-13
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDU_gates_open
-GVRecord ID=5
+GVRecord Name=Total_TCDS_gates_open
+GVRecord ID=8
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
