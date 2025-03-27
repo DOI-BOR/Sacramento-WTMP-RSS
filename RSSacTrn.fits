@@ -1,4 +1,4 @@
-TSDataSet Name=RSSacTrn
+TSDataSet Name=Input TS DataSet for RSSacTrn
 Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system. (TS Data Set)
 
 _type=0

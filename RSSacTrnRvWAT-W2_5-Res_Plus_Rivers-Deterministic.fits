@@ -1,5 +1,5 @@
 TSDataSet Name=RSSacTrnRv-WAT-W2 5-Res Plus Rivers-Deterministic
-Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used. (TS Data Set for WAT-W2 5-Res Plus Rivers-Deterministic)
+Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used. (TS Data Set for W2 5-Res Plus Rivers-Deterministic)
 
 _type=0
 ParentPath=null
@@ -9,7 +9,7 @@ TSRecord Name=Shasta - Pit River Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//Shasta-Pit-in/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//SHASTA-PIT-IN/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -18,7 +18,7 @@ TSRecord Name=Shasta - Squaw Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//Shasta-Sulanharas-in/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//SHASTA-SULANHARAS-IN/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -27,7 +27,7 @@ TSRecord Name=Shasta - McCloud River Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//Shasta-McCloud-in/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//SHASTA-MCCLOUD-IN/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -36,7 +36,7 @@ TSRecord Name=Shasta - Sacramento River Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//Shasta-Sac-in/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//SHASTA-SAC-IN/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -45,7 +45,7 @@ TSRecord Name=Whiskeytown - Clear Creek Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//Whiskeytown/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR-LINEARINTERP/CLEAR CR ABOVE JCR INFLOW/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -54,7 +54,7 @@ TSRecord Name=Trinity - Trinity River Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//TRINITY RIVER/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//TRINITY RIVER/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -72,7 +72,7 @@ TSRecord Name=SF Clear Creek IGO Balance
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//IGO/FLOW-BALANCE//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//IGO/FLOW-BALANCE//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -81,7 +81,7 @@ TSRecord Name=Cow Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/COW_CREEK/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/COW_CREEK/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -90,7 +90,7 @@ TSRecord Name=Cottonwood Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/COTTONWOOD_CREEK/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/COTTONWOOD_CREEK/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -108,7 +108,7 @@ TSRecord Name=Shasta Balance Flow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/SACRAMENTO RIVER/SHASTA LAKE/FLOW-ACC-DEP//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/SACRAMENTO RIVER/SHASTA LAKE/FLOW-ACC-DEP//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -135,7 +135,7 @@ TSRecord Name=Trinity - East Fork Trinity Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//EF TRINITY/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//EF TRINITY/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -144,7 +144,7 @@ TSRecord Name=Trinity - Swift Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//SWIFT CR/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//SWIFT CR/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -153,7 +153,7 @@ TSRecord Name=Trinity - Stuart Fork Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//STUART FORK/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//STUART FORK/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -162,7 +162,7 @@ TSRecord Name=Battle Creek Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/BATTLE_CREEK/FLOW-IN//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/BATTLE_CREEK/FLOW-IN//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -171,7 +171,7 @@ TSRecord Name=Trinity Balance Flow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/TRINITY RIVER/TRINITY LAKE/FLOW-ACC-DEP//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/TRINITY RIVER/TRINITY LAKE/FLOW-ACC-DEP//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -180,7 +180,7 @@ TSRecord Name=Whiskeytown Balance Flow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/CLEAR CREEK/WHISKEYTOWN LAKE/FLOW-ACC-DEP//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/CLEAR CREEK/WHISKEYTOWN LAKE/FLOW-ACC-DEP//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -225,7 +225,7 @@ TSRecord Name=Rush Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/TRINITY R RUSH CK/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/TRINITY R RUSH CK/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -234,7 +234,7 @@ TSRecord Name=Grass Valley Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/TRINITY R GRASS VALLEY CK/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/TRINITY R GRASS VALLEY CK/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -243,7 +243,7 @@ TSRecord Name=Indian Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/TRINITY R INDIAN CK/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/TRINITY R INDIAN CK/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -252,7 +252,7 @@ TSRecord Name=Weaver Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/TRINITY R WEAVER CK/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/TRINITY R WEAVER CK/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -261,7 +261,7 @@ TSRecord Name=Reading Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/TRINITY R READING CK/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/TRINITY R READING CK/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -270,7 +270,7 @@ TSRecord Name=Browns Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/TRINITY R BROWNS CK/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/TRINITY R BROWNS CK/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -279,7 +279,7 @@ TSRecord Name=Canyon Cr Local Inflow
 TSRecord VariableId=4
 TSRecord ParamName=Flow
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/USBR/TRINITY R CANYON CK/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/USBR/TRINITY R CANYON CK/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -297,7 +297,7 @@ TSRecord Name=~E9:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/SACRAMENTO RIVER/Shasta Lake/ELEV//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//Shasta Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -405,7 +405,7 @@ TSRecord Name=~E107:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//SHASTA/FLOW-RELEASE-KESWICK-CFS//1Hour/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/SACRAMENTO RIVER/SHASTA LAKE/FLOW-KESWICK-CFS//1Month/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -414,7 +414,7 @@ TSRecord Name=Keswick Release
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=//SHASTA/FLOW-RELEASE-KESWICK-CFS//1Hour/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/SACRAMENTO RIVER/SHASTA LAKE/FLOW-KESWICK-CFS//1Month/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -423,7 +423,7 @@ TSRecord Name=~E127:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/CLEAR CREEK/Whiskeytown Lake/ELEV//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//Whiskeytown Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -495,7 +495,7 @@ TSRecord Name=~E148:F
 TSRecord VariableId=41
 TSRecord ParamName=Flow-RELEASE
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/TRINITY RIVER/LEWISTON RESERVOIR/FLOW-RIVER RELEASE//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/TRINITY RIVER/LEWISTON RESERVOIR/FLOW-RIVER RELEASE//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -540,7 +540,7 @@ TSRecord Name=Lewiston Gated Spillway
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/TRINITY RIVER/LEWISTON RESERVOIR/FLOW-RIVER RELEASE//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/TRINITY RIVER/LEWISTON RESERVOIR/FLOW-RIVER RELEASE//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -558,7 +558,7 @@ TSRecord Name=~E170:F
 TSRecord VariableId=43
 TSRecord ParamName=Flow-DIVERSION
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/ANDERSON-COTTONWOOD CANAL/SHARON AVE (11370700)/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/ANDERSON-COTTONWOOD CANAL/SHARON AVE (11370700)/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -567,7 +567,7 @@ TSRecord Name=Anderson-Cottonwood Canal
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/ANDERSON-COTTONWOOD CANAL/SHARON AVE (11370700)/FLOW//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=/ANDERSON-COTTONWOOD CANAL/SHARON AVE (11370700)/FLOW//1DAY/sactrn_bc_script/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -576,7 +576,7 @@ TSRecord Name=~E181:F
 TSRecord VariableId=14
 TSRecord ParamName=Elev
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/TRINITY RIVER/Trinity Lake/ELEV//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//Trinity Lake/ELEV-FORECAST//1Day/AMER_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -594,7 +594,7 @@ TSRecord Name=Trinity Powerhouse Release
 TSRecord VariableId=85
 TSRecord ParamName=
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/TRINITY RIVER/TRINITY LAKE/FLOW-RELEASE//1Day/SACTRN_BC_SCRIPT/
+TSRecord DssPathname=//ZEROS/flow//1Day/ZEROS/
 TSRecord InputPosition=0
 TSRecord End=
 

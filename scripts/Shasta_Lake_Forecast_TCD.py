@@ -1018,8 +1018,8 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
         
     # Power law approximation for velocity in the Sacramento River
     keswickFlow = getKeswickOutflow(currentRule, network, currentRuntimestep)
-    Kcoef = 2.3
-    alpha = 0.3625
+    Kcoef = 2.
+    alpha = 0.33
     velocity = Kcoef * (keswickFlow / 1000)**alpha  # power law approximation
     # Calculate travel time in model steps
     if velocity <= 0.0:
@@ -1041,7 +1041,7 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
     flushTimeSteps = flushTimeDays * 24
 
     futureRts = RunTimeStep()
-    futureRts.setStep(min(currentRuntimestep.getStep() + flushTimeSteps, currentRuntimestep.getTotalNumSteps()-1))
+    futureRts.setStep(min(currentRuntimestep.getStep() + travTimeSteps, currentRuntimestep.getTotalNumSteps()-1))
     targetTempFuture = getGVTemperature(network, futureRts, globalVarNameTCDTarget)
     #network.printMessage('Future temp target ' + str(targetTempFuture))
     
@@ -1049,12 +1049,12 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
     #flowVol = (tcdMinFlow + riverOutletFlow) * deltaT
     flowVol = keswickFlow * deltaT
     kesConPoolVol = 20100. * 43560.  # cubic feet, assumed this is top of conservation
-    kesFraction = flowVol / kesConPoolVol
-    multiplier = 3.3  # Inflow more important than CSTR assumption because of where inflow enters vertically
+    kesFraction = flowVol / 86400.
+    multiplier = 0.14  # Calibration factor
     kesFraction = min(kesFraction * multiplier, 1.)
     keswickResAvgTemp = getKeswickAvgTemp(network, currentRuntimestep)
-    exchCoef = 0.013  # exchange rate between atmosphere and river temp
-    exchCoefDaily = 0.02  # daily exchange rate between atmosphere and Keswick
+    exchCoef = 0.0098  # exchange rate between atmosphere and river temp
+    #exchCoefDaily = 0.02  # daily exchange rate between atmosphere and Keswick
     #tSearchMin = 5.  # min temp (deg C) to search for outflow temp from Shasta to meet DS target
     #tSearchMax = 25.
     tSearchMin = keswickResAvgTemp - 6.
@@ -1067,23 +1067,23 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
     for j in range(numIters):
         outletTemp = tSearchMin + float(j) / float(numIters+1) * (tSearchMax - tSearchMin)
         # Impact of Keswick
-        #t = (1 - kesFraction) * keswickResAvgTemp + kesFraction * outletTemp
-        t = outletTemp
-        for k in range(flushTimeDays):
-            futureRts.setStep(min(currentRuntimestep.getStep() + k*24,currentRuntimestep.getTotalNumSteps() - 1))
-            eqTemp = getGVTemperature(network, futureRts, globalVarNameEquilibTemp)
-            deltaTemp = (eqTemp - t) * exchCoefDaily
-            t += deltaTemp
+        t = (1 - kesFraction) * keswickResAvgTemp + kesFraction * outletTemp
+        #t = outletTemp
+        #for k in range(flushTimeDays):
+        #    futureRts.setStep(min(currentRuntimestep.getStep() + k*24,currentRuntimestep.getTotalNumSteps() - 1))
+        #    eqTemp = getGVTemperature(network, futureRts, globalVarNameEquilibTemp)
+        #    deltaTemp = (eqTemp - t) * exchCoefDaily
+        #    t += deltaTemp
         # Route downstream
-        avgET = 0
+        #avgET = 0
         for k in range(travTimeSteps):
-            futureRts.setStep(min(currentRuntimestep.getStep() + k + flushTimeSteps,currentRuntimestep.getTotalNumSteps() - 1))
+            futureRts.setStep(min(currentRuntimestep.getStep() + k, currentRuntimestep.getTotalNumSteps() - 1))
             eqTemp = getGVTemperature(network, futureRts, globalVarNameEquilibTemp)
-            avgET += eqTemp
+            #avgET += eqTemp
             deltaTemp = (eqTemp - t) * exchCoef
             t += deltaTemp
-        if travTimeSteps > 0:
-            avgET = avgET / travTimeSteps
+        #if travTimeSteps > 0:
+        #    avgET = avgET / travTimeSteps
         #network.printMessage('Iter vars ' + str(outletTemp) + ', ' + str(t))
         if j == 0:
             prevT = t

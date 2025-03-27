@@ -1,14 +1,24 @@
-ModifiedTime=1710466044227
+ModifiedTime=1741308625121
 GVDataSet Name=RSSacTrnPO-WAT-ResSim Prescribed-Deterministic
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
 
-GVRecord=SCALAR
-GVRecord Name=Downstream_Control_Loc
-GVRecord ID=36
-GVRecord DssFilename=rss/RSSacTrnPO_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnPO-ResSim-Default/
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDS_gates_open
+GVRecord ID=8
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Side Gate Sum/count-gate//1Hour/Derived/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
+GVRecord LinkedLocation=SHA-TCD-Side Gate Sum
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=KRDD_Equilibrium_Temp
+GVRecord ID=38
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=//ZEROS/TEMP-WATER//1HOUR/ZEROS/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZEROS
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -33,52 +43,12 @@ GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDL_gates_open
-GVRecord ID=7
-GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
-GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Bottom Gate Sum/count-gate//1Hour/Derived/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=SHA-TCD-Bottom Gate Sum
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDS_gates_open
-GVRecord ID=8
-GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
-GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Side Gate Sum/count-gate//1Hour/Derived/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=SHA-TCD-Side Gate Sum
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Whiskeytown_Upper_Gate_open
-GVRecord ID=22
-GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
-GVRecord DssPathname=//ONES/GATE//1HOUR/ONES/
-GVRecord DataLocation=false
-GVRecord LinkedLocation=
-GVRecord LinkedModel=
-GVRecord End
-
-GVRecord=TIME_SERIES
 GVRecord Name=TCD_target
 GVRecord ID=1
 GVRecord DssFilename=shared/DMS_SacTrnHydroTS.dss
 GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-Calc-Calculated Water Temp/Temp-Water//1Hour/230.14.50.1.1/
 GVRecord DataLocation=true
 GVRecord LinkedLocation=SHA-Calc-Calculated Water Temp
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDU_gates_open
-GVRecord ID=5
-GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
-GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Top Gate Sum/count-gate//1Hour/Derived/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=SHA-TCD-Top Gate Sum
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -93,12 +63,42 @@ GVRecord LinkedModel=
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=KRDD_Equilibrium_Temp
-GVRecord ID=38
+GVRecord Name=Total_TCDU_gates_open
+GVRecord ID=5
 GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
-GVRecord DssPathname=//ZEROS/TEMP-WATER//1HOUR/ZEROS/
+GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Top Gate Sum/count-gate//1Hour/Derived/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=ZEROS
+GVRecord LinkedLocation=SHA-TCD-Top Gate Sum
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Whiskeytown_Upper_Gate_open
+GVRecord ID=22
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=//ONES/GATE//1HOUR/ONES/
+GVRecord DataLocation=false
+GVRecord LinkedLocation=
+GVRecord LinkedModel=
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDL_gates_open
+GVRecord ID=7
+GVRecord DssFilename=shared/DMS_SacTrn_ResSim_Pre-Process.dss
+GVRecord DssPathname=/MR Sac.-Shasta Lake/SHA-TCD-Bottom Gate Sum/count-gate//1Hour/Derived/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=SHA-TCD-Bottom Gate Sum
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=36
+GVRecord DssFilename=rss/RSSacTrnPO_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnPO-ResSim-Default/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
 GVRecord LinkedModel=DSS File
 GVRecord End
 

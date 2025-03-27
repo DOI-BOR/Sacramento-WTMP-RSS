@@ -1,4 +1,4 @@
-TSDataSet Name=RSSacTrnPO
+TSDataSet Name=Input TS DataSet for RSSacTrnPO
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
 
 _type=0

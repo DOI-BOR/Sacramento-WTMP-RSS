@@ -43,8 +43,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -91,8 +93,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\forecast_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "deg C",
-        "interpretedUnits" : "deg C"
+        "interpretedUnits" : "deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -132,8 +136,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\forecast_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Dewpt T, deg C",
-        "interpretedUnits" : "Dewpt T, deg C"
+        "interpretedUnits" : "Dewpt T, deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -173,8 +179,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "W/m2",
-        "interpretedUnits" : "W/m2"
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -191,7 +199,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 0.0,
@@ -225,8 +233,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Fraction, 0-1",
-        "interpretedUnits" : "Fraction, 0-1"
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -243,7 +253,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -272,8 +287,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "m/s",
-        "interpretedUnits" : "m/s"
+        "interpretedUnits" : "m/s",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -328,8 +345,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -376,8 +395,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "deg C",
-        "interpretedUnits" : "deg C"
+        "interpretedUnits" : "deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -417,8 +438,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Dewpt T, deg C",
-        "interpretedUnits" : "Dewpt T, deg C"
+        "interpretedUnits" : "Dewpt T, deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -458,8 +481,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "W/m2",
-        "interpretedUnits" : "W/m2"
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -476,7 +501,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 0.0,
@@ -510,8 +535,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Fraction, 0-1",
-        "interpretedUnits" : "Fraction, 0-1"
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -528,7 +555,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -557,8 +589,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "m/s",
-        "interpretedUnits" : "m/s"
+        "interpretedUnits" : "m/s",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -613,8 +647,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -661,8 +697,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "deg C",
-        "interpretedUnits" : "deg C"
+        "interpretedUnits" : "deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -702,8 +740,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Relative Humidity, %",
-        "interpretedUnits" : "Relative Humidity, %"
+        "interpretedUnits" : "Relative Humidity, %",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -743,8 +783,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "W/m2",
-        "interpretedUnits" : "W/m2"
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -761,7 +803,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 0.0,
@@ -795,8 +837,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Fraction, 0-1",
-        "interpretedUnits" : "Fraction, 0-1"
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -813,7 +857,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -842,8 +891,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "m/s",
-        "interpretedUnits" : "m/s"
+        "interpretedUnits" : "m/s",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -898,8 +949,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -946,8 +999,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SHASTA_LAPSE/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "deg C",
-        "interpretedUnits" : "deg C"
+        "interpretedUnits" : "deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -974,6 +1029,7 @@
         "@type" : "TableData",
         "name" : "Table Data",
         "description" : "",
+        "units" : "Relative Humidity, %",
         "availableUnits" : [ "Relative Humidity, %", "Dewpt T, deg C", "Dewpt T, deg F", "Wetbulb T, deg C", "Wetbulb T, deg F", "mm-Hg", "in-Hg", "mb", "kPa" ],
         "compType" : 2,
         "dates" : [ ],
@@ -987,8 +1043,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Relative Humidity, %",
-        "interpretedUnits" : "Relative Humidity, %"
+        "interpretedUnits" : "Relative Humidity, %",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1028,8 +1086,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "W/m2",
-        "interpretedUnits" : "W/m2"
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1046,7 +1106,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 0.0,
@@ -1080,8 +1140,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Fraction, 0-1",
-        "interpretedUnits" : "Fraction, 0-1"
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1098,7 +1160,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -1127,8 +1194,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "m/s",
-        "interpretedUnits" : "m/s"
+        "interpretedUnits" : "m/s",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1183,8 +1252,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1231,8 +1302,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "deg C",
-        "interpretedUnits" : "deg C"
+        "interpretedUnits" : "deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1272,8 +1345,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Dewpt T, deg C",
-        "interpretedUnits" : "Dewpt T, deg C"
+        "interpretedUnits" : "Dewpt T, deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1313,8 +1388,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "W/m2",
-        "interpretedUnits" : "W/m2"
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1331,7 +1408,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 0.0,
@@ -1365,8 +1442,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Fraction, 0-1",
-        "interpretedUnits" : "Fraction, 0-1"
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1383,7 +1462,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -1412,8 +1496,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "m/s",
-        "interpretedUnits" : "m/s"
+        "interpretedUnits" : "m/s",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1468,8 +1554,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1516,8 +1604,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "deg C",
-        "interpretedUnits" : "deg C"
+        "interpretedUnits" : "deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1557,8 +1647,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Dewpt T, deg C",
-        "interpretedUnits" : "Dewpt T, deg C"
+        "interpretedUnits" : "Dewpt T, deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1598,8 +1690,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "W/m2",
-        "interpretedUnits" : "W/m2"
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1616,7 +1710,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 0.0,
@@ -1650,8 +1744,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Fraction, 0-1",
-        "interpretedUnits" : "Fraction, 0-1"
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1668,7 +1764,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -1697,8 +1798,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "m/s",
-        "interpretedUnits" : "m/s"
+        "interpretedUnits" : "m/s",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1753,8 +1856,10 @@
         "availableUnits" : [ "mb", "mm-hg", "in-hg", "atm" ],
         "compType" : 0,
         "DSS Path" : "",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "",
-        "interpretedUnits" : ""
+        "interpretedUnits" : "",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1801,8 +1906,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-AIR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "deg C",
-        "interpretedUnits" : "deg C"
+        "interpretedUnits" : "deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1842,8 +1949,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Dewpt T, deg C",
-        "interpretedUnits" : "Dewpt T, deg C"
+        "interpretedUnits" : "Dewpt T, deg C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1883,8 +1992,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "W/m2",
-        "interpretedUnits" : "W/m2"
+        "interpretedUnits" : "W/m2",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1901,7 +2012,7 @@
         "name" : "Lat-Long",
         "description" : "",
         "availableUnits" : [ "W/m2", "Cal/cm2/day", "MJ/m2/day" ],
-        "compType" : 2,
+        "compType" : 1,
         "dustCoefficient" : 0.04,
         "interval" : 60.0,
         "latitude" : 0.0,
@@ -1935,8 +2046,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./RRAC1/%-CLOUD COVER-FRAC//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "Fraction, 0-1",
-        "interpretedUnits" : "Fraction, 0-1"
+        "interpretedUnits" : "Fraction, 0-1",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1953,7 +2066,12 @@
         "name" : "Compute from ObsSW and Lat-Long",
         "description" : "",
         "availableUnits" : [ "Fraction, 0-1" ],
-        "compType" : 2
+        "compType" : 2,
+        "DSS Path" : "",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "",
+        "interpretedUnits" : "",
+        "profileData" : false
       } ],
       "selectedDataSourceName" : "DSS"
     }, {
@@ -1982,8 +2100,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
         "DSS Path" : "/MR SAC.-CLEAR CR. TO SAC R./KRDD/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "m/s",
-        "interpretedUnits" : "m/s"
+        "interpretedUnits" : "m/s",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",

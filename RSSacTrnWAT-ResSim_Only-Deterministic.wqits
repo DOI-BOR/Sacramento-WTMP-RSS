@@ -8,8 +8,8 @@ TSRecord=1
 TSRecord Name=Lewiston Met-Air Temperature
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Air Temperature
-TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR Sac.-Lewiston Res./TCAC1/Temp-Air//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./
+TSRecord DssFilename=shared/forecast_SacTrn_ResSim_Pre-Process.dss
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1/TEMP-AIR//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -17,8 +17,8 @@ TSRecord=2
 TSRecord Name=Lewiston Met-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
-TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR Sac.-Lewiston Res./TCAC1/Temp-DewPoint//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./
+TSRecord DssFilename=shared/forecast_SacTrn_ResSim_Pre-Process.dss
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1/TEMP-DEWPOINT//1HOUR/MERGEDFROM_MR SAC.-CLEAR CR. TO SAC R./
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -27,7 +27,7 @@ TSRecord Name=Lewiston Met-Shortwave Radiation
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Shortwave Radiation
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1Hour/MergedFrom_MR SAC.-CLEAR CR. TO SAC R./
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1/IRRAD-SOLAR//1HOUR/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -36,7 +36,7 @@ TSRecord Name=Lewiston Met-Cloudiness
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Cloudiness
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR Sac.-Trinity River/TCAC1/%-Cloud Cover-FRAC//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./
+TSRecord DssPathname=/MR SAC.-TRINITY RIVER/TCAC1/%-CLOUD COVER-FRAC//1DAY/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -45,7 +45,7 @@ TSRecord Name=Lewiston Met-Wind Speed
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Wind Speed
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR Sac.-Lewiston Res./TCAC1/Speed-Wind//1Hour/MergedFrom_MR Sac.-Clear Cr. to Sac R./
+TSRecord DssPathname=/MR SAC.-LEWISTON RES./TCAC1/SPEED-WIND//1HOUR/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -108,7 +108,7 @@ TSRecord Name=Sacramento R Met-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 
@@ -153,7 +153,7 @@ TSRecord Name=Shasta Met-Humidity
 TSRecord VariableId=-2147483648
 TSRecord ParamName=Humidity
 TSRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD/RELHUM-FROM-AT-DP//1Hour/sactrn_bc_script-DERIVED/
+TSRecord DssPathname=/MR SAC.-CLEAR CR. TO SAC R./KRDD/TEMP-DEWPOINT//1HOUR/SACTRN_BC_SCRIPT/
 TSRecord InputPosition=0
 TSRecord End=
 

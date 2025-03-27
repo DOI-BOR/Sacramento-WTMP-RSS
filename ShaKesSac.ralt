@@ -1,13 +1,13 @@
 RssAlt Name=ShaKesSac
 RssAlt Description=
 Version=1001
-ModifiedTime=1706664423797
+ModifiedTime=1740420626714
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
 InputTSData Path=rss/ShaKesSac.fits
 OutputTSData Path=
-InputGVData Path=rss/ShaKesSac.igv
+InputGVData Path=
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1

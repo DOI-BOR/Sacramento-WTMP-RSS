@@ -2,11 +2,8 @@
   "index" : 12108,
   "name" : "ShaKesSac_DZ",
   "description" : "",
-  "Description" : "",
-  "Index" : 12108,
-  "Name" : "ShaKesSac_DZ",
   "geometryId" : 12092,
-  "lastModifiedTime" : 1687735428317,
+  "lastModifiedTime" : 1737152595646,
   "set" : {
     "@type" : "WQDispersionCoefSettings",
     "id" : 0,
@@ -77,12 +74,79 @@
         "value" : {
           "@type" : "WQReservoirDispersionSettings",
           "alternateMixingMethod" : "MUNK_ANDERSON",
+          "entrainmentSettings" : {
+            "entrainmentInflowSettings" : [ {
+              "entrainmentRate" : 2.0E-4,
+              "entrainmentRateType" : "USER_DEFINED",
+              "inflowId" : 15,
+              "inflowName" : "Pit River in",
+              "initialMixingRatio" : 0.15,
+              "streamCrossSectionHalfAngle" : 85.0,
+              "streamSlope" : 0.002737587160300545,
+              "streamSlopeType" : "CALCULATED",
+              "useEntrainment" : true
+            }, {
+              "entrainmentRate" : 2.0E-4,
+              "entrainmentRateType" : "USER_DEFINED",
+              "inflowId" : 16,
+              "inflowName" : "Squaw Creek in",
+              "initialMixingRatio" : 0.15,
+              "streamCrossSectionHalfAngle" : 85.0,
+              "streamSlope" : 0.004246436084908064,
+              "streamSlopeType" : "CALCULATED",
+              "useEntrainment" : true
+            }, {
+              "entrainmentRate" : 2.0E-4,
+              "entrainmentRateType" : "USER_DEFINED",
+              "inflowId" : 17,
+              "inflowName" : "McCloud River in",
+              "initialMixingRatio" : 0.15,
+              "streamCrossSectionHalfAngle" : 85.0,
+              "streamSlope" : 0.004901916776712818,
+              "streamSlopeType" : "CALCULATED",
+              "useEntrainment" : true
+            }, {
+              "entrainmentRate" : 2.0E-4,
+              "entrainmentRateType" : "USER_DEFINED",
+              "inflowId" : 18,
+              "inflowName" : "Sacramento River in",
+              "initialMixingRatio" : 0.15,
+              "streamCrossSectionHalfAngle" : 85.0,
+              "streamSlope" : 0.004167204911561812,
+              "streamSlopeType" : "CALCULATED",
+              "useEntrainment" : true
+            }, {
+              "entrainmentRate" : 2.0E-4,
+              "entrainmentRateType" : "USER_DEFINED",
+              "inflowId" : 19,
+              "inflowName" : "Big Backbone Creek in",
+              "initialMixingRatio" : 0.15,
+              "streamCrossSectionHalfAngle" : 85.0,
+              "streamSlope" : 0.01170148042103084,
+              "streamSlopeType" : "CALCULATED",
+              "useEntrainment" : true
+            }, {
+              "entrainmentRate" : 2.0E-4,
+              "entrainmentRateType" : "USER_DEFINED",
+              "inflowId" : 20,
+              "inflowName" : "Distributed in",
+              "initialMixingRatio" : 0.15,
+              "streamCrossSectionHalfAngle" : 85.0,
+              "streamSlope" : 0.05655512951411507,
+              "streamSlopeType" : "CALCULATED",
+              "useEntrainment" : true
+            } ],
+            "useSameSettingsForAllInflows" : true
+          },
+          "maxInflowEnvelopeHeight" : 15.24,
+          "maxOutflowEnvelopeHeight" : 100.0,
+          "mixedLayerTolerance" : 0.04,
           "munkAndersonData" : {
             "@type" : "MunkAndersonDispersionData",
             "acoeff" : 0.1,
             "bcoeff" : 0.65,
             "ccoeff" : 0.05,
-            "dzmin" : 9.0E-5
+            "dzmin" : 7.5E-5
           },
           "stabilityData" : {
             "@type" : "StabilityDispersionData",
@@ -90,13 +154,16 @@
             "a3" : 0.7,
             "ecrit" : 1.0E-7
           },
+          "useMaxInflowEnvelopeHeight" : true,
+          "useMaxOutflowEnvelopeHeight" : true,
           "verticalMixingType" : "ALTERNATE_METHOD",
           "windData" : {
             "@type" : "WindDispersionData",
             "a1" : 1.0E-4,
             "a2" : 3.0,
             "dzmax" : "-Infinity",
-            "dzmin" : 4.0E-5
+            "dzmin" : 4.0E-5,
+            "useDzMax" : false
           }
         }
       }, {
@@ -110,26 +177,54 @@
         "value" : {
           "@type" : "WQReservoirDispersionSettings",
           "alternateMixingMethod" : "WIND",
+          "entrainmentSettings" : {
+            "entrainmentInflowSettings" : [ {
+              "entrainmentRate" : 0.002728340243923194,
+              "entrainmentRateType" : "CALCULATED",
+              "inflowId" : 8,
+              "inflowName" : "Whiskeytown Lake-Spring Creek Diversion Reach",
+              "initialMixingRatio" : 0.15,
+              "streamCrossSectionHalfAngle" : 85.0,
+              "streamSlope" : 0.0071090809197792365,
+              "streamSlopeType" : "CALCULATED",
+              "useEntrainment" : true
+            }, {
+              "entrainmentRate" : 6.774744535696605E-4,
+              "entrainmentRateType" : "CALCULATED",
+              "inflowId" : 21,
+              "inflowName" : "Shasta out",
+              "initialMixingRatio" : 0.15,
+              "streamCrossSectionHalfAngle" : 85.0,
+              "streamSlope" : 0.001765284537618034,
+              "streamSlopeType" : "CALCULATED",
+              "useEntrainment" : true
+            } ],
+            "useSameSettingsForAllInflows" : true
+          },
+          "mixedLayerTolerance" : 0.08,
           "munkAndersonData" : {
             "@type" : "MunkAndersonDispersionData",
             "acoeff" : 3.33,
             "bcoeff" : 1.5,
-            "ccoeff" : 0.09842519685039369,
+            "ccoeff" : 0.09843,
             "dzmin" : 0.0
           },
           "stabilityData" : {
             "@type" : "StabilityDispersionData",
             "a1" : 1.0E-6,
             "a3" : 1.0,
-            "ecrit" : 6.096E-8
+            "ecrit" : 1.0E-7
           },
+          "useMaxInflowEnvelopeHeight" : false,
+          "useMaxOutflowEnvelopeHeight" : false,
           "verticalMixingType" : "ALTERNATE_METHOD",
           "windData" : {
             "@type" : "WindDispersionData",
-            "a1" : 0.0,
+            "a1" : 3.28E-5,
             "a2" : 2.0,
             "dzmax" : "-Infinity",
-            "dzmin" : 5.0E-5
+            "dzmin" : 1.08E-5,
+            "useDzMax" : false
           }
         }
       } ]

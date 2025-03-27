@@ -2,113 +2,154 @@
   "index" : 17265,
   "name" : "SacTrnRiversOnly_P1",
   "description" : "",
-  "Description" : "",
-  "Index" : 17265,
-  "Name" : "SacTrnRiversOnly_P1",
   "geometryId" : 17264,
-  "lastModifiedTime" : 1693946309369,
+  "lastModifiedTime" : 1739916494580,
   "setMap" : {
     "871" : {
       "@type" : "WQParameterSet",
       "name" : "ParameterSet for UpperSac-Trinity Temperature",
       "description" : "",
-      "parameterIds" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 1002, 1003, 1004, 1005, 1007, 1008, 1009, 1010 ],
-      "parameterOptionIds" : [ 51, 1006 ],
+      "parameterIds" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1002, 1003 ],
+      "parameterOptionIds" : [ 51 ],
       "parameterOptionSettings" : [ {
         "@type" : "WQParameterOptionSetting",
         "parameterOptionId" : 51,
         "option" : 3
-      }, {
-        "@type" : "WQParameterOptionSetting",
-        "parameterOptionId" : 1006,
-        "option" : 2
       } ],
       "parameterSettings" : [ {
         "@type" : "WQParameterSetting",
         "parameterId" : 1,
-        "value" : 1.0
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 2,
-        "value" : 2.5
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 2.5
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 3,
-        "value" : 1.0
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 4,
-        "value" : 1.0
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1.0
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 5,
-        "value" : 0.25
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.25
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 6,
-        "value" : 1600.0
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1600.0
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 7,
-        "value" : 1674.72
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 1674.72
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 8,
-        "value" : 0.0432
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0432
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 9,
-        "value" : 0.2
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.2
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 10,
-        "value" : 0.45
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.45
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 11,
-        "value" : 0.052
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.052
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 12,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 13,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
+      }, {
+        "@type" : "WQParameterSetting",
+        "parameterId" : 14,
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 1002,
-        "value" : -1.0
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : -1.0
+        }
       }, {
         "@type" : "WQParameterSetting",
         "parameterId" : 1003,
-        "value" : 85.0
-      }, {
-        "@type" : "WQParameterSetting",
-        "parameterId" : 1004,
-        "value" : 0.15
-      }, {
-        "@type" : "WQParameterSetting",
-        "parameterId" : 1005,
-        "value" : -1.0
-      }, {
-        "@type" : "WQParameterSetting",
-        "parameterId" : 1007,
-        "value" : 0.08
-      }, {
-        "@type" : "WQParameterSetting",
-        "parameterId" : 1008,
-        "value" : -1.0
-      }, {
-        "@type" : "WQParameterSetting",
-        "parameterId" : 1009,
-        "value" : -1.0
-      }, {
-        "@type" : "WQParameterSetting",
-        "parameterId" : 1010,
-        "value" : -1.0
+        "value" : {
+          "lookupPath" : "wq/parameter/doubleValue",
+          "type" : "Value",
+          "value" : 0.0
+        }
       } ],
       "regionParameterOptionSettings" : [ {
         "parameterOptionSettings" : [ {
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -121,10 +162,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -137,10 +174,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -153,10 +186,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -169,10 +198,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -185,10 +210,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -201,10 +222,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -217,10 +234,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -233,10 +246,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -249,10 +258,6 @@
           "@type" : "WQParameterOptionSetting",
           "parameterOptionId" : 51,
           "option" : 3
-        }, {
-          "@type" : "WQParameterOptionSetting",
-          "parameterOptionId" : 1006,
-          "option" : 2
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -273,11 +278,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 1.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 1.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 9,
-          "value" : 0.35
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.35
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -289,11 +302,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 1.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 1.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 9,
-          "value" : 0.35
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.35
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -305,11 +326,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 1.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 1.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 9,
-          "value" : 0.35
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.35
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -321,11 +350,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 1.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 1.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 9,
-          "value" : 0.35
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.35
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -337,11 +374,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 4.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 4.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 3,
-          "value" : 0.5
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.5
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -353,11 +398,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 4.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 4.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 3,
-          "value" : 0.5
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.5
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -369,11 +422,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 4.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 4.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 3,
-          "value" : 0.5
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.5
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -385,11 +446,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 4.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 4.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 3,
-          "value" : 0.5
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.5
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
@@ -401,11 +470,19 @@
         "parameterSettings" : [ {
           "@type" : "WQParameterSetting",
           "parameterId" : 2,
-          "value" : 4.0
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 4.0
+          }
         }, {
           "@type" : "WQParameterSetting",
           "parameterId" : 3,
-          "value" : 0.5
+          "value" : {
+            "lookupPath" : "wq/parameter/doubleValue",
+            "type" : "Value",
+            "value" : 0.5
+          }
         } ],
         "regionRef" : {
           "@type" : "WQRegionRef",
