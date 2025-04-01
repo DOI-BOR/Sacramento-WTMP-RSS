@@ -61,9 +61,9 @@ from datetime import date
 # TCD Operations
 startOpDate = date(3000, 5, 1)  # May 1st
 endOpDate = date(3000, 12, 1)  # Dec 1st
-temperatureThreshold = 0.1
-maxViolationDays = 2
-checkOpHour = 10  # Hour to do operations check (approx daily average)
+temperatureThreshold = 0.3
+maxViolationDays = 3
+checkOpHour = 19  # Hour to do operations check
 gateOpLookbackDays = 2  # For operations outside of target op period
 # Variable names
 globalVarNameNumUpGates = 'Total_TCDU_gates_forecast'
@@ -1004,7 +1004,6 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
 
     # Get the downstream control location
     loc = getDSControlLoc(network,currentRuntimestep)
-    #network.printMessage('loc ' + str(loc))
     
     if loc == 0:  # At Shasta Dam - no backrouting needed
         return wqTarget
@@ -1030,7 +1029,16 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
         travTime = downstreamDistance / velocity
     deltaT = currentRuntimestep.getTimeStepSeconds()
     travTimeSteps = int(round(travTime / deltaT))
-    #network.printMessage('travTimeSteps ' + str(travTimeSteps))
+
+    # Get Keswick pool information
+    flowVol = keswickFlow * 86400.  # Keswick flow is short term average of Shasta out
+    kesConPoolVol = 20100. * 43560.  # cubic feet, assumed at top of conservation
+    if flowVol <= 0.0:
+        flushTimeDays = 0
+    else:
+        flushTimeDays = -(-int(round(kesConPoolVol)) // int(round(flowVol)))
+    #network.printMessage('flushTimeDays ' + str(flushTimeDays))
+    flushTimeSteps = flushTimeDays * 24
 
     futureRts = RunTimeStep()
     futureRts.setStep(min(currentRuntimestep.getStep() + travTimeSteps, currentRuntimestep.getTotalNumSteps()-1))
@@ -1038,17 +1046,20 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
     #network.printMessage('Future temp target ' + str(targetTempFuture))
     
     # Get Keswick pool information
-    flowVol = keswickFlow * 86400.
+    #flowVol = (tcdMinFlow + riverOutletFlow) * deltaT
+    flowVol = keswickFlow * deltaT
     kesConPoolVol = 20100. * 43560.  # cubic feet, assumed this is top of conservation
-    kesFraction = flowVol / kesConPoolVol
+    kesFraction = flowVol / 86400.
     multiplier = 0.14  # Calibration factor
     kesFraction = min(kesFraction * multiplier, 1.)
     keswickResAvgTemp = getKeswickAvgTemp(network, currentRuntimestep)
-    #exchCoef = 0.0098  # exchange rate between atmosphere and river temp
-    exchCoef = 0.015 # exchange rate between atmosphere and river temp
+    exchCoef = 0.0098  # exchange rate between atmosphere and river temp
+    #exchCoefDaily = 0.02  # daily exchange rate between atmosphere and Keswick
+    #tSearchMin = 5.  # min temp (deg C) to search for outflow temp from Shasta to meet DS target
+    #tSearchMax = 25.
     tSearchMin = keswickResAvgTemp - 6.
-    tSearchMax = keswickResAvgTemp + 12.
-    numIters = 51
+    tSearchMax = keswickResAvgTemp + 6.
+    numIters = 21
     bracketed = False
     cantBeMet = False
     #network.printMessage('Keswick vars ' + str(keswickResAvgTemp) + ', ' + str(kesFraction))
@@ -1057,12 +1068,22 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
         outletTemp = tSearchMin + float(j) / float(numIters+1) * (tSearchMax - tSearchMin)
         # Impact of Keswick
         t = (1 - kesFraction) * keswickResAvgTemp + kesFraction * outletTemp
+        #t = outletTemp
+        #for k in range(flushTimeDays):
+        #    futureRts.setStep(min(currentRuntimestep.getStep() + k*24,currentRuntimestep.getTotalNumSteps() - 1))
+        #    eqTemp = getGVTemperature(network, futureRts, globalVarNameEquilibTemp)
+        #    deltaTemp = (eqTemp - t) * exchCoefDaily
+        #    t += deltaTemp
         # Route downstream
+        #avgET = 0
         for k in range(travTimeSteps):
             futureRts.setStep(min(currentRuntimestep.getStep() + k, currentRuntimestep.getTotalNumSteps() - 1))
             eqTemp = getGVTemperature(network, futureRts, globalVarNameEquilibTemp)
+            #avgET += eqTemp
             deltaTemp = (eqTemp - t) * exchCoef
             t += deltaTemp
+        #if travTimeSteps > 0:
+        #    avgET = avgET / travTimeSteps
         #network.printMessage('Iter vars ' + str(outletTemp) + ', ' + str(t))
         if j == 0:
             prevT = t
@@ -1089,19 +1110,127 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
         prevT = t
         prevOutletT = outletTemp
 
+    #network.printMessage('Avg ET ' + str(avgET))
     if bracketed:
         # Linear interpolation
-        targetTemp = (targetTempFuture - lowerT) / (upperT - lowerT) * (upperOutletT - lowerOutletT) + lowerOutletT
-        #network.printMessage('Upper, lower T ' + str(upperT) + ', ' + str(lowerT))
-        #network.printMessage('Upper, lower outlet T ' + str(upperOutletT) + ', ' + str(lowerOutletT))
-        #network.printMessage('Backrouted target temp ' + str(targetTemp))
+        targetTemp = (upperT - targetTempFuture) / (upperT - lowerT) * (upperOutletT - lowerOutletT) + lowerOutletT
     elif cantBeMet:
         targetTemp = outletTemp
     else:
         if t < targetTempFuture:
             targetTemp = outletTemp
         else:
-            #network.printMessage('Target Temperature Downstream' + str(targetTempFuture))
+            network.printMessage('Target Temperature Downstream' + str(targetTempFuture))
+            raise ValueError('Outlet temperature not bracketed')
+    
+    return targetTemp
+
+
+#######################################################################################################
+# Backcalculate the temperature required at Shasta Dam from the downstream temperature target
+def backRouteWQTarget(network, currentRuntimestep, wqTarget, tcdMinFlow, riverOutletFlow):
+
+    # Get the downstream control location
+    loc = getDSControlLoc(network,currentRuntimestep)
+    
+    if loc == 0:  # At Shasta Dam - no backrouting needed
+        return wqTarget
+    elif loc == 1:  # Highway 44
+        downstreamDistance = 30000.  # in feet
+    elif loc == 2:  # CCR
+        downstreamDistance = 53000.
+    elif loc == 3:  # Ball's Ferry
+        downstreamDistance = 137000.
+    else:
+        raise NotImplementedError('Downstream location index ' + str(loc) + ' not recognized.')
+        
+    # Power law approximation for velocity in the Sacramento River
+    keswickFlow = getKeswickOutflow(currentRule, network, currentRuntimestep)
+    Kcoef = 2.3
+    alpha = 0.3625
+    velocity = Kcoef * (keswickFlow / 1000)**alpha  # power law approximation
+    # Calculate travel time in model steps
+    if velocity <= 0.0:
+        print('WARNING: Keswick flow <= 0 in Forecast TCD script. Specified flows may be incorrect.')
+        travTime = 0.0
+    else:
+        travTime = downstreamDistance / velocity
+    deltaT = currentRuntimestep.getTimeStepSeconds()
+    travTimeSteps = int(round(travTime / deltaT))
+
+    futureRts = RunTimeStep()
+    futureRts.setStep(min(currentRuntimestep.getStep() + travTimeSteps, currentRuntimestep.getTotalNumSteps()-1))
+    targetTempFuture = getGVTemperature(network, futureRts, globalVarNameTCDTarget)
+    #network.printMessage('Future temp target ' + str(targetTempFuture))
+    
+    # Get Keswick pool information
+    #flowVol = (tcdMinFlow + riverOutletFlow) * deltaT
+    flowVol = keswickFlow * deltaT
+    kesConPoolVol = 20100. * 43560.  # cubic feet, assumed this is top of conservation
+    kesFraction = flowVol / kesConPoolVol
+    multiplier = 3.3  # Inflow more important than CSTR assumption because of where inflow enters vertically
+    kesFraction = min(kesFraction * multiplier, 1.)
+    keswickResAvgTemp = getKeswickAvgTemp(network, currentRuntimestep)
+    exchCoef = 0.013  # exchange rate between atmosphere and river temp
+    #tSearchMin = 5.  # min temp (deg C) to search for outflow temp from Shasta to meet DS target
+    #tSearchMax = 25.
+    tSearchMin = keswickResAvgTemp - 6.
+    tSearchMax = keswickResAvgTemp + 6.
+    numIters = 21
+    bracketed = False
+    cantBeMet = False
+    #network.printMessage('Keswick vars ' + str(keswickResAvgTemp) + ', ' + str(kesFraction))
+    #network.printMessage('Travel time steps ' + str(travTimeSteps))
+    for j in range(numIters):
+        outletTemp = tSearchMin + float(j) / float(numIters+1) * (tSearchMax - tSearchMin)
+        # Impact of Keswick
+        t = (1 - kesFraction) * keswickResAvgTemp + kesFraction * outletTemp
+        # Route downstream
+        avgET = 0
+        for k in range(travTimeSteps):
+            futureRts.setStep(min(currentRuntimestep.getStep() + k,currentRuntimestep.getTotalNumSteps() - 1))
+            eqTemp = getGVTemperature(network, futureRts, globalVarNameEquilibTemp)
+            avgET += eqTemp
+            deltaTemp = (eqTemp - t) * exchCoef
+            t += deltaTemp
+        avgET = avgET / travTimeSteps
+        network.printMessage('Iter vars ' + str(outletTemp) + ', ' + str(t))
+        if j == 0:
+            prevT = t
+            prevOutletT = outletTemp
+        if t > targetTempFuture and prevT < targetTempFuture:
+            upperOutletT = outletTemp
+            upperT = t
+            lowerOutletT = prevOutletT
+            lowerT = prevT
+            bracketed = True
+            network.printMessage('Break loop 1 ' + str(prevT) + ', ' + str(t) + ', ' + str(targetTempFuture))
+            break
+        elif prevT > targetTempFuture and t < targetTempFuture:
+            lowerOutletT = outletTemp
+            lowerT = t
+            upperOutletT = prevOutletT
+            upperT = prevT
+            bracketed = True
+            network.printMessage('Break loop 2 ' + str(prevT) + ', ' + str(t) + ', ' + str(targetTempFuture))
+            break
+        elif j == 0 and t > targetTempFuture:
+            cantBeMet = True
+            break
+        prevT = t
+        prevOutletT = outletTemp
+
+    #network.printMessage('Avg ET ' + str(avgET))
+    if bracketed:
+        # Linear interpolation
+        targetTemp = (upperT - targetTempFuture) / (upperT - lowerT) * (upperOutletT - lowerOutletT) + lowerOutletT
+    elif cantBeMet:
+        targetTemp = outletTemp
+    else:
+        if t < targetTempFuture:
+            targetTemp = outletTemp
+        else:
+            network.printMessage('Target Temperature Downstream' + str(targetTempFuture))
             raise ValueError('Outlet temperature not bracketed')
     
     return targetTemp
@@ -1316,3 +1445,4 @@ def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev
         raise ValueError()
 
     return targetTemp, tcdResult, tcdFlows
+
