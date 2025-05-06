@@ -2,9 +2,6 @@
   "index" : 26933,
   "name" : "SacTrn_IC_linked",
   "description" : "",
-  "Description" : "",
-  "Index" : 26933,
-  "Name" : "SacTrn_IC_linked",
   "constituentId" : 871,
   "geometryId" : 1043,
   "initialConditionSet" : {
@@ -776,9 +773,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\Keswick_R1_2010_2017-2020.dss",
                   "DSS Path" : "//Keswick Reservoir/DEPTH-TEMP//2010-01-21//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -824,9 +823,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\shasta_profs_watercourse_all.dss",
                   "DSS Path" : "//Shasta/DEPTH-TEMP//2016-01-20//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -872,9 +873,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\whiskeytown_1Prof.dss",
                   "DSS Path" : "//Whiskeytown Lake/DEPTH-TEMP//2016-01-21//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -920,9 +923,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\lewiston_upper_curtain_profiles.dss",
                   "DSS Path" : "//Lewiston Reservoir/DEPTH-TEMP//2011-01-05//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -968,9 +973,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\TrinityProf.dss",
                   "DSS Path" : "//Trinity Lake/DEPTH-TEMP//2016-01-27//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -1022,9 +1029,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\Keswick_R1_2010_2017-2020.dss",
                   "DSS Path" : "//Keswick Reservoir/DEPTH-TEMP//2010-01-21//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -1070,9 +1079,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\shasta_profs_watercourse_all.dss",
                   "DSS Path" : "//Shasta Lake/DEPTH-TEMP//2016-01-20//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -1118,9 +1129,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\whiskeytown_1Prof.dss",
                   "DSS Path" : "//Whiskeytown Lake/DEPTH-TEMP//2016-01-21//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -1166,9 +1179,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\lewiston_upper_curtain_profiles.dss",
                   "DSS Path" : "//Lewiston Reservoir/DEPTH-TEMP//2011-01-05//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]
@@ -1214,9 +1229,11 @@
                   "compType" : 1,
                   "DSS File Path" : "shared\\TrinityProf.dss",
                   "DSS Path" : "//Trinity Lake/DEPTH-TEMP//2016-01-27//",
+                  "HasInterpretedUnits" : true,
                   "Interpreted Units" : "",
                   "curve" : 0,
                   "interpretedUnits" : "",
+                  "profileData" : false,
                   "selectionType" : "UseSelectedRecord"
                 }
               } ]

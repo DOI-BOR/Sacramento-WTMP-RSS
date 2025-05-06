@@ -1,0 +1,16 @@
+TSDataSet Name=RSSacTrnNS-ResSim Only-Deterministic
+Description=Copy of RSSacTrn, but with WQ setup to excude Shasta so that it can be simulated by another model or input. (Obs WQ TS Data Set for ResSim Only-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=0
+TSRecord Name=Water Temperature
+TSRecord VariableId=2001
+TSRecord ParamName=TEMP
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=/SACRAMENTO/BALLS FERRY BRIDGE(BSF)/TEMP//IR-MONTH/TEMPERATURE-MERGED/
+TSRecord InputPosition=0
+TSRecord End=
+
+

@@ -2,9 +2,6 @@
   "index" : 17266,
   "name" : "SacTrnRiversOnly_BC1",
   "description" : "",
-  "Description" : "",
-  "Index" : 17266,
-  "Name" : "SacTrnRiversOnly_BC1",
   "constituentSetId" : 871,
   "geometryId" : 17264,
   "lastModifiedTime" : 1706826278693,
@@ -36,8 +33,10 @@
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -100,8 +99,10 @@
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -165,8 +166,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/WEAVER CK-TEMP-WATER/TEMP-WATER-C//1Day/236.103.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -202,8 +205,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/WEAVER CK-TEMP-WATER/TEMP-WATER-C//1Day/236.103.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -234,8 +239,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/RUSH CK-TEMP-WATER/TEMP-WATER-C//1Day/236.100.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -271,8 +278,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/RUSH CK-TEMP-WATER/TEMP-WATER-C//1Day/236.100.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -303,8 +312,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-SAC RIVER/BATTLE CREEK-WTEMP/TEMP-WATER-C//1Hour/237.36.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -340,8 +351,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-SAC RIVER/BATTLE CREEK-WTEMP/TEMP-WATER-C//1Hour/237.36.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -372,8 +385,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
         "DSS Path" : "/USBR/KESWICK_TOUT-C/TEMP-WATER//1HOUR/INTERP/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -409,8 +424,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
         "DSS Path" : "/USBR/KESWICK_TOUT-C/TEMP-WATER//1HOUR/INTERP/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -441,8 +458,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/READING CK-TEMP-WATER/TEMP-WATER-C//1Day/236.104.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -478,8 +497,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/READING CK-TEMP-WATER/TEMP-WATER-C//1Day/236.104.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -510,8 +531,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/WEAVER CK-TEMP-WATER/TEMP-WATER-C//1Day/236.103.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -547,8 +570,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/WEAVER CK-TEMP-WATER/TEMP-WATER-C//1Day/236.103.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -578,8 +603,10 @@
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -642,8 +669,10 @@
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -706,8 +735,10 @@
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -770,8 +801,10 @@
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
         "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -835,8 +868,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/GRASS VALLEY CK-TEMP-WATER/TEMP-WATER-C//1Day/236.101.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -872,8 +907,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/GRASS VALLEY CK-TEMP-WATER/TEMP-WATER-C//1Day/236.101.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -904,8 +941,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
         "DSS Path" : "/USBR/LEWISTON_HATCHERY-C/TEMP-WATER//1HOUR/GROSS_INTERP_PLACEHOLDER/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -941,8 +980,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
         "DSS Path" : "/USBR/LEWISTON_HATCHERY-C/TEMP-WATER//1HOUR/GROSS_INTERP_PLACEHOLDER/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -973,8 +1014,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-SAC RIVER/COW CREEK-WTEMP/TEMP-WATER-C//1Hour/237.33.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1010,8 +1053,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-SAC RIVER/COW CREEK-WTEMP/TEMP-WATER-C//1Hour/237.33.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1042,8 +1087,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
         "DSS Path" : "/USBR/WHI DAM OUTFLOW-C/TEMP-WATER//1HOUR/GRAB2PROCESSED-LINEARINTERP-MERGED/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1079,8 +1126,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
         "DSS Path" : "/USBR/WHI DAM OUTFLOW-C/TEMP-WATER//1HOUR/GRAB2PROCESSED-LINEARINTERP-MERGED/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1111,8 +1160,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-SAC RIVER/COTTONWOOD CREEK-WTEMP/TEMP-WATER-C//1Hour/237.35.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1148,8 +1199,10 @@
         "compType" : 2,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-SAC RIVER/COTTONWOOD CREEK-WTEMP/TEMP-WATER-C//1Hour/237.35.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1180,8 +1233,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/CANYON CK-TEMP-WATER/TEMP-WATER-C//1Day/236.106.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1217,8 +1272,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/CANYON CK-TEMP-WATER/TEMP-WATER-C//1Day/236.106.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1249,8 +1306,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/BROWNS CK-TEMP-WATER/TEMP-WATER-C//1Day/236.105.50.1.1/",
+        "HasInterpretedUnits" : false,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
         "name" : "Excel Worksheet",
@@ -1286,8 +1345,10 @@
         "compType" : 1,
         "DSS File Path" : "shared\\DMS_SacTrn_ResSim_Pre-Process.dss",
         "DSS Path" : "/MR SAC.-TRINITY RIVER/BROWNS CK-TEMP-WATER/TEMP-WATER-C//1Day/236.105.50.1.1/",
+        "HasInterpretedUnits" : true,
         "Interpreted Units" : "\u00B0C",
-        "interpretedUnits" : "\u00B0C"
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     } ],

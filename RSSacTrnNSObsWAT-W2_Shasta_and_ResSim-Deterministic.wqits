@@ -1,0 +1,16 @@
+TSDataSet Name=RSSacTrnNS-WAT-W2 Shasta and ResSim-Deterministic
+Description=Copy of RSSacTrn, but with WQ setup to excude Shasta so that it can be simulated by another model or input. (Obs WQ TS Data Set for WAT-W2 Shasta and ResSim-Deterministic)
+
+_type=0
+ParentPath=null
+ParentClass=null
+TSRecord=0
+TSRecord Name=Water Temperature
+TSRecord VariableId=2001
+TSRecord ParamName=TEMPERATURE-WATER
+TSRecord DssFilename=shared/WTMP_SacTrn_Historical.dss
+TSRecord DssPathname=//AND (AIRPORT ROAD)/TEMPERATURE-WATER//1HOUR/CDEC-EDIT/
+TSRecord InputPosition=0
+TSRecord End=
+
+

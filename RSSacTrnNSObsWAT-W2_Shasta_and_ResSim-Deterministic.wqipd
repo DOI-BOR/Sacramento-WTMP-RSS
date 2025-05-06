@@ -1,0 +1,4 @@
+PDCDataSet Name=RSSacTrnNS-WAT-W2 Shasta and ResSim-Deterministic
+Description=Copy of RSSacTrn, but with WQ setup to excude Shasta so that it can be simulated by another model or input. (PDC Data Set for WAT-W2 Shasta and ResSim-Deterministic)
+
+

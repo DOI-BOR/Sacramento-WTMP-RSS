@@ -1,0 +1,1132 @@
+{
+  "index" : 48822,
+  "name" : "SacTrnNoShasta_IC_linked",
+  "description" : "",
+  "constituentId" : 871,
+  "geometryId" : 48819,
+  "initialConditionSet" : {
+    "@type" : "WQInitialConditionSet2",
+    "description" : "",
+    "junctionConditionMap" : {
+      "@type" : "WQMap",
+      "entries" : [ {
+        "key" : 2,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 25,
+              "jnctId" : 167,
+              "name" : "ACID dam",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 38,
+              "jnctId" : 52,
+              "name" : "Bend Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 11,
+              "jnctId" : 162,
+              "name" : "Clear Cr + South Fork",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 27,
+              "jnctId" : 173,
+              "name" : "Douglas City",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 35,
+              "jnctId" : 165,
+              "name" : "Helena",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 36,
+              "jnctId" : 50,
+              "name" : "Jellys Ferry Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 31,
+              "jnctId" : 171,
+              "name" : "Junction City",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 9,
+              "jnctId" : 160,
+              "name" : "Lewiston WQ",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 14,
+              "jnctId" : 175,
+              "name" : "Limekiln Gulch",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 39,
+              "jnctId" : 45,
+              "name" : "Red Bluff Diversion",
+              "type" : "RIVER_OUTFLOW"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 34,
+              "jnctId" : 188,
+              "name" : "Sacramento R + Battle Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 13,
+              "jnctId" : 43,
+              "name" : "Sacramento R + Clear Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 32,
+              "jnctId" : 54,
+              "name" : "Sacramento R + Cottonwood Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 30,
+              "jnctId" : 63,
+              "name" : "Sacramento R + Cow Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 29,
+              "jnctId" : 209,
+              "name" : "Trinity R at Browns Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 33,
+              "jnctId" : 211,
+              "name" : "Trinity R at Canyon Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 12,
+              "jnctId" : 199,
+              "name" : "Trinity R at Grass Valley Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 22,
+              "jnctId" : 203,
+              "name" : "Trinity R at Indian Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 37,
+              "jnctId" : 213,
+              "name" : "Trinity R at NF Trinity R",
+              "type" : "RIVER_OUTFLOW"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 10,
+              "jnctId" : 201,
+              "name" : "Trinity R at Rush Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 24,
+              "jnctId" : 205,
+              "name" : "Trinity R at Weaver Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 26,
+              "jnctId" : 207,
+              "name" : "Trinity River at Reading Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 23,
+              "jnctId" : 5,
+              "name" : "Keswick Dam",
+              "type" : "RESERVOIR_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 5,
+              "jnctId" : 143,
+              "name" : "Lewiston Dam",
+              "type" : "RESERVOIR_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 7,
+              "jnctId" : 65,
+              "name" : "Whiskeytown Dam",
+              "type" : "RESERVOIR_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 2,
+              "override" : 10.0
+            }
+          } ]
+        }
+      }, {
+        "key" : 1,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 25,
+              "jnctId" : 167,
+              "name" : "ACID dam",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 38,
+              "jnctId" : 52,
+              "name" : "Bend Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 11,
+              "jnctId" : 162,
+              "name" : "Clear Cr + South Fork",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 27,
+              "jnctId" : 173,
+              "name" : "Douglas City",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 35,
+              "jnctId" : 165,
+              "name" : "Helena",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 36,
+              "jnctId" : 50,
+              "name" : "Jellys Ferry Bridge",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 31,
+              "jnctId" : 171,
+              "name" : "Junction City",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 9,
+              "jnctId" : 160,
+              "name" : "Lewiston WQ",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 14,
+              "jnctId" : 175,
+              "name" : "Limekiln Gulch",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 39,
+              "jnctId" : 45,
+              "name" : "Red Bluff Diversion",
+              "type" : "RIVER_OUTFLOW"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 34,
+              "jnctId" : 188,
+              "name" : "Sacramento R + Battle Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 13,
+              "jnctId" : 43,
+              "name" : "Sacramento R + Clear Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 32,
+              "jnctId" : 54,
+              "name" : "Sacramento R + Cottonwood Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 30,
+              "jnctId" : 63,
+              "name" : "Sacramento R + Cow Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 29,
+              "jnctId" : 209,
+              "name" : "Trinity R at Browns Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 33,
+              "jnctId" : 211,
+              "name" : "Trinity R at Canyon Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 12,
+              "jnctId" : 199,
+              "name" : "Trinity R at Grass Valley Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 22,
+              "jnctId" : 203,
+              "name" : "Trinity R at Indian Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 37,
+              "jnctId" : 213,
+              "name" : "Trinity R at NF Trinity R",
+              "type" : "RIVER_OUTFLOW"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 10,
+              "jnctId" : 201,
+              "name" : "Trinity R at Rush Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 24,
+              "jnctId" : 205,
+              "name" : "Trinity R at Weaver Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 26,
+              "jnctId" : 207,
+              "name" : "Trinity River at Reading Cr",
+              "type" : "RIVER_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 23,
+              "jnctId" : 5,
+              "name" : "Keswick Dam",
+              "type" : "RESERVOIR_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 5,
+              "jnctId" : 143,
+              "name" : "Lewiston Dam",
+              "type" : "RESERVOIR_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainBoundaryRef",
+              "geometryId" : 1043,
+              "id" : 7,
+              "jnctId" : 65,
+              "name" : "Whiskeytown Dam",
+              "type" : "RESERVOIR_2_RIVER"
+            },
+            "value" : {
+              "@type" : "WQInitialCondition",
+              "constituentId" : 1,
+              "override" : 10.0
+            }
+          } ]
+        }
+      } ]
+    },
+    "name" : "SacTrnNoShasta_IC_linked",
+    "reachInterpolationType" : "ONEWAYFORWARD",
+    "reservoirInterpolationType" : "LINEAR",
+    "reservoirSourcesMap" : {
+      "@type" : "WQMap",
+      "entries" : [ {
+        "key" : 2,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 33,
+              "name" : "Keswick Reservoir",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "Paired Data",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "numberCurves" : 1,
+                    "numberOrdinates" : 2,
+                    "transformType" : -2147483648,
+                    "xOrdinates" : [ 0.0, 1000.0 ],
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ 10.0, 10.0 ] ],
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "DSS Path" : "",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : -1,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 6,
+              "name" : "Lewiston Reservoir",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "Paired Data",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "numberCurves" : 1,
+                    "numberOrdinates" : 2,
+                    "transformType" : -2147483648,
+                    "xOrdinates" : [ 0.0, 1000.0 ],
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ 10.0, 10.0 ] ],
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "DSS Path" : "",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : -1,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 4,
+              "name" : "Trinity Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "Paired Data",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "numberCurves" : 1,
+                    "numberOrdinates" : 2,
+                    "transformType" : -2147483648,
+                    "xOrdinates" : [ 0.0, 3000.0 ],
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ 10.0, 10.0 ] ],
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "DSS Path" : "",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : -1,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 9,
+              "name" : "Whiskeytown Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "Paired Data",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "numberCurves" : 1,
+                    "numberOrdinates" : 2,
+                    "transformType" : -2147483648,
+                    "xOrdinates" : [ 0.0, 2000.0 ],
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ 10.0, 10.0 ] ],
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "DSS Path" : "",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : -1,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          } ]
+        }
+      }, {
+        "key" : 1,
+        "value" : {
+          "@type" : "WQMap",
+          "entries" : [ {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 33,
+              "name" : "Keswick Reservoir",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "DSS",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "numberCurves" : 1,
+                    "transformType" : -2147483648,
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ ] ],
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "units" : "ft/C",
+                  "availableUnits" : [ ],
+                  "compType" : 1,
+                  "DSS File Path" : "shared\\Keswick_R1_2010_2017-2020.dss",
+                  "DSS Path" : "//Keswick Reservoir/DEPTH-TEMP//2010-04-14//",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : 0,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 6,
+              "name" : "Lewiston Reservoir",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "DSS",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "numberCurves" : 1,
+                    "transformType" : -2147483648,
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ ] ],
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "units" : "ft/C",
+                  "availableUnits" : [ ],
+                  "compType" : 1,
+                  "DSS File Path" : "shared\\lewiston_upper_curtain_profiles.dss",
+                  "DSS Path" : "//Lewiston Reservoir/DEPTH-TEMP//2010-04-29//",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : 0,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 4,
+              "name" : "Trinity Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "DSS",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "numberCurves" : 1,
+                    "transformType" : -2147483648,
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ ] ],
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "units" : "ft/C",
+                  "availableUnits" : [ ],
+                  "compType" : 1,
+                  "DSS File Path" : "shared\\TrinityProf.dss",
+                  "DSS Path" : "//Trinity Lake/DEPTH-TEMP//2020-04-09//",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : 0,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          }, {
+            "key" : {
+              "@type" : "WQSubDomainRef",
+              "geometryId" : 1043,
+              "id" : 9,
+              "name" : "Whiskeytown Lake",
+              "type" : "RESERVOIR_1DV"
+            },
+            "value" : {
+              "@type" : "InitialConditionsSourceSelection",
+              "selectedKey" : "DSS",
+              "entries" : [ {
+                "key" : "Paired Data",
+                "value" : {
+                  "@type" : "PairedData",
+                  "name" : "Paired Data",
+                  "description" : "",
+                  "availableUnits" : [ ],
+                  "compType" : 0,
+                  "curve" : 0,
+                  "pairedDataContainer" : {
+                    "numberCurves" : 1,
+                    "transformType" : -2147483648,
+                    "xprecision" : -1,
+                    "yOrdinates" : [ [ ] ],
+                    "yprecision" : -1
+                  }
+                }
+              }, {
+                "key" : "DSS",
+                "value" : {
+                  "@type" : "PairedCurveData",
+                  "name" : "DSS",
+                  "description" : "",
+                  "units" : "ft/C",
+                  "availableUnits" : [ ],
+                  "compType" : 1,
+                  "DSS File Path" : "shared\\whiskeytown_1Prof.dss",
+                  "DSS Path" : "//Whiskeytown Lake/DEPTH-TEMP//2020-04-14//",
+                  "HasInterpretedUnits" : true,
+                  "Interpreted Units" : "",
+                  "curve" : 0,
+                  "interpretedUnits" : "",
+                  "profileData" : false,
+                  "selectionType" : "UseSelectedRecord"
+                }
+              } ]
+            }
+          } ]
+        }
+      } ]
+    }
+  },
+  "lastModifiedTime" : 1746116414800,
+  "version" : 2
+}

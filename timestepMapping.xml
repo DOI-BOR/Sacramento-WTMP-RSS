@@ -10,6 +10,7 @@
   <TimeStepInfo ModelAlternative="Forecast" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="5 Res Copy" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="WhisClear" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="RSSacTrnNS" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="WHI-Only" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="RSSacTrnRv" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="Shasta" TimeStep="1 Hour" Lookback="24" />

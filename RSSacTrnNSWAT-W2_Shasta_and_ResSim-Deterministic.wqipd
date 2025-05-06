@@ -1,0 +1,48 @@
+PDCDataSet Name=RSSacTrnNS-WAT-W2 Shasta and ResSim-Deterministic
+Description=
+
+PDCRecord=33
+PDCRecordImpl Name=Keswick Reservoir-Water_Temperature
+PDCRecordImpl Description=Constituent:Water_Temperature, Reservoir:Keswick Reservoir
+PDCRecordImpl Units=°C
+PDCRecordImpl Input=true
+PDCRecordImpl VariableId=2001
+PDCRecordImpl ParamName=Water Temperature
+PDCRecordImpl DssFilename=shared/WTMP_SacTrn_Forecast.dss
+PDCRecordImpl DssPathname=/Keswick Reservoir/IC/depth-temp///icPathsMap/
+PDCRecordImpl End=
+
+PDCRecord=6
+PDCRecordImpl Name=Lewiston Reservoir-Water_Temperature
+PDCRecordImpl Description=Constituent:Water_Temperature, Reservoir:Lewiston Reservoir
+PDCRecordImpl Units=°C
+PDCRecordImpl Input=true
+PDCRecordImpl VariableId=2001
+PDCRecordImpl ParamName=Water Temperature
+PDCRecordImpl DssFilename=shared/WTMP_SacTrn_Forecast.dss
+PDCRecordImpl DssPathname=/Lewiston Reservoir/IC/depth-temp///icPathsMap/
+PDCRecordImpl End=
+
+PDCRecord=4
+PDCRecordImpl Name=Trinity Lake-Water_Temperature
+PDCRecordImpl Description=Constituent:Water_Temperature, Reservoir:Trinity Lake
+PDCRecordImpl Units=°C
+PDCRecordImpl Input=true
+PDCRecordImpl VariableId=2001
+PDCRecordImpl ParamName=Water Temperature
+PDCRecordImpl DssFilename=shared/WTMP_SacTrn_Forecast.dss
+PDCRecordImpl DssPathname=/Trinity Lake/IC/depth-temp///icPathsMap/
+PDCRecordImpl End=
+
+PDCRecord=9
+PDCRecordImpl Name=Whiskeytown Lake-Water_Temperature
+PDCRecordImpl Description=Constituent:Water_Temperature, Reservoir:Whiskeytown Lake
+PDCRecordImpl Units=°C
+PDCRecordImpl Input=true
+PDCRecordImpl VariableId=2001
+PDCRecordImpl ParamName=Water Temperature
+PDCRecordImpl DssFilename=shared/WTMP_SacTrn_Forecast.dss
+PDCRecordImpl DssPathname=/Whiskeytown Lake/IC/depth-temp///icPathsMap/
+PDCRecordImpl End=
+
+

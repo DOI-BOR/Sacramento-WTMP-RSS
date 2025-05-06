@@ -83,6 +83,10 @@ stateVarNameTCDLevel = 'TCD_Level'
 # Script constants
 lastIterationPassNum = 2
 
+# list of alterantives where TCD script is not computed
+alts_to_skip = [
+	'RSSacTrnNS',
+]
 
 #######################################################################################################
 # Gets indexes of leakage points
@@ -151,8 +155,10 @@ def initRuleScript(currentRule, network):
 
     applyRule = checkApplyRule(currentRule, network)
 
+    alt = str(network.getAlternative())
+        	
     # Handle case where rule is active or disable but WQ for reservoir is not being run
-    if not applyRule:
+    if not applyRule or alt in alts_to_skip:
         currentRule.setEvalRule(False)
         network.getRssRun().printWarningMessage("Warning: Scripted rule " + currentRule.getName() + 
             " references Water Quality which is disabled for this simulation. Rule will be ignored.")
@@ -160,7 +166,8 @@ def initRuleScript(currentRule, network):
 
     # WQ is being simulated
     else:
-        # Pass information to the WQEngine that says we're dealing with the Shasta TCD
+
+		# Pass information to the WQEngine that says we're dealing with the Shasta TCD
         wqRun = network.getWQRun()
         engineAdapter = wqRun.getWQEngineAdapter()
         resOp = currentRule.getController().getReservoirOp()
@@ -197,7 +204,7 @@ def runRuleScript(currentRule, network, currentRuntimestep):
     #  (On 0th iteration, only local res decisions being evaluated and WQ is not being run yet)
     computeIter = currentRule.getComputeIteration()
     evalRule = currentRule.getEvalRule() and (computeIter >= lastIterationPassNum)
-    
+
     if evalRule:
 
         # Get current water quality target

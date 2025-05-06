@@ -2,9 +2,6 @@
   "index" : 17814,
   "name" : "UpperSac-Trinity BC forecast",
   "description" : "",
-  "Description" : "",
-  "Index" : 17814,
-  "Name" : "UpperSac-Trinity BC forecast",
   "constituentSetId" : 871,
   "geometryId" : 1043,
   "lastModifiedTime" : 1695146529799,
@@ -22,60 +19,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R CANYON CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -91,55 +92,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -155,60 +158,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//SWIFT CR/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -224,55 +231,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -288,60 +297,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R RUSH CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -357,55 +370,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -421,55 +436,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -485,55 +502,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -549,56 +568,58 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
-        "DSS Path" : "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
+        "DSS Path" : "/USBR/SPRING_CREEK_DEBRIS_DAM/TEMP-WATER//1HOUR/USBR_DERIVED/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -614,60 +635,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/COTTONWOOD_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -683,60 +708,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/COW_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/COW_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/COW_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/COW_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -752,60 +781,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//Shasta-Pit-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Pit-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//Shasta-Pit-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Pit-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -821,60 +854,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//EF TRINITY/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -890,60 +927,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/BATTLE_CREEK/TEMP-IN//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -959,60 +1000,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R READING CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1028,60 +1073,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R BROWNS CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1097,60 +1146,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//TRINITY RIVER/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1166,54 +1219,56 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "",
-        "Interpreted Units" : "",
+        "name" : "DSS",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 0,
-        "description" : "",
+        "DSS Path" : "",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "",
         "interpretedUnits" : "",
-        "name" : "DSS"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1229,55 +1284,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1293,55 +1350,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1357,60 +1416,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//Shasta-McCloud-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-McCloud-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//Shasta-McCloud-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-McCloud-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1426,56 +1489,58 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\USBR_inputs.dss",
-        "DSS Path" : "/USBR/CLEAR CREAK WHI INFLOW ADJUSTED/TEMP-WATER//1HOUR/WATERCOURSE/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\USBR_inputs.dss",
+        "DSS Path" : "/USBR/CLEAR CREAK WHI INFLOW ADJUSTED/TEMP-WATER//1HOUR/WATERCOURSE/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1491,55 +1556,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1555,60 +1622,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R GRASS VALLEY CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1624,60 +1695,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R WEAVER CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1693,60 +1768,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "/USBR/TRINITY R INDIAN CK/TEMP-WATER//1Day/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1762,55 +1841,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1826,55 +1907,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1890,60 +1973,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -1959,55 +2046,57 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS Path" : "///////",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS Path" : "///////",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : ""
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -2023,60 +2112,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_AT_JUNCTION",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_AT_JUNCTION"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//Shasta-Sac-in/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : true,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     }, {
@@ -2092,60 +2185,64 @@
       "constituentId" : 1,
       "dataSources" : [ {
         "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
         "availableUnits" : [ ],
         "compType" : 2,
         "dates" : [ ],
-        "description" : "",
-        "name" : "Table Data",
         "values" : [ ]
       }, {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       }, {
         "@type" : "ExcelData",
-        "availableUnits" : [ ],
-        "bottomRow" : 0,
-        "compType" : 2,
-        "description" : "",
         "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ ],
+        "compType" : 2,
+        "bottomRow" : 0,
         "timeColumn" : "",
         "topRow" : 0,
         "valueColumn" : "",
         "worksheetName" : ""
       }, {
         "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Constant Value",
         "value" : "-Infinity"
       }, {
         "@type" : "AmbientData",
-        "OptionType" : "AVERAGE_RECIEVING_WATER",
+        "name" : "Ambient Value",
+        "description" : "",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 2,
-        "description" : "",
-        "name" : "Ambient Value"
+        "OptionType" : "AVERAGE_RECIEVING_WATER"
       } ],
       "selectedDataSource" : {
         "@type" : "DssData",
-        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
-        "DSS Path" : "//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
-        "Interpreted Units" : "\u00B0C",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "deg C",
         "availableUnits" : [ "\u00B0C" ],
         "compType" : 1,
-        "description" : "",
+        "DSS File Path" : "shared\\WTMP_SacTrn_Forecast.dss",
+        "DSS Path" : "//STUART FORK/TEMP-WATER//1Hour/SACTRN_BC_SCRIPT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
         "interpretedUnits" : "\u00B0C",
-        "name" : "DSS",
-        "units" : "deg C"
+        "profileData" : false
       },
       "units" : [ "\u00B0C" ]
     } ],

@@ -1,4 +1,4 @@
-TSDataSet Name=RSSacTrnRv
+TSDataSet Name=Input TS DataSet for RSSacTrnRv
 Description=Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used. (TS Data Set)
 
 _type=0

@@ -1,0 +1,340 @@
+{
+  "id" : 48841,
+  "name" : "SacTrn_Obs_1",
+  "description" : "",
+  "stations" : [ {
+    "active" : true,
+    "description" : "Observation/Compliance location at Balls Ferry",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 1864791.9051570534, 1.4679884407720307E7 ]
+    },
+    "id" : 0,
+    "isProfileStation" : false,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : false,
+    "name" : "Balls Ferry",
+    "nearestMeridian" : 0,
+    "networkElements" : [ {
+      "elementId" : 64,
+      "networkId" : 1
+    } ],
+    "observed" : true,
+    "referenceElevation" : 0.0,
+    "snapToStreamElement" : false,
+    "stationIconLatitude" : 1.4680185059663152E7,
+    "stationIconLongitude" : 1867989.5588705726,
+    "streamName" : "Sacramento River",
+    "streamStation" : 1449507.1159788987,
+    "variables" : [ {
+      "@type" : "WQObsConstituentVariable",
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "DEG C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
+        "DSS Path" : "/SACRAMENTO/BALLS FERRY BRIDGE(BSF)/TEMP//IR-MONTH/TEMPERATURE-MERGED/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "datasource" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "DEG C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
+        "DSS Path" : "/SACRAMENTO/BALLS FERRY BRIDGE(BSF)/TEMP//IR-MONTH/TEMPERATURE-MERGED/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "displayName" : "Water Temperature",
+      "selectedDataSourceName" : "DSS"
+    } ]
+  }, {
+    "active" : true,
+    "description" : "Above Clear Creek monitoring location",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 1818861.3282091303, 1.4723675896361647E7 ]
+    },
+    "id" : 1,
+    "isProfileStation" : false,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : false,
+    "name" : "CCR",
+    "nearestMeridian" : 0,
+    "networkElements" : [ {
+      "elementId" : 168,
+      "networkId" : 1
+    } ],
+    "observed" : true,
+    "referenceElevation" : 0.0,
+    "snapToStreamElement" : false,
+    "stationIconLatitude" : 1.4725857207114095E7,
+    "stationIconLongitude" : 1821147.2915083438,
+    "streamName" : "Sacramento River",
+    "streamStation" : 1533564.2333435623,
+    "variables" : [ {
+      "@type" : "WQObsConstituentVariable",
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
+        "DSS Path" : "//CCR/TEMPERATURE-WATER//IR-MONTH/CDEC-EDIT-MERGED/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "datasource" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "C",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
+        "DSS Path" : "//CCR/TEMPERATURE-WATER//IR-MONTH/CDEC-EDIT-MERGED/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "displayName" : "Water Temperature",
+      "selectedDataSourceName" : "DSS"
+    } ]
+  }, {
+    "active" : true,
+    "description" : "Observation/Compliance location at Airport Road",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ 1836592.2222560034, 1.4699400998800084E7 ]
+    },
+    "id" : 2,
+    "isProfileStation" : false,
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "metStation" : false,
+    "name" : "Airport Road",
+    "nearestMeridian" : 0,
+    "networkElements" : [ {
+      "elementId" : 49,
+      "networkId" : 1
+    } ],
+    "observed" : true,
+    "referenceElevation" : 0.0,
+    "snapToStreamElement" : false,
+    "stationIconLatitude" : 1.4703005802115882E7,
+    "stationIconLongitude" : 1837196.504643964,
+    "streamName" : "Sacramento River",
+    "streamStation" : 1491721.9867495312,
+    "variables" : [ {
+      "@type" : "WQObsConstituentVariable",
+      "constituentId" : 1,
+      "dataSources" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
+        "DSS Path" : "//AND (AIRPORT ROAD)/TEMPERATURE-WATER//1HOUR/CDEC-EDIT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "datasource" : [ {
+        "@type" : "TableData",
+        "name" : "Table Data",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "dates" : [ ],
+        "values" : [ ]
+      }, {
+        "@type" : "DssData",
+        "name" : "DSS",
+        "description" : "",
+        "units" : "F",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 1,
+        "DSS File Path" : "shared\\WTMP_SacTrn_Historical.dss",
+        "DSS Path" : "//AND (AIRPORT ROAD)/TEMPERATURE-WATER//1HOUR/CDEC-EDIT/",
+        "HasInterpretedUnits" : false,
+        "Interpreted Units" : "\u00B0C",
+        "interpretedUnits" : "\u00B0C",
+        "profileData" : false
+      }, {
+        "@type" : "ExcelData",
+        "name" : "Excel Worksheet",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "bottomRow" : 0,
+        "timeColumn" : "",
+        "topRow" : 0,
+        "valueColumn" : "",
+        "worksheetName" : ""
+      }, {
+        "@type" : "ConstantData",
+        "name" : "Constant Value",
+        "description" : "",
+        "availableUnits" : [ "\u00B0C" ],
+        "compType" : 2,
+        "value" : "-Infinity"
+      } ],
+      "displayName" : "Water Temperature",
+      "selectedDataSourceName" : "DSS"
+    } ]
+  } ],
+  "userDefinedVariables" : [ ]
+}

@@ -1,24 +1,14 @@
-ModifiedTime=1743100293806
+ModifiedTime=1746202791366
 GVDataSet Name=RSSacTrn-WAT-ResSim Only
 Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system. (GV Data Set for WAT-ResSim Only)
 
 GVRecord=TIME_SERIES
-GVRecord Name=Whiskeytown_target
-GVRecord ID=19
+GVRecord Name=KRDD_Equilibrium_Temp
+GVRecord ID=38
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/
+GVRecord DssPathname=/MR Sac.-Clear Cr. to Sac R./KRDD/Temp-Equil//1Day/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=WHI-target-13
-GVRecord LinkedModel=DSS File
-GVRecord End
-
-GVRecord=TIME_SERIES
-GVRecord Name=TCD_target
-GVRecord ID=1
-GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/
-GVRecord DataLocation=true
-GVRecord LinkedLocation=SHASTA
+GVRecord LinkedLocation=KRDD
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -33,12 +23,12 @@ GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDU_gates_open
-GVRecord ID=5
+GVRecord Name=Whiskeytown_target
+GVRecord ID=19
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
+GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=FIVE-BY-HOUR
+GVRecord LinkedLocation=WHI-target-13
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -52,33 +42,33 @@ GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End
 
-GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDS_gates_open
-GVRecord ID=8
+GVRecord=SCALAR
+GVRecord Name=Downstream_Control_Loc
+GVRecord ID=36
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
+GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/SACTRN_TARGET_TEMP/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=ZERO-BY-HOUR
+GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=KRDD_Equilibrium_Temp
-GVRecord ID=38
+GVRecord Name=TCD_target
+GVRecord ID=1
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=/MR Sac.-Clear Cr. to Sac R./KRDD/Temp-Equil//1Day/sactrn_bc_script/
+GVRecord DssPathname=/USBR/SHASTA/TEMP-WATER-TARGET//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=KRDD
+GVRecord LinkedLocation=SHASTA
 GVRecord LinkedModel=DSS File
 GVRecord End
 
 GVRecord=TIME_SERIES
-GVRecord Name=Total_TCDL_gates_open
-GVRecord ID=7
+GVRecord Name=Total_TCDU_gates_open
+GVRecord ID=5
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
 GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=ZERO-BY-HOUR
+GVRecord LinkedLocation=FIVE-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -92,13 +82,23 @@ GVRecord LinkedLocation=
 GVRecord LinkedModel=
 GVRecord End
 
-GVRecord=SCALAR
-GVRecord Name=Downstream_Control_Loc
-GVRecord ID=36
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDL_gates_open
+GVRecord ID=7
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/SACTRN_TARGET_TEMP/
+GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
+GVRecord LinkedLocation=ZERO-BY-HOUR
+GVRecord LinkedModel=DSS File
+GVRecord End
+
+GVRecord=TIME_SERIES
+GVRecord Name=Total_TCDS_gates_open
+GVRecord ID=8
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1HOUR/sactrn_bc_script/
+GVRecord DataLocation=true
+GVRecord LinkedLocation=ZERO-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
