@@ -1,13 +1,13 @@
 RssAlt Name=RSSacTrn
 RssAlt Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system.
 Version=1001
-ModifiedTime=1746165968026
+ModifiedTime=1749226360351
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
 InputTSData Path=rss/RSSacTrn.fits
 OutputTSData Path=
-InputGVData Path=
+InputGVData Path=rss/RSSacTrn.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -109,13 +109,11 @@ MaxHeuristicIterations=8
 YieldAnalysisRuleRefBegin
 Reservoir=8:Shasta Lake
 Rule=1:Specified Release:1
-StorageZone=8:Shasta Lake,4:Forecast Op Set,2:Flood Control,1000.0
 Tolerance=10.0
 YieldAnalysisRuleRefEnd
 YieldAnalysisRuleRefBegin
 Reservoir=8:Shasta Lake
 Rule=0:PowerPlant-Specified:27
-StorageZone=8:Shasta Lake,4:Forecast Op Set,2:Flood Control,1000.0
 Tolerance=10.0
 YieldAnalysisRuleRefEnd
 YieldAnalysisEnd
@@ -187,18 +185,7 @@ Hindcast=~E186:F;41;0;-Infinity
 Hindcast=~E187:F;41;1;0.0
 Hindcast=~E197:F;41;1;0.0
 Hindcast=~E196:F;43;1;0.0
-Hindcast=~S2;98;1;0.01
-Hindcast=~S4;98;1;0.01
-Hindcast=~S9;98;1;0.01
-Hindcast=~S10;98;1;1.0E-6
 Hindcast=~S11;98;1;0.0
-Hindcast=~S12;98;1;0.0
-Hindcast=~S14;98;1;0.0
-Hindcast=~S15;98;1;0.0
-Hindcast=~S16;98;1;0.0
-Hindcast=~S17;98;1;0.0
-Hindcast=~S18;98;1;0.0
-Hindcast=~S20;98;1;0.0
 Hindcast=~S21;98;1;0.0
 Hindcast=~S25;98;1;0.0
 Hindcast=~S30;98;1;0.0
@@ -234,6 +221,8 @@ TimeStep=1
 TimeStepIncrement=2
 Constituent=UpperSac-Trinity Temperature
 ConstituentId=871
+ObsData=SacTrn_Obs_1
+ObsDataId=48841
 InitialConditions=SacTrn_IC_linked
 InitialConditionsId=26933
 BoundaryConditions=UpperSac-Trinity BC forecast
@@ -264,13 +253,23 @@ CoupledFlowWQCompute=true
 WaterQualityEnd
 PlugInDataBegin
 PlugIn:Monte Carlo
-MinIterations:-2147483648
-MaxIterations:-2147483648
+MinIterations:100
+MaxIterations:1000
 LastIteration:0
 CumulativeTime:0
 SimulationOption:0
-ScriptFilePath:rss/RSSacTrn.mcscript
-IterationString:
+ScriptFilePath:rss/RSSacTrn.mcscripts
+Iteration:1
+Iteration:2
+Iteration:3
+Iteration:4
+Iteration:5
+Iteration:6
+Iteration:7
+Iteration:8
+Iteration:9
+Iteration:10
+IterationString:1-10
 Compute:false
 StandAloneRandomSeed:0.0
 PlugInEnd

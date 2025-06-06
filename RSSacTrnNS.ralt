@@ -1,13 +1,13 @@
 RssAlt Name=RSSacTrnNS
 RssAlt Description=Copy of RSSacTrn, but with WQ setup to excude Shasta so that it can be simulated by another model or input.
 Version=1001
-ModifiedTime=1746198267781
+ModifiedTime=1748978469557
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
 InputTSData Path=rss/RSSacTrnNS.fits
 OutputTSData Path=
-InputGVData Path=rss/RSSacTrnNS.igv
+InputGVData Path=
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1

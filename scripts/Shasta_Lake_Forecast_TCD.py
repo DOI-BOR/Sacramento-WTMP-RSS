@@ -426,7 +426,9 @@ def getNumGatesOpen(network, currentRuntimestep, levelName, isHistorical=False):
     if not globVar:
         raise NameError("Global variable: " + globalVarName + " not found.")
     numGates = globVar.getCurrentValue(currentRuntimestep)
-    
+
+    #network.printMessage('read global var '+globalVarName+': '+str(numGates))
+
     if numGates < 0 or numGates > maxGates:
         raise ValueError("Global variable: " + globalVarName + " has invalid value " +
                          str(numGates) + " for time step: " + str(currentRuntimestep.step))
@@ -499,12 +501,15 @@ def getHistoricalGateLevel(network, currentRuntimestep):
     for gateLevelName in gateLevelNames:
         nOpen = getNumGatesOpen(network, currentRuntimestep, gateLevelName, isHistorical=True)
         nGatesHist.append(nOpen)
+        #network.printMessage(gateLevelName+' nOpen '+str(nOpen))
 
     gateOptions = getNumGateOptions()
     level = -1
     for level, nGates in gateOptions.items():
         matches = True
+        #network.printMessage('gateOptions level '+str(level)+str(nGates))
         for gateLevel in range(len(gateLevelNames)):
+            #network.printMessage('gatelevel '+str(gateLevel)+' histGate: '+str(nGatesHist[gateLevel])+' gateOp: '+str(nGates[gateLevel]))
             if nGatesHist[gateLevel] == 0 and nGates[gateLevel] != 0:
                 matches = False
             elif nGatesHist[gateLevel] != 0 and nGates[gateLevel] == 0:
@@ -788,6 +793,7 @@ def getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev
     insideOpPeriod = curDate >= startOpDate and curDate <= endOpDate
     
     elevRestrictionLevel = getElevationRestrictionLevel(currentRule, network, resElev)
+    #network.printMessage('elevRestrictionLevel: '+str(elevRestrictionLevel))
     gateOptions = getNumGateOptions()
     nGateOptions = len(gateOptions)
 
@@ -798,14 +804,17 @@ def getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev
     # iCurStep comes in at num LB steps + 1 for first time step
     if iCurStep <= currentRuntimestep.getRunTimeWindow().getNumLookbackSteps() + 1:
         histLevel = getHistoricalGateLevel(network, currentRuntimestep)
+        #network.printMessage('histLevel: '+str(histLevel))
         if histLevel > 0:  # valid value found
             level = max(histLevel, elevRestrictionLevel)
             tcdTemp, tcdFlows = setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
                                                 tcdMinFlow, riverOutletFlow, riverOutletTemp, level)
+            #network.printMessage('histlevel tcdTemp: '+str(tcdTemp))
         else:  # find a set of gate openings that hits the target temperature without any operating restrictions
             tcdTemp, tcdFlows = findTCDTempAndFlowsNoRestriction(currentRule, network,
                                    currentRuntimestep, resElev, elevRestrictionLevel, targetTemp, 
                                    tcdMinFlow, riverOutletFlow, riverOutletTemp)
+            #network.printMessage('unrestricted tcdTemp: '+str(tcdTemp))
         setTempTargetViolations(network, 0)
         return tcdTemp, tcdFlows
     else:  # Not the first time step
@@ -1011,9 +1020,10 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
 
     # Get the downstream control location
     loc = getDSControlLoc(network,currentRuntimestep)
-    #network.printMessage('loc ' + str(loc))
+    #network.printMessage('getDSControlLoc: ' + str(loc))
     
     if loc == 0:  # At Shasta Dam - no backrouting needed
+        #network.printMessage('In Shasta Dam - no backroute')
         return wqTarget
     elif loc == 1:  # Highway 44
         downstreamDistance = 30000.  # in feet

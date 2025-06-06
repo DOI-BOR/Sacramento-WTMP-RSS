@@ -8,7 +8,7 @@ PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
-PDCRecordImpl DssFilename=shared/WTMP_SacTrn_Forecast.dss
+PDCRecordImpl DssFilename=J:/Work_2024/USBR_maintenace/WTMP_SacramentoTrinity/shared/WTMP_SacTrn_Forecast.dss
 PDCRecordImpl DssPathname=/Keswick Reservoir/IC/depth-temp///icPathsMap/
 PDCRecordImpl End=
 
@@ -19,7 +19,7 @@ PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
-PDCRecordImpl DssFilename=shared/WTMP_SacTrn_Forecast.dss
+PDCRecordImpl DssFilename=J:/Work_2024/USBR_maintenace/WTMP_SacramentoTrinity/shared/WTMP_SacTrn_Forecast.dss
 PDCRecordImpl DssPathname=/Lewiston Reservoir/IC/depth-temp///icPathsMap/
 PDCRecordImpl End=
 
@@ -30,7 +30,7 @@ PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
-PDCRecordImpl DssFilename=shared/WTMP_SacTrn_Forecast.dss
+PDCRecordImpl DssFilename=J:/Work_2024/USBR_maintenace/WTMP_SacramentoTrinity/shared/WTMP_SacTrn_Forecast.dss
 PDCRecordImpl DssPathname=/Trinity Lake/IC/depth-temp///icPathsMap/
 PDCRecordImpl End=
 
@@ -41,7 +41,7 @@ PDCRecordImpl Units=°C
 PDCRecordImpl Input=true
 PDCRecordImpl VariableId=2001
 PDCRecordImpl ParamName=Water Temperature
-PDCRecordImpl DssFilename=shared/WTMP_SacTrn_Forecast.dss
+PDCRecordImpl DssFilename=J:/Work_2024/USBR_maintenace/WTMP_SacramentoTrinity/shared/WTMP_SacTrn_Forecast.dss
 PDCRecordImpl DssPathname=/Whiskeytown Lake/IC/depth-temp///icPathsMap/
 PDCRecordImpl End=
 
