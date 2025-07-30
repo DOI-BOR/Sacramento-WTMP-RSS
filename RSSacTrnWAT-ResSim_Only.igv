@@ -1,4 +1,4 @@
-ModifiedTime=1749229007879
+ModifiedTime=1753803347472
 GVDataSet Name=RSSacTrn-WAT-ResSim Only
 Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system. (GV Data Set for WAT-ResSim Only)
 
@@ -46,9 +46,9 @@ GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDM_gates_open
 GVRecord ID=6
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//ZERO-BY-HOUR/FLOW-ZERO//1Hour/SACTRN_BC_SCRIPT/
+GVRecord DssPathname=//TWO-BY-HOUR/GATES-2//1Hour/SACTRN_BC_SCRIPT/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=ZERO-BY-HOUR
+GVRecord LinkedLocation=TWO-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 
@@ -76,9 +76,9 @@ GVRecord=TIME_SERIES
 GVRecord Name=Total_TCDU_gates_open
 GVRecord ID=5
 GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
-GVRecord DssPathname=//FIVE-BY-HOUR/GATES-FIVE//1Hour/SACTRN_BC_SCRIPT/
+GVRecord DssPathname=//THREE-BY-HOUR/GATES-3//1Hour/SACTRN_BC_SCRIPT/
 GVRecord DataLocation=true
-GVRecord LinkedLocation=FIVE-BY-HOUR
+GVRecord LinkedLocation=THREE-BY-HOUR
 GVRecord LinkedModel=DSS File
 GVRecord End
 

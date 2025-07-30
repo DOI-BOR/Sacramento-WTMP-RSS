@@ -1,4 +1,4 @@
-ModifiedTime=1745947754943
+ModifiedTime=1750103062217
 GVDataSet Name=RSSacTrnPO-WAT-ResSim Prescribed
 Description=Upper Sacramento / Trinity System ResSim model with all Reservoirs
 
@@ -85,8 +85,8 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=rss/RSSacTrnPO_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnPO-ResSim-Default/
+GVRecord DssFilename=shared/Downstream_control_loc_default.dss
+GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/DEFAULT/
 GVRecord DataLocation=true
 GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
 GVRecord LinkedModel=DSS File
