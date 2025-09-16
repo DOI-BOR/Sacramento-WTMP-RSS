@@ -71,7 +71,7 @@ def runRuleScript(currentRule, network, currentRuntimestep):
         # Find current minimum flow requirement through the controlled outlet with the WQCD
         usePrevStepAsEstimate = True  # if flow value not available, use previous timestep val as estimate
         co_flow = resOp.getWQControlDeviceFlow(currentRuntimestep, currentRule, usePrevStepAsEstimate)
-        if not isValidValue(co_flow):
+        if not isValidValue(co_flow,checkZero=False): # would need to be checkZero=true, if using getOptimalFlows()...
             raise ValueError("Invalid value: " + str(co_flow) + " for Whiskeytown controlled outlet flow for time step: "
                              + str(currentRuntimestep.step))
 
@@ -162,11 +162,11 @@ def getGateConfig(network, currentRuntimestep):
 #######################################################################################################
 # Check whether a WQ target value is valid
 def isValidValue(value, checkZero=True):
-    if not value:
+    if not isinstance(value,float):
         return False
     elif value == Constants.UNDEFINED_DOUBLE:
         return False
-    elif checkZero and value < 0.:
+    elif checkZero and value < 0.0:
         return False
     else:
         return True
