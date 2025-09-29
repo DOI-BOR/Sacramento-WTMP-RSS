@@ -1,4 +1,4 @@
-ModifiedTime=1748876933263
+ModifiedTime=1759001679714
 GVDataSet Name=RSSacTrnNS-WAT-W2 Shasta and ResSim
 Description=Copy of RSSacTrn, but with WQ setup to excude Shasta so that it can be simulated by another model or input. (GV Data Set for WAT-W2 Shasta and ResSim)
 
@@ -45,8 +45,8 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=rss/RSSacTrnNS_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnNS-ResSim-Default/
+GVRecord DssFilename=shared/WTMP_SacTrn_Forecast.dss
+GVRecord DssPathname=//DOWNSTREAM_CONTROL_LOC///INTEGER/SACTRN_TARGET_TEMP/
 GVRecord DataLocation=true
 GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
 GVRecord LinkedModel=DSS File
