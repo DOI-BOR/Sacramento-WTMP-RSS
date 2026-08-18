@@ -1,4 +1,4 @@
-TSDataSet Name=WhisClear
+TSDataSet Name=Input TS DataSet for WhisClear
 Description=(TS Data Set)
 
 _type=0

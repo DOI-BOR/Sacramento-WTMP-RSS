@@ -1,7 +1,7 @@
 RssAlt Name=RSSacTrn
 RssAlt Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system.
 Version=1001
-ModifiedTime=1749226360351
+ModifiedTime=1787085352234
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
@@ -20,6 +20,7 @@ LogLevel=3
 UseYieldAnalysis=false
 SelectedYieldAnalysis=Reservoir Yield
 ReservoirYieldAnalysisBegin
+UseDemandVarLimit=false
 YieldAnalysisBegin
 UseHydropowerRules=false
 MaxIteration=25
@@ -75,6 +76,7 @@ ReverseReservoirYieldAnalysisEnd
 WaterAccountYieldAnalysisBegin
 Tolerence=0.0
 WaterAccountIndex=-2147483648
+UseDemandVarLimit=false
 YieldAnalysisBegin
 UseHydropowerRules=false
 MaxIteration=25
@@ -109,11 +111,13 @@ MaxHeuristicIterations=8
 YieldAnalysisRuleRefBegin
 Reservoir=8:Shasta Lake
 Rule=1:Specified Release:1
+StorageZone=8:Shasta Lake,4:Forecast Op Set,2:Flood Control,1000.0
 Tolerance=10.0
 YieldAnalysisRuleRefEnd
 YieldAnalysisRuleRefBegin
 Reservoir=8:Shasta Lake
 Rule=0:PowerPlant-Specified:27
+StorageZone=8:Shasta Lake,4:Forecast Op Set,2:Flood Control,1000.0
 Tolerance=10.0
 YieldAnalysisRuleRefEnd
 YieldAnalysisEnd
@@ -192,13 +196,6 @@ Hindcast=~S30;98;1;0.0
 Hindcast=~S31;98;1;0.0
 Hindcast=~S32;98;1;0.0
 Hindcast=~S33;98;1;0.0
-InputTsVariant=WAT-Default-Deterministic,false
-InputTsVariant=WAT-ResSim_Script-Deterministic,false
-InputTsVariant=ResSim_Script-Deterministic,true
-InputTsVariant=WAT-ResSim Only-Deterministic,true
-InputTsVariant=ResSim Only-Deterministic,true
-InputTsVariant=WAT-ResSim Only,true
-InputTsVariant=ResSim Only,true
 UsingInflowFactors=false
 InflowFactorType=0
 GlobalInflowFactor=1.0
