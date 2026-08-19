@@ -1,4 +1,4 @@
-TSDataSet Name=RSSacRiv
+TSDataSet Name=Input TS DataSet for RSSacRiv
 Description=River-only model with upstream boundaries at Keswick Dam and Whiskeytown Dam (TS Data Set)
 
 _type=0
