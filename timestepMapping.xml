@@ -6,7 +6,7 @@
   <TimeStepInfo ModelAlternative="SacTrnRvP" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="ShaKesSac" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="RSSacTrn" TimeStep="1 Hour" Lookback="24" />
-  <TimeStepInfo ModelAlternative="WhisClear" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="WhsClrP" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="SacTrnNSF" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="SacTrnRvF" TimeStep="1 Hour" Lookback="24" />
 </ResSimTimeStepMap>

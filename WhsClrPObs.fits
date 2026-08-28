@@ -1,4 +1,4 @@
-TSDataSet Name=WhisClearObs
+TSDataSet Name=WhsClrPObs
 Description=(Observed TS Data Set)
 
 _type=0
