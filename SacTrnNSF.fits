@@ -1,4 +1,4 @@
-TSDataSet Name=Input TS DataSet for RSSacTrnNS
+TSDataSet Name=Input TS DataSet for SacTrnNSF
 Description=Copy of RSSacTrn, but with WQ setup to excude Shasta so that it can be simulated by another model or input. (TS Data Set)
 
 _type=0

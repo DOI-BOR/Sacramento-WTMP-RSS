@@ -85,8 +85,8 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=rss/RSSacTrnNS_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacTrnNS-ResSim-Default/
+GVRecord DssFilename=rss/SacTrnNSF_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/SacTrnNSF-ResSim-Default/
 GVRecord DataLocation=true
 GVRecord LinkedLocation=DOWNSTREAM_CONTROL_LOC
 GVRecord LinkedModel=DSS File

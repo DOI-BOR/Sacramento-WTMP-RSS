@@ -1,13 +1,13 @@
-RssAlt Name=RSSacTrnNS
+RssAlt Name=SacTrnNSF
 RssAlt Description=Copy of RSSacTrn, but with WQ setup to excude Shasta so that it can be simulated by another model or input.
 Version=1001
 ModifiedTime=1787085398700
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
-InputTSData Path=rss/RSSacTrnNS.fits
+InputTSData Path=rss/SacTrnNSF.fits
 OutputTSData Path=
-InputGVData Path=rss/RSSacTrnNS.igv
+InputGVData Path=rss/SacTrnNSF.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -144,7 +144,7 @@ YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 ReservoirStorageVsYieldAnalysisEnd
 TimeStep=1
 TimeIncrement=2
-ObservedTSData Path=rss/RSSacTrnNSObs.fits
+ObservedTSData Path=rss/SacTrnNSFObs.fits
 resOpSelection=141,1
 resOpSelection=8,4
 resOpSelection=126,2
@@ -255,7 +255,7 @@ MaxIterations:1000
 LastIteration:0
 CumulativeTime:0
 SimulationOption:0
-ScriptFilePath:rss/RSSacTrnNS.mcscripts
+ScriptFilePath:rss/SacTrnNSF.mcscripts
 Iteration:1
 Iteration:2
 Iteration:3
