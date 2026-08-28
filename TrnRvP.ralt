@@ -1,13 +1,13 @@
-RssAlt Name=RSTrnRiv
+RssAlt Name=TrnRvP
 RssAlt Description=River-only model with upstream boundary at Lewiston Dam
 Version=1001
 ModifiedTime=1787085379088
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
-InputTSData Path=rss/RSTrnRiv.fits
+InputTSData Path=rss/TrnRvP.fits
 OutputTSData Path=
-InputGVData Path=rss/RSTrnRiv.igv
+InputGVData Path=rss/TrnRvP.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -144,7 +144,7 @@ YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 ReservoirStorageVsYieldAnalysisEnd
 TimeStep=1
 TimeIncrement=2
-ObservedTSData Path=rss/RSTrnRivObs.fits
+ObservedTSData Path=rss/TrnRvPObs.fits
 resOpSelection=141,1
 resOpSelection=8,3
 resOpSelection=126,1
@@ -253,7 +253,7 @@ MaxIterations:1000
 LastIteration:0
 CumulativeTime:0
 SimulationOption:0
-ScriptFilePath:rss/RSTrnRiv.mcscripts
+ScriptFilePath:rss/TrnRvP.mcscripts
 Iteration:1
 Iteration:2
 Iteration:3
