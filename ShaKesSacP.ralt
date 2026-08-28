@@ -1,13 +1,13 @@
-RssAlt Name=ShaKesSac
+RssAlt Name=ShaKesSacP
 RssAlt Description=
 Version=1001
 ModifiedTime=1787085343291
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
-InputTSData Path=rss/ShaKesSac.fits
+InputTSData Path=rss/ShaKesSacP.fits
 OutputTSData Path=
-InputGVData Path=rss/ShaKesSac.igv
+InputGVData Path=rss/ShaKesSacP.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -144,7 +144,7 @@ YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 ReservoirStorageVsYieldAnalysisEnd
 TimeStep=1
 TimeIncrement=2
-ObservedTSData Path=rss/ShaKesSacObs.fits
+ObservedTSData Path=rss/ShaKesSacPObs.fits
 resOpSelection=141,1
 resOpSelection=8,3
 resOpSelection=126,1
@@ -218,17 +218,17 @@ TimeStep=1
 TimeStepIncrement=2
 Constituent=UpperSac-Trinity Temperature
 ConstituentId=871
-InitialConditions=ShaKesSac_IC-2000
+InitialConditions=ShaKesSacP_IC-2000
 InitialConditionsId=12094
-BoundaryConditions=ShaKesSac_BC1
+BoundaryConditions=ShaKesSacP_BC1
 BoundaryConditionsId=12095
 MetData=UpperSac-Trinity 7-station
 MetDataId=873
-DispersionCoef=ShaKesSac_DZ
+DispersionCoef=ShaKesSacP_DZ
 DispersionCoefId=12108
-Parameters=ShaKesSac_P1
+Parameters=ShaKesSacP_P1
 ParametersId=12093
-WqGeometry=ShaKesSac
+WqGeometry=ShaKesSacP
 WqGeometryId=12092
 NumberThreads=1
 OutputSteps=1
@@ -253,7 +253,7 @@ MaxIterations:1000
 LastIteration:0
 CumulativeTime:0
 SimulationOption:0
-ScriptFilePath:rss/ShaKesSac.mcscripts
+ScriptFilePath:rss/ShaKesSacP.mcscripts
 Iteration:1
 Iteration:2
 Iteration:3

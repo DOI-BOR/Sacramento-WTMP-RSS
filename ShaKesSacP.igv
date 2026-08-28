@@ -1,5 +1,5 @@
 ModifiedTime=1787085343272
-GVDataSet Name=ShaKesSac
+GVDataSet Name=ShaKesSacP
 Description=(Global Variable Data Set)
 
 GVRecord=TIME_SERIES
@@ -85,8 +85,8 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=rss/ShaKesSac_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/ShaKesSac-ResSim-Default/
+GVRecord DssFilename=rss/ShaKesSacP_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/ShaKesSacP-ResSim-Default/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=
