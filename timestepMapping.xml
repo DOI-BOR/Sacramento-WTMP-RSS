@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ResSimTimeStepMap>
-  <TimeStepInfo ModelAlternative="RSSacTrnPO" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="SacTrnP" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="RSTrnRiv" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="RSSacRiv" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="SacTrnRvP" TimeStep="1 Hour" Lookback="24" />
