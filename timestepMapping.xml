@@ -2,7 +2,7 @@
 <ResSimTimeStepMap>
   <TimeStepInfo ModelAlternative="SacTrnP" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="RSTrnRiv" TimeStep="1 Hour" Lookback="24" />
-  <TimeStepInfo ModelAlternative="RSSacRiv" TimeStep="1 Hour" Lookback="24" />
+  <TimeStepInfo ModelAlternative="SacRvP" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="SacTrnRvP" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="ShaKesSac" TimeStep="1 Hour" Lookback="24" />
   <TimeStepInfo ModelAlternative="RSSacTrn" TimeStep="1 Hour" Lookback="24" />

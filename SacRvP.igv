@@ -1,5 +1,5 @@
 ModifiedTime=1787085371727
-GVDataSet Name=RSSacRiv
+GVDataSet Name=SacRvP
 Description=(Global Variable Data Set)
 
 GVRecord=TIME_SERIES
@@ -85,8 +85,8 @@ GVRecord End
 GVRecord=SCALAR
 GVRecord Name=Downstream_Control_Loc
 GVRecord ID=36
-GVRecord DssFilename=rss/RSSacRiv_igv.dss
-GVRecord DssPathname=//Downstream_Control_Loc///Integer/RSSacRiv-ResSim-Default/
+GVRecord DssFilename=rss/SacRvP_igv.dss
+GVRecord DssPathname=//Downstream_Control_Loc///Integer/SacRvP-ResSim-Default/
 GVRecord DataLocation=false
 GVRecord LinkedLocation=
 GVRecord LinkedModel=

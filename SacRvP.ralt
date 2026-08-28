@@ -1,13 +1,13 @@
-RssAlt Name=RSSacRiv
+RssAlt Name=SacRvP
 RssAlt Description=River-only model with upstream boundaries at Keswick Dam and Whiskeytown Dam
 Version=1001
 ModifiedTime=1787085371773
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
-InputTSData Path=rss/RSSacRiv.fits
+InputTSData Path=rss/SacRvP.fits
 OutputTSData Path=
-InputGVData Path=rss/RSSacRiv.igv
+InputGVData Path=rss/SacRvP.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -144,7 +144,7 @@ YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 ReservoirStorageVsYieldAnalysisEnd
 TimeStep=1
 TimeIncrement=2
-ObservedTSData Path=rss/RSSacRivObs.fits
+ObservedTSData Path=rss/SacRvPObs.fits
 resOpSelection=141,1
 resOpSelection=8,3
 resOpSelection=126,1
@@ -253,7 +253,7 @@ MaxIterations:1000
 LastIteration:0
 CumulativeTime:0
 SimulationOption:0
-ScriptFilePath:rss/RSSacRiv.mcscripts
+ScriptFilePath:rss/SacRvP.mcscripts
 Iteration:1
 Iteration:2
 Iteration:3
