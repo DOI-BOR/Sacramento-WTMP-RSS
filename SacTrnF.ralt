@@ -1,13 +1,13 @@
-RssAlt Name=RSSacTrn
+RssAlt Name=SacTrnF
 RssAlt Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system.
 Version=1001
 ModifiedTime=1787085352234
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
-InputTSData Path=rss/RSSacTrn.fits
+InputTSData Path=rss/SacTrnF.fits
 OutputTSData Path=
-InputGVData Path=rss/RSSacTrn.igv
+InputGVData Path=rss/SacTrnF.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -144,7 +144,7 @@ YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 ReservoirStorageVsYieldAnalysisEnd
 TimeStep=1
 TimeIncrement=2
-ObservedTSData Path=rss/RSSacTrnObs.fits
+ObservedTSData Path=rss/SacTrnFObs.fits
 resOpSelection=141,1
 resOpSelection=8,4
 resOpSelection=126,2
@@ -255,7 +255,7 @@ MaxIterations:1000
 LastIteration:0
 CumulativeTime:0
 SimulationOption:0
-ScriptFilePath:rss/RSSacTrn.mcscripts
+ScriptFilePath:rss/SacTrnF.mcscripts
 Iteration:1
 Iteration:2
 Iteration:3
