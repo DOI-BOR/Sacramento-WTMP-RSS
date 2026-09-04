@@ -1,13 +1,13 @@
-RssAlt Name=SacTrnRvF
-RssAlt Description=Copy for forecast mode of Derived from RSSacTrnPO, but includes a rivers-only water quality geometry model with upstream boundaries at Keswick Dam and Whiskeytown Dam, and Lewiston Dam. ResSim will run the full 5-reservoir hydralics, so if alternative flows are desired ResSim overides must be used.
+RssAlt Name=SacTrnF
+RssAlt Description=Supports Predictive Operations/Forecast ResSim model runs for the 5-reservoir and 2-river (+ Clear Creek) Sacramento-Trinity system.
 Version=1001
-ModifiedTime=1787331905571
+ModifiedTime=1787085352234
 NetworkID=1
 System Path=rss/UpperSac-Trinity.rsys
 Operations Path=
-InputTSData Path=rss/SacTrnRvF.fits
+InputTSData Path=rss/SacTrnF.fits
 OutputTSData Path=
-InputGVData Path=rss/SacTrnRvF.igv
+InputGVData Path=rss/SacTrnF.igv
 InputWQTSDataPath Path=
 OutputVerticalDatum=AS_DEFINED
 FlowComputeType=1
@@ -21,7 +21,6 @@ UseYieldAnalysis=false
 SelectedYieldAnalysis=Reservoir Yield
 ReservoirYieldAnalysisBegin
 UseDemandVarLimit=false
-DemandVarLimit=0
 YieldAnalysisBegin
 UseHydropowerRules=false
 MaxIteration=25
@@ -38,13 +37,13 @@ MaxHeuristicIterations=8
 YieldAnalysisRuleRefBegin
 Reservoir=8:Shasta Lake
 Rule=1:Specified Release:1
-StorageZone=8:Shasta Lake,3:Calibration Specified Releases,2:Flood Control,1000.0
+StorageZone=8:Shasta Lake,4:Forecast Op Set,2:Flood Control,1000.0
 Tolerance=10.0
 YieldAnalysisRuleRefEnd
 YieldAnalysisRuleRefBegin
 Reservoir=8:Shasta Lake
 Rule=0:PowerPlant-Specified:27
-StorageZone=8:Shasta Lake,3:Calibration Specified Releases,2:Flood Control,1000.0
+StorageZone=8:Shasta Lake,4:Forecast Op Set,2:Flood Control,1000.0
 Tolerance=10.0
 YieldAnalysisRuleRefEnd
 YieldAnalysisEnd
@@ -78,7 +77,6 @@ WaterAccountYieldAnalysisBegin
 Tolerence=0.0
 WaterAccountIndex=-2147483648
 UseDemandVarLimit=false
-DemandVarLimit=0
 YieldAnalysisBegin
 UseHydropowerRules=false
 MaxIteration=25
@@ -113,13 +111,13 @@ MaxHeuristicIterations=8
 YieldAnalysisRuleRefBegin
 Reservoir=8:Shasta Lake
 Rule=1:Specified Release:1
-StorageZone=8:Shasta Lake,3:Calibration Specified Releases,2:Flood Control,1000.0
+StorageZone=8:Shasta Lake,4:Forecast Op Set,2:Flood Control,1000.0
 Tolerance=10.0
 YieldAnalysisRuleRefEnd
 YieldAnalysisRuleRefBegin
 Reservoir=8:Shasta Lake
 Rule=0:PowerPlant-Specified:27
-StorageZone=8:Shasta Lake,3:Calibration Specified Releases,2:Flood Control,1000.0
+StorageZone=8:Shasta Lake,4:Forecast Op Set,2:Flood Control,1000.0
 Tolerance=10.0
 YieldAnalysisRuleRefEnd
 YieldAnalysisEnd
@@ -146,11 +144,11 @@ YieldAnalysesToOutput=1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 ReservoirStorageVsYieldAnalysisEnd
 TimeStep=1
 TimeIncrement=2
-ObservedTSData Path=rss/SacTrnRvFObs.fits
+ObservedTSData Path=rss/SacTrnFObs.fits
 resOpSelection=141,1
-resOpSelection=8,3
-resOpSelection=126,1
-resOpSelection=180,2
+resOpSelection=8,4
+resOpSelection=126,2
+resOpSelection=180,3
 resOpSelection=58,1
 divOpSelection=195,0
 divOpSelection=169,0
@@ -161,31 +159,31 @@ DssOutputDataBegin
 WriteAllDssOutput;true
 WriteAllInputDss;true
 DssOutputDataEnd
-Hindcast=~E9:F;14;0;-Infinity
-Hindcast=~E9:F;15;2;-Infinity
+Hindcast=~E9:F;14;2;-Infinity
+Hindcast=~E9:F;15;0;-Infinity
 Hindcast=~E13:F;41;0;-Infinity
 Hindcast=~E26:F;41;0;-Infinity
 Hindcast=~E27:F;41;0;-Infinity
 Hindcast=~E28:F;41;0;-Infinity
 Hindcast=~E164:F;41;0;-Infinity
-Hindcast=~E59:F;14;0;-Infinity
+Hindcast=~E59:F;14;1;583.0
 Hindcast=~E59:F;15;2;-Infinity
 Hindcast=~E107:F;41;0;-Infinity
-Hindcast=~E127:F;14;0;-Infinity
-Hindcast=~E127:F;15;2;-Infinity
+Hindcast=~E127:F;14;2;-Infinity
+Hindcast=~E127:F;15;0;-Infinity
 Hindcast=~E159:F;96;1;0.0
 Hindcast=~E194:F;41;0;-Infinity
 Hindcast=~E198:F;41;1;0.0
 Hindcast=~E157:F;41;0;-Infinity
-Hindcast=~E142:F;14;0;-Infinity
+Hindcast=~E142:F;14;1;1901.0
 Hindcast=~E142:F;15;2;-Infinity
 Hindcast=~E147:F;41;0;-Infinity
 Hindcast=~E148:F;41;0;-Infinity
 Hindcast=~E149:F;41;0;-Infinity
 Hindcast=~E153:F;41;0;-Infinity
 Hindcast=~E170:F;43;0;-Infinity
-Hindcast=~E181:F;14;0;-Infinity
-Hindcast=~E181:F;15;2;-Infinity
+Hindcast=~E181:F;14;2;-Infinity
+Hindcast=~E181:F;15;0;-Infinity
 Hindcast=~E185:F;96;1;0.0
 Hindcast=~E186:F;41;0;-Infinity
 Hindcast=~E187:F;41;1;0.0
@@ -195,7 +193,7 @@ Hindcast=~S11;98;1;0.0
 Hindcast=~S21;98;1;0.0
 Hindcast=~S25;98;1;0.0
 Hindcast=~S30;98;1;0.0
-Hindcast=~S31;98;1;4.0
+Hindcast=~S31;98;1;0.0
 Hindcast=~S32;98;1;0.0
 Hindcast=~S33;98;1;0.0
 UsingInflowFactors=false
@@ -220,18 +218,20 @@ TimeStep=1
 TimeStepIncrement=2
 Constituent=UpperSac-Trinity Temperature
 ConstituentId=871
-InitialConditions=SacTrnRiversOnly_IC_constant
-InitialConditionsId=17267
-BoundaryConditions=SacTrnRiversOnly_BC1_forecast
-BoundaryConditionsId=53319
+ObsData=SacTrn_Obs_1
+ObsDataId=48841
+InitialConditions=SacTrn_IC_linked
+InitialConditionsId=26933
+BoundaryConditions=UpperSac-Trinity BC forecast
+BoundaryConditionsId=17814
 MetData=SacTrn_Forecast
 MetDataId=19479
-DispersionCoef=SacTrnRiversOnly_DZ
-DispersionCoefId=17268
-Parameters=SacTrnRiversOnly_P1
-ParametersId=17265
-WqGeometry=Sacramento-Trinity-Rivers-Only
-WqGeometryId=17264
+DispersionCoef=UpperSac-Trinity DZ
+DispersionCoefId=1046
+Parameters=UpperSacTrinity - P1
+ParametersId=1047
+WqGeometry=UpperSac-Geom
+WqGeometryId=1043
 NumberThreads=1
 OutputSteps=1
 PreserveConcentration=true
@@ -255,7 +255,7 @@ MaxIterations:1000
 LastIteration:0
 CumulativeTime:0
 SimulationOption:0
-ScriptFilePath:rss/SacTrnRvF.mcscripts
+ScriptFilePath:rss/SacTrnF.mcscripts
 Iteration:1
 Iteration:2
 Iteration:3

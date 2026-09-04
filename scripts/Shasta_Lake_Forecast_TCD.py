@@ -85,7 +85,7 @@ lastIterationPassNum = 2
 
 # list of alterantives where TCD script is not computed
 alts_to_skip = [
-	'RSSacTrnNS',
+	'SacTrnNSF',
 ]
 
 #######################################################################################################
