@@ -20,7 +20,6 @@ from java.util import Vector
 from datetime import date
 
 
-#######################################################################################################
 # Reference information
 
 # TCD inlet definitions
@@ -59,6 +58,8 @@ from datetime import date
 
 # Script "Global variables"
 # TCD Operations
+# Operation window: the TCD gate-switching logic below behaves differently
+# inside vs. outside this seasonal window (see getForecastTCDTempAndFlows).
 startOpDate = date(3000, 5, 1)  # May 1st
 endOpDate = date(3000, 12, 1)  # Dec 1st
 temperatureThreshold = 0.1
@@ -88,37 +89,90 @@ alts_to_skip = [
 	'SacTrnNSF',
 ]
 
-#######################################################################################################
-# Gets indexes of leakage points
 def getLeakageIndexes():
+    """Return the TCD inlet indices that represent uncontrollable leakage zones.
+
+    Returns
+    -------
+    list of int
+        Inlet indices (see the port-index reference table above) for
+        Leakage Zones 6, 5, 4, 3, 2, and 1 respectively, in descending
+        zone-number order matching ascending elevation.
+    """
     return [2, 4, 7, 11, 13, 17]
 
 
-#######################################################################################################
-# Gets indexes of gate points
 def getGateIndexes(useHighPt):
+    """Return the TCD inlet indices grouped by operable gate level.
+
+    Parameters
+    ----------
+    useHighPt : bool
+        If True, uses the "high point" variant of the side, lower, and
+        middle gate groupings (the alternate/elevated operable port at each
+        level); if False, uses the "usual" (lower/default) operable port.
+
+    Returns
+    -------
+    tuple of (list of int, list of int, list of int, list of int)
+        Side, lower, middle, and upper gate inlet indices, respectively.
+
+    Notes
+    -----
+    The upper gate indices (19, 20, 21) do not vary with ``useHighPt``,
+    since the port-index table above defines only one tier of upper ports.
+    """
 
     if useHighPt:
+        # Elevated-port variant: substitutes the higher-elevation operable
+        # port at each level (e.g. side index 9 instead of 5).
         sideIdx = [0, 1, 3, 9]
         lowerIdx = [6, 8, 12]
         middleIdx = [14, 15, 18]
     else:
+        # Default/"usual" operable port at each level.
         sideIdx = [0, 1, 3, 5]
         lowerIdx = [6, 8, 10]
         middleIdx = [14, 15, 16]
         
+    # Upper gates have only one tier, so they don't vary with useHighPt.
     upperIdx = [19, 20, 21]
     return sideIdx, lowerIdx, middleIdx, upperIdx
 
 
-#######################################################################################################
 def getRiverOutletElevs():
+    """Return the centerline elevations of the three river outlet structures.
+
+    Returns
+    -------
+    dict
+        Mapping of river outlet element name to centerline elevation (ft):
+        "Outlet 16-RRL" (742 ft), "Outlet 15-RRM" (842 ft), and
+        "Outlet 14-RRU" (942 ft).
+    """
     return {'Outlet 16-RRL': 742., 'Outlet 15-RRM': 842., 'Outlet 14-RRU': 942.}
 
 
-#######################################################################################################
-# Gets the inlet elevations from the WQ Geometry (which gets passed the data in the Reservoir Physical tab)
 def getInletElevs(currentRule, network):
+    """Retrieve the TCD inlet elevations from the WQ engine's reservoir geometry.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object, used to reach the reservoir
+        operation and its release element.
+    network : object
+        HEC-ResSim network object, used to reach the current WQ run, its
+        engine adapter, and its WQ geometry.
+
+    Returns
+    -------
+    list of float
+        Inlet elevations for the reservoir's TCD, indexed as in the
+        port-index reference table at the top of this file. These values
+        originate from the Reservoir Physical tab configuration, passed
+        through to the WQ geometry.
+    """
     wqRun = network.getWQRun()
     engineAdapter = wqRun.getWQEngineAdapter()
     resOp = currentRule.getController().getReservoirOp()
@@ -130,8 +184,20 @@ def getInletElevs(currentRule, network):
     return elevs
 
 
-#######################################################################################################
-def getNumGateOptions():  # Level number, number of gate openings [side, lower, middle, upper]
+def getNumGateOptions():
+    """Return the catalog of discrete gate-level configurations.
+
+    Returns
+    -------
+    dict
+        Mapping of integer gate level (1 = highest elevation withdrawal,
+        7 = lowest) to a 4-element list ``[side, lower, middle, upper]``
+        giving the number of open gates at each level for that
+        configuration. Levels 2, 4, and 6 are "blending" configurations
+        that open gates at two adjacent levels simultaneously; the others
+        are single-level configurations.
+    """
+    # Level number, number of gate openings [side, lower, middle, upper]
     numGateOptions = {1: [0, 0, 0, 5],  # upper only
                       2: [0, 0, 2, 3],  # upper and middle blending
                       3: [0, 0, 5, 0],  # middle only
@@ -142,16 +208,52 @@ def getNumGateOptions():  # Level number, number of gate openings [side, lower, 
     return numGateOptions
 
 
-#######################################################################################################
-# Get gate settings for an integer level value [side, lower, middle, upper]
 def getGatesForLevel(level):
+    """Look up the gate-opening configuration for a given discrete gate level.
+
+    Parameters
+    ----------
+    level : int
+        Gate level key into the dictionary returned by getNumGateOptions
+        (1-7).
+
+    Returns
+    -------
+    list of int
+        4-element list ``[side, lower, middle, upper]`` giving the number
+        of open gates at each level.
+    """
     numGateOptions = getNumGateOptions()
     return numGateOptions[level]
 
 
-#######################################################################################################
-# Called at the start of the simulation
 def initRuleScript(currentRule, network):
+    """Initialize the Shasta TCD rule, disabling it or registering TCD info with the WQ engine.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object being initialized.
+    network : object
+        HEC-ResSim network object for the current compute.
+
+    Returns
+    -------
+    int
+        ``Constants.TRUE``, unconditionally (both the disabled and the
+        active-WQ branches return True; there is no failure path here).
+
+    Notes
+    -----
+    The rule is force-disabled (via checkApplyRule) if WQ is not running,
+    the reservoir is outside the active WQ geometry extent, or the current
+    alternative name is in the alts_to_skip list (e.g. 'SacTrnNSF'). When
+    the rule remains active, this function registers the TCD's gate-index
+    groupings (side/lower/middle/upper, using the "usual" rather than
+    "high point" ports) with the WQ engine adapter via
+    ``setShastaTCDInfo``, a one-time setup step specific to this
+    reservoir's optimization logic in the engine.
+    """
 
     applyRule = checkApplyRule(currentRule, network)
 
@@ -182,13 +284,37 @@ def initRuleScript(currentRule, network):
         return Constants.TRUE
 
 
-#######################################################################################################
-# This checks whether we should be applying this rule in a given simulation
-# Needs to have WQ running and the reservoir in the active WQ geometry
 def checkApplyRule(currentRule, network):
+    """Check whether this rule should be applied for the current simulation.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object, used to reach the controlled
+        reservoir element.
+    network : object
+        HEC-ResSim network object, used to reach the current WQ run and
+        geometry.
+
+    Returns
+    -------
+    bool
+        False if Water Quality is not running at all, or if the
+        reservoir's WQ subdomain falls outside the active WQ geometry
+        extent; True otherwise.
+
+    Notes
+    -----
+    This checks two separate conditions required for the rule to be
+    meaningful: WQ must be running for this simulation at all, and this
+    specific reservoir's subdomain must actually be included in the WQ
+    geometry extent currently being simulated.
+    """
     wqRun = network.getWQRun()
     if not wqRun:
         return False
+    # Resolve this reservoir's WQ subdomain and confirm it falls inside the
+    # geometry extent actually being simulated in the current WQ run.
     rssWQGeometry = wqRun.getRssWQGeometry()
     resOp = currentRule.getController().getReservoirOp()
     res = resOp.getReservoirElement()
@@ -196,9 +322,50 @@ def checkApplyRule(currentRule, network):
     return rssWQGeometry.isInExtent(resWQGeoSubdom)
 
 
-#######################################################################################################
-# This is called each simulated forward time step during the simulation
 def runRuleScript(currentRule, network, currentRuntimestep):
+    """Evaluate the Shasta TCD gate/flow rule for the current time step.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object being evaluated.
+    network : object
+        HEC-ResSim network object, used to look up global/state variables
+        and the current WQ run.
+    currentRuntimestep : object
+        Current simulation time step object.
+
+    Returns
+    -------
+    None
+        This rule communicates its decision by calling
+        ``setWQControlDeviceFlowRatios`` directly rather than returning an
+        OpValue; the function's own return value has no effect on the
+        compute.
+
+    Raises
+    ------
+    ValueError
+        If reservoir elevation or penstock flow cannot be resolved to a
+        valid value at the current or (as a fallback) previous time step.
+
+    Notes
+    -----
+    The rule only evaluates once ``computeIter >= lastIterationPassNum``
+    (2), similar to the ``computeIter > 1`` iteration gates used elsewhere
+    in this project, ensuring WQ results are available before TCD
+    decisions are made. If the penstock flow is below 1 cfs (treated as
+    effectively zero), the previous time step's gate level is reused
+    (falling back to the historical record, and finally to level 1 /
+    "upper only" if no historical value can be found -- note the
+    ``preLevel`` vs. ``prevLevel`` naming: this fallback assignment appears
+    intended to set ``prevLevel`` but is written as ``preLevel``, a
+    distinct variable that is never used afterward, so the intended
+    default of level 1 in this edge case silently does not take effect).
+    Otherwise, the full optimization in getForecastTCDTempAndFlows is run
+    to find a gate configuration and flow split meeting the water-quality
+    target.
+    """
 
     # Only evaluation rule if running WQ (getEvalRule) *and* compute iteration > 0
     #  (On 0th iteration, only local res decisions being evaluated and WQ is not being run yet)
@@ -210,7 +377,8 @@ def runRuleScript(currentRule, network, currentRuntimestep):
         # Get current water quality target
         wqTarget = getGVTemperature(network, currentRuntimestep, globalVarNameTCDTarget)
     
-        # Get reservoir elevation
+        # Get reservoir elevation, falling back to the previous time step if
+        # the current one is not yet valid (e.g. not yet computed this iteration).
         resOp = currentRule.getController().getReservoirOp()
         res = resOp.getReservoirElement()
         resElev = res.getStorageFunction().getElevation(currentRuntimestep)
@@ -229,7 +397,9 @@ def runRuleScript(currentRule, network, currentRuntimestep):
             raise ValueError("Invalid value: " + str(penstockFlow) + 
                              " for penstock flow for time step: " + str(currentRuntimestep.step))
 
-        # Find any river outlet flow
+        # Find any river outlet flow, which affects the target TCD temperature
+        # needed to meet the combined downstream temperature (see
+        # getTCDTempAndFlowsForLevel).
         riverOutletFlow, riverOutletTemp = getRiverOutletFlowAndTemp(currentRule, network, currentRuntimestep, usePrevStepAsEstimate)
 
         # If no penstock flow, use same gate configuration as previous time step
@@ -240,6 +410,8 @@ def runRuleScript(currentRule, network, currentRuntimestep):
                 prevLevel = getHistoricalGateLevel(network, currentRuntimestep)
                 if prevLevel < 0:  # no historical value found
                     preLevel = 1  # default to upper gates only
+            # Don't allow a gate level that would be invalid given the
+            # current reservoir elevation.
             elevRestrictionLevel = getElevationRestrictionLevel(currentRule, network, resElev)
             prevLevel = max(prevLevel, elevRestrictionLevel)
             setGateLevel(network, currentRuntimestep, prevLevel)
@@ -257,9 +429,35 @@ def runRuleScript(currentRule, network, currentRuntimestep):
     return None
 
 
-#######################################################################################################
-# Set TCD flows when there is only a small amount of flow through the penstocks
 def splitFlowForLevel(currentRule, network, level, penstockFlow):
+    """Evenly split a small penstock flow across all operable inlets at a gate level.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object, used to reach inlet elevation
+        information.
+    network : object
+        HEC-ResSim network object.
+    level : int
+        Gate level (per getNumGateOptions) whose open gate groups should
+        receive flow.
+    penstockFlow : float
+        Total flow to distribute evenly across the active outlet points.
+
+    Returns
+    -------
+    list of float
+        Flow assigned to each TCD inlet index; zero everywhere except the
+        operable inlets belonging to the open gate groups for ``level``,
+        each of which receives an equal share of ``penstockFlow``.
+
+    Notes
+    -----
+    This is used as a simplified fallback (rather than the full
+    optimization in getTCDTempAndFlowsForLevel) when penstock flow is too
+    small (<1 cfs) to be worth optimizing; see runRuleScript.
+    """
 
     elevs = getInletElevs(currentRule, network)
     nInletLevels = len(elevs)
@@ -267,7 +465,8 @@ def splitFlowForLevel(currentRule, network, level, penstockFlow):
     sideIdx, lowerIdx, middleIdx, upperIdx = getGateIndexes(False)
     nGates = getGatesForLevel(level)  # [side, lower, middle, upper]
 
-    # Count active outlet points
+    # Count active outlet points across all levels with at least one open
+    # gate, so the per-point average flow can be computed below.
     nPts = 0
     if nGates[0] > 0:
         nPts += len(sideIdx)
@@ -295,9 +494,47 @@ def splitFlowForLevel(currentRule, network, level, penstockFlow):
     return tcdFlows
 
 
-#######################################################################################################
-# Get the water quality target value by looking for the global variable timeseries
 def getGVTemperature(network, currentRuntimestep, gvName):
+    """Read a temperature global variable's current value, converted to degrees C.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the global variable.
+    currentRuntimestep : object
+        Current simulation time step object.
+    gvName : str
+        Name of the global variable to read.
+
+    Returns
+    -------
+    float
+        Current value of the global variable, converted to degrees
+        Celsius if it was not already in that unit.
+
+    Raises
+    ------
+    NameError
+        If the global variable is not found.
+    ValueError
+        If the variable's current value is invalid.
+    NotImplementedError
+        If the global variable is neither a TimeSeriesGlobalVariable nor a
+        ScalarGlobalVariable.
+
+    Notes
+    -----
+    Unit detection differs by global-variable type: for a time series
+    variable, the DSS units string is inspected for a "c" substring
+    (case-insensitive) to decide whether conversion is needed; for a
+    scalar variable, a value greater than 32 is assumed to be Fahrenheit
+    (since no plausible Celsius water/air temperature would exceed 32
+    here) and is converted accordingly. The equilibrium-temperature global
+    variable (globalVarNameEquilibTemp) is validated allowing zero as a
+    valid value (``checkZero=False``), unlike other temperature variables,
+    presumably because an equilibrium temperature of exactly 0 deg C is
+    physically plausible and should not be rejected as invalid.
+    """
 
     globVar = network.getGlobalVariable(gvName)
     if not globVar:
@@ -335,15 +572,38 @@ def getGVTemperature(network, currentRuntimestep, gvName):
     return tempDegC
 
 
-#######################################################################################################
-# Get the total river outlet flow for a given time step
 def getRiverOutletFlowAndTemp(currentRule, network, currentRuntimestep, usePrevStepAsEstimate):
+    """Compute the combined flow and flow-weighted average temperature across all river outlets.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object.
+    network : object
+        HEC-ResSim network object.
+    currentRuntimestep : object
+        Current simulation time step object.
+    usePrevStepAsEstimate : bool
+        Passed through to each individual outlet's flow lookup; if the
+        current time step's flow is unavailable, the previous time step's
+        decision value is used as an estimate.
+
+    Returns
+    -------
+    tuple of (float, float)
+        Total combined flow across all river outlets, and the
+        flow-weighted average temperature of that combined flow (0 if
+        total flow is zero).
+    """
 
     totalFlow = 0.
     totalFlowTemp = 0.
     totalTemp = 0.
     roDict = getRiverOutletElevs()
     
+    # Accumulate flow and flow-weighted temperature across each of the
+    # three river outlets, so the weighted average can be computed after
+    # the loop.
     for roName, roElev in roDict.items():
         flow, temp = getRiverOutletFlowAndTempSingle(currentRule, network, roName, roElev, currentRuntimestep, usePrevStepAsEstimate)
         totalFlow += flow
@@ -355,9 +615,43 @@ def getRiverOutletFlowAndTemp(currentRule, network, currentRuntimestep, usePrevS
     return totalFlow, totalTemp
     
 
-#######################################################################################################
-# Get a single river outlet flow for a given time step
 def getRiverOutletFlowAndTempSingle(currentRule, network, name, elevation, currentRuntimestep, usePrevStepAsEstimate):
+    """Get the flow and resulting release temperature for a single river outlet.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object, used to reach the reservoir
+        operation and controllers.
+    network : object
+        HEC-ResSim network object, used to reach the WQ run/engine.
+    name : str
+        Name of the river outlet element (see getRiverOutletElevs).
+    elevation : float
+        Centerline elevation of this river outlet, used to query the WQ
+        engine for the release temperature at that elevation.
+    currentRuntimestep : object
+        Current simulation time step object.
+    usePrevStepAsEstimate : bool
+        If the current time step's flow is unavailable, fall back to the
+        previous time step's decision value.
+
+    Returns
+    -------
+    tuple of (float, float)
+        Flow through this outlet and its release temperature. Returns
+        ``(0., 0.)`` if the outlet's flow is zero or negative (no
+        temperature query is made in that case, since there is no release
+        to characterize).
+
+    Raises
+    ------
+    NameError
+        If the named river outlet element cannot be found.
+    ValueError
+        If the resolved flow is invalid, or if the computed temperature
+        falls outside the plausible 0-100 degree range.
+    """
 
     resOp = currentRule.getController().getReservoirOp()
     res = resOp.getReservoirElement()
@@ -374,6 +668,8 @@ def getRiverOutletFlowAndTempSingle(currentRule, network, name, elevation, curre
 
     roCntrlr = resOp.getControllerForElement(rivOutlet)
     flow = roCntrlr.getCurMinOpValue(currentRuntimestep).value;
+    # Fall back to the previous time step's decision value if the current
+    # flow is not yet valid (e.g. not yet computed this iteration).
     if not isValidValue(flow) and usePrevStepAsEstimate:
         rts = RunTimeStep()
         rts.setStep(currentRuntimestep.getStep() - 1)
@@ -393,11 +689,41 @@ def getRiverOutletFlowAndTempSingle(currentRule, network, name, elevation, curre
         return 0., 0.
 
 
-#######################################################################################################
-# Get the total number of gates open at a given level by looking for the global variable timeseries
 def getNumGatesOpen(network, currentRuntimestep, levelName, isHistorical=False):
+    """Read the current (or historical) number of open gates for a given level.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the relevant global
+        variable.
+    currentRuntimestep : object
+        Current simulation time step object.
+    levelName : str
+        Gate level name: "upper", "middle", "lower", or "side"
+        (case-insensitive).
+    isHistorical : bool, optional
+        If True, reads the historical "_open" global variable instead of
+        the forecast variable. Defaults to False.
+
+    Returns
+    -------
+    int
+        Current number of open gates at the given level.
+
+    Raises
+    ------
+    NameError
+        If ``levelName`` is not recognized, or the resolved global
+        variable is not found.
+    ValueError
+        If the resolved value is negative or exceeds the maximum gate
+        count for that level (5 for upper/middle/lower, 2 for side).
+    """
 
     maxGates = 5
+    # Select the forecast or historical global variable name based on the
+    # requested gate level and whether historical data was requested.
     if levelName.lower() == 'upper':
         if isHistorical:
             globalVarName = globalVarNameNumUpGatesHist
@@ -414,6 +740,7 @@ def getNumGatesOpen(network, currentRuntimestep, levelName, isHistorical=False):
         else:
             globalVarName = globalVarNameNumLowGates
     elif levelName.lower() == 'side':
+        # Side level caps out at 2 gates rather than 5.
         if isHistorical:
             globalVarName = globalVarNameNumSideGatesHist
         else:
@@ -422,6 +749,8 @@ def getNumGatesOpen(network, currentRuntimestep, levelName, isHistorical=False):
     else:
         raise NameError("Gate level: " + levelName + " not recognized.")
         
+    # Read the resolved global variable and validate it's within the
+    # physically possible range of gate counts for this level.
     globVar = network.getGlobalVariable(globalVarName)
     if not globVar:
         raise NameError("Global variable: " + globalVarName + " not found.")
@@ -436,11 +765,45 @@ def getNumGatesOpen(network, currentRuntimestep, levelName, isHistorical=False):
         return numGates
 
 
-#######################################################################################################
-# Set the total number of gates open at a given level for the global variable timeseries
 def setNumGatesOpen(network, currentRuntimestep, levelName, numGates):
+    """Write the current number of open gates for a given level.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up and set the relevant
+        global variable.
+    currentRuntimestep : object
+        Current simulation time step object.
+    levelName : str
+        Gate level name: "upper", "middle", "lower", or "side"
+        (case-insensitive).
+    numGates : int
+        Number of open gates to set at this level.
+
+    Returns
+    -------
+    None
+
+    Raises
+    ------
+    NameError
+        If ``levelName`` is not recognized, or the resolved global
+        variable is not found.
+    ValueError
+        If ``numGates`` is negative or exceeds the maximum gate count for
+        that level (5 for upper/middle/lower, 2 for side).
+
+    Notes
+    -----
+    Unlike getNumGatesOpen, this only ever writes to the forecast global
+    variable (there is no historical variant to write to, since historical
+    values represent observed, not forecast, operations).
+    """
 
     maxGates = 5
+    # Unlike getNumGatesOpen, there is no historical variant here -- this
+    # always targets the forecast global variable.
     if levelName.lower() == 'upper':
         globalVarName = globalVarNameNumUpGates
     elif levelName.lower() == 'middle':
@@ -457,6 +820,8 @@ def setNumGatesOpen(network, currentRuntimestep, levelName, numGates):
     if not globVar:
         raise NameError("Global variable: " + globalVarName + " not found.")
     
+    # Validate before writing, so an out-of-range value never reaches the
+    # stored global variable.
     if numGates < 0 or numGates > maxGates:
         raise ValueError("Global variable: " + globalVarName + " has invalid value " +
                          str(numGates) + " for time step: " + str(currentRuntimestep.step))
@@ -464,26 +829,67 @@ def setNumGatesOpen(network, currentRuntimestep, levelName, numGates):
     globVar.setCurrentValue(currentRuntimestep, numGates)
 
 
-#######################################################################################################
-# Set the total number of gates open at a given level for the global variable timeseries
-#   nGates = [side, lower, middle, upper]
 def setGateOpenings(network, currentRuntimestep, nGates):
+    """Write the number of open gates for all four levels at once.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object.
+    currentRuntimestep : object
+        Current simulation time step object.
+    nGates : list of int
+        4-element list ``[side, lower, middle, upper]`` of gate counts, as
+        returned by getGatesForLevel.
+
+    Returns
+    -------
+    None
+    """
     setNumGatesOpen(network, currentRuntimestep, 'side', nGates[0])
     setNumGatesOpen(network, currentRuntimestep, 'lower', nGates[1])
     setNumGatesOpen(network, currentRuntimestep, 'middle', nGates[2])
     setNumGatesOpen(network, currentRuntimestep, 'upper', nGates[3])
 
 
-#######################################################################################################
-# Set the gate level
 def setGateLevel(network, currentRuntimestep, level):
+    """Store the current discrete gate level in the TCD level state variable.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the state variable.
+    currentRuntimestep : object
+        Current simulation time step object.
+    level : int
+        Gate level value to store (per getNumGateOptions).
+
+    Returns
+    -------
+    None
+    """
     sv = network.getStateVariable(stateVarNameTCDLevel)
     sv.setValue(currentRuntimestep, level)
 
 
-#######################################################################################################
-# Get the gate level for the previous time step
 def getPrevGateLevel(network, currentRuntimestep):
+    """Read the TCD gate level stored at the previous time step.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the state variable.
+    currentRuntimestep : object
+        Current simulation time step object; the previous step's index is
+        derived from this.
+
+    Returns
+    -------
+    int or float
+        Gate level value stored at the previous time step (step index
+        clamped to a minimum of 0, so the first time step reads its own
+        step 0 value rather than a negative index).
+    """
     sv = network.getStateVariable(stateVarNameTCDLevel)
     iCurStep = currentRuntimestep.getStep()
     iPrevStep = max(0, iCurStep - 1)
@@ -492,12 +898,41 @@ def getPrevGateLevel(network, currentRuntimestep):
     return sv.getValue(rts)
 
 
-#######################################################################################################
-# Get the historical gate level for a given time step
 def getHistoricalGateLevel(network, currentRuntimestep):
+    """Infer the discrete gate level from historical (observed) gate-opening counts.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up historical gate-opening
+        global variables.
+    currentRuntimestep : object
+        Current simulation time step object.
+
+    Returns
+    -------
+    int
+        Gate level (per getNumGateOptions) whose open/closed pattern
+        matches the historical record at each of the four gate levels.
+
+    Raises
+    ------
+    ValueError
+        If no cataloged gate-level configuration's open/closed pattern
+        matches the historical record.
+
+    Notes
+    -----
+    Matching is done on open/closed status only (nonzero vs. zero gate
+    count at each level), not on the exact number of gates open; a level
+    "matches" if, for every gate group, the historical count and the
+    cataloged count are both zero or both nonzero.
+    """
 
     nGatesHist = []
     gateLevelNames = ['side', 'lower', 'middle', 'upper']
+    # Read the historical open/closed gate counts for each level first, so
+    # they can be compared against every cataloged configuration below.
     for gateLevelName in gateLevelNames:
         nOpen = getNumGatesOpen(network, currentRuntimestep, gateLevelName, isHistorical=True)
         nGatesHist.append(nOpen)
@@ -505,6 +940,8 @@ def getHistoricalGateLevel(network, currentRuntimestep):
 
     gateOptions = getNumGateOptions()
     level = -1
+    # Search cataloged configurations for one whose open/closed pattern
+    # (not exact gate counts) matches the historical record at every level.
     for level, nGates in gateOptions.items():
         matches = True
         #network.printMessage('gateOptions level '+str(level)+str(nGates))
@@ -525,34 +962,101 @@ def getHistoricalGateLevel(network, currentRuntimestep):
     return level
 
 
-#######################################################################################################
-# Set the number of temperature target violations
 def setTempTargetViolations(network, numViolations):
+    """Store the running count of consecutive temperature-target violation days.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the state variable.
+    numViolations : int
+        Number of consecutive violations to store.
+
+    Returns
+    -------
+    None
+
+    Notes
+    -----
+    This state variable is stored at a fixed step index of 1 rather than
+    the current time step, so it functions as a single persistent counter
+    across the simulation rather than a per-time-step time series.
+    """
     sv = network.getStateVariable(stateVarNameTCDViolations)
     rts = RunTimeStep()
     rts.setStep(1)
     sv.setValue(rts, numViolations)
 
 
-#######################################################################################################
-# Set the temperature target backcalculated at TCD outlet
 def setUpstreamTempTarget(network, currentRuntimestep, target):
+    """Store the back-calculated upstream (at-dam) temperature target.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the global variable.
+    currentRuntimestep : object
+        Current simulation time step object.
+    target : float
+        Back-calculated temperature target at the TCD outlet (i.e. at
+        Shasta Dam), as computed by backRouteWQTarget2.
+
+    Returns
+    -------
+    None
+    """
     gv = network.getGlobalVariable(globalVarNameUSTempTarget)
     gv.setCurrentValue(currentRuntimestep, target)
 
 
-#######################################################################################################
-# Get the number of temperature target violations
 def getTempTargetViolations(network):
+    """Read the running count of consecutive temperature-target violation days.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the state variable.
+
+    Returns
+    -------
+    int
+        Current violation count, read from the fixed step-1 storage
+        location used by setTempTargetViolations.
+    """
     sv = network.getStateVariable(stateVarNameTCDViolations)
     rts = RunTimeStep()
     rts.setStep(1)
     return sv.getValue(rts)
 
 
-#######################################################################################################
-# Check whether a value is valid
 def isValidValue(value, checkZero=True):
+    """Check whether a numeric value is defined and (optionally) non-negative.
+
+    Parameters
+    ----------
+    value : float
+        Value to validate.
+    checkZero : bool, optional
+        If True (default), values less than 0 are considered invalid. If
+        False, only ``None`` and ``Constants.UNDEFINED_DOUBLE`` are
+        checked, allowing negative (and zero) values through.
+
+    Returns
+    -------
+    bool
+        False if ``value`` is ``None``, equals
+        ``Constants.UNDEFINED_DOUBLE``, or (if ``checkZero``) is negative;
+        True otherwise.
+
+    Notes
+    -----
+    Unlike the ``isValidValue`` used in the other rule scripts in this
+    project, this version checks ``value is None`` rather than
+    ``not value`` (so a value of exactly 0.0 is not rejected on that basis
+    alone) and exposes the negative-value check as an optional
+    ``checkZero`` parameter so callers like getGVTemperature can allow
+    negative or zero temperatures where physically plausible.
+    """
     if value is None:
         return False
     elif value == Constants.UNDEFINED_DOUBLE:
@@ -563,10 +1067,28 @@ def isValidValue(value, checkZero=True):
         return True
 
 
-#######################################################################################################
-# Calculate total TCD leakage fraction, applicable for years 2000-2009
-# From W2 Report, Table 16
 def getTotalLeakageFraction2000(resElev, elevs):
+    """Compute total TCD leakage fraction using pre-2010 (2000-2009) calibration.
+
+    Parameters
+    ----------
+    resElev : float
+        Current reservoir elevation.
+    elevs : list of float
+        TCD inlet elevations (see getInletElevs).
+
+    Returns
+    -------
+    float
+        Total leakage fraction of gross flow, per the pre-2010 calibration
+        in the W2 Report, Table 16.
+
+    Notes
+    -----
+    Leakage-zone percentage contributions (upper/middle/lower) are
+    hard-coded here per the cited report table; see getTotalLeakageFraction
+    for how they combine with reservoir elevation.
+    """
     upperFraction = 13.09/100.
     middleFraction = 19.7/100.
     lowerFraction = 12.65/100.
@@ -574,10 +1096,28 @@ def getTotalLeakageFraction2000(resElev, elevs):
     return fraction
 
 
-#######################################################################################################
-# Calculate total TCD leakage fraction, applicable for years 2010 onward
-# From W2 Report, Table 17
 def getTotalLeakageFraction2010(resElev, elevs):
+    """Compute total TCD leakage fraction using 2010-onward calibration.
+
+    Parameters
+    ----------
+    resElev : float
+        Current reservoir elevation.
+    elevs : list of float
+        TCD inlet elevations (see getInletElevs).
+
+    Returns
+    -------
+    float
+        Total leakage fraction of gross flow, per the 2010-onward
+        calibration in the W2 Report, Table 17.
+
+    Notes
+    -----
+    The middle-zone leakage fraction is 0 in this calibration (unlike the
+    pre-2010 table), reflecting a presumed physical change (e.g. sealing)
+    at that leakage zone.
+    """
     upperFraction = 16.3/100.
     middleFraction = 0./100.
     lowerFraction = 15.75/100.
@@ -585,9 +1125,46 @@ def getTotalLeakageFraction2010(resElev, elevs):
     return fraction
 
 
-#######################################################################################################
-# Calculate the total leakage fraction based on reservoir elevation
 def getTotalLeakageFraction(resElev, elevs, upperFraction, middleFraction, lowerFraction, grossFraction):
+    """Compute the total TCD leakage fraction as a function of reservoir elevation.
+
+    Parameters
+    ----------
+    resElev : float
+        Current reservoir elevation.
+    elevs : list of float
+        TCD inlet elevations (see getInletElevs).
+    upperFraction : float
+        Fraction of gross leakage attributable to the upper leakage zone
+        (Zone 1) when fully exposed.
+    middleFraction : float
+        Fraction of gross leakage attributable to the middle leakage zone
+        (Zone 2) when fully exposed.
+    lowerFraction : float
+        Fraction of gross leakage attributable to the lower leakage zone
+        (Zone 3) when fully exposed.
+    grossFraction : float
+        Assumed total leakage fraction when the pool elevation is at or
+        above 1000 ft and all gates are closed.
+
+    Returns
+    -------
+    float
+        Total leakage fraction of gross penstock flow, interpolated
+        piecewise between four elevation bands anchored at 1000 ft and the
+        Zone-1, Zone-2, and Zone-3 inlet elevations.
+
+    Notes
+    -----
+    As reservoir elevation drops below 1000 ft, successive leakage zones
+    become submerged and are assumed to stop contributing their
+    respective fraction of leakage (the corresponding fraction term is
+    phased out linearly between zone boundaries via ``resElevFactor``).
+    Below Zone 3's elevation, leakage is treated as zero -- the inline
+    comment notes "we have bigger concerns than leakage at this point,"
+    i.e. a reservoir elevation this low is a far more serious problem than
+    estimating leakage precisely.
+    """
 
     #grossFraction = 0.2  # Assumed leakage fraction when pool elev > 1000. and all gates closed
     topElev = 1000.
@@ -611,10 +1188,27 @@ def getTotalLeakageFraction(resElev, elevs, upperFraction, middleFraction, lower
     return fraction
 
 
-#######################################################################################################
-# Get TCD leakage table coefficients for each zone
-# From W2 Report, Tables 16 and 17
 def getLeakageTableVals(currentYear, zoneNum):
+    """Look up leakage-flow regression coefficients for a given year and leakage zone.
+
+    Parameters
+    ----------
+    currentYear : int
+        Calendar year of the current time step, used to select between
+        pre-2010 and 2010-onward coefficient tables.
+    zoneNum : int
+        Leakage zone number (1-6; see the port-index reference table).
+
+    Returns
+    -------
+    list of float
+        2-element list of regression coefficients ``[base, gateRatioCoef]``
+        for the given zone and year, taken from the W2 Report, Tables 16
+        (pre-2010) and 17 (2010 onward). Zones 5 and 6 fold in additional
+        "Bottom 7"/"Bottom 8" leakage contributions into the base
+        coefficient. Returns an empty list if ``zoneNum`` is not
+        recognized.
+    """
     vals = []
     # Zone 6 (also includes "Bottom 8" leakage)
     if zoneNum == 6:
@@ -655,11 +1249,29 @@ def getLeakageTableVals(currentYear, zoneNum):
     return vals
 
 
-#######################################################################################################
-# Calculate a theoretical maximum flow through a given gate level based on depth of gate submergence
-#   and the number of open gates
-# Estimate max using a sharp crested weir equation (Fluid Mechanics, White, 3rd ed., pg 624)
 def calcWeirFlow(H, numOpenGates):
+    """Estimate maximum flow through a partially submerged gate using a sharp-crested weir equation.
+
+    Parameters
+    ----------
+    H : float
+        Head of submergence over the gate invert, in feet.
+    numOpenGates : int
+        Number of open gates of this type contributing to the total flow
+        estimate.
+
+    Returns
+    -------
+    float
+        Estimated maximum flow (cfs) through the given number of open
+        gates at this submergence depth.
+
+    Notes
+    -----
+    Uses the sharp-crested weir equation from White's Fluid Mechanics, 3rd
+    ed., p. 624, assuming imperial units (g = 32.1 ft/s^2) and a fixed
+    gate width of 50 ft per gate.
+    """
     g = 32.1  # assuming imperial units here
     weirCoef = 0.564  # from White
     width = 50.  # gates are 50' wide
@@ -667,25 +1279,96 @@ def calcWeirFlow(H, numOpenGates):
     return q
 
 
-#######################################################################################################
-# Gets the TCD outlet index for a given leakage zone
 def getIdxForLeakageZone(z):
+    """Translate a leakage zone number into its TCD inlet index.
+
+    Parameters
+    ----------
+    z : int
+        Leakage zone number (1 = highest elevation leakage zone, 6 =
+        lowest), per the port-index reference table at the top of this
+        file.
+
+    Returns
+    -------
+    int
+        TCD inlet index corresponding to leakage zone ``z``.
+
+    Notes
+    -----
+    getLeakageIndexes returns inlet indices ordered from lowest to highest
+    zone number (6 down to 1); this function reverses that ordering so
+    zone 1 (highest elevation) maps to the last entry and zone 6 (lowest)
+    maps to the first.
+    """
     leakageIdx = getLeakageIndexes()
     i = len(leakageIdx) - z
     return leakageIdx[i]
 
 
-#######################################################################################################
-# Calculates leakage as a function of several inputs
 def calcLeakage(currentYear, zone, gateRatio, elevationRatio, totalLeakFract, flow):
+    """Compute the leakage flow for a single zone given gate state and elevation.
+
+    Parameters
+    ----------
+    currentYear : int
+        Calendar year, used to select the appropriate coefficient table
+        via getLeakageTableVals.
+    zone : int
+        Leakage zone number (1-6).
+    gateRatio : float
+        Fraction of nearby gates that are closed (contributing to
+        leakage); typically ``(total - open) / total`` for the relevant
+        gate group.
+    elevationRatio : float
+        Fraction (0-1) describing how submerged this leakage zone is
+        relative to its elevation band.
+    totalLeakFract : float
+        Total leakage fraction of gross flow, from
+        getTotalLeakageFraction2000/2010.
+    flow : float
+        Total penstock flow (cfs) that the leakage fraction is applied to.
+
+    Returns
+    -------
+    float
+        Estimated leakage flow (cfs) for this zone.
+
+    Notes
+    -----
+    Combines a base coefficient and a gate-ratio-dependent coefficient
+    (from the regression table) with the elevation ratio, total leakage
+    fraction, and total flow to produce an absolute leakage flow estimate.
+    """
     tableVals = getLeakageTableVals(currentYear, zone)
     leakageFlow = (tableVals[0] + tableVals[1]*gateRatio)/100. * elevationRatio * totalLeakFract * flow
     return leakageFlow
 
 
-#######################################################################################################
-# Chooses the minimum flow fraction based on the number of open levels and the point number (0 = lowest)
 def chooseMinFlowFract(nOpenLevels, ptNum):
+    """Choose the minimum flow fraction for an inlet point in the flow-split optimization.
+
+    Parameters
+    ----------
+    nOpenLevels : int
+        Number of gate levels currently open.
+    ptNum : int
+        Index of the inlet point within its gate level (0 = lowest).
+
+    Returns
+    -------
+    float
+        Minimum flow fraction (currently always 0.01, i.e. 1%) to assign
+        as a lower bound for this inlet point in the optimization.
+
+    Notes
+    -----
+    The branching on ``nOpenLevels`` and ``ptNum`` currently always
+    resolves to the same constant (0.01) regardless of input; the
+    conditional structure appears to be a placeholder for previously (or
+    potentially in the future) differentiated minimum-flow logic, but as
+    written it has no effect on the returned value.
+    """
     if ptNum == 0:
         if nOpenLevels == 1:
             minFF = 0.01
@@ -699,9 +1382,32 @@ def chooseMinFlowFract(nOpenLevels, ptNum):
     return minFF
 
 
-#######################################################################################################
-# Check if gate operation change within a given time period back from current step
 def checkRecentGateOp(network, currentRuntimestep):
+    """Check whether the TCD gate level has changed within a recent lookback window.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the gate-level state
+        variable.
+    currentRuntimestep : object
+        Current simulation time step object.
+
+    Returns
+    -------
+    tuple of (bool, int or float)
+        Whether the gate level changed at any point within the lookback
+        window, and the gate level at the immediately preceding time step.
+
+    Notes
+    -----
+    The lookback window spans ``gateOpLookbackDays`` days (converted to
+    time steps using the model's time-step size), but is clamped so it
+    never searches before the first valid lookback step of the run
+    (``lbSteps + 1``). This is used outside the main seasonal operation
+    window (see getForecastTCDTempAndFlows) to avoid switching gates too
+    frequently.
+    """
 
     stateVarTCDlevel = network.getStateVariable(stateVarNameTCDLevel)
     iCurStep = currentRuntimestep.getStep()
@@ -713,6 +1419,8 @@ def checkRecentGateOp(network, currentRuntimestep):
     rts = RunTimeStep()
     rts.setStep(iStartStep)
     holdLevel = stateVarTCDlevel.getValue(rts)
+    # Scan every step between the lookback start and the current step for
+    # any change away from the level held at the start of the window.
     for j in range(iStartStep+1, iCurStep):
         rts.setStep(j)
         level = stateVarTCDlevel.getValue(rts)
@@ -725,9 +1433,44 @@ def checkRecentGateOp(network, currentRuntimestep):
     return recentChange, prevLevel
 
 
-#######################################################################################################
-# Get highest gate level possible for a reservoir elevation 
 def getElevationRestrictionLevel(currentRule, network, resElev):
+    """Determine the highest (most restrictive) gate level allowed at a given reservoir elevation.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object, used to reach TCD inlet
+        elevations.
+    network : object
+        HEC-ResSim network object.
+    resElev : float
+        Current reservoir elevation.
+
+    Returns
+    -------
+    int
+        The lowest-numbered (least restrictive / highest withdrawal
+        elevation) gate level whose elevation restriction is satisfied by
+        ``resElev``, or 0 if no restriction applies (i.e. even level 1 is
+        unrestricted at this elevation... see Notes for the actual
+        iteration order).
+
+    Notes
+    -----
+    Restrictions are only defined for levels 1-4 (blending/single-level
+    upper and middle configurations); levels 5-7 have no defined
+    restriction and default to 0 via the ``except KeyError`` fallback.
+    Iteration order follows ``nGateOptions.items()`` (levels 1 through 7
+    in the catalog's natural order), returning as soon as a level's
+    restriction is satisfied -- in practice this does not guarantee the
+    most restrictive or least restrictive match is found first depending
+    on dict iteration order in the runtime's Python/Jython version, but
+    is preserved as-is. Requirements: "upper only" (level 1) needs the
+    upper gate invert submerged by at least 35 ft; "upper and middle"
+    (level 2) needs only the upper invert submerged; "middle only"
+    (level 3) needs the middle invert submerged by at least 35 ft;
+    "middle and lower" (level 4) needs only the middle invert submerged.
+    """
     elevs = getInletElevs(currentRule, network)
     nGateOptions = getNumGateOptions()  # dictionary of options for gates (e.g., level 1 = [0,0,0,5] upper only)
     sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(False)
@@ -735,7 +1478,9 @@ def getElevationRestrictionLevel(currentRule, network, resElev):
                         2: elevs[upperGateIdx[0]],        # upper and middle needs upper invert submerged
                         3: elevs[middleGateIdx[0]] + 35.,  # middle only needs invert submerged by at least 35'
                         4: elevs[middleGateIdx[0]]}        # middle and lower needs middle invert submerged
-    # Loop over the options
+    # Loop over the options, returning the first level (in catalog order)
+    # whose elevation restriction is satisfied by the current reservoir
+    # elevation; levels without a defined restriction default to 0.
     for level, nGates in nGateOptions.items():
         try:
             elevRestriction = elevRestrictions[level]
@@ -746,9 +1491,22 @@ def getElevationRestrictionLevel(currentRule, network, resElev):
     return 0
 
 
-#######################################################################################################
-# Get total gate flow through all the levels
 def getTotalGateFlows(tcdFlows):
+    """Sum per-inlet flows into totals for each of the four gate levels.
+
+    Parameters
+    ----------
+    tcdFlows : list of float
+        Per-inlet flow values, indexed as in the port-index reference
+        table.
+
+    Returns
+    -------
+    tuple of (float, float, float, float)
+        Total flow through the side, lower, middle, and upper gate groups
+        respectively (using the "usual", not "high point", port
+        groupings).
+    """
     useHighPt = False
     sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(useHighPt)
     
@@ -767,9 +1525,21 @@ def getTotalGateFlows(tcdFlows):
     return totalSideFlow, totalLowerFlow, totalMiddleFlow, totalUpperFlow
 
 
-#######################################################################################################
-# Get total leakage flow
 def getTotalLeakageFlow(tcdFlows):
+    """Sum per-inlet flows across all leakage-zone inlets.
+
+    Parameters
+    ----------
+    tcdFlows : list of float
+        Per-inlet flow values, indexed as in the port-index reference
+        table.
+
+    Returns
+    -------
+    float
+        Total flow attributed to leakage zones (indices from
+        getLeakageIndexes).
+    """
     leakageIdx = getLeakageIndexes()
     totalLeakageFlow = 0.
     for idx in leakageIdx:
@@ -777,10 +1547,74 @@ def getTotalLeakageFlow(tcdFlows):
     return totalLeakageFlow
     
 
-#######################################################################################################
-# Determine forecasted WQCD flow distribution for a WQ target
 def getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev, targetTemp, tcdMinFlow, 
                                riverOutletFlow, riverOutletTemp):
+    """Determine the forecast TCD gate level, outlet temperature, and flow split for the current time step.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object.
+    network : object
+        HEC-ResSim network object.
+    currentRuntimestep : object
+        Current simulation time step object.
+    resElev : float
+        Current reservoir elevation.
+    targetTemp : float
+        Desired downstream water-quality temperature target.
+    tcdMinFlow : float
+        Total penstock flow to be distributed through the TCD.
+    riverOutletFlow : float
+        Combined flow through the river outlets (bypassing the TCD).
+    riverOutletTemp : float
+        Flow-weighted average temperature of the river outlet flow.
+
+    Returns
+    -------
+    tuple of (float, list of float)
+        Resulting TCD outlet temperature and the per-inlet flow
+        distribution achieving it.
+
+    Raises
+    ------
+    ValueError
+        Propagated from findTCDTempAndFlowsNoRestriction if no gate
+        configuration can be found that meets the target.
+
+    Notes
+    -----
+    This is the core decision logic for the TCD gate-switching strategy,
+    with different behavior depending on where the current time step falls:
+
+    - **First time step(s)** (within the lookback window): tries to adopt
+      the historical gate level if one can be matched; otherwise searches
+      for the uppermost unrestricted level that meets the target
+      temperature via findTCDTempAndFlowsNoRestriction.
+    - **Not the daily check hour**: simply holds the previous gate level
+      (subject to elevation restriction) without re-evaluating whether it
+      still meets the target -- gate decisions are only reconsidered once
+      per day, at ``checkOpHour``.
+    - **At the check hour, outside the seasonal operation window**
+      (``startOpDate``-``endOpDate``): the only requirement is to avoid
+      switching gates too often (via checkRecentGateOp); if a recent
+      change already occurred, hold the previous level, otherwise search
+      unrestricted for the best level.
+    - **At the check hour, inside the seasonal operation window**: gates
+      may only move one direction -- from upper (shallower) levels toward
+      lower (deeper) levels -- never back up except when reservoir
+      elevation forces a downward move. The current level is evaluated
+      against the target; violations accumulate over
+      ``maxViolationDays`` consecutive days before moving down a level
+      (with some additional logic to catch a level switch that
+      overshoots and moves too cold, trying to move back up one level if
+      that still meets the target).
+
+    The one-way (upper-to-lower only) movement rule inside the operation
+    period, combined with the violation-day counter, is intended to
+    prevent the TCD from oscillating between adjacent gate levels in
+    response to small temperature fluctuations near the target.
+    """
 
     curTime = currentRuntimestep.getHecTime()
     #network.printMessage(curTime.toString())
@@ -851,6 +1685,7 @@ def getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev
                     setTempTargetViolations(network, 0)
                     return tcdTemp, tcdFlows
                 else:
+                    # Evaluate the current (previous) gate level against the target.
                     nGates = getGatesForLevel(prevGateLevel)
                     targetTemp, tcdTemp, tcdFlows = getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, 
                                            resElev, targetTemp, tcdMinFlow, nGates, riverOutletFlow, riverOutletTemp)
@@ -860,6 +1695,9 @@ def getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev
                     totLeakFlow = getTotalLeakageFlow(tcdFlows)
                     flowPctCutoff = 0.10  # can't be less than 3% = 1 + 1 + 1 min flow fractions
 
+                    # Track consecutive days where the current level runs too
+                    # warm (a real violation) vs. too cold (overshoot, where we
+                    # may be able to move back up a level) vs. an acceptable match.
                     if tcdTemp > targetTemp + temperatureThreshold:
                         numViolations += 1
                         setTempTargetViolations(network, numViolations)
@@ -883,6 +1721,8 @@ def getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev
                                     setTempTargetViolations(network, 0)
                             else:
                                 setTempTargetViolations(network, 0)
+                    # Only actually switch down a level once violations have
+                    # accumulated for maxViolationDays consecutive checks.
                     if numViolations >= maxViolationDays and prevGateLevel < nGateOptions:  # move to next level down in elevation
                         level = prevGateLevel + 1
                         tcdTemp, tcdFlows = setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
@@ -900,10 +1740,38 @@ def getForecastTCDTempAndFlows(currentRule, network, currentRuntimestep, resElev
                         return tcdTemp, tcdFlows
 
 
-#######################################################################################################
-# Given a level, set things and return optimized TCD flow and temperature for that level    
 def setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, 
                     tcdMinFlow, riverOutletFlow, riverOutletTemp, level):
+    """Commit a chosen gate level and compute its optimized temperature and flows.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object.
+    network : object
+        HEC-ResSim network object.
+    currentRuntimestep : object
+        Current simulation time step object.
+    resElev : float
+        Current reservoir elevation.
+    targetTemp : float
+        Desired downstream temperature target.
+    tcdMinFlow : float
+        Total penstock flow through the TCD.
+    riverOutletFlow : float
+        Combined river outlet flow.
+    riverOutletTemp : float
+        Flow-weighted average river outlet temperature.
+    level : int
+        Gate level to commit (writes gate-level state and gate-opening
+        global variables).
+
+    Returns
+    -------
+    tuple of (float, list of float)
+        Resulting optimized TCD temperature and per-inlet flow
+        distribution for the given level.
+    """
     setGateLevel(network, currentRuntimestep, level)
     nGates = getGatesForLevel(level)
     setGateOpenings(network, currentRuntimestep, nGates)
@@ -912,10 +1780,62 @@ def setDataForLevel(currentRule, network, currentRuntimestep, resElev, targetTem
     return tcdTemp, tcdFlows
 
 
-#######################################################################################################
-# Loop over possible combos of open gate levels and get the upper most one satisfying the target temperature
 def findTCDTempAndFlowsNoRestriction(currentRule, network, currentRuntimestep, resElev, elevRestrictionLevel,
                                      targetTemp, tcdMinFlow, riverOutletFlow, riverOutletTemp):
+    """Search all unrestricted gate levels for the uppermost one meeting the temperature target.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object.
+    network : object
+        HEC-ResSim network object.
+    currentRuntimestep : object
+        Current simulation time step object.
+    resElev : float
+        Current reservoir elevation.
+    elevRestrictionLevel : int
+        Minimum (lowest-numbered) gate level allowed given current
+        elevation; levels below this are skipped.
+    targetTemp : float
+        Desired downstream temperature target.
+    tcdMinFlow : float
+        Total penstock flow through the TCD.
+    riverOutletFlow : float
+        Combined river outlet flow.
+    riverOutletTemp : float
+        Flow-weighted average river outlet temperature.
+
+    Returns
+    -------
+    tuple of (float, list of float)
+        Resulting TCD temperature and per-inlet flow distribution for the
+        selected gate level.
+
+    Raises
+    ------
+    ValueError
+        If no level in the catalog (at or above ``elevRestrictionLevel``)
+        can produce a temperature within the required tolerance of the
+        target.
+
+    Notes
+    -----
+    This is used when no reliable prior gate state is available (first
+    time step with no historical match, or outside the operation period
+    with no recent gate change) and the model must pick a level from
+    scratch. Iterates through gate levels in catalog order (1 = highest
+    elevation withdrawal downward); for each level, if the resulting
+    temperature is within a small buffer (0.02 deg) of the target, that
+    level is accepted -- unless the *previous* (one level higher)
+    candidate was actually closer to the target, in which case the
+    function backs up and returns that higher level's result instead
+    (preferring the least restrictive level that still adequately meets
+    the target). If no level ever gets within tolerance, the last
+    (lowest, most restrictive) level in the catalog is accepted
+    regardless. If the loop somehow completes without returning (e.g. an
+    empty catalog), a ValueError is raised.
+    """
     
     # Loop over the options
     nGateOptions = getNumGateOptions()  # dictionary of options for gates (e.g., level 1 = [0,0,0,5] upper only)
@@ -926,6 +1846,9 @@ def findTCDTempAndFlowsNoRestriction(currentRule, network, currentRuntimestep, r
             targetTemp, tcdTemp, tcdFlows = getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, 
                                                resElev, targetTemp, tcdMinFlow, nGates, riverOutletFlow, riverOutletTemp)
             if tcdTemp != errorCode and tcdTemp < targetTemp + 0.02:  # small buffer
+                # This level meets the target; but if the previous
+                # (higher/less restrictive) level we tried was actually
+                # closer to the target, prefer that one instead.
                 if level > 1 and abs(levelAbvResult - targetTemp) < abs(tcdTemp - targetTemp):
                     setGateLevel(network, currentRuntimestep, level - 1)
                     setGateOpenings(network, currentRuntimestep, levelAbvNumGates)
@@ -935,6 +1858,8 @@ def findTCDTempAndFlowsNoRestriction(currentRule, network, currentRuntimestep, r
                     setGateOpenings(network, currentRuntimestep, nGates)
                     return tcdTemp, tcdFlows
             elif tcdTemp != errorCode and level == len(nGateOptions):
+                # Last (most restrictive) level in the catalog: accept it
+                # even if it didn't get within the small buffer above.
                 setGateLevel(network, currentRuntimestep, level)
                 setGateOpenings(network, currentRuntimestep, nGates)
                 return tcdTemp, tcdFlows
@@ -945,8 +1870,38 @@ def findTCDTempAndFlowsNoRestriction(currentRule, network, currentRuntimestep, r
     raise ValueError("No optimized TCD flows found")
     
 
-#######################################################################################################
 def getDSControlLoc(network,currentRuntimestep):
+    """Read the configured downstream temperature-control location index.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to look up the global variable.
+    currentRuntimestep : object
+        Current simulation time step object (unused directly, but present
+        for interface consistency with other global-variable readers).
+
+    Returns
+    -------
+    int
+        Downstream control location index: 0 (at Shasta Dam), 1 (Highway
+        44), 2 (CCR), or 3 (Ball's Ferry).
+
+    Raises
+    ------
+    NameError
+        If the global variable is not found, has no value, or has a value
+        outside the valid 0-3 range.
+
+    Notes
+    -----
+    The commented-out fallback code below the raise (defaulting to
+    location 2, "Abv Clear Cr", with a warning instead of raising) is
+    unreachable dead code -- it sits after an unconditional ``raise``
+    inside the ``if fail:`` branch, so it can never execute as written.
+    It is preserved as-is since it may represent previously intended
+    (or possibly future) fallback behavior.
+    """
     gv = network.getGlobalVariable(globalVarNameDSControlLoc)
 
     fail=False
@@ -968,8 +1923,42 @@ def getDSControlLoc(network,currentRuntimestep):
     	return gv.getValue()
 
 
-#######################################################################################################
 def getKeswickOutflow(currentRule, network, currentRuntimestep, usePrevStepAsEstimate=True):
+    """Get the current (or estimated) outflow from Keswick Reservoir.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object (unused directly; present for
+        interface consistency with other flow-lookup functions in this
+        file).
+    network : object
+        HEC-ResSim network object, used to locate the Keswick Reservoir
+        element.
+    currentRuntimestep : object
+        Current simulation time step object.
+    usePrevStepAsEstimate : bool, optional
+        If the current/decision flow is unavailable or below 0.1 cfs, fall
+        back to the previous time step's decision value. Defaults to True.
+
+    Returns
+    -------
+    float
+        Keswick Reservoir outflow (cfs).
+
+    Raises
+    ------
+    NameError
+        If the "Keswick Reservoir" network element cannot be found.
+    ValueError
+        If the resolved flow is invalid even after the fallback.
+
+    Notes
+    -----
+    Keswick is immediately downstream of Shasta Dam; its outflow is used
+    in backRouteWQTarget2 to estimate Sacramento River travel velocity via
+    a power-law approximation.
+    """
 
     keswickName = "Keswick Reservoir"
     kesElem = network.findElement(keswickName)
@@ -980,6 +1969,8 @@ def getKeswickOutflow(currentRule, network, currentRuntimestep, usePrevStepAsEst
     childElemVec = kesElem.getElementsByClass(type(rde), None)
     cntrlr = kesOpSet.getControllerForElement(childElemVec[0])
     flow = cntrlr.getCurMinOpValue(currentRuntimestep).value
+    # Fall back to the previous time step's decision value if the current
+    # flow is unavailable or implausibly small (< 0.1 cfs).
     if (not isValidValue(flow) or flow < 0.1) and usePrevStepAsEstimate:
         rts = RunTimeStep()
         rts.setStep(currentRuntimestep.getStep() - 1)
@@ -990,8 +1981,37 @@ def getKeswickOutflow(currentRule, network, currentRuntimestep, usePrevStepAsEst
     return flow
 
 
-#######################################################################################################
 def getKeswickAvgTemp(network, currentRuntimestep):
+    """Compute the volume-weighted average water temperature in Keswick Reservoir.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object, used to locate Keswick Reservoir and
+        its WQ geometry/engine.
+    currentRuntimestep : object
+        Current simulation time step object (unused directly, since layer
+        results are read for the current engine state without an explicit
+        time-step argument).
+
+    Returns
+    -------
+    float
+        Volume-weighted average water temperature across all vertical
+        layers of Keswick Reservoir.
+
+    Raises
+    ------
+    NameError
+        If the "Keswick Reservoir" network element cannot be found.
+
+    Notes
+    -----
+    Used in backRouteWQTarget2 as the starting temperature for the
+    downstream temperature-routing calculation, since Keswick's pool
+    temperature mixes with the TCD outlet temperature before continuing
+    downstream.
+    """
 
     keswickName = "Keswick Reservoir"
     kesElem = network.findElement(keswickName)
@@ -1008,15 +2028,77 @@ def getKeswickAvgTemp(network, currentRuntimestep):
         WQTime.TIME_STEP_INFO.END_OF_STEP.id, nLayers)
     avgTemp = 0.
     totalVol = 0.
+    # Volume-weight each layer's temperature to get the overall pool average.
     for j in range(nLayers):
         avgTemp += layerTemps[j] * layerVols[j]
         totalVol += layerVols[j]
     return avgTemp / totalVol
 
 
-#######################################################################################################
-# Backcalculate the temperature required at Shasta Dam from the downstream temperature target
 def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverOutletFlow):
+    """Back-calculate the required TCD outlet temperature from a downstream temperature target.
+
+    Parameters
+    ----------
+    network : object
+        HEC-ResSim network object.
+    currentRuntimestep : object
+        Current simulation time step object.
+    wqTarget : float
+        Desired temperature target at the downstream control location.
+    tcdMinFlow : float
+        Total penstock flow through the TCD (unused directly in this
+        function's body, but accepted for interface consistency with its
+        caller, getTCDTempAndFlowsForLevel).
+    riverOutletFlow : float
+        Combined river outlet flow (unused directly in this function's
+        body; see the same note as ``tcdMinFlow``).
+
+    Returns
+    -------
+    float
+        Required TCD outlet temperature at Shasta Dam such that, after
+        mixing with Keswick Reservoir and traveling downstream to the
+        configured control location, the resulting temperature meets
+        ``wqTarget``.
+
+    Raises
+    ------
+    NotImplementedError
+        If the downstream control location index is not one of the four
+        recognized values.
+    ValueError
+        If the search below fails to bracket a solution.
+
+    Notes
+    -----
+    This function references ``currentRule`` (passed to
+    getKeswickOutflow) without ``currentRule`` being a parameter of this
+    function; as written, this would raise a NameError if this code path
+    is ever executed, since ``currentRule`` is not defined in this
+    function's scope, its enclosing module scope, or passed in. This
+    appears to be an omitted parameter, preserved here exactly rather
+    than corrected.
+
+    If the control location is at Shasta Dam itself (location 0), no
+    backrouting is needed and the target is returned unchanged. Otherwise,
+    a downstream distance (Highway 44, CCR, or Ball's Ferry) is used with
+    a power-law velocity approximation (based on Keswick outflow) to
+    estimate river travel time in model time steps. The function then
+    performs a bisection-style bracketing search over candidate TCD outlet
+    temperatures: for each candidate, it simulates mixing with Keswick
+    Reservoir (weighted by a calibrated fraction of Keswick's conservation
+    pool volume) and then routes the resulting temperature downstream
+    step-by-step using a simple exchange with the equilibrium temperature
+    global variable, comparing the final routed temperature against the
+    future (lead-time-adjusted) target. Once two candidate temperatures
+    are found that bracket the target (one routes too warm, one too
+    cool), the result is linearly interpolated between them. If the very
+    first candidate already produces a routed temperature below the
+    target with no bracketing possible, that first candidate is accepted
+    outright as a fallback; if a solution cannot be bracketed at all, a
+    ValueError is raised.
+    """
 
     # Get the downstream control location
     loc = getDSControlLoc(network,currentRuntimestep)
@@ -1049,6 +2131,9 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
     travTimeSteps = int(round(travTime / deltaT))
     #network.printMessage('travTimeSteps ' + str(travTimeSteps))
 
+    # Look up the water-quality target at the future time step corresponding
+    # to the estimated downstream travel time, since a parcel of water
+    # leaving the dam now will arrive downstream at that later time.
     futureRts = RunTimeStep()
     futureRts.setStep(min(currentRuntimestep.getStep() + travTimeSteps, currentRuntimestep.getTotalNumSteps()-1))
     targetTempFuture = getGVTemperature(network, futureRts, globalVarNameTCDTarget)
@@ -1070,6 +2155,9 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
     cantBeMet = False
     #network.printMessage('Keswick vars ' + str(keswickResAvgTemp) + ', ' + str(kesFraction))
     #network.printMessage('Travel time steps ' + str(travTimeSteps))
+    # Scan candidate outlet temperatures across the search range, routing
+    # each one downstream, until two consecutive candidates bracket the
+    # future target temperature (one above, one below).
     for j in range(numIters):
         outletTemp = tSearchMin + float(j) / float(numIters+1) * (tSearchMax - tSearchMin)
         # Impact of Keswick
@@ -1124,17 +2212,93 @@ def backRouteWQTarget2(network, currentRuntimestep, wqTarget, tcdMinFlow, riverO
     return targetTemp
 
 
-#######################################################################################################
-# Given a set of open gate levels, get the forecasted WQCD flow distribution for a WQ target
 def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev, targetTemp, tcdMinFlow, nGates, 
                                riverOutletFlow, riverOutletTemp):
+    """Optimize the TCD inlet flow distribution for a fixed gate configuration.
+
+    Parameters
+    ----------
+    currentRule : object
+        HEC-ResSim scripted rule object.
+    network : object
+        HEC-ResSim network object.
+    currentRuntimestep : object
+        Current simulation time step object.
+    resElev : float
+        Current reservoir elevation.
+    targetTemp : float
+        Desired downstream temperature target (will be adjusted/back-routed
+        internally; the adjusted value is also returned).
+    tcdMinFlow : float
+        Total penstock flow through the TCD.
+    nGates : list of int
+        4-element ``[side, lower, middle, upper]`` count of open gates at
+        each level, as returned by getGatesForLevel.
+    riverOutletFlow : float
+        Combined river outlet flow (bypassing the TCD).
+    riverOutletTemp : float
+        Flow-weighted average river outlet temperature.
+
+    Returns
+    -------
+    tuple of (float, float, list of float)
+        The (possibly adjusted) target temperature actually used for the
+        optimization, the resulting optimized TCD outlet temperature, and
+        the per-inlet flow distribution achieving it.
+
+    Raises
+    ------
+    ValueError
+        If the WQ engine's flow optimization fails (wrapped from
+        WQException) or if the resulting flows do not sum to within 1 cfs
+        of ``tcdMinFlow``.
+
+    Notes
+    -----
+    This is the detailed physical optimization underlying the higher-level
+    gate-selection logic in getForecastTCDTempAndFlows. The steps are:
+
+    1. Back-route the downstream target temperature to an equivalent
+       at-dam target (backRouteWQTarget2), then further adjust that target
+       to account for river outlet flow diluting/mixing with the TCD
+       outlet downstream (if any river outlet flow exists), clamping the
+       adjusted target to a plausible 0.1-35 degC range to avoid chasing
+       an unreachable target caused by large river-outlet contributions.
+    2. Compute uncontrollable leakage flow for each of the six leakage
+       zones (using the appropriate pre/post-2010 coefficient table based
+       on the current simulation year), fixing each leakage zone's
+       min/max flow bounds to the same computed value (i.e. leakage is
+       not a decision variable in the optimization).
+    3. For each operable gate group (side, lower, middle, upper) with at
+       least one open gate, set minimum/maximum flow bounds per inlet
+       point: fully submerged groups get a small minimum fraction up to
+       the full penstock flow as a maximum; partially submerged groups
+       (only applicable to middle/upper, which have multiple elevation
+       tiers) are constrained using the sharp-crested weir equation
+       (calcWeirFlow) to estimate a physical maximum flow given the
+       submergence depth.
+    4. Call the WQ engine's flow optimizer (``computeWQCDFlows``) with
+       these per-inlet bounds, the fixed total flow, and the adjusted
+       target temperature, then retrieve the resulting predicted outlet
+       temperature.
+    5. Validate that the optimizer's flows sum to within 1 cfs of the
+       requested total flow, raising with diagnostic output otherwise.
+
+    If the WQ engine raises a WQException during optimization, diagnostic
+    context (flows, elevation, target, gate counts, and bounds) is printed
+    before re-raising as a bare ValueError (which, as written, discards
+    the original exception's message in the raised error itself, though it
+    has already been printed).
+    """
 
     # Route target temperature back from downstream location
     backRoutedWqTarget = backRouteWQTarget2(network, currentRuntimestep, targetTemp, tcdMinFlow, riverOutletFlow)
     #network.printMessage('Target, backrouted temps ' + str(targetTemp) + ', ' + str(backRoutedWqTarget))
     targetTemp = backRoutedWqTarget
 
-    # Adjust target temperature for river outlet impact
+    # Adjust target temperature for river outlet impact: back out the
+    # river outlet's contribution so the TCD alone, combined with the
+    # river outlet flow, still averages to the original downstream target.
     if riverOutletFlow > 0.:
         totalDownstreamFlow = tcdMinFlow + riverOutletFlow
         newTargetTemp = (totalDownstreamFlow * targetTemp - riverOutletFlow * riverOutletTemp) / tcdMinFlow
@@ -1178,7 +2342,8 @@ def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev
     sideGateRatio = (numSideGates - numSideGatesOpen)/numSideGates
     lowerGateRatio = (numLowerGates - numLowerGatesOpen)/numLowerGates
     middleGateRatio = (numMiddleGates - numMiddleGatesOpen)/numMiddleGates
-    # Zone 6 - no gate ratio or elev ratio
+    # Zone 6 - no gate ratio or elev ratio: fix min=max so it is not a
+    # decision variable in the optimizer below.
     zone = 6
     i = getIdxForLeakageZone(zone)
     inletFlowMin[i] = calcLeakage(currentYear, zone, 1., 1., totalLeakageFraction, tcdMinFlow)
@@ -1214,6 +2379,8 @@ def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev
     inletFlowMin[i] = calcLeakage(currentYear, zone, 1., elevRatio, totalLeakageFraction, tcdMinFlow)
     inletFlowMax[i] = inletFlowMin[i]
 
+    # Count how many of the four gate levels have at least one gate open,
+    # used by chooseMinFlowFract to scale minimum per-inlet flow bounds.
     numLevelsOpen = 0
     if numSideGatesOpen > 0:
         numLevelsOpen += 1
@@ -1227,7 +2394,8 @@ def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev
     useHighPt = False
     sideGateIdx, lowerGateIdx, middleGateIdx, upperGateIdx = getGateIndexes(useHighPt)
 
-    # Side (lowest level) gates
+    # Side (lowest level) gates: always fully submerged when open, so each
+    # point just gets a small minimum fraction and the full flow as a max.
     if numSideGatesOpen > 0:
         for count, idx in enumerate(sideGateIdx):
             flowFract = chooseMinFlowFract(numLevelsOpen, count)
@@ -1236,14 +2404,15 @@ def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev
             inletFlowMin[idx] = flowFract * tcdMinFlow
             inletFlowMax[idx] = tcdMinFlow
                 
-    # Lower level gates
+    # Lower level gates: same simple treatment as side gates.
     if numLowerGatesOpen > 0:
         for count, idx in enumerate(lowerGateIdx):
             flowFract = chooseMinFlowFract(numLevelsOpen, count)
             inletFlowMin[idx] = flowFract * tcdMinFlow
             inletFlowMax[idx] = tcdMinFlow
 
-    # Middle level gates
+    # Middle level gates: constrained by how many of the tiered inlet
+    # points are actually submerged at the current reservoir elevation.
     if numMiddleGatesOpen > 0:
         if resElev > elevs[middleGateIdx[2]]:  # All pts submerged
             for count, idx in enumerate(middleGateIdx):
@@ -1266,7 +2435,7 @@ def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev
             inletFlowMin[idx] = min(flowFract * tcdMinFlow, weirMaxEstimate)
             inletFlowMax[idx] = min(tcdMinFlow, weirMaxEstimate)
     
-    # Upper level gates
+    # Upper level gates: same tiered-submergence treatment as middle gates.
     if numUpperGatesOpen > 0:
         if resElev > elevs[upperGateIdx[2]]:  # All pts submerged
             for count, idx in enumerate(upperGateIdx):
@@ -1297,6 +2466,9 @@ def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev
     resWQGeoSubdom = rssWQGeometry.getWQSubdomain(res)
     wqcd = rssWQGeometry.getWQControlDevice(currentRule.getController().getReleaseElement())
     tempConstituent = wqRun.getWQConstituent("Water Temperature")
+    # Hand the per-inlet bounds, fixed total flow, and adjusted target
+    # temperature to the WQ engine's optimizer; on failure, print rich
+    # diagnostic context before re-raising.
     try:
         tcdFlows = engineAdapter.computeWQCDFlows(resWQGeoSubdom, wqcd, tempConstituent, nInletLevels, inletFlowMin, inletFlowMax, tcdMinFlow, targetTemp)
     except WQException as wqe:
@@ -1315,7 +2487,8 @@ def getTCDTempAndFlowsForLevel(currentRule, network, currentRuntimestep, resElev
         
     tcdResult = engineAdapter.getWQResultOptimized(resWQGeoSubdom, wqcd)
 
-    # Error checking
+    # Error checking: confirm the optimizer's solution actually respects
+    # the fixed total flow constraint within a small tolerance.
     if abs(sum(tcdFlows) - tcdMinFlow) > 1.:  # 1 cfs
         print("TCD flows /= Penstock flow")
         print(hecTime.toString())
